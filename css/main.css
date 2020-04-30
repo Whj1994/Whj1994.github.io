@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b0ffeb;
+  background: #86ffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2150,17 +2150,6 @@ body {
   -o-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
-/*这是设置底部文字, 看个人需要修改*/
-}
-body #footer > div > div {
-  color: #eee;
-}
-.main-inner {
-  background: #fff;
-  opacity: 0.8;
-}
-.header-inner {
-  opacity: 0.8;
 }
 .header {
   margin: 0 auto;
