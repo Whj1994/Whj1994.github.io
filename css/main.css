@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff67ee;
+  background: #f4708a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2150,6 +2150,14 @@ body {
   -o-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
+}
+# ---------------------------------------------------------------,
+# Post Settings,
+# See: https:,
+​,
+# 更改post_block透明度,
+post_block:enable: true {
+  opacity: 0.9;
 }
 .header {
   margin: 0 auto;
