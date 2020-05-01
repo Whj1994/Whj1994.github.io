@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Highly cited journals</title>
-    <url>/2020/04/29/Just-for-test/</url>
+    <url>/2020/04/29/Highly%20cited%20journals/</url>
     <content><![CDATA[<table>
 <thead>
 <tr>
@@ -46,6 +46,17 @@
       <tags>
         <tag>Typora</tag>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tips for writing</title>
+    <url>/2020/05/01/Tips-for-writing/</url>
+    <content><![CDATA[<ol>
+<li>Regardless of …, to the best of our knowlege, few …</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>writing</tag>
       </tags>
   </entry>
   <entry>
@@ -108,65 +119,6 @@
 <p>你能等自己平心静气再做答时……</p>
 <p>那么，你的修养就会如天地般博大，而你，就是个真正的男子汉了，我的儿子！</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Highly cited journals</title>
-    <url>/2020/04/29/Highly%20cited%20journals/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="left">序号</th>
-<th align="left">期刊全写</th>
-<th align="left">期刊简写</th>
-<th align="left">影响因子</th>
-<th align="left">分区情况</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td align="left">IEEE Transactions on Evolutionary Computation</td>
-<td align="left">IEEE Trans. Evol. Comput.</td>
-<td align="left">IF=8.508</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">IEEE Transactions on Cybernetics</td>
-<td align="left">IEEE Trans. Cybern.</td>
-<td align="left">IF=10.387</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
-<td align="left">IEEE Trans. Knowl. Data Eng.</td>
-<td align="left">IF=3.857</td>
-<td align="left">工程技术：2区；计算机科学：2区</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>Typora</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tips for writing</title>
-    <url>/2020/05/01/Tips-for-writing/</url>
-    <content><![CDATA[<ol>
-<li>Regardless of …, to the best of our knowlege, few …</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>writing</tag>
-      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
