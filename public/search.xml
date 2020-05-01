@@ -49,6 +49,23 @@
       </tags>
   </entry>
   <entry>
+    <title>Quick Start</title>
+    <url>/2020/04/28/Quick%20Start/</url>
+    <content><![CDATA[<h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
     <title>IF</title>
     <url>/2020/04/29/IF/</url>
     <content><![CDATA[<h2 id="《IF》"><a href="#《IF》" class="headerlink" title="《IF》"></a>《IF》</h2><h4 id="by-Rudyard-Kipling"><a href="#by-Rudyard-Kipling" class="headerlink" title="by Rudyard Kipling"></a>by Rudyard Kipling</h4><p>If you can keep your head when all about you</p>
@@ -119,22 +136,5 @@
       <tags>
         <tag>writing</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Quick Start</title>
-    <url>/2020/04/28/Quick%20Start/</url>
-    <content><![CDATA[<h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
 </search>
