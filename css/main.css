@@ -963,7 +963,7 @@ pre .javascript .function {
 }
 .headband {
   background: #222;
-  height: 3px;
+  height: 0px;
 }
 .site-meta {
   flex-grow: 1;
@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #7491ff;
+  background: #f299ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2545,6 +2545,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
 }
 .content-wrap {
   opacity: 0.85;
