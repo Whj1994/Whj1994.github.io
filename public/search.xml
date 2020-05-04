@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Highly cited journals</title>
+    <url>/2020/04/29/Highly%20cited%20journals/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">期刊全写</th>
+<th align="left">期刊简写</th>
+<th align="left">影响因子</th>
+<th align="left">分区情况</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">IEEE Transactions on Evolutionary Computation</td>
+<td align="left">IEEE Trans. Evol. Comput.</td>
+<td align="left">IF=8.508</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">IEEE Transactions on Cybernetics</td>
+<td align="left">IEEE Trans. Cybern.</td>
+<td align="left">IF=10.387</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
+<td align="left">IEEE Trans. Knowl. Data Eng.</td>
+<td align="left">IF=3.857</td>
+<td align="left">工程技术：2区；计算机科学：2区</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">IEEE Transactions on Industrial Informatics</td>
+<td align="left">IEEE Trans. Ind. Informat.</td>
+<td align="left">IF=7.377</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Action After Review (AAR)</title>
     <url>/2020/05/04/Action-After-Review-AAR/</url>
-    <content><![CDATA[<p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
+<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》PPT课件”，若有侵权，实属无意，告知即删。</p>
 ]]></content>
       <tags>
         <tag>methodology</tag>
@@ -12,7 +69,7 @@
   <entry>
     <title>Quick Start</title>
     <url>/2020/04/28/Quick%20Start/</url>
-    <content><![CDATA[<h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
@@ -29,7 +86,7 @@
   <entry>
     <title>Tips for writing</title>
     <url>/2020/05/01/Tips-for-writing/</url>
-    <content><![CDATA[<ol>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
 <li>Regardless of …, to the best of our knowlege, few …</li>
 <li>In …, we will first recall …. Then, we review …</li>
 <li>In …, we focus on … since … and …</li>
@@ -45,7 +102,7 @@
   <entry>
     <title>IF</title>
     <url>/2020/04/29/IF/</url>
-    <content><![CDATA[<h2 id="《IF》"><a href="#《IF》" class="headerlink" title="《IF》"></a>《IF》</h2><h4 id="by-Rudyard-Kipling"><a href="#by-Rudyard-Kipling" class="headerlink" title="by Rudyard Kipling"></a>by Rudyard Kipling</h4><p>If you can keep your head when all about you</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="《IF》"><a href="#《IF》" class="headerlink" title="《IF》"></a>《IF》</h2><h4 id="by-Rudyard-Kipling"><a href="#by-Rudyard-Kipling" class="headerlink" title="by Rudyard Kipling"></a>by Rudyard Kipling</h4><p>If you can keep your head when all about you</p>
 <p>Are losing theirs and blaming it on you,</p>
 <p>If you can trust yourself when all men doubt you</p>
 <p>But make allowance for their doubting too,</p>
@@ -102,70 +159,5 @@
 <p>你能等自己平心静气再做答时……</p>
 <p>那么，你的修养就会如天地般博大，而你，就是个真正的男子汉了，我的儿子！</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Highly cited journals</title>
-    <url>/2020/04/29/Highly%20cited%20journals/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="left">序号</th>
-<th align="left">期刊全写</th>
-<th align="left">期刊简写</th>
-<th align="left">影响因子</th>
-<th align="left">分区情况</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td align="left">IEEE Transactions on Evolutionary Computation</td>
-<td align="left">IEEE Trans. Evol. Comput.</td>
-<td align="left">IF=8.508</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">IEEE Transactions on Cybernetics</td>
-<td align="left">IEEE Trans. Cybern.</td>
-<td align="left">IF=10.387</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
-<td align="left">IEEE Trans. Knowl. Data Eng.</td>
-<td align="left">IF=3.857</td>
-<td align="left">工程技术：2区；计算机科学：2区</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">IEEE Transactions on Industrial Informatics</td>
-<td align="left">IEEE Trans. Ind. Informat.</td>
-<td align="left">IF=7.377</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>Typora</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>后浪</title>
-    <url>/2020/05/04/%E5%90%8E%E6%B5%AA/</url>
-    <content><![CDATA[<p>那些口口声声，<br>一代不如一代的人，应该看着你们；<br>像我一样，我看着你们，满怀羡慕。<br>人类积攒了几千年的财富，<br>所有的知识、见识、智慧和艺术，<br>像是专门为你们准备的礼物；<br>科技繁荣、文化繁茂、城市繁华，<br>现代文明的成果被层层打开，可以尽情地享用；<br>自由学习一门语言、学习一门手艺、欣赏一部电影、去遥远的地方旅行。<br>很多人，从小你们就在自由探索自己的兴趣；<br>很多人在童年就进入了不惑之年；<br>不惑于自己喜欢什么，不喜欢什么。<br>人与人之间的壁垒被打破，<br>你们只凭相同的爱好，<br>就能结交千万个值得干杯的朋友，<br>你们拥有了，我们曾经梦寐以求的权利——选择的权利<br>你所热爱的就是你的生活，你们有幸遇见这样的时代；<br>但是时代更有幸，遇见这样的你们。<br>我看着你们，满怀敬意。<br>向你们的专业态度致敬，<br>你们正在把传统的变成现代的，把经典的变成流行的；<br>把学术的变成大众的，把民族变成世界的；<br>你们把自己的热爱变成了一个和成千上万的人分享快乐的事业，<br>向你们的自信致敬。<br>弱小的人，才习惯嘲讽和否定；<br>内心强大的人，从不吝啬赞美和鼓励。<br>向你们的大气致敬，<br>小人同而不和，君子美美与共，和而不同。<br>更年轻的身体，更容得下多元的文化审美和价值观。<br>有一天我终于发现，<br>不只是我们在如何教你们生活，<br>你们也在启发我们，怎样去更好的生活。<br>那些抱怨一代不如一代的人，应该看看你们；<br>就像我一样，我看着你们满怀感激；<br>因为你们这个世界会更喜欢中国，<br>因为一个国家最好看的风景，<br>就是这个国家的年轻人。<br>因为你们，<br>这世上的小说、音乐、电影所表现的青春<br>就不再是忧伤迷茫，而是善良、勇敢、无私、无所畏惧。<br>是心里有火，眼里有光。<br>不用活成我们想象中的样子，<br>我们这一代人的想象力不足以想象你们的未来；<br>如果你们依然需要我们的祝福，<br>那么，<br>奔涌吧，后浪<br>我们在同一条奔涌的河流。</p>
-]]></content>
-      <tags>
-        <tag>speech</tag>
-      </tags>
   </entry>
 </search>
