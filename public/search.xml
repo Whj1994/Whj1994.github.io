@@ -10,76 +10,21 @@
       </tags>
   </entry>
   <entry>
-    <title>Highly cited journals</title>
-    <url>/2020/04/29/Highly%20cited%20journals/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="left">序号</th>
-<th align="left">期刊全写</th>
-<th align="left">期刊简写</th>
-<th align="left">影响因子</th>
-<th align="left">分区情况</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td align="left">IEEE Transactions on Evolutionary Computation</td>
-<td align="left">IEEE Trans. Evol. Comput.</td>
-<td align="left">IF=8.508</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">IEEE Transactions on Cybernetics</td>
-<td align="left">IEEE Trans. Cybern.</td>
-<td align="left">IF=10.387</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
-<td align="left">IEEE Trans. Knowl. Data Eng.</td>
-<td align="left">IF=3.857</td>
-<td align="left">工程技术：2区；计算机科学：2区</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">IEEE Transactions on Industrial Informatics</td>
-<td align="left">IEEE Trans. Ind. Informat.</td>
-<td align="left">IF=7.377</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>Typora</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tips for writing</title>
-    <url>/2020/05/01/Tips-for-writing/</url>
-    <content><![CDATA[<ol>
-<li>Regardless of …, to the best of our knowlege, few …</li>
-<li>In …, we will first recall …. Then, we review …</li>
-<li>In …, we focus on … since … and …</li>
-<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
-<li>The reason lies in the fact that …</li>
-<li></li>
-</ol>
-]]></content>
-      <tags>
-        <tag>writing</tag>
-      </tags>
+    <title>Quick Start</title>
+    <url>/2020/04/28/Quick%20Start/</url>
+    <content><![CDATA[<h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>IF</title>
@@ -143,20 +88,75 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Quick Start</title>
-    <url>/2020/04/28/Quick%20Start/</url>
-    <content><![CDATA[<h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
+    <title>Tips for writing</title>
+    <url>/2020/05/01/Tips-for-writing/</url>
+    <content><![CDATA[<ol>
+<li>Regardless of …, to the best of our knowlege, few …</li>
+<li>In …, we will first recall …. Then, we review …</li>
+<li>In …, we focus on … since … and …</li>
+<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
+<li>The reason lies in the fact that …</li>
+<li></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>writing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Highly cited journals</title>
+    <url>/2020/04/29/Highly%20cited%20journals/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">期刊全写</th>
+<th align="left">期刊简写</th>
+<th align="left">影响因子</th>
+<th align="left">分区情况</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">IEEE Transactions on Evolutionary Computation</td>
+<td align="left">IEEE Trans. Evol. Comput.</td>
+<td align="left">IF=8.508</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">IEEE Transactions on Cybernetics</td>
+<td align="left">IEEE Trans. Cybern.</td>
+<td align="left">IF=10.387</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
+<td align="left">IEEE Trans. Knowl. Data Eng.</td>
+<td align="left">IF=3.857</td>
+<td align="left">工程技术：2区；计算机科学：2区</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">IEEE Transactions on Industrial Informatics</td>
+<td align="left">IEEE Trans. Ind. Informat.</td>
+<td align="left">IF=7.377</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+        <tag>Markdown</tag>
+      </tags>
   </entry>
 </search>
