@@ -1,59 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Highly cited journals</title>
-    <url>/2020/04/29/Highly%20cited%20journals/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="left">序号</th>
-<th align="left">期刊全写</th>
-<th align="left">期刊简写</th>
-<th align="left">影响因子</th>
-<th align="left">分区情况</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td align="left">IEEE Transactions on Evolutionary Computation</td>
-<td align="left">IEEE Trans. Evol. Comput.</td>
-<td align="left">IF=8.508</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">IEEE Transactions on Cybernetics</td>
-<td align="left">IEEE Trans. Cybern.</td>
-<td align="left">IF=10.387</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
-<td align="left">IEEE Trans. Knowl. Data Eng.</td>
-<td align="left">IF=3.857</td>
-<td align="left">工程技术：2区；计算机科学：2区</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">IEEE Transactions on Industrial Informatics</td>
-<td align="left">IEEE Trans. Ind. Informat.</td>
-<td align="left">IF=7.377</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-</tbody></table>
+    <title>Action After Review (AAR)</title>
+    <url>/2020/05/04/Action-After-Review-AAR/</url>
+    <content><![CDATA[<p><img src="/2020/05/04/Action-After-Review-AAR/_posts%5CAction-After-Review-AAR%5CAAR.png" alt="avatar"></p>
 ]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
       <tags>
-        <tag>Typora</tag>
-        <tag>Markdown</tag>
+        <tag>methodology</tag>
       </tags>
   </entry>
   <entry>
@@ -118,11 +71,59 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Action After Review (AAR)</title>
-    <url>/2020/05/04/Action-After-Review-AAR/</url>
-    <content><![CDATA[]]></content>
+    <title>Highly cited journals</title>
+    <url>/2020/04/29/Highly%20cited%20journals/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">期刊全写</th>
+<th align="left">期刊简写</th>
+<th align="left">影响因子</th>
+<th align="left">分区情况</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">IEEE Transactions on Evolutionary Computation</td>
+<td align="left">IEEE Trans. Evol. Comput.</td>
+<td align="left">IF=8.508</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">IEEE Transactions on Cybernetics</td>
+<td align="left">IEEE Trans. Cybern.</td>
+<td align="left">IF=10.387</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
+<td align="left">IEEE Trans. Knowl. Data Eng.</td>
+<td align="left">IF=3.857</td>
+<td align="left">工程技术：2区；计算机科学：2区</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">IEEE Transactions on Industrial Informatics</td>
+<td align="left">IEEE Trans. Ind. Informat.</td>
+<td align="left">IF=7.377</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
       <tags>
-        <tag>methodology</tag>
+        <tag>Typora</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
