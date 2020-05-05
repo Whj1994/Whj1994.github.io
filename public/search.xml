@@ -1,117 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>Win10环境基于Anaconda安装Tensorflow</title>
-      <link href="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/"/>
-      <url>/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/version.png" alt="version"></p><h1 id="配置安装环境"><a href="#配置安装环境" class="headerlink" title="配置安装环境"></a>配置安装环境</h1><p>搜索打开 Anaconda Prompt: </p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/SearchPrompt.png" alt="SearchPrompt"></p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/Prompt.png" alt="Prompt"></p><p>在 Anaconda Prompt中输入：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ conda create -n tensorflow python=3.6</span><br></pre></td></tr></table></figure><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/ConPyth36.png" alt="ConPyth36"></p><p>同意安装新的 packages:</p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/yes.png" alt="yes"></p><p>安装环境配置成功。</p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/activave.png" alt="activave"></p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/envir.png" alt="envir"></p><h1 id="安装CPU版本tensorflow"><a href="#安装CPU版本tensorflow" class="headerlink" title="安装CPU版本tensorflow"></a>安装CPU版本tensorflow</h1><p>安装CPU版本tensorflow1.5，接上条命令输入：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip install tensorflow==1.5 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com</span><br></pre></td></tr></table></figure><p>（时间较长，连接到清华仓库镜像地址安装应该要快些，未测试）</p><p>或者打开安装环境, 再输入上条安装命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ conda activate tensorflow</span><br></pre></td></tr></table></figure><p>（关闭安装环境: </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ conda deactivate</span><br></pre></td></tr></table></figure><p>）</p><p>CPU版tensorflow 安装成功：</p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/tf.png" alt="tf"></p><h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p> Anaconda Prompt中输入 python：</p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/python.png" alt="python"></p><p>依次输入测试命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ import tensorflow as tf</span><br><span class="line">$ sess = tf.Session()</span><br><span class="line">$ succ = tf.constant(<span class="string">'succeed, tensorflow!'</span>)</span><br><span class="line">$ <span class="built_in">print</span>(sess.run(succ))</span><br></pre></td></tr></table></figure><p>出现以下结果表明安装成功：</p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/test.png" alt="test"></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Action After Review (AAR)</title>
-      <link href="/2020/05/04/Action-After-Review-AAR/"/>
-      <url>/2020/05/04/Action-After-Review-AAR/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p><h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> methodology </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Tips for writing</title>
-      <link href="/2020/05/01/Tips-for-writing/"/>
-      <url>/2020/05/01/Tips-for-writing/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol><li>Regardless of …, to the best of our knowlege, few …</li><li>In …, we will first recall …. Then, we review …</li><li>In …, we focus on … since … and …</li><li>For this reason, in … we suggest … by …, which is the main difference with …</li><li>The reason lies in the fact that …</li><li></li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> writing </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>IF</title>
-      <link href="/2020/04/29/IF/"/>
-      <url>/2020/04/29/IF/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="《IF》"><a href="#《IF》" class="headerlink" title="《IF》"></a>《IF》</h2><h4 id="by-Rudyard-Kipling"><a href="#by-Rudyard-Kipling" class="headerlink" title="by Rudyard Kipling"></a>by Rudyard Kipling</h4><p>If you can keep your head when all about you</p><p>Are losing theirs and blaming it on you,</p><p>If you can trust yourself when all men doubt you</p><p>But make allowance for their doubting too,</p><p>If you can wait and not be tired by waiting,</p><p>Or being lied about, don’t deal in lies,</p><p>Or being hated, don’t give way to hating,</p><p>And yet don’t look too good, nor talk too wise:</p><p>If you can dream–and not make dreams your master,</p><p>If you can think–and not make thoughts your aim;</p><p>If you can meet with Triumph and Disaster</p><p>And treat those two impostors just the same;</p><p>If you can bear to hear the truth you’ve spoken</p><p>Twisted by knaves to make a trap for fools,</p><p>Or watch the things you gave your life to, broken,</p><p>And stoop and build ‘em up with worn-out tools:</p><p>If you can make one heap of all your winnings</p><p>And risk it all on one turn of pitch-and-toss,</p><p>And lose, and start again at your beginnings</p><p>And never breath a word about your loss;</p><p>If you can force your heart and nerve and sinew</p><p>To serve your turn long after they are gone,</p><p>And so hold on when there is nothing in you</p><p>Except the Will which says to them: “Hold on!”</p><p>If you can talk with crowds and keep your virtue,</p><p>Or walk with kings–nor lose the common touch,</p><p>If neither foes nor loving friends can hurt you;</p><p>If all men count with you, but none too much,</p><p>If you can fill the unforgiving minute</p><p>With sixty seconds’ worth of distance run,</p><p>Yours is the Earth and everything that’s in it,</p><p>And–which is more–you’ll be a Man, my son!</p><h2 id="《如果》"><a href="#《如果》" class="headerlink" title="《如果》"></a>《如果》</h2><h4 id="英-吉卜林"><a href="#英-吉卜林" class="headerlink" title="[英]吉卜林"></a>[英]吉卜林</h4><p>如果在众人六神无主之时,</p><p>你镇定自若而不是人云亦云;</p><p>如果被众人猜忌怀疑时,</p><p>你能自信如常而不去枉加辩论;</p><p>如果你有梦想,</p><p>又能不迷失自我;</p><p>如果你有神思,</p><p>又不至于走火入魔;</p><p>如果在成功之中能不忘形于色,</p><p>而在灾难之后也勇于咀嚼苦果;</p><p>如果看到自己追求的美好破灭为一摊零碎的瓦砾,</p><p>也不说放弃;</p><p>如果你辛苦劳作,</p><p>已是功成名就,</p><p>为了新目标,</p><p>你依旧冒险一搏,</p><p>哪怕功名成乌有;</p><p>如果你跟村夫交谈而不变谦恭之态,</p><p>和王侯散步而不露谄媚之颜;</p><p>如果他人的爱憎左右不了你,</p><p>如果你与任何人为伍都能卓然独立;</p><p>如果昏惑的骚扰动摇不了你的意志,</p><p>你能等自己平心静气再做答时……</p><p>那么，你的修养就会如天地般博大，而你，就是个真正的男子汉了，我的儿子！</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Highly cited journals</title>
-      <link href="/2020/04/29/Highly%20cited%20journals/"/>
-      <url>/2020/04/29/Highly%20cited%20journals/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table><thead><tr><th align="left">序号</th><th align="left">期刊全写</th><th align="left">期刊简写</th><th align="left">影响因子</th><th align="left">分区情况</th><th align="left">备注</th></tr></thead><tbody><tr><td align="left">1</td><td align="left">IEEE Transactions on Evolutionary Computation</td><td align="left">IEEE Trans. Evol. Comput.</td><td align="left">IF=8.508</td><td align="left">工程技术：1区；计算机科学：1区</td><td align="left">顶刊</td></tr><tr><td align="left">2</td><td align="left">IEEE Transactions on Cybernetics</td><td align="left">IEEE Trans. Cybern.</td><td align="left">IF=10.387</td><td align="left">工程技术：1区；计算机科学：1区</td><td align="left">顶刊</td></tr><tr><td align="left">3</td><td align="left">IEEE Transactions on Knowledge and Data Engineering</td><td align="left">IEEE Trans. Knowl. Data Eng.</td><td align="left">IF=3.857</td><td align="left">工程技术：2区；计算机科学：2区</td><td align="left"></td></tr><tr><td align="left">4</td><td align="left">IEEE Transactions on Industrial Informatics</td><td align="left">IEEE Trans. Ind. Informat.</td><td align="left">IF=7.377</td><td align="left">工程技术：1区；计算机科学：1区</td><td align="left">顶刊</td></tr></tbody></table>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Action After Review (AAR)</title>
+    <url>/2020/05/04/Action-After-Review-AAR/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
+<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
+]]></content>
+      <tags>
+        <tag>methodology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Quick Start</title>
+    <url>/2020/04/28/Quick%20Start/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Highly cited journals</title>
+    <url>/2020/04/29/Highly%20cited%20journals/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">期刊全写</th>
+<th align="left">期刊简写</th>
+<th align="left">影响因子</th>
+<th align="left">分区情况</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">IEEE Transactions on Evolutionary Computation</td>
+<td align="left">IEEE Trans. Evol. Comput.</td>
+<td align="left">IF=8.508</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">IEEE Transactions on Cybernetics</td>
+<td align="left">IEEE Trans. Cybern.</td>
+<td align="left">IF=10.387</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
+<td align="left">IEEE Trans. Knowl. Data Eng.</td>
+<td align="left">IF=3.857</td>
+<td align="left">工程技术：2区；计算机科学：2区</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">IEEE Transactions on Industrial Informatics</td>
+<td align="left">IEEE Trans. Ind. Informat.</td>
+<td align="left">IF=7.377</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+</tbody></table>
+]]></content>
       <categories>
-          
-          <category> Markdown </category>
-          
+        <category>Markdown</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Typora </tag>
-            
-            <tag> Markdown </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Quick Start</title>
-      <link href="/2020/04/28/Quick%20Start/"/>
-      <url>/2020/04/28/Quick%20Start/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p><h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>Typora</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tips for writing</title>
+    <url>/2020/05/01/Tips-for-writing/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
+<li>Regardless of …, to the best of our knowlege, few …</li>
+<li>In …, we will first recall …. Then, we review …</li>
+<li>In …, we focus on … since … and …</li>
+<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
+<li>The reason lies in the fact that …</li>
+<li></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>writing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IF</title>
+    <url>/2020/04/29/IF/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="《IF》"><a href="#《IF》" class="headerlink" title="《IF》"></a>《IF》</h2><h4 id="by-Rudyard-Kipling"><a href="#by-Rudyard-Kipling" class="headerlink" title="by Rudyard Kipling"></a>by Rudyard Kipling</h4><p>If you can keep your head when all about you</p>
+<p>Are losing theirs and blaming it on you,</p>
+<p>If you can trust yourself when all men doubt you</p>
+<p>But make allowance for their doubting too,</p>
+<p>If you can wait and not be tired by waiting,</p>
+<p>Or being lied about, don’t deal in lies,</p>
+<p>Or being hated, don’t give way to hating,</p>
+<p>And yet don’t look too good, nor talk too wise:</p>
+<p>If you can dream–and not make dreams your master,</p>
+<p>If you can think–and not make thoughts your aim;</p>
+<p>If you can meet with Triumph and Disaster</p>
+<p>And treat those two impostors just the same;</p>
+<p>If you can bear to hear the truth you’ve spoken</p>
+<p>Twisted by knaves to make a trap for fools,</p>
+<p>Or watch the things you gave your life to, broken,</p>
+<p>And stoop and build ‘em up with worn-out tools:</p>
+<p>If you can make one heap of all your winnings</p>
+<p>And risk it all on one turn of pitch-and-toss,</p>
+<p>And lose, and start again at your beginnings</p>
+<p>And never breath a word about your loss;</p>
+<p>If you can force your heart and nerve and sinew</p>
+<p>To serve your turn long after they are gone,</p>
+<p>And so hold on when there is nothing in you</p>
+<p>Except the Will which says to them: “Hold on!”</p>
+<p>If you can talk with crowds and keep your virtue,</p>
+<p>Or walk with kings–nor lose the common touch,</p>
+<p>If neither foes nor loving friends can hurt you;</p>
+<p>If all men count with you, but none too much,</p>
+<p>If you can fill the unforgiving minute</p>
+<p>With sixty seconds’ worth of distance run,</p>
+<p>Yours is the Earth and everything that’s in it,</p>
+<p>And–which is more–you’ll be a Man, my son!</p>
+<h2 id="《如果》"><a href="#《如果》" class="headerlink" title="《如果》"></a>《如果》</h2><h4 id="英-吉卜林"><a href="#英-吉卜林" class="headerlink" title="[英]吉卜林"></a>[英]吉卜林</h4><p>如果在众人六神无主之时,</p>
+<p>你镇定自若而不是人云亦云;</p>
+<p>如果被众人猜忌怀疑时,</p>
+<p>你能自信如常而不去枉加辩论;</p>
+<p>如果你有梦想,</p>
+<p>又能不迷失自我;</p>
+<p>如果你有神思,</p>
+<p>又不至于走火入魔;</p>
+<p>如果在成功之中能不忘形于色,</p>
+<p>而在灾难之后也勇于咀嚼苦果;</p>
+<p>如果看到自己追求的美好破灭为一摊零碎的瓦砾,</p>
+<p>也不说放弃;</p>
+<p>如果你辛苦劳作,</p>
+<p>已是功成名就,</p>
+<p>为了新目标,</p>
+<p>你依旧冒险一搏,</p>
+<p>哪怕功名成乌有;</p>
+<p>如果你跟村夫交谈而不变谦恭之态,</p>
+<p>和王侯散步而不露谄媚之颜;</p>
+<p>如果他人的爱憎左右不了你,</p>
+<p>如果你与任何人为伍都能卓然独立;</p>
+<p>如果昏惑的骚扰动摇不了你的意志,</p>
+<p>你能等自己平心静气再做答时……</p>
+<p>那么，你的修养就会如天地般博大，而你，就是个真正的男子汉了，我的儿子！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Win10环境基于Anaconda安装Tensorflow</title>
+    <url>/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/version.png" alt="version"></p>
+<h1 id="配置安装环境"><a href="#配置安装环境" class="headerlink" title="配置安装环境"></a>配置安装环境</h1><p>搜索打开 Anaconda Prompt: </p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/SearchPrompt.png" alt="SearchPrompt"></p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/Prompt.png" alt="Prompt"></p>
+<p>在 Anaconda Prompt中输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda create -n tensorflow python=3.6</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/ConPyth36.png" alt="ConPyth36"></p>
+<p>同意安装新的 packages:</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/yes.png" alt="yes"></p>
+<p>安装环境配置成功。</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/activave.png" alt="activave"></p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/envir.png" alt="envir"></p>
+<h1 id="安装CPU版本tensorflow"><a href="#安装CPU版本tensorflow" class="headerlink" title="安装CPU版本tensorflow"></a>安装CPU版本tensorflow</h1><p>安装CPU版本tensorflow1.5，接上条命令输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ pip install tensorflow==1.5 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com</span><br></pre></td></tr></table></figure>
+
+<p>（时间较长，连接到清华仓库镜像地址安装应该要快些，未测试）</p>
+<p>或者打开安装环境, 再输入上条安装命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda activate tensorflow</span><br></pre></td></tr></table></figure>
+
+<p>（关闭安装环境: </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda deactivate</span><br></pre></td></tr></table></figure>
+<p>）</p>
+<p>CPU版tensorflow 安装成功：</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/tf.png" alt="tf"></p>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p> Anaconda Prompt中输入 python：</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/python.png" alt="python"></p>
+<p>依次输入测试命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ import tensorflow as tf</span><br><span class="line">$ sess = tf.Session()</span><br><span class="line">$ succ = tf.constant(<span class="string">'succeed, tensorflow!'</span>)</span><br><span class="line">$ <span class="built_in">print</span>(sess.run(succ))</span><br></pre></td></tr></table></figure>
+
+<p>出现以下结果表明安装成功：</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/test.png" alt="test"></p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
 </search>
