@@ -128,22 +128,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Tips for writing</title>
-    <url>/2020/05/01/Tips-for-writing/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
-<li>Regardless of …, to the best of our knowlege, few …</li>
-<li>In …, we will first recall …. Then, we review …</li>
-<li>In …, we focus on … since … and …</li>
-<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
-<li>The reason lies in the fact that …</li>
-<li></li>
-</ol>
-]]></content>
-      <tags>
-        <tag>writing</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Quick Start</title>
     <url>/2020/04/28/Quick%20Start/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
@@ -159,5 +143,21 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 <h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Tips for writing</title>
+    <url>/2020/05/01/Tips-for-writing/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
+<li>Regardless of …, to the best of our knowlege, few …</li>
+<li>In …, we will first recall …. Then, we review …</li>
+<li>In …, we focus on … since … and …</li>
+<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
+<li>The reason lies in the fact that …</li>
+<li></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>writing</tag>
+      </tags>
   </entry>
 </search>
