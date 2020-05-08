@@ -199,6 +199,93 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/author.jpg">
+      <meta itemprop="name" content="Wang Haijun">
+      <meta itemprop="description" content="谩对黄河叹此心">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="渐营">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" class="post-title-link" itemprop="url">Matlab  可变输入输出</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-08 15:46:54 / 修改时间：17:40:10" itemprop="dateCreated datePublished" datetime="2020-05-08T15:46:54+08:00">2020-05-08</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>711</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数也。</p>
+<p>varargin 是函数定义语句中的输入变量，放在输入项的最后位置；在函数内是个 1*N 的cell数组，N 是在此位置之后的输入项数, N可以为0。</p>
+<p>varargout 用在输出位置，情况与 varargin 相同。</p>
+<p>说明： nargin 表所有的输入变量数。</p>
+<p>下面给出一个例子使用：<br>定义函数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">% <span class="keyword">function</span> definition</span><br><span class="line"><span class="keyword">function</span> varargout = calculator(<span class="built_in">type</span>, varargin)</span><br><span class="line">varInput = cell2mat(varargin(:));   % cell to double</span><br><span class="line"><span class="keyword">if</span> strcmp(<span class="built_in">type</span>, <span class="string">'addition'</span>)</span><br><span class="line">    <span class="keyword">if</span> nargin == 3</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">    elseif nargin == 4</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">        varargout&#123;2&#125; = varInput(1) + varInput(2) + varInput(3);</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+
+<p>运行主函数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">% run <span class="keyword">in</span> <span class="built_in">command</span></span><br><span class="line">[res1, res2] = calculator(<span class="string">'addition'</span>, 10, 20, 30);</span><br><span class="line">disp([<span class="string">'res1='</span>, num2str(res1)])</span><br><span class="line">disp([<span class="string">'res2='</span>, num2str(res2)])</span><br></pre></td></tr></table></figure>
+
+<p>输出结果：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">res1=30</span><br><span class="line">res2=60</span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -230,7 +317,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-06 12:29:51" itemprop="dateModified" datetime="2020-05-06T12:29:51+08:00">2020-05-06</time>
+                <time title="修改时间：2020-05-06 12:40:27" itemprop="dateModified" datetime="2020-05-06T12:40:27+08:00">2020-05-06</time>
               </span>
 
           <br>
@@ -239,7 +326,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>596</span>
+              <span>714</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -293,6 +380,10 @@
 <p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/test.png" alt="test"></p>
 <h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>在 spyder中导入tensorflow包之前，需要在 Anaconda 的tenserflow环境中重新安装spyder插件：</p>
 <p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/spyder.png" alt="spyder"></p>
+<p>在 spyder中找不到的模块需要在tensorflow环境中重新安装一次，比如 matplotlib 模块:</p>
+<p>Anaconda Prompt中依次输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda activate tensorflow</span><br><span class="line">conda install matplotlib</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -885,7 +976,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -898,7 +989,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -942,7 +1033,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">3k</span>
+    <span title="站点总字数">4k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
