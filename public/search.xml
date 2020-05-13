@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Action After Review (AAR)</title>
-    <url>/2020/05/04/Action-After-Review-AAR/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
-<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
-]]></content>
-      <tags>
-        <tag>methodology</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Highly cited journals</title>
     <url>/2020/04/29/Highly%20cited%20journals/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
@@ -64,6 +54,16 @@
       <tags>
         <tag>Typora</tag>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Action After Review (AAR)</title>
+    <url>/2020/05/04/Action-After-Review-AAR/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
+<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
+]]></content>
+      <tags>
+        <tag>methodology</tag>
       </tags>
   </entry>
   <entry>
@@ -189,6 +189,18 @@
       </tags>
   </entry>
   <entry>
+    <title>Tips for Latex</title>
+    <url>/2020/05/10/Tips-for-Latex/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果如下所示：</p>
+<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
+]]></content>
+      <tags>
+        <tag>latex</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Quick Start</title>
     <url>/2020/04/28/Quick%20Start/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
@@ -204,18 +216,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 <h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>Tips for Latex</title>
-    <url>/2020/05/10/Tips-for-Latex/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<p>效果如下所示：</p>
-<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
-]]></content>
-      <tags>
-        <tag>latex</tag>
-      </tags>
   </entry>
   <entry>
     <title>Win10环境基于Anaconda安装Tensorflow</title>
