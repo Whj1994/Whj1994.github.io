@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Action After Review (AAR)</title>
+    <url>/2020/05/04/Action-After-Review-AAR/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
+<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
+]]></content>
+      <tags>
+        <tag>methodology</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>佳作欣赏之 &quot;IF&quot;</title>
     <url>/2020/04/29/IF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="《IF》"><a href="#《IF》" class="headerlink" title="《IF》"></a>《IF》</h2><h4 id="by-Rudyard-Kipling"><a href="#by-Rudyard-Kipling" class="headerlink" title="by Rudyard Kipling"></a>by Rudyard Kipling</h4><p>If you can keep your head when all about you,</p>
@@ -62,16 +72,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Action After Review (AAR)</title>
-    <url>/2020/05/04/Action-After-Review-AAR/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
-<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
-]]></content>
-      <tags>
-        <tag>methodology</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Highly cited journals</title>
     <url>/2020/04/29/Highly%20cited%20journals/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
@@ -128,6 +128,19 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown 语法总结</title>
+    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
+<p><strong>粗体：</strong> “ ** ** “</p>
+<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
+<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
+<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
+]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Matlab,VBS与HFSS实现器件联调</title>
     <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
@@ -151,16 +164,26 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown 语法总结</title>
-    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
-<p><strong>粗体：</strong> “ ** ** “</p>
-<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
-<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
-<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
+    <title>Matlab  可变输入输出</title>
+    <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
+<p>varargin 是函数定义语句中的输入变量，放在输入项的最后位置；在函数内是个 1*N 的cell数组，N 是在此位置之后的输入项数, N也可以为0。</p>
+<p>varargout 用在输出位置，情况与 varargin 相同。</p>
+<p>说明： nargin 表所有的输入变量数。</p>
+<p>下面给出一个例子使用：<br>定义函数：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% <span class="keyword">function</span> definition</span><br><span class="line"><span class="keyword">function</span> varargout = calculator(<span class="built_in">type</span>, varargin)</span><br><span class="line">varInput = cell2mat(varargin(:));   % cell to double</span><br><span class="line"><span class="keyword">if</span> strcmp(<span class="built_in">type</span>, <span class="string">'addition'</span>)</span><br><span class="line">    <span class="keyword">if</span> nargin == 3</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">    elseif nargin == 4</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">        varargout&#123;2&#125; = varInput(1) + varInput(2) + varInput(3);</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+
+<p>运行主函数：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% run <span class="keyword">in</span> <span class="built_in">command</span></span><br><span class="line">[res1, res2] = calculator(<span class="string">'addition'</span>, 10, 20, 30);</span><br><span class="line">disp([<span class="string">'res1='</span>, num2str(res1)])</span><br><span class="line">disp([<span class="string">'res2='</span>, num2str(res2)])</span><br></pre></td></tr></table></figure>
+
+<p>输出结果：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">res1=30</span><br><span class="line">res2=60</span><br></pre></td></tr></table></figure>
+
+
+
 ]]></content>
       <tags>
-        <tag>markdown</tag>
+        <tag>matlab</tag>
       </tags>
   </entry>
   <entry>
@@ -191,6 +214,23 @@
 <h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
+    <title>Tips for writing</title>
+    <url>/2020/05/01/Tips-for-writing/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
+<li>Regardless of …, to the best of our knowlege, few …</li>
+<li>In …, we will first recall …. Then, we review …</li>
+<li>In …, we focus on … since … and …</li>
+<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
+<li>The reason lies in the fact that …</li>
+<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
+<li>For these problems we may happily look forward to a wealth of … success stories.</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>writing</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Matlab中文本数据混合文件的数据读取</title>
     <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
@@ -201,29 +241,6 @@
 
 <p>读取后的数据结果：</p>
 <p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
-]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab  可变输入输出</title>
-    <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
-<p>varargin 是函数定义语句中的输入变量，放在输入项的最后位置；在函数内是个 1*N 的cell数组，N 是在此位置之后的输入项数, N也可以为0。</p>
-<p>varargout 用在输出位置，情况与 varargin 相同。</p>
-<p>说明： nargin 表所有的输入变量数。</p>
-<p>下面给出一个例子使用：<br>定义函数：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% <span class="keyword">function</span> definition</span><br><span class="line"><span class="keyword">function</span> varargout = calculator(<span class="built_in">type</span>, varargin)</span><br><span class="line">varInput = cell2mat(varargin(:));   % cell to double</span><br><span class="line"><span class="keyword">if</span> strcmp(<span class="built_in">type</span>, <span class="string">'addition'</span>)</span><br><span class="line">    <span class="keyword">if</span> nargin == 3</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">    elseif nargin == 4</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">        varargout&#123;2&#125; = varInput(1) + varInput(2) + varInput(3);</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-
-<p>运行主函数：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% run <span class="keyword">in</span> <span class="built_in">command</span></span><br><span class="line">[res1, res2] = calculator(<span class="string">'addition'</span>, 10, 20, 30);</span><br><span class="line">disp([<span class="string">'res1='</span>, num2str(res1)])</span><br><span class="line">disp([<span class="string">'res2='</span>, num2str(res2)])</span><br></pre></td></tr></table></figure>
-
-<p>输出结果：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">res1=30</span><br><span class="line">res2=60</span><br></pre></td></tr></table></figure>
-
-
-
 ]]></content>
       <tags>
         <tag>matlab</tag>
@@ -300,23 +317,6 @@
 ]]></content>
       <tags>
         <tag>read</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tips for writing</title>
-    <url>/2020/05/01/Tips-for-writing/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
-<li>Regardless of …, to the best of our knowlege, few …</li>
-<li>In …, we will first recall …. Then, we review …</li>
-<li>In …, we focus on … since … and …</li>
-<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
-<li>The reason lies in the fact that …</li>
-<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
-<li>For these problems we may happily look forward to a wealth of … success stories.</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>writing</tag>
       </tags>
   </entry>
   <entry>
