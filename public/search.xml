@@ -57,6 +57,21 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown 语法总结</title>
+    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
+<p><strong>粗体：</strong> “ ** ** “</p>
+<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
+<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
+<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
+<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
+<p>首页文章内实现预览，在相应的位置填加 “&lt;!–more–&gt;“</p>
+]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>佳作欣赏之 &quot;IF&quot;</title>
     <url>/2020/04/29/IF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="《IF》"><a href="#《IF》" class="headerlink" title="《IF》"></a>《IF》</h2><h4 id="by-Rudyard-Kipling"><a href="#by-Rudyard-Kipling" class="headerlink" title="by Rudyard Kipling"></a>by Rudyard Kipling</h4><p>If you can keep your head when all about you,</p>
@@ -118,6 +133,16 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Action After Review (AAR)</title>
+    <url>/2020/05/04/Action-After-Review-AAR/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
+<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
+]]></content>
+      <tags>
+        <tag>methodology</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Matlab,VBS与HFSS实现器件联调</title>
     <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
@@ -138,19 +163,6 @@
 ]]></content>
       <tags>
         <tag>Matlab, VBS, HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown 语法总结</title>
-    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
-<p><strong>粗体：</strong> “ ** ** “</p>
-<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
-<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
-<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
-]]></content>
-      <tags>
-        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -180,50 +192,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Action After Review (AAR)</title>
-    <url>/2020/05/04/Action-After-Review-AAR/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
-<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
-]]></content>
-      <tags>
-        <tag>methodology</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Quick Start</title>
-    <url>/2020/04/28/Quick%20Start/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>Tips for writing</title>
-    <url>/2020/05/01/Tips-for-writing/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
-<li>Regardless of …, to the best of our knowlege, few …</li>
-<li>In …, we will first recall …. Then, we review …</li>
-<li>In …, we focus on … since … and …</li>
-<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
-<li>The reason lies in the fact that …</li>
-<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
-<li>For these problems we may happily look forward to a wealth of … success stories.</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>writing</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Matlab  可变输入输出</title>
     <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
@@ -247,6 +215,23 @@
       </tags>
   </entry>
   <entry>
+    <title>Quick Start</title>
+    <url>/2020/04/28/Quick%20Start/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
     <title>Tips for Latex</title>
     <url>/2020/05/10/Tips-for-Latex/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
@@ -259,17 +244,20 @@
       </tags>
   </entry>
   <entry>
-    <title>硬件基本知识整理</title>
-    <url>/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="S-参数"><a href="#S-参数" class="headerlink" title="S 参数"></a>S 参数</h1><p>S 参数英文原称是“Scattering Parameter”，即“散射参数”。</p>
-<p>一个二端口的网络，共有四个S参数：S11、S12、S21、S22；</p>
-<p>互易网络满足： S12 = S21；</p>
-<p>对称网络满足： S11 = S22；</p>
-<p>无耗网络中，端口1输入的能量或者反射回端口1或者传输到端口2，满足： S11*S11 + S21*S21 =1。</p>
-<p>高速电路设计中的微带线或者带状线，都有参考平面，通常是不对称结构（比如平行双导线就是对称结构），但是满足互易条件，因此S11!=S22， S12=S21。</p>
+    <title>Tips for writing</title>
+    <url>/2020/05/01/Tips-for-writing/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
+<li>Regardless of …, to the best of our knowlege, few …</li>
+<li>In …, we will first recall …. Then, we review …</li>
+<li>In …, we focus on … since … and …</li>
+<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
+<li>The reason lies in the fact that …</li>
+<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
+<li>For these problems we may happily look forward to a wealth of … success stories.</li>
+</ol>
 ]]></content>
       <tags>
-        <tag>HFSS</tag>
+        <tag>writing</tag>
       </tags>
   </entry>
   <entry>
@@ -322,7 +310,9 @@
   <entry>
     <title>佳作欣赏之&quot;黄石公《素书》&quot;</title>
     <url>/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="黄石公《素书》"><a href="#黄石公《素书》" class="headerlink" title="黄石公《素书》"></a>黄石公《素书》</h1><h2 id="原始章第一"><a href="#原始章第一" class="headerlink" title="原始章第一"></a>原始章第一</h2><p>夫道、德、仁、义、礼五者，一体也。 道者，人之所蹈，使万物不知其所由。 德者，人之所得，使万物各得<br>其所欲。 仁者，人之所亲，有慈慧恻隐之心，以遂其生存。 义者，人之所宜，赏善罚恶，以立功立事。 礼者，人之所履，夙兴夜寐，以成人伦之序。 夫欲为人之本，不可无一焉。 贤人君子，明于盛衰之道，通乎成败之数，审乎治乱之势，达乎去就之理。故潜居抱道以待其时。 若时至而行，则能极人臣之位； 得机而动，则能成绝代之功。如其不遇，没身而已。 是以其道足高，而名重于后代。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="黄石公《素书》"><a href="#黄石公《素书》" class="headerlink" title="黄石公《素书》"></a>黄石公《素书》</h1><h2 id="原始章第一"><a href="#原始章第一" class="headerlink" title="原始章第一"></a>原始章第一</h2><p>夫道、德、仁、义、礼五者，一体也。 道者，人之所蹈，使万物不知其所由。 德者，人之所得，使万物各得其所欲。 仁者，人之所亲，有慈慧恻隐之心，以遂其生存。 义者，人之所宜，赏善罚恶，以立功立事。 礼者，人之所履，夙兴夜寐，以成人伦之序。 夫欲为人之本，不可无一焉。 贤人君子，明于盛衰之道，通乎成败之数，审乎治乱之势，达乎去就之理。故潜居抱道以待其时。 若时至而行，则能极人臣之位； 得机而动，则能成绝代之功。如其不遇，没身而已。 是以其道足高，而名重于后代。</p>
+<center> <！--more--> </！--more--></center>
+
 <h2 id="正道章第二"><a href="#正道章第二" class="headerlink" title="正道章第二"></a>正道章第二</h2><p>德足以怀远，信足以一异，义足以得众，才足以鉴古，明足以照下，此人之俊也。 行足以为仪表，智足以决嫌疑，信可以使守约，廉可以使分财，此人之豪也。 守职而不废，处义而不回，见嫌而不苟免，见利而不苟得，此人之杰也。</p>
 <h2 id="求人之志章第三"><a href="#求人之志章第三" class="headerlink" title="求人之志章第三"></a>求人之志章第三</h2><p>绝嗜禁欲，所以除累。抑非损恶，所以让过。贬酒阙色，所以无污。 避嫌远疑，所以不误。博学切问，所以广知。高行微言，所以修身。 恭俭谦约，所以自守。深计远虑，所以不穷。亲仁友直，所以扶颠。 近恕笃行，所以接人。任材使能，所以济物。殚恶斥谗，所以止乱。 推古验今，所以不惑。先揆后度，所以应卒。设变致权，所以解结。 括囊顺会，所以无咎。橛橛梗梗，所以立功。孜孜淑淑，所以保终。</p>
 <h2 id="本德宗道章第四"><a href="#本德宗道章第四" class="headerlink" title="本德宗道章第四"></a>本德宗道章第四</h2><p>夫志，心独行之术。长没长于博谋，安没安于忍辱，先没先于修德，乐没乐于好善，神没神于至诚，明没明于体物，吉没吉于知足，苦没苦于多愿，悲没悲于精散，病没病于无常，短没短于苟得，幽没幽于贪鄙，孤没孤于自恃，危没危于任疑，败没败于多私。</p>
@@ -331,6 +321,20 @@
 ]]></content>
       <tags>
         <tag>read</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>硬件基本知识整理</title>
+    <url>/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="S-参数"><a href="#S-参数" class="headerlink" title="S 参数"></a>S 参数</h1><p>S 参数英文原称是“Scattering Parameter”，即“散射参数”。</p>
+<p>一个二端口的网络，共有四个S参数：S11、S12、S21、S22；</p>
+<p>互易网络满足： S12 = S21；</p>
+<p>对称网络满足： S11 = S22；</p>
+<p>无耗网络中，端口1输入的能量或者反射回端口1或者传输到端口2，满足： S11*S11 + S21*S21 =1。</p>
+<p>高速电路设计中的微带线或者带状线，都有参考平面，通常是不对称结构（比如平行双导线就是对称结构），但是满足互易条件，因此S11!=S22， S12=S21。</p>
+]]></content>
+      <tags>
+        <tag>HFSS</tag>
       </tags>
   </entry>
 </search>
