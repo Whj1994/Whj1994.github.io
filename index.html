@@ -231,7 +231,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-25 00:12:49" itemprop="dateModified" datetime="2020-06-25T00:12:49+08:00">2020-06-25</time>
+                <time title="修改时间：2020-06-27 16:02:48" itemprop="dateModified" datetime="2020-06-27T16:02:48+08:00">2020-06-27</time>
               </span>
 
           
@@ -282,7 +282,13 @@
 <p>内容节选自以下链接，若有侵权，告知立删</p>
 <p><a href="https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-7/" target="_blank" rel="noopener">How to Install Google Chrome Web Browser on CentOS 7</a></p>
 <p>路过sayhi:<a href="https://www.cnblogs.com/vae860514/p/8269002.html" target="_blank" rel="noopener">Centos7 yum安装chrome浏览器</a></p>
+<h3 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h3><p>首先查看防火墙的运行状态</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --state</span><br></pre></td></tr></table></figure>
 
+<p>如果是 “running” 状态，则关闭防火墙：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl stop firewalld.service</span><br></pre></td></tr></table></figure>
+
+<h3 id="CentOS7-安装-pycharm"><a href="#CentOS7-安装-pycharm" class="headerlink" title="CentOS7 安装 pycharm"></a>CentOS7 安装 pycharm</h3>
       
     </div>
 
