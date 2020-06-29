@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Highly cited journals</title>
+    <url>/2020/04/29/Highly%20cited%20journals/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">期刊全写</th>
+<th align="left">期刊简写</th>
+<th align="left">影响因子</th>
+<th align="left">分区情况</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">IEEE Transactions on Evolutionary Computation</td>
+<td align="left">IEEE Trans. Evol. Comput.</td>
+<td align="left">IF=8.508</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">IEEE Transactions on Cybernetics</td>
+<td align="left">IEEE Trans. Cybern.</td>
+<td align="left">IF=10.387</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
+<td align="left">IEEE Trans. Knowl. Data Eng.</td>
+<td align="left">IF=3.857</td>
+<td align="left">工程技术：2区；计算机科学：2区</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">IEEE Transactions on Industrial Informatics</td>
+<td align="left">IEEE Trans. Ind. Informat.</td>
+<td align="left">IF=7.377</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Action After Review (AAR)</title>
     <url>/2020/05/04/Action-After-Review-AAR/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
@@ -72,85 +128,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Highly cited journals</title>
-    <url>/2020/04/29/Highly%20cited%20journals/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
-<thead>
-<tr>
-<th align="left">序号</th>
-<th align="left">期刊全写</th>
-<th align="left">期刊简写</th>
-<th align="left">影响因子</th>
-<th align="left">分区情况</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td align="left">IEEE Transactions on Evolutionary Computation</td>
-<td align="left">IEEE Trans. Evol. Comput.</td>
-<td align="left">IF=8.508</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">IEEE Transactions on Cybernetics</td>
-<td align="left">IEEE Trans. Cybern.</td>
-<td align="left">IF=10.387</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
-<td align="left">IEEE Trans. Knowl. Data Eng.</td>
-<td align="left">IF=3.857</td>
-<td align="left">工程技术：2区；计算机科学：2区</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">IEEE Transactions on Industrial Informatics</td>
-<td align="left">IEEE Trans. Ind. Informat.</td>
-<td align="left">IF=7.377</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>Typora</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab,VBS与HFSS实现器件联调</title>
-    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
-<p>流程说明：</p>
-<p>Matlab 的作用：</p>
-<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
-<p>VBS 的作用：</p>
-<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
-<p>HFSS 的作用：</p>
-<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
-<p>流程(1)：</p>
-<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
-<p>流程(2)：</p>
-<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
-<p>流程(3)：</p>
-<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
-<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
-]]></content>
-      <tags>
-        <tag>Matlab, VBS, HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown 语法总结</title>
     <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
@@ -190,10 +167,49 @@
       </tags>
   </entry>
   <entry>
+    <title>Matlab,VBS与HFSS实现器件联调</title>
+    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
+<p>流程说明：</p>
+<p>Matlab 的作用：</p>
+<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
+<p>VBS 的作用：</p>
+<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
+<p>HFSS 的作用：</p>
+<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
+<p>流程(1)：</p>
+<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
+<p>流程(2)：</p>
+<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
+<p>流程(3)：</p>
+<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
+<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
+]]></content>
+      <tags>
+        <tag>Matlab, VBS, HFSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Matlab 数据类型转换</title>
     <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
 <p>字符串转 double： str2double();</p>
+]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Matlab中文本数据混合文件的数据读取</title>
+    <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
+<p>textscan 函数读取的结果是个 1*1 的cell数组，可以展开为 N*1 的cell数组，单个字符串或者单个数据占据其中的一个位置。</p>
+<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/oriFile.png" alt="oriFile"></p>
+<p>代码如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">clc; clear; close all;</span><br><span class="line"></span><br><span class="line">fid=fopen(<span class="string">'test.s2p'</span>); % open file <span class="keyword">in</span> <span class="built_in">read</span> only </span><br><span class="line">    data = textscan(fid,<span class="string">'%s'</span>);   % textscan <span class="keyword">function</span> <span class="built_in">read</span> data</span><br><span class="line">    data = data&#123;:&#125;;</span><br><span class="line">fclose(fid);</span><br></pre></td></tr></table></figure>
+
+<p>读取后的数据结果：</p>
+<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
 ]]></content>
       <tags>
         <tag>matlab</tag>
@@ -215,51 +231,6 @@
 ]]></content>
       <tags>
         <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python 学习笔记</title>
-    <url>/2020/06/03/Python-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="定义一个3-3的矩阵"><a href="#定义一个3-3的矩阵" class="headerlink" title="定义一个3*3的矩阵"></a>定义一个3*3的矩阵</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">X= np.array([[1,2,3],[4,5,6],[7,8,9]])</span><br></pre></td></tr></table></figure>
-
-<h2 id="spyder-注释"><a href="#spyder-注释" class="headerlink" title="spyder 注释"></a>spyder 注释</h2><p>注释/反注释:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ctrl + 1</span><br></pre></td></tr></table></figure>
-
-<p>块注释/块反注释</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ctrl + 4/5</span><br></pre></td></tr></table></figure>
-
-<h2 id="Pyhon-安装完成后，命令提示符”-‘python’-不是内部或外部命令，也不是可运行的程序”"><a href="#Pyhon-安装完成后，命令提示符”-‘python’-不是内部或外部命令，也不是可运行的程序”" class="headerlink" title="Pyhon 安装完成后，命令提示符” ‘python’ 不是内部或外部命令，也不是可运行的程序”:"></a>Pyhon 安装完成后，命令提示符” ‘python’ 不是内部或外部命令，也不是可运行的程序”:</h2><p>原因： python的安装路径没有填加到环境变量。</p>
-<h2 id="命令提示符不能进入到指定的路径："><a href="#命令提示符不能进入到指定的路径：" class="headerlink" title="命令提示符不能进入到指定的路径："></a>命令提示符不能进入到指定的路径：</h2><p>首先</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ..</span><br></pre></td></tr></table></figure>
-<p>退回到 C:盘符，然后进入目标盘符，再然后进入到目标路径。</p>
-<h2 id="测试函数模块-optproblems的安装"><a href="#测试函数模块-optproblems的安装" class="headerlink" title="测试函数模块 optproblems的安装"></a>测试函数模块 optproblems的安装</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install optproblems</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="统计运行时长"><a href="#统计运行时长" class="headerlink" title="统计运行时长"></a>统计运行时长</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import time</span><br><span class="line">start = time.time()</span><br><span class="line">main_function()</span><br><span class="line">end = time.time()</span><br><span class="line"><span class="built_in">print</span> str(end-start)</span><br></pre></td></tr></table></figure>
-
-<h2 id="使用plot-画图"><a href="#使用plot-画图" class="headerlink" title="使用plot 画图"></a>使用plot 画图</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import random</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">data = random.uniform()</span><br></pre></td></tr></table></figure>
-
-<h2 id="读取-pf-文件"><a href="#读取-pf-文件" class="headerlink" title="读取 .pf 文件"></a>读取 .pf 文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line"><span class="built_in">source</span> = open(<span class="string">"ZDT1.pf"</span>, <span class="string">"r"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">values = source.readlines()</span><br><span class="line"></span><br><span class="line">data = np.zeros(shape=(len(values),2))</span><br><span class="line"><span class="keyword">for</span> index, value <span class="keyword">in</span> enumerate(values):</span><br><span class="line">    dataTmp= value.split()</span><br><span class="line">    data[index,0] = <span class="built_in">float</span>(dataTmp[0])</span><br><span class="line">    data[index,1] = <span class="built_in">float</span>(dataTmp[1])</span><br></pre></td></tr></table></figure>
-
-<h2 id="对数组先平方再求和"><a href="#对数组先平方再求和" class="headerlink" title="对数组先平方再求和"></a>对数组先平方再求和</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab中文本数据混合文件的数据读取</title>
-    <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
-<p>textscan 函数读取的结果是个 1*1 的cell数组，可以展开为 N*1 的cell数组，单个字符串或者单个数据占据其中的一个位置。</p>
-<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/oriFile.png" alt="oriFile"></p>
-<p>代码如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">clc; clear; close all;</span><br><span class="line"></span><br><span class="line">fid=fopen(<span class="string">'test.s2p'</span>); % open file <span class="keyword">in</span> <span class="built_in">read</span> only </span><br><span class="line">    data = textscan(fid,<span class="string">'%s'</span>);   % textscan <span class="keyword">function</span> <span class="built_in">read</span> data</span><br><span class="line">    data = data&#123;:&#125;;</span><br><span class="line">fclose(fid);</span><br></pre></td></tr></table></figure>
-
-<p>读取后的数据结果：</p>
-<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
-]]></content>
-      <tags>
-        <tag>matlab</tag>
       </tags>
   </entry>
   <entry>
@@ -321,18 +292,6 @@
 <h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
-    <title>Tips for Latex</title>
-    <url>/2020/05/10/Tips-for-Latex/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<p>效果如下所示：</p>
-<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
-]]></content>
-      <tags>
-        <tag>latex</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Tips for writing</title>
     <url>/2020/05/01/Tips-for-writing/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
@@ -347,6 +306,47 @@
 ]]></content>
       <tags>
         <tag>writing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tips for Latex</title>
+    <url>/2020/05/10/Tips-for-Latex/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果如下所示：</p>
+<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
+]]></content>
+      <tags>
+        <tag>latex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python 学习笔记</title>
+    <url>/2020/06/03/Python-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="定义一个3-3的矩阵"><a href="#定义一个3-3的矩阵" class="headerlink" title="定义一个3*3的矩阵"></a>定义一个3*3的矩阵</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">X= np.array([[1,2,3],[4,5,6],[7,8,9]])</span><br></pre></td></tr></table></figure>
+
+<h2 id="spyder-注释"><a href="#spyder-注释" class="headerlink" title="spyder 注释"></a>spyder 注释</h2><p>注释/反注释:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ctrl + 1</span><br></pre></td></tr></table></figure>
+
+<p>块注释/块反注释</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ctrl + 4/5</span><br></pre></td></tr></table></figure>
+
+<h2 id="Pyhon-安装完成后，命令提示符”-‘python’-不是内部或外部命令，也不是可运行的程序”"><a href="#Pyhon-安装完成后，命令提示符”-‘python’-不是内部或外部命令，也不是可运行的程序”" class="headerlink" title="Pyhon 安装完成后，命令提示符” ‘python’ 不是内部或外部命令，也不是可运行的程序”:"></a>Pyhon 安装完成后，命令提示符” ‘python’ 不是内部或外部命令，也不是可运行的程序”:</h2><p>原因： python的安装路径没有填加到环境变量。</p>
+<h2 id="命令提示符不能进入到指定的路径："><a href="#命令提示符不能进入到指定的路径：" class="headerlink" title="命令提示符不能进入到指定的路径："></a>命令提示符不能进入到指定的路径：</h2><p>首先</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ..</span><br></pre></td></tr></table></figure>
+<p>退回到 C:盘符，然后进入目标盘符，再然后进入到目标路径。</p>
+<h2 id="测试函数模块-optproblems的安装"><a href="#测试函数模块-optproblems的安装" class="headerlink" title="测试函数模块 optproblems的安装"></a>测试函数模块 optproblems的安装</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install optproblems</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="统计运行时长"><a href="#统计运行时长" class="headerlink" title="统计运行时长"></a>统计运行时长</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import time</span><br><span class="line">start = time.time()</span><br><span class="line">main_function()</span><br><span class="line">end = time.time()</span><br><span class="line"><span class="built_in">print</span> str(end-start)</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用plot-画图"><a href="#使用plot-画图" class="headerlink" title="使用plot 画图"></a>使用plot 画图</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import random</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">data = random.uniform()</span><br></pre></td></tr></table></figure>
+
+<h2 id="读取-pf-文件"><a href="#读取-pf-文件" class="headerlink" title="读取 .pf 文件"></a>读取 .pf 文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line"><span class="built_in">source</span> = open(<span class="string">"ZDT1.pf"</span>, <span class="string">"r"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">values = source.readlines()</span><br><span class="line"></span><br><span class="line">data = np.zeros(shape=(len(values),2))</span><br><span class="line"><span class="keyword">for</span> index, value <span class="keyword">in</span> enumerate(values):</span><br><span class="line">    dataTmp= value.split()</span><br><span class="line">    data[index,0] = <span class="built_in">float</span>(dataTmp[0])</span><br><span class="line">    data[index,1] = <span class="built_in">float</span>(dataTmp[1])</span><br></pre></td></tr></table></figure>
+
+<h2 id="对数组先平方再求和"><a href="#对数组先平方再求和" class="headerlink" title="对数组先平方再求和"></a>对数组先平方再求和</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -394,6 +394,28 @@
 ]]></content>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>“EXCEXCEL 文本表示科学计数法</title>
+    <url>/2020/05/29/%E2%80%9CEXCEXCEL-%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
+<thead>
+<tr>
+<th align="left">A1</th>
+<th align="left">B1</th>
+<th align="left">C1</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">0.00E+00</td>
+<td align="left">0.00E+00</td>
+<td align="left">0.00E+00 (0.00E+00)</td>
+</tr>
+</tbody></table>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C1 =TEXT(A1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">" "</span>&amp; <span class="string">"("</span> &amp; TEXT(B1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">")"</span></span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>Excel</tag>
       </tags>
   </entry>
   <entry>
@@ -448,7 +470,7 @@
 
 <p>接着将‘0.0.0.0 account.jetbrains.com’添加至 hosts 文件中， 即：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vi /etc/hosts/</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/hosts" alt="hosts"></p>
+<p><img src="/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/hosts.png" alt="hosts"></p>
 <p>找到pycharm的最新激活码：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">56NPDDVEIV-eyJsaWNlbnNlSWQiOiI1Nk5QRERWRUlWIiwibGljZW5zZWVOYW1lIjoi5rC45LmF5r+A5rS7IGlkZWEubWVkZW1pbmcuY29tIiwiYXNzaWduZWVOYW1lIjoiIiwiYXNzaWduZWVFbWFpbCI6IiIsImxpY2Vuc2VSZXN0cmljdGlvbiI6IiIsImNoZWNrQ29uY3VycmVudFVzZSI6ZmFsc2UsInByb2R1Y3RzIjpbeyJjb2RlIjoiSUkiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkFDIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJEUE4iLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUlNDIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBTIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSU0YiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiR08iLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkRNIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IkNMIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSUzAiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUkMiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUkQiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IlBDIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSU1YiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUlNVIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSTSIsInBhaWRVcFRvIjoiMjAyMC0wNy0yMiIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiV1MiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkRCIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJEQyIsInBhaWRVcFRvIjoiMjAyMC0wNy0yMiIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQREIiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFdTIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBHTyIsInBhaWRVcFRvIjoiMjAyMC0wNy0yMiIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQUFMiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFBDIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBSQiIsInBhaWRVcFRvIjoiMjAyMC0wNy0yMiIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQU1ciLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiRFAiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUlMiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiRFBBIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9XSwibWV0YWRhdGEiOiIwMTIwMjAwNjIzUFBBTTAwMDAwNSIs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</span><br></pre></td></tr></table></figure>
 
@@ -470,28 +492,6 @@
 <p>鱼虫光：<a href="https://www.cnblogs.com/ycg-blog/p/12219942.html" target="_blank" rel="noopener">centos7 下载破解pycharm专业版</a></p>
 <p>山高似水深：<a href="https://www.cnblogs.com/tnsay/p/12297957.html" target="_blank" rel="noopener">最新pycharm 激活码 更新时间 2020年6月24日11:47:52</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>“EXCEXCEL 文本表示科学计数法</title>
-    <url>/2020/05/29/%E2%80%9CEXCEXCEL-%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
-<thead>
-<tr>
-<th align="left">A1</th>
-<th align="left">B1</th>
-<th align="left">C1</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">0.00E+00</td>
-<td align="left">0.00E+00</td>
-<td align="left">0.00E+00 (0.00E+00)</td>
-</tr>
-</tbody></table>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C1 =TEXT(A1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">" "</span>&amp; <span class="string">"("</span> &amp; TEXT(B1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">")"</span></span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>Excel</tag>
-      </tags>
   </entry>
   <entry>
     <title>佳作欣赏之&quot;黄石公《素书》&quot;</title>
