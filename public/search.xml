@@ -62,16 +62,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Action After Review (AAR)</title>
-    <url>/2020/05/04/Action-After-Review-AAR/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
-<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
-]]></content>
-      <tags>
-        <tag>methodology</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Highly cited journals</title>
     <url>/2020/04/29/Highly%20cited%20journals/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
@@ -128,29 +118,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Matlab,VBS与HFSS实现器件联调</title>
-    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
-<p>流程说明：</p>
-<p>Matlab 的作用：</p>
-<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
-<p>VBS 的作用：</p>
-<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
-<p>HFSS 的作用：</p>
-<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
-<p>流程(1)：</p>
-<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
-<p>流程(2)：</p>
-<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
-<p>流程(3)：</p>
-<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
-<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
-]]></content>
-      <tags>
-        <tag>Matlab, VBS, HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown 语法总结</title>
     <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
@@ -190,6 +157,49 @@
       </tags>
   </entry>
   <entry>
+    <title>Action After Review (AAR)</title>
+    <url>/2020/05/04/Action-After-Review-AAR/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
+<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
+]]></content>
+      <tags>
+        <tag>methodology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Matlab,VBS与HFSS实现器件联调</title>
+    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
+<p>流程说明：</p>
+<p>Matlab 的作用：</p>
+<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
+<p>VBS 的作用：</p>
+<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
+<p>HFSS 的作用：</p>
+<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
+<p>流程(1)：</p>
+<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
+<p>流程(2)：</p>
+<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
+<p>流程(3)：</p>
+<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
+<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
+]]></content>
+      <tags>
+        <tag>Matlab, VBS, HFSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Matlab 数据类型转换</title>
+    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
+<p>字符串转 double： str2double();</p>
+]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Origin 学习笔记</title>
     <url>/2020/06/09/Origin-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="将数据从-matlab-导入到-origin"><a href="#将数据从-matlab-导入到-origin" class="headerlink" title="将数据从 matlab 导入到 origin"></a>将数据从 matlab 导入到 origin</h2><p>Matlab 准备: 属性-&gt;快捷方式-&gt;目标-&gt;  后面填加 /Automation 和 /desktop，如：</p>
@@ -218,16 +228,6 @@
 
 <p>读取后的数据结果：</p>
 <p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
-]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab 数据类型转换</title>
-    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
-<p>字符串转 double： str2double();</p>
 ]]></content>
       <tags>
         <tag>matlab</tag>
@@ -304,18 +304,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Tips for Latex</title>
-    <url>/2020/05/10/Tips-for-Latex/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<p>效果如下所示：</p>
-<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
-]]></content>
-      <tags>
-        <tag>latex</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Quick Start</title>
     <url>/2020/04/28/Quick%20Start/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
@@ -331,6 +319,110 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 <h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Tips for Latex</title>
+    <url>/2020/05/10/Tips-for-Latex/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果如下所示：</p>
+<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
+]]></content>
+      <tags>
+        <tag>latex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tips for writing</title>
+    <url>/2020/05/01/Tips-for-writing/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
+<li>Regardless of …, to the best of our knowlege, few …</li>
+<li>In …, we will first recall …. Then, we review …</li>
+<li>In …, we focus on … since … and …</li>
+<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
+<li>The reason lies in the fact that …</li>
+<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
+<li>For these problems we may happily look forward to a wealth of … success stories.</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>writing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VMWare15 安装 Centos7 系统</title>
+    <url>/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>基本上参照以下两个链接可以完成安装，这里总结一下需要主要的几个地方：</p>
+<p>第一： 设置密码后，登录名称是“root”，密码为你自己设置的密码；</p>
+<p>第二： 修改内容的命令不是 “vim”， 而是 “vi”；</p>
+<p>第三： 设备的名称不要改</p>
+<p>第四： 修改具体内容，一般是进入目录后，按 “i键” 或者是 “insert”, 然后移动光标进行修改，修改完成后，保存退出，先按“Esc”，然后键入“：wq！”即可；</p>
+<p>第五： 第一个网络适配器的设备名称是“ens33”，第二个网络适配器的设备名称不一定是“ens37”，可能是“ens34”；</p>
+<p>第六： 第二个网络适配器（外网的）IPADDR要确认在起始的IP范围内，才能ping通。</p>
+<p>第七，安装桌面版，参考第四条链接。</p>
+<p>第八，CentOS 桌面美化，见第五条链接。</p>
+<p>第九，安装VMWare需要先卸载 open-vm-tools，否则安装不上.</p>
+<p>参考链接：</p>
+<p>脚本之家：<a href="https://www.jb51.net/article/187026.htm" target="_blank" rel="noopener">VMware安装Linux CentOS 7.7系统的详细教程</a></p>
+<p>effortsing： <a href="https://www.cnblogs.com/effortsing/p/9996362.html" target="_blank" rel="noopener">vmware安装centos7.5、配置网卡、环境配置</a></p>
+<p>heshengfu1211: <a href="https://blog.csdn.net/heshengfu1211/article/details/87828523" target="_blank" rel="noopener">CentOS7操作系统安装及安装后解决ping不通网络和主机域名的问题</a></p>
+<p>玲珑醉： <a href="https://www.cnblogs.com/sunshine-1/p/8669031.html" target="_blank" rel="noopener">Centos7.1 mini版安装后安装图形界面教程</a></p>
+<p>cloudp： <a href="https://zhuanlan.zhihu.com/p/68845973?utm_source=qq" target="_blank" rel="noopener">CentOS7桌面美化</a></p>
+<h2 id="系统优化"><a href="#系统优化" class="headerlink" title="系统优化"></a>系统优化</h2><h3 id="CentOS7-安装-Chrome"><a href="#CentOS7-安装-Chrome" class="headerlink" title="CentOS7 安装 Chrome"></a>CentOS7 安装 Chrome</h3><ol>
+<li>配置yum 源</li>
+</ol>
+<p>在目录 /etc/yum.repos.d 下新建文件 google-chrome.repo</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vi /etc/yum.repos.d/google-chrome.repo</span></span><br></pre></td></tr></table></figure>
+
+<p>键入‘i’，或者‘Insert’后，新增以下内容：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[google-chrome]</span><br><span class="line">name=google-chrome</span><br><span class="line">baseurl=http://dl.google.com/linux/chrome/rpm/stable/<span class="variable">$basearch</span></span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub</span><br></pre></td></tr></table></figure>
+
+<p>保存退出</p>
+<p>‘Esc’键后，</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:wq！</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>安装google chrome</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</span></span><br><span class="line"><span class="comment"># yum localinstall google-chrome-stable_current_x86_64.rpm</span></span><br></pre></td></tr></table></figure>
+
+<p>内容节选自以下链接，若有侵权，告知立删</p>
+<p><a href="https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-7/" target="_blank" rel="noopener">How to Install Google Chrome Web Browser on CentOS 7</a></p>
+<p>路过sayhi:<a href="https://www.cnblogs.com/vae860514/p/8269002.html" target="_blank" rel="noopener">Centos7 yum安装chrome浏览器</a></p>
+<h3 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h3><p>首先查看防火墙的运行状态</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo firewall-cmd --state</span><br></pre></td></tr></table></figure>
+
+<p>如果是 “running” 状态，则关闭防火墙：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl stop firewalld.service</span><br></pre></td></tr></table></figure>
+
+<h3 id="CentOS7-安装-pycharm"><a href="#CentOS7-安装-pycharm" class="headerlink" title="CentOS7 安装 pycharm"></a>CentOS7 安装 pycharm</h3><p>首先下载liunux版的 pycharm 安装包: <a href="https://www.jetbrains.com/pycharm/download/#section=linux" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/#section=linux</a></p>
+<p>其次，移动安装包到安装目录并解压:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xzvf pycharm-2020.1.2.tar.gz</span><br></pre></td></tr></table></figure>
+
+<p>接着将‘0.0.0.0 account.jetbrains.com’添加至 hosts 文件中， 即：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vi /etc/hosts/</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/hosts" alt="hosts"></p>
+<p>找到pycharm的最新激活码：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">56NPDDVEIV-eyJsaWNlbnNlSWQiOiI1Nk5QRERWRUlWIiwibGljZW5zZWVOYW1lIjoi5rC45LmF5r+A5rS7IGlkZWEubWVkZW1pbmcuY29tIiwiYXNzaWduZWVOYW1lIjoiIiwiYXNzaWduZWVFbWFpbCI6IiIsImxpY2Vuc2VSZXN0cmljdGlvbiI6IiIsImNoZWNrQ29uY3VycmVudFVzZSI6ZmFsc2UsInByb2R1Y3RzIjpbeyJjb2RlIjoiSUkiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkFDIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJEUE4iLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUlNDIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBTIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSU0YiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiR08iLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkRNIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IkNMIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSUzAiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUkMiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUkQiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IlBDIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSU1YiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUlNVIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSTSIsInBhaWRVcFRvIjoiMjAyMC0wNy0yMiIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiV1MiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkRCIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJEQyIsInBhaWRVcFRvIjoiMjAyMC0wNy0yMiIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQREIiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFdTIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBHTyIsInBhaWRVcFRvIjoiMjAyMC0wNy0yMiIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQUFMiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFBDIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBSQiIsInBhaWRVcFRvIjoiMjAyMC0wNy0yMiIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQU1ciLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiRFAiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUlMiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiRFBBIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9XSwibWV0YWRhdGEiOiIwMTIwMjAwNjIzUFBBTTAwMDAwNSIs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</span><br></pre></td></tr></table></figure>
+
+<p>接着进入 bin 目录下安装pycharm：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo sh pycharm.sh</span><br></pre></td></tr></table></figure>
+
+<p>安装过程中选择激活码激活 pycharm，并输入找到的激活码，完成安装。</p>
+<p>最后创建桌面快捷方式</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vi /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure>
+
+<p>在新出现的页面写入以下内容（’Exec=’和‘Icon=’分别是自己的安装目录下的内容）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env xdg-open</span></span><br><span class="line">[Desktop Entry]</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">Name=Pycharm</span><br><span class="line">Comment=pycharm-2020.1.2</span><br><span class="line">Exec=/mytest/pycharm-2020.1.2/bin/pycharm.sh</span><br><span class="line">Icon=/mytest/pycharm-2020.1.2/bin/pycharm.png</span><br><span class="line">Terminal=<span class="literal">false</span></span><br><span class="line">StartupNotify=<span class="literal">true</span></span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br></pre></td></tr></table></figure>
+
+<p>最后一步：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chmod a+x /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure>
+
+
+<p>说明： 部分内容节选自以下链接，若有侵权，告知立删</p>
+<p>鱼虫光：<a href="https://www.cnblogs.com/ycg-blog/p/12219942.html" target="_blank" rel="noopener">centos7 下载破解pycharm专业版</a></p>
+<p>山高似水深：<a href="https://www.cnblogs.com/tnsay/p/12297957.html" target="_blank" rel="noopener">最新pycharm 激活码 更新时间 2020年6月24日11:47:52</a></p>
+]]></content>
   </entry>
   <entry>
     <title>佳作欣赏之&quot;黄石公《素书》&quot;</title>
@@ -349,20 +441,39 @@
       </tags>
   </entry>
   <entry>
-    <title>Tips for writing</title>
-    <url>/2020/05/01/Tips-for-writing/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
-<li>Regardless of …, to the best of our knowlege, few …</li>
-<li>In …, we will first recall …. Then, we review …</li>
-<li>In …, we focus on … since … and …</li>
-<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
-<li>The reason lies in the fact that …</li>
-<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
-<li>For these problems we may happily look forward to a wealth of … success stories.</li>
-</ol>
+    <title>硬件基本知识整理</title>
+    <url>/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="S-参数"><a href="#S-参数" class="headerlink" title="S 参数"></a>S 参数</h1><p>S 参数英文原称是“Scattering Parameter”，即“散射参数”。</p>
+<p>一个二端口的网络，共有四个S参数：S11、S12、S21、S22；</p>
+<p>互易网络满足： S12 = S21；</p>
+<p>对称网络满足： S11 = S22；</p>
+<p>无耗网络中，端口1输入的能量或者反射回端口1或者传输到端口2，满足： S11*S11 + S21*S21 =1。</p>
+<p>高速电路设计中的微带线或者带状线，都有参考平面，通常是不对称结构（比如平行双导线就是对称结构），但是满足互易条件，因此S11!=S22， S12=S21。</p>
 ]]></content>
       <tags>
-        <tag>writing</tag>
+        <tag>HFSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>“EXCEXCEL 文本表示科学计数法</title>
+    <url>/2020/05/29/%E2%80%9CEXCEXCEL-%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
+<thead>
+<tr>
+<th align="left">A1</th>
+<th align="left">B1</th>
+<th align="left">C1</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">0.00E+00</td>
+<td align="left">0.00E+00</td>
+<td align="left">0.00E+00 (0.00E+00)</td>
+</tr>
+</tbody></table>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C1 =TEXT(A1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">" "</span>&amp; <span class="string">"("</span> &amp; TEXT(B1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">")"</span></span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>Excel</tag>
       </tags>
   </entry>
   <entry>
@@ -413,42 +524,6 @@
       </tags>
   </entry>
   <entry>
-    <title>“EXCEXCEL 文本表示科学计数法</title>
-    <url>/2020/05/29/%E2%80%9CEXCEXCEL-%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
-<thead>
-<tr>
-<th align="left">A1</th>
-<th align="left">B1</th>
-<th align="left">C1</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">0.00E+00</td>
-<td align="left">0.00E+00</td>
-<td align="left">0.00E+00 (0.00E+00)</td>
-</tr>
-</tbody></table>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C1 =TEXT(A1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">" "</span>&amp; <span class="string">"("</span> &amp; TEXT(B1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">")"</span></span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>Excel</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>硬件基本知识整理</title>
-    <url>/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="S-参数"><a href="#S-参数" class="headerlink" title="S 参数"></a>S 参数</h1><p>S 参数英文原称是“Scattering Parameter”，即“散射参数”。</p>
-<p>一个二端口的网络，共有四个S参数：S11、S12、S21、S22；</p>
-<p>互易网络满足： S12 = S21；</p>
-<p>对称网络满足： S11 = S22；</p>
-<p>无耗网络中，端口1输入的能量或者反射回端口1或者传输到端口2，满足： S11*S11 + S21*S21 =1。</p>
-<p>高速电路设计中的微带线或者带状线，都有参考平面，通常是不对称结构（比如平行双导线就是对称结构），但是满足互易条件，因此S11!=S22， S12=S21。</p>
-]]></content>
-      <tags>
-        <tag>HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>笔试知识整理</title>
     <url>/2020/06/16/%E7%AC%94%E8%AF%95%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h1><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>排序算法的复杂度</p>
@@ -468,53 +543,5 @@
 <p>MaxineZhou：<a href="https://blog.csdn.net/MaxineZhou/article/details/89314044" target="_blank" rel="noopener">什么是堆以及堆排序原理</a></p>
 <p>dreamcatcher-cx：<a href="https://www.cnblogs.com/chengxiao/p/6129630.html" target="_blank" rel="noopener">图解排序算法(三)之堆排序</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>VMWare15 安装 Centos7 系统</title>
-    <url>/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>基本上参照以下两个链接可以完成安装，这里总结一下需要主要的几个地方：</p>
-<p>第一： 设置密码后，登录名称是“root”，密码为你自己设置的密码；</p>
-<p>第二： 修改内容的命令不是 “vim”， 而是 “vi”；</p>
-<p>第三： 设备的名称不要改</p>
-<p>第四： 修改具体内容，一般是进入目录后，按 “i键” 或者是 “insert”, 然后移动光标进行修改，修改完成后，保存退出，先按“Esc”，然后键入“：wq！”即可；</p>
-<p>第五： 第一个网络适配器的设备名称是“ens33”，第二个网络适配器的设备名称不一定是“ens37”，可能是“ens34”；</p>
-<p>第六： 第二个网络适配器（外网的）IPADDR要确认在起始的IP范围内，才能ping通。</p>
-<p>第七，安装桌面版，参考第四条链接。</p>
-<p>第八，CentOS 桌面美化，见第五条链接。</p>
-<p>第九，安装VMWare需要先卸载 open-vm-tools，否则安装不上.</p>
-<p>参考链接：</p>
-<p>脚本之家：<a href="https://www.jb51.net/article/187026.htm" target="_blank" rel="noopener">VMware安装Linux CentOS 7.7系统的详细教程</a></p>
-<p>effortsing： <a href="https://www.cnblogs.com/effortsing/p/9996362.html" target="_blank" rel="noopener">vmware安装centos7.5、配置网卡、环境配置</a></p>
-<p>heshengfu1211: <a href="https://blog.csdn.net/heshengfu1211/article/details/87828523" target="_blank" rel="noopener">CentOS7操作系统安装及安装后解决ping不通网络和主机域名的问题</a></p>
-<p>玲珑醉： <a href="https://www.cnblogs.com/sunshine-1/p/8669031.html" target="_blank" rel="noopener">Centos7.1 mini版安装后安装图形界面教程</a></p>
-<p>cloudp： <a href="https://zhuanlan.zhihu.com/p/68845973?utm_source=qq" target="_blank" rel="noopener">CentOS7桌面美化</a></p>
-<h2 id="系统优化"><a href="#系统优化" class="headerlink" title="系统优化"></a>系统优化</h2><h3 id="CentOS7-安装-Chrome"><a href="#CentOS7-安装-Chrome" class="headerlink" title="CentOS7 安装 Chrome"></a>CentOS7 安装 Chrome</h3><ol>
-<li>配置yum 源</li>
-</ol>
-<p>在目录 /etc/yum.repos.d 下新建文件 google-chrome.repo</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vi /etc/yum.repos.d/google-chrome.repo</span></span><br></pre></td></tr></table></figure>
-
-<p>键入‘i’，或者‘Insert’后，新增以下内容：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[google-chrome]</span><br><span class="line">name=google-chrome</span><br><span class="line">baseurl=http://dl.google.com/linux/chrome/rpm/stable/<span class="variable">$basearch</span></span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub</span><br></pre></td></tr></table></figure>
-
-<p>保存退出</p>
-<p>‘Esc’键后，</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:wq！</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>安装google chrome</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</span></span><br><span class="line"><span class="comment"># yum localinstall google-chrome-stable_current_x86_64.rpm</span></span><br></pre></td></tr></table></figure>
-
-<p>内容节选自以下链接，若有侵权，告知立删</p>
-<p><a href="https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-7/" target="_blank" rel="noopener">How to Install Google Chrome Web Browser on CentOS 7</a></p>
-<p>路过sayhi:<a href="https://www.cnblogs.com/vae860514/p/8269002.html" target="_blank" rel="noopener">Centos7 yum安装chrome浏览器</a></p>
-<h3 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h3><p>首先查看防火墙的运行状态</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo firewall-cmd --state</span><br></pre></td></tr></table></figure>
-
-<p>如果是 “running” 状态，则关闭防火墙：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl stop firewalld.service</span><br></pre></td></tr></table></figure>
-
-<h3 id="CentOS7-安装-pycharm"><a href="#CentOS7-安装-pycharm" class="headerlink" title="CentOS7 安装 pycharm"></a>CentOS7 安装 pycharm</h3>]]></content>
   </entry>
 </search>
