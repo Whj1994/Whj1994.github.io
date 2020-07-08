@@ -1,19 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Markdown 语法总结</title>
-    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
-<p><strong>粗体：</strong> “ ** ** “</p>
-<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
-<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
-<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
-<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
-<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
-<p>插入链接</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    <title>Highly cited journals</title>
+    <url>/2020/04/29/Highly%20cited%20journals/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">期刊全写</th>
+<th align="left">期刊简写</th>
+<th align="left">影响因子</th>
+<th align="left">分区情况</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">IEEE Transactions on Evolutionary Computation</td>
+<td align="left">IEEE Trans. Evol. Comput.</td>
+<td align="left">IF=8.508</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">IEEE Transactions on Cybernetics</td>
+<td align="left">IEEE Trans. Cybern.</td>
+<td align="left">IF=10.387</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
+<td align="left">IEEE Trans. Knowl. Data Eng.</td>
+<td align="left">IF=3.857</td>
+<td align="left">工程技术：2区；计算机科学：2区</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">IEEE Transactions on Industrial Informatics</td>
+<td align="left">IEEE Trans. Ind. Informat.</td>
+<td align="left">IF=7.377</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
       <tags>
-        <tag>markdown</tag>
+        <tag>Typora</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -24,16 +64,6 @@
 ]]></content>
       <tags>
         <tag>methodology</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab 数据类型转换</title>
-    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
-<p>字符串转 double： str2double();</p>
-]]></content>
-      <tags>
-        <tag>matlab</tag>
       </tags>
   </entry>
   <entry>
@@ -98,6 +128,22 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Markdown 语法总结</title>
+    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
+<p><strong>粗体：</strong> “ ** ** “</p>
+<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
+<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
+<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
+<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
+<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
+<p>插入链接</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Matlab,VBS与HFSS实现器件联调</title>
     <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
@@ -121,78 +167,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Highly cited journals</title>
-    <url>/2020/04/29/Highly%20cited%20journals/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
-<thead>
-<tr>
-<th align="left">序号</th>
-<th align="left">期刊全写</th>
-<th align="left">期刊简写</th>
-<th align="left">影响因子</th>
-<th align="left">分区情况</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td align="left">IEEE Transactions on Evolutionary Computation</td>
-<td align="left">IEEE Trans. Evol. Comput.</td>
-<td align="left">IF=8.508</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">IEEE Transactions on Cybernetics</td>
-<td align="left">IEEE Trans. Cybern.</td>
-<td align="left">IF=10.387</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
-<td align="left">IEEE Trans. Knowl. Data Eng.</td>
-<td align="left">IF=3.857</td>
-<td align="left">工程技术：2区；计算机科学：2区</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">IEEE Transactions on Industrial Informatics</td>
-<td align="left">IEEE Trans. Ind. Informat.</td>
-<td align="left">IF=7.377</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>Typora</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab中文本数据混合文件的数据读取</title>
-    <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
-<p>textscan 函数读取的结果是个 1*1 的cell数组，可以展开为 N*1 的cell数组，单个字符串或者单个数据占据其中的一个位置。</p>
-<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/oriFile.png" alt="oriFile"></p>
-<p>代码如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">clc; clear; close all;</span><br><span class="line"></span><br><span class="line">fid=fopen(<span class="string">'test.s2p'</span>); % open file <span class="keyword">in</span> <span class="built_in">read</span> only </span><br><span class="line">    data = textscan(fid,<span class="string">'%s'</span>);   % textscan <span class="keyword">function</span> <span class="built_in">read</span> data</span><br><span class="line">    data = data&#123;:&#125;;</span><br><span class="line">fclose(fid);</span><br></pre></td></tr></table></figure>
-
-<p>读取后的数据结果：</p>
-<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
-]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Matlab  可变输入输出</title>
     <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
@@ -210,6 +184,32 @@
 
 
 
+]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Matlab 数据类型转换</title>
+    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
+<p>字符串转 double： str2double();</p>
+]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Matlab中文本数据混合文件的数据读取</title>
+    <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
+<p>textscan 函数读取的结果是个 1*1 的cell数组，可以展开为 N*1 的cell数组，单个字符串或者单个数据占据其中的一个位置。</p>
+<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/oriFile.png" alt="oriFile"></p>
+<p>代码如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">clc; clear; close all;</span><br><span class="line"></span><br><span class="line">fid=fopen(<span class="string">'test.s2p'</span>); % open file <span class="keyword">in</span> <span class="built_in">read</span> only </span><br><span class="line">    data = textscan(fid,<span class="string">'%s'</span>);   % textscan <span class="keyword">function</span> <span class="built_in">read</span> data</span><br><span class="line">    data = data&#123;:&#125;;</span><br><span class="line">fclose(fid);</span><br></pre></td></tr></table></figure>
+
+<p>读取后的数据结果：</p>
+<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
 ]]></content>
       <tags>
         <tag>matlab</tag>
@@ -277,6 +277,64 @@
       </tags>
   </entry>
   <entry>
+    <title>Quick Start</title>
+    <url>/2020/04/28/Quick%20Start/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Python 调用 C++ 函数</title>
+    <url>/2020/06/02/Python-%E8%B0%83%E7%94%A8-C-%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
+<li><p>“.cpp” 文件是”C++”语言的文件，国际一般读作”C Plus Plus”，因此后缀为”.cpp”.</p>
+</li>
+<li><p>python 调用C/C++的方法有： boost.python， swig， ctypes， pybind11 等方法。</p>
+</li>
+<li><p>pybind11 是一个只包含头文件的库，语法与目标非常像Boost.Python； Boost.Python 兼容所有的C++编译器，Pybind11 只支持Python2.7以上和C++ 11以上的编译器。</p>
+</li>
+<li><p>使用Pybind11， 需要支持C++11标准的编译器(VS2015以上)，还需要下载CMake.</p>
+</li>
+<li><p>CMake是一个跨平台的安装（编译）工具，可以用简单的语句来描述所有平台的安装；可以输出各种各样的makefile或者project文件，只是它的组态档取名为 CMakeLists.txt。</p>
+</li>
+<li><p>CMake 在windows 上编译C++的简单使用<br>1）CMake安装好以后，编写一个简单.cpp程序；<br>2）在cpp文件相同目录下建立一个CMakeLists.txt文件，例如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake_minimum_required (VERSION 2.6)</span><br><span class="line">project (HelloWorld)</span><br><span class="line">add_executable (HelloWorld HelloWorld.cpp)</span><br></pre></td></tr></table></figure>
+<p>3）到CMakeLists.txt文件的目录，运行CMake:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake .</span><br></pre></td></tr></table></figure>
+<p>4) 生成.sln, .vcxproj文件，可以使用VS打开.sln文件来编译，运行，调试程序。<br>5）构建程序</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msbuild Helloworld.sln</span><br></pre></td></tr></table></figure>
+
+<p>就可以在Debug目录下找到HelloWorld.exe 程序。</p>
+</li>
+<li><p>Pybind11 是header-only,因此不需要编译动态链接库，直接使用include 就可以。<br>1） VS2017新建 C++ 空白工程</p>
+<pre><code>项目属性页-&gt;常规-&gt;调整输出类型为dll, 调整输出文件名为pyd;
+
+项目属性页-&gt;VC++目录-&gt;包含目录-&gt;（Anaconda3\include,Pybind11\include）,库目录（Anaconda3\libs）;
+
+项目属性页-&gt;链接器-&gt;输入-&gt;附加依赖项-&gt;手动输入（python36.lib，python3.lib）</code></pre><p>2）添加源文件，添加头文件，编译，运行，生成.pyd文件</p>
+<p>3）复制.pyd文件到要引用相同目录下，直接import就可以使用</p>
+</li>
+</ol>
+<p>说明： 以上内容整理自以下链接，侵权无意，告知立删。</p>
+<p>fitzzhang：<a href="https://blog.csdn.net/fitzzhang/article/details/78988682" target="_blank" rel="noopener">python调用C++之pybind11入门</a></p>
+<p>boonya：<a href="https://blog.csdn.net/boonya/article/details/88851372" target="_blank" rel="noopener">使用cmake在Windows上编译c++</a></p>
+<p>kupe87826：<a href="https://blog.csdn.net/kupepoem/article/details/105072604" target="_blank" rel="noopener">Pybind11实现python调用c++</a></p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Tips for Latex</title>
     <url>/2020/05/10/Tips-for-Latex/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
@@ -289,9 +347,26 @@
       </tags>
   </entry>
   <entry>
+    <title>Tips for writing</title>
+    <url>/2020/05/01/Tips-for-writing/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
+<li>Regardless of …, to the best of our knowlege, few …</li>
+<li>In …, we will first recall …. Then, we review …</li>
+<li>In …, we focus on … since … and …</li>
+<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
+<li>The reason lies in the fact that …</li>
+<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
+<li>For these problems we may happily look forward to a wealth of … success stories.</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>writing</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>VMWare15 安装 Centos7 系统</title>
     <url>/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>基本上参照以下两个链接可以完成安装，这里总结一下需要主要的几个地方：</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>基本上参照以下两个链接可以完成安装，这里总结一下需要注意的几个地方：</p>
 <p>第一： 设置密码后，登录名称是“root”，密码为你自己设置的密码；</p>
 <p>第二： 修改内容的命令不是 “vim”， 而是 “vi”；</p>
 <p>第三： 设备的名称不要改</p>
@@ -338,16 +413,9 @@
 <p>其次，移动安装包到安装目录并解压:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xzvf pycharm-2020.1.2.tar.gz</span><br></pre></td></tr></table></figure>
 
-<p>接着将‘0.0.0.0 account.jetbrains.com’添加至 hosts 文件中， 即：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vi /etc/hosts/</span><br></pre></td></tr></table></figure>
-<p><img src="/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/hosts.png" alt="hosts"></p>
-<p>找到pycharm的最新激活码：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">56NPDDVEIV-eyJsaWNlbnNlSWQiOiI1Nk5QRERWRUlWIiwibGljZW5zZWVOYW1lIjoi5rC45LmF5r+A5rS7IGlkZWEubWVkZW1pbmcuY29tIiwiYXNzaWduZWVOYW1lIjoiIiwiYXNzaWduZWVFbWFpbCI6IiIsImxpY2Vuc2VSZXN0cmljdGlvbiI6IiIsImNoZWNrQ29uY3VycmVudFVzZSI6ZmFsc2UsInByb2R1Y3RzIjpbeyJjb2RlIjoiSUkiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkFDIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJEUE4iLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUlNDIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBTIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSU0YiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiR08iLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkRNIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IkNMIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSUzAiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUkMiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUkQiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IlBDIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSU1YiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUlNVIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSTSIsInBhaWRVcFRvIjoiMjAyMC0wNy0yMiIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiV1MiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkRCIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJEQyIsInBhaWRVcFRvIjoiMjAyMC0wNy0yMiIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQREIiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFdTIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBHTyIsInBhaWRVcFRvIjoiMjAyMC0wNy0yMiIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQUFMiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFBDIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBSQiIsInBhaWRVcFRvIjoiMjAyMC0wNy0yMiIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQU1ciLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiRFAiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUlMiLCJwYWlkVXBUbyI6IjIwMjAtMDctMjIiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiRFBBIiwicGFpZFVwVG8iOiIyMDIwLTA3LTIyIiwiZXh0ZW5kZWQiOnRydWV9XSwibWV0YWRhdGEiOiIwMTIwMjAwNjIzUFBBTTAwMDAwNSIs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</span><br></pre></td></tr></table></figure>
-
 <p>接着进入 bin 目录下安装pycharm：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo sh pycharm.sh</span><br></pre></td></tr></table></figure>
 
-<p>安装过程中选择激活码激活 pycharm，并输入找到的激活码，完成安装。</p>
 <p>最后创建桌面快捷方式</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vi /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure>
 
@@ -357,134 +425,14 @@
 <p>最后一步：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chmod a+x /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure>
 
-
+<p>破解过程参见第三个链接。</p>
 <p>说明： 部分内容节选自以下链接，若有侵权，告知立删</p>
 <p>鱼虫光：<a href="https://www.cnblogs.com/ycg-blog/p/12219942.html" target="_blank" rel="noopener">centos7 下载破解pycharm专业版</a></p>
 <p>山高似水深：<a href="https://www.cnblogs.com/tnsay/p/12297957.html" target="_blank" rel="noopener">最新pycharm 激活码 更新时间 2020年6月24日11:47:52</a></p>
+<p>wangxuanyou：<a href="https://www.cnblogs.com/xyou/p/12596895.html" target="_blank" rel="noopener">Pycharm2020 永久激活</a></p>
 <h3 id="CentOS7-安装-python3"><a href="#CentOS7-安装-python3" class="headerlink" title="CentOS7 安装 python3"></a>CentOS7 安装 python3</h3><p>参见以下链接：</p>
 <p>忧臣解读：<a href="https://www.cnblogs.com/anxminise/p/9650206.html" target="_blank" rel="noopener">Centos7安装Python3.7</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Python 调用 C++ 函数</title>
-    <url>/2020/06/02/Python-%E8%B0%83%E7%94%A8-C-%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
-<li><p>“.cpp” 文件是”C++”语言的文件，国际一般读作”C Plus Plus”，因此后缀为”.cpp”.</p>
-</li>
-<li><p>python 调用C/C++的方法有： boost.python， swig， ctypes， pybind11 等方法。</p>
-</li>
-<li><p>pybind11 是一个只包含头文件的库，语法与目标非常像Boost.Python； Boost.Python 兼容所有的C++编译器，Pybind11 只支持Python2.7以上和C++ 11以上的编译器。</p>
-</li>
-<li><p>使用Pybind11， 需要支持C++11标准的编译器(VS2015以上)，还需要下载CMake.</p>
-</li>
-<li><p>CMake是一个跨平台的安装（编译）工具，可以用简单的语句来描述所有平台的安装；可以输出各种各样的makefile或者project文件，只是它的组态档取名为 CMakeLists.txt。</p>
-</li>
-<li><p>CMake 在windows 上编译C++的简单使用<br>1）CMake安装好以后，编写一个简单.cpp程序；<br>2）在cpp文件相同目录下建立一个CMakeLists.txt文件，例如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake_minimum_required (VERSION 2.6)</span><br><span class="line">project (HelloWorld)</span><br><span class="line">add_executable (HelloWorld HelloWorld.cpp)</span><br></pre></td></tr></table></figure>
-<p>3）到CMakeLists.txt文件的目录，运行CMake:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake .</span><br></pre></td></tr></table></figure>
-<p>4) 生成.sln, .vcxproj文件，可以使用VS打开.sln文件来编译，运行，调试程序。<br>5）构建程序</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msbuild Helloworld.sln</span><br></pre></td></tr></table></figure>
-
-<p>就可以在Debug目录下找到HelloWorld.exe 程序。</p>
-</li>
-<li><p>Pybind11 是header-only,因此不需要编译动态链接库，直接使用include 就可以。<br>1） VS2017新建 C++ 空白工程</p>
-<pre><code>项目属性页-&gt;常规-&gt;调整输出类型为dll, 调整输出文件名为pyd;
-
-项目属性页-&gt;VC++目录-&gt;包含目录-&gt;（Anaconda3\include,Pybind11\include）,库目录（Anaconda3\libs）;
-
-项目属性页-&gt;链接器-&gt;输入-&gt;附加依赖项-&gt;手动输入（python36.lib，python3.lib）</code></pre><p>2）添加源文件，添加头文件，编译，运行，生成.pyd文件</p>
-<p>3）复制.pyd文件到要引用相同目录下，直接import就可以使用</p>
-</li>
-</ol>
-<p>说明： 以上内容整理自以下链接，侵权无意，告知立删。</p>
-<p>fitzzhang：<a href="https://blog.csdn.net/fitzzhang/article/details/78988682" target="_blank" rel="noopener">python调用C++之pybind11入门</a></p>
-<p>boonya：<a href="https://blog.csdn.net/boonya/article/details/88851372" target="_blank" rel="noopener">使用cmake在Windows上编译c++</a></p>
-<p>kupe87826：<a href="https://blog.csdn.net/kupepoem/article/details/105072604" target="_blank" rel="noopener">Pybind11实现python调用c++</a></p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Quick Start</title>
-    <url>/2020/04/28/Quick%20Start/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>Tips for writing</title>
-    <url>/2020/05/01/Tips-for-writing/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
-<li>Regardless of …, to the best of our knowlege, few …</li>
-<li>In …, we will first recall …. Then, we review …</li>
-<li>In …, we focus on … since … and …</li>
-<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
-<li>The reason lies in the fact that …</li>
-<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
-<li>For these problems we may happily look forward to a wealth of … success stories.</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>writing</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《牛客》学习笔记</title>
-    <url>/2020/06/16/%E7%AC%94%E8%AF%95%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h1><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>排序算法的复杂度</p>
-<p><img src="/2020/06/16/%E7%AC%94%E8%AF%95%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/sortComp.png" alt="The complexity of sorting algorithm"></p>
-<p>二叉树：</p>
-<p>树：不包含回路的连通无向图</p>
-<p>二叉树：特殊的树，不为空则有根节点，左子树与右子树组成</p>
-<p>满二叉树： 每个分支节点都有左子树和右子树，所有叶子都在同一层上。</p>
-<p>完全二叉树： 从右向左减少叶子节点的满二叉树。</p>
-<p>堆排序：</p>
-<p>堆:一种特殊的完全二叉树</p>
-<p>大顶堆：所有父节点都大于等于子节点</p>
-<p>小顶堆：所有父节点都小于等于子节点</p>
-<p>推的存储： 从上到下，从左到右，父节点编号为k,左儿子编号为2<em>k,右儿子编号为2</em>k+1.</p>
-<p>堆排序的基本思想：将序列构成大顶推，将根节点与末尾元素进行交换； 将剩余n-1个元素重新构造堆，反复执行，得到有序序列。</p>
-<p>说明：内容节选自以下链接，若有侵权，告知立删</p>
-<p>MaxineZhou：<a href="https://blog.csdn.net/MaxineZhou/article/details/89314044" target="_blank" rel="noopener">什么是堆以及堆排序原理</a></p>
-<p>dreamcatcher-cx：<a href="https://www.cnblogs.com/chengxiao/p/6129630.html" target="_blank" rel="noopener">图解排序算法(三)之堆排序</a></p>
-<h2 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h2><h3 id="题1"><a href="#题1" class="headerlink" title="题1"></a>题1</h3><p>来源：牛客网  链接：<a href="https://www.nowcoder.com/questionTerminal/9fededa1b63a41798e5d43344d7bf216?f=discussion" target="_blank" rel="noopener">车站建造问题</a></p>
-<p>有10^8个村庄排在一条公路上，依次编号为0<del>10^8-1，相邻村庄距离为1，其中有n个村庄居住着牛牛，居住着牛牛的村庄从小到大依次为a0</del>an-1，其中保证a0=0.<br>现在需要建设车站，有两个要求必须被满足：<br>1、每个有牛牛居住的村庄必须修建车站。<br>2、相邻车站的距离必须为1或为某个质数。<br>现给出n和a数组，求需要建设车站的最小数量。</p>
-<p>解题思路来源于牛客网用户_hzy1721： 车站数最少为n， 若相邻车站的距离不是1或者质数，则在中间插入一个或多个车站，使得距离为1或者质数;该题等同于把一个非素数分解为素数的个数，考核内容为<a href="https://zh.wikipedia.org/wiki/%E5%93%A5%E5%BE%B7%E5%B7%B4%E8%B5%AB%E7%8C%9C%E6%83%B3" target="_blank" rel="noopener">哥德巴赫猜想</a>。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>“EXCEXCEL 文本表示科学计数法</title>
-    <url>/2020/05/29/%E2%80%9CEXCEXCEL-%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
-<thead>
-<tr>
-<th align="left">A1</th>
-<th align="left">B1</th>
-<th align="left">C1</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">0.00E+00</td>
-<td align="left">0.00E+00</td>
-<td align="left">0.00E+00 (0.00E+00)</td>
-</tr>
-</tbody></table>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C1 =TEXT(A1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">" "</span>&amp; <span class="string">"("</span> &amp; TEXT(B1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">")"</span></span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>Excel</tag>
-      </tags>
   </entry>
   <entry>
     <title>Win10环境基于Anaconda安装Tensorflow</title>
@@ -534,6 +482,28 @@
       </tags>
   </entry>
   <entry>
+    <title>“EXCEXCEL 文本表示科学计数法</title>
+    <url>/2020/05/29/%E2%80%9CEXCEXCEL-%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
+<thead>
+<tr>
+<th align="left">A1</th>
+<th align="left">B1</th>
+<th align="left">C1</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">0.00E+00</td>
+<td align="left">0.00E+00</td>
+<td align="left">0.00E+00 (0.00E+00)</td>
+</tr>
+</tbody></table>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C1 =TEXT(A1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">" "</span>&amp; <span class="string">"("</span> &amp; TEXT(B1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">")"</span></span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>Excel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>佳作欣赏之&quot;黄石公《素书》&quot;</title>
     <url>/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="黄石公《素书》"><a href="#黄石公《素书》" class="headerlink" title="黄石公《素书》"></a>黄石公《素书》</h1><h2 id="原始章第一"><a href="#原始章第一" class="headerlink" title="原始章第一"></a>原始章第一</h2><p>夫道、德、仁、义、礼五者，一体也。 道者，人之所蹈，使万物不知其所由。 德者，人之所得，使万物各得其所欲。 仁者，人之所亲，有慈慧恻隐之心，以遂其生存。 义者，人之所宜，赏善罚恶，以立功立事。 礼者，人之所履，夙兴夜寐，以成人伦之序。 夫欲为人之本，不可无一焉。 贤人君子，明于盛衰之道，通乎成败之数，审乎治乱之势，达乎去就之理。故潜居抱道以待其时。 若时至而行，则能极人臣之位； 得机而动，则能成绝代之功。如其不遇，没身而已。 是以其道足高，而名重于后代。</p>
@@ -548,6 +518,30 @@
       <tags>
         <tag>read</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>《牛客》学习笔记</title>
+    <url>/2020/06/16/%E7%AC%94%E8%AF%95%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h1><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>排序算法的复杂度</p>
+<p><img src="/2020/06/16/%E7%AC%94%E8%AF%95%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/sortComp.png" alt="The complexity of sorting algorithm"></p>
+<p>二叉树：</p>
+<p>树：不包含回路的连通无向图</p>
+<p>二叉树：特殊的树，不为空则有根节点，左子树与右子树组成</p>
+<p>满二叉树： 每个分支节点都有左子树和右子树，所有叶子都在同一层上。</p>
+<p>完全二叉树： 从右向左减少叶子节点的满二叉树。</p>
+<p>堆排序：</p>
+<p>堆:一种特殊的完全二叉树</p>
+<p>大顶堆：所有父节点都大于等于子节点</p>
+<p>小顶堆：所有父节点都小于等于子节点</p>
+<p>推的存储： 从上到下，从左到右，父节点编号为k,左儿子编号为2<em>k,右儿子编号为2</em>k+1.</p>
+<p>堆排序的基本思想：将序列构成大顶推，将根节点与末尾元素进行交换； 将剩余n-1个元素重新构造堆，反复执行，得到有序序列。</p>
+<p>说明：内容节选自以下链接，若有侵权，告知立删</p>
+<p>MaxineZhou：<a href="https://blog.csdn.net/MaxineZhou/article/details/89314044" target="_blank" rel="noopener">什么是堆以及堆排序原理</a></p>
+<p>dreamcatcher-cx：<a href="https://www.cnblogs.com/chengxiao/p/6129630.html" target="_blank" rel="noopener">图解排序算法(三)之堆排序</a></p>
+<h2 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h2><h3 id="题1"><a href="#题1" class="headerlink" title="题1"></a>题1</h3><p>来源：牛客网  链接：<a href="https://www.nowcoder.com/questionTerminal/9fededa1b63a41798e5d43344d7bf216?f=discussion" target="_blank" rel="noopener">车站建造问题</a></p>
+<p>有10^8个村庄排在一条公路上，依次编号为0<del>10^8-1，相邻村庄距离为1，其中有n个村庄居住着牛牛，居住着牛牛的村庄从小到大依次为a0</del>an-1，其中保证a0=0.<br>现在需要建设车站，有两个要求必须被满足：<br>1、每个有牛牛居住的村庄必须修建车站。<br>2、相邻车站的距离必须为1或为某个质数。<br>现给出n和a数组，求需要建设车站的最小数量。</p>
+<p>解题思路来源于牛客网用户_hzy1721： 车站数最少为n， 若相邻车站的距离不是1或者质数，则在中间插入一个或多个车站，使得距离为1或者质数;该题等同于把一个非素数分解为素数的个数，考核内容为<a href="https://zh.wikipedia.org/wiki/%E5%93%A5%E5%BE%B7%E5%B7%B4%E8%B5%AB%E7%8C%9C%E6%83%B3" target="_blank" rel="noopener">哥德巴赫猜想</a>。</p>
+]]></content>
   </entry>
   <entry>
     <title>硬件基本知识整理</title>
