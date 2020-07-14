@@ -437,7 +437,7 @@ pre {
 }
 pre,
 code {
-  font-family: consolas, Menlo, monospace, "Noto Serif SC", "PingFang SC", "Microsoft YaHei";
+  font-family: consolas, Menlo, monospace, 'EB Garamond', "Noto Serif SC", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 code {
   background: #eee;
@@ -1214,7 +1214,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff0d83;
+  background: #baff30;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
