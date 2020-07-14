@@ -67,45 +67,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown 语法总结</title>
-    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
-<p><strong>粗体：</strong> “ ** ** “</p>
-<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
-<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
-<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
-<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
-<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
-<p>插入链接</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab,VBS与HFSS实现器件联调</title>
-    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
-<p>流程说明：</p>
-<p>Matlab 的作用：</p>
-<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
-<p>VBS 的作用：</p>
-<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
-<p>HFSS 的作用：</p>
-<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
-<p>流程(1)：</p>
-<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
-<p>流程(2)：</p>
-<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
-<p>流程(3)：</p>
-<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
-<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
-]]></content>
-      <tags>
-        <tag>Matlab, VBS, HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>佳作欣赏之 &quot;IF&quot;</title>
     <url>/2020/04/29/IF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="《IF》"><a href="#《IF》" class="headerlink" title="《IF》"></a>《IF》</h2><h4 id="by-Rudyard-Kipling"><a href="#by-Rudyard-Kipling" class="headerlink" title="by Rudyard Kipling"></a>by Rudyard Kipling</h4><p>If you can keep your head when all about you,</p>
@@ -167,6 +128,22 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Markdown 语法总结</title>
+    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
+<p><strong>粗体：</strong> “ ** ** “</p>
+<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
+<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
+<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
+<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
+<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
+<p>插入链接</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Matlab  可变输入输出</title>
     <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
@@ -216,6 +193,29 @@
       </tags>
   </entry>
   <entry>
+    <title>Matlab,VBS与HFSS实现器件联调</title>
+    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
+<p>流程说明：</p>
+<p>Matlab 的作用：</p>
+<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
+<p>VBS 的作用：</p>
+<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
+<p>HFSS 的作用：</p>
+<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
+<p>流程(1)：</p>
+<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
+<p>流程(2)：</p>
+<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
+<p>流程(3)：</p>
+<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
+<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
+]]></content>
+      <tags>
+        <tag>Matlab, VBS, HFSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Origin 学习笔记</title>
     <url>/2020/06/09/Origin-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="将数据从-matlab-导入到-origin"><a href="#将数据从-matlab-导入到-origin" class="headerlink" title="将数据从 matlab 导入到 origin"></a>将数据从 matlab 导入到 origin</h2><p>Matlab 准备: 属性-&gt;快捷方式-&gt;目标-&gt;  后面填加 /Automation 和 /desktop，如：</p>
@@ -244,6 +244,79 @@
       <tags>
         <tag>Photoshop</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Python 中 numpy.sort() 与 Matlab 中 sort() 排序</title>
+    <url>/2020/07/14/Python-%E4%B8%AD-numpy-sort-%E4%B8%8E-Matlab-%E4%B8%AD-sort-%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp; 通过近一整天的debug发现，python 中的 numpy.sort() 函数与 matlab 中的 sort() 函数的默认排序方法不同，从而也导致了当待排序的数组中存在多个相同数值时最后的排序结果也不尽相同。</p>
+<p>&emsp; 当待排序的数组有多个可以排序的属性后，使用 matlab 中的 sort() 函数经过不同属性的多次排序后，可以得到想要的多个属性排序后排列数组（主要体现在数值相同的情况下）； 而 python 中的 numpy.sort() 中快速排序、 归并排序和堆排序则达不到这个效果。</p>
+<p>&emsp; sort()函数的三种排序方法都是不稳定排序，因此python 可以考虑使用稳定的 sorted() 函数。 如果要返回稳定排序后的下标，可以在sorted()函数内部使用enumerate（）函数。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">itemSorted = sorted(emuerate(item), key=lambda x:x[1])</span><br><span class="line">index = [ii[0] <span class="keyword">for</span> ii <span class="keyword">in</span> itemSorted]</span><br><span class="line">val = [jj[1] <span class="keyword">for</span> jj <span class="keyword">in</span> itemSorted]</span><br></pre></td></tr></table></figure>
+
+<p>部分内容节选自以下链接，侵权无意，告知立删：</p>
+<p>sbj123456789： <a href="https://www.cnblogs.com/sbj123456789/p/10951598.html" target="_blank" rel="noopener">python中sorted排序后返回同时返回下标</a></p>
+]]></content>
+      <tags>
+        <tag>python matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python 调用 C++ 函数</title>
+    <url>/2020/06/02/Python-%E8%B0%83%E7%94%A8-C-%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
+<li><p>“.cpp” 文件是”C++”语言的文件，国际一般读作”C Plus Plus”，因此后缀为”.cpp”.</p>
+</li>
+<li><p>python 调用C/C++的方法有： boost.python， swig， ctypes， pybind11 等方法。</p>
+</li>
+<li><p>pybind11 是一个只包含头文件的库，语法与目标非常像Boost.Python； Boost.Python 兼容所有的C++编译器，Pybind11 只支持Python2.7以上和C++ 11以上的编译器。</p>
+</li>
+<li><p>使用Pybind11， 需要支持C++11标准的编译器(VS2015以上)，还需要下载CMake.</p>
+</li>
+<li><p>CMake是一个跨平台的安装（编译）工具，可以用简单的语句来描述所有平台的安装；可以输出各种各样的makefile或者project文件，只是它的组态档取名为 CMakeLists.txt。</p>
+</li>
+<li><p>CMake 在windows 上编译C++的简单使用<br>1）CMake安装好以后，编写一个简单.cpp程序；<br>2）在cpp文件相同目录下建立一个CMakeLists.txt文件，例如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake_minimum_required (VERSION 2.6)</span><br><span class="line">project (HelloWorld)</span><br><span class="line">add_executable (HelloWorld HelloWorld.cpp)</span><br></pre></td></tr></table></figure>
+<p>3）到CMakeLists.txt文件的目录，运行CMake:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake .</span><br></pre></td></tr></table></figure>
+<p>4) 生成.sln, .vcxproj文件，可以使用VS打开.sln文件来编译，运行，调试程序。<br>5）构建程序</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msbuild Helloworld.sln</span><br></pre></td></tr></table></figure>
+
+<p>就可以在Debug目录下找到HelloWorld.exe 程序。</p>
+</li>
+<li><p>Pybind11 是header-only,因此不需要编译动态链接库，直接使用include 就可以。<br>1） VS2017新建 C++ 空白工程</p>
+<pre><code>项目属性页-&gt;常规-&gt;调整输出类型为dll, 调整输出文件名为pyd;
+
+项目属性页-&gt;VC++目录-&gt;包含目录-&gt;（Anaconda3\include,Pybind11\include）,库目录（Anaconda3\libs）;
+
+项目属性页-&gt;链接器-&gt;输入-&gt;附加依赖项-&gt;手动输入（python36.lib，python3.lib）</code></pre><p>2）添加源文件，添加头文件，编译，运行，生成.pyd文件</p>
+<p>3）复制.pyd文件到要引用相同目录下，直接import就可以使用</p>
+</li>
+</ol>
+<p>说明： 以上内容整理自以下链接，侵权无意，告知立删。</p>
+<p>fitzzhang：<a href="https://blog.csdn.net/fitzzhang/article/details/78988682" target="_blank" rel="noopener">python调用C++之pybind11入门</a></p>
+<p>boonya：<a href="https://blog.csdn.net/boonya/article/details/88851372" target="_blank" rel="noopener">使用cmake在Windows上编译c++</a></p>
+<p>kupe87826：<a href="https://blog.csdn.net/kupepoem/article/details/105072604" target="_blank" rel="noopener">Pybind11实现python调用c++</a></p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Quick Start</title>
+    <url>/2020/04/28/Quick%20Start/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>Python 学习笔记</title>
@@ -289,79 +362,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python 中 numpy.sort() 与 Matlab 中 sort() 排序</title>
-    <url>/2020/07/14/Python-%E4%B8%AD-numpy-sort-%E4%B8%8E-Matlab-%E4%B8%AD-sort-%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp; 通过近一整天的debug发现，python 中的 numpy.sort() 函数与 matlab 中的 sort() 函数的默认排序方法不同，从而也导致了当待排序的数组中存在多个相同数值时最后的排序结果也不尽相同。</p>
-<p>&emsp; 当待排序的数组有多个可以排序的属性后，使用 matlab 中的 sort() 函数经过不同属性的多次排序后，可以得到想要的多个属性排序后排列数组（主要体现在数值相同的情况下）； 而 python 中的 numpy.sort() 中快速排序、 归并排序和堆排序则达不到这个效果。</p>
-<p>&emsp; sort()函数的三种排序方法都是不稳定排序，因此python 可以考虑使用稳定的 sorted() 函数。 如果要返回稳定排序后的下标，可以在sorted()函数内部使用enumerate（）函数。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">itemSorted = sorted(emuerate(item), key=lambda x:x[1])</span><br><span class="line">index = [ii[0] <span class="keyword">for</span> ii <span class="keyword">in</span> itemSorted]</span><br><span class="line">val = [jj[1] <span class="keyword">for</span> jj <span class="keyword">in</span> itemSorted]</span><br></pre></td></tr></table></figure>
-
-<p>部分内容节选自以下链接，侵权无意，告知立删：</p>
-<p>sbj123456789： <a href="https://www.cnblogs.com/sbj123456789/p/10951598.html" target="_blank" rel="noopener">python中sorted排序后返回同时返回下标</a></p>
-]]></content>
-      <tags>
-        <tag>python matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Quick Start</title>
-    <url>/2020/04/28/Quick%20Start/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>Python 调用 C++ 函数</title>
-    <url>/2020/06/02/Python-%E8%B0%83%E7%94%A8-C-%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
-<li><p>“.cpp” 文件是”C++”语言的文件，国际一般读作”C Plus Plus”，因此后缀为”.cpp”.</p>
-</li>
-<li><p>python 调用C/C++的方法有： boost.python， swig， ctypes， pybind11 等方法。</p>
-</li>
-<li><p>pybind11 是一个只包含头文件的库，语法与目标非常像Boost.Python； Boost.Python 兼容所有的C++编译器，Pybind11 只支持Python2.7以上和C++ 11以上的编译器。</p>
-</li>
-<li><p>使用Pybind11， 需要支持C++11标准的编译器(VS2015以上)，还需要下载CMake.</p>
-</li>
-<li><p>CMake是一个跨平台的安装（编译）工具，可以用简单的语句来描述所有平台的安装；可以输出各种各样的makefile或者project文件，只是它的组态档取名为 CMakeLists.txt。</p>
-</li>
-<li><p>CMake 在windows 上编译C++的简单使用<br>1）CMake安装好以后，编写一个简单.cpp程序；<br>2）在cpp文件相同目录下建立一个CMakeLists.txt文件，例如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake_minimum_required (VERSION 2.6)</span><br><span class="line">project (HelloWorld)</span><br><span class="line">add_executable (HelloWorld HelloWorld.cpp)</span><br></pre></td></tr></table></figure>
-<p>3）到CMakeLists.txt文件的目录，运行CMake:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake .</span><br></pre></td></tr></table></figure>
-<p>4) 生成.sln, .vcxproj文件，可以使用VS打开.sln文件来编译，运行，调试程序。<br>5）构建程序</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msbuild Helloworld.sln</span><br></pre></td></tr></table></figure>
-
-<p>就可以在Debug目录下找到HelloWorld.exe 程序。</p>
-</li>
-<li><p>Pybind11 是header-only,因此不需要编译动态链接库，直接使用include 就可以。<br>1） VS2017新建 C++ 空白工程</p>
-<pre><code>项目属性页-&gt;常规-&gt;调整输出类型为dll, 调整输出文件名为pyd;
-
-项目属性页-&gt;VC++目录-&gt;包含目录-&gt;（Anaconda3\include,Pybind11\include）,库目录（Anaconda3\libs）;
-
-项目属性页-&gt;链接器-&gt;输入-&gt;附加依赖项-&gt;手动输入（python36.lib，python3.lib）</code></pre><p>2）添加源文件，添加头文件，编译，运行，生成.pyd文件</p>
-<p>3）复制.pyd文件到要引用相同目录下，直接import就可以使用</p>
-</li>
-</ol>
-<p>说明： 以上内容整理自以下链接，侵权无意，告知立删。</p>
-<p>fitzzhang：<a href="https://blog.csdn.net/fitzzhang/article/details/78988682" target="_blank" rel="noopener">python调用C++之pybind11入门</a></p>
-<p>boonya：<a href="https://blog.csdn.net/boonya/article/details/88851372" target="_blank" rel="noopener">使用cmake在Windows上编译c++</a></p>
-<p>kupe87826：<a href="https://blog.csdn.net/kupepoem/article/details/105072604" target="_blank" rel="noopener">Pybind11实现python调用c++</a></p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Tips for Latex</title>
     <url>/2020/05/10/Tips-for-Latex/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
@@ -371,6 +371,24 @@
 ]]></content>
       <tags>
         <tag>latex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tips for writing</title>
+    <url>/2020/05/01/Tips-for-writing/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
+<li>Regardless of …, to the best of our knowlege, few …</li>
+<li>In …, we will first recall …. Then, we review …</li>
+<li>In …, we focus on … since … and …</li>
+<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
+<li>The reason lies in the fact that …</li>
+<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
+<li>For these problems we may happily look forward to a wealth of … success stories.</li>
+<li>The parameters of these comparison approahces are set on the basis of their original papers.</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>writing</tag>
       </tags>
   </entry>
   <entry>
@@ -445,24 +463,6 @@
 <h3 id="CentOS7-安装-python3"><a href="#CentOS7-安装-python3" class="headerlink" title="CentOS7 安装 python3"></a>CentOS7 安装 python3</h3><p>参见以下链接：</p>
 <p>忧臣解读：<a href="https://www.cnblogs.com/anxminise/p/9650206.html" target="_blank" rel="noopener">Centos7安装Python3.7</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Tips for writing</title>
-    <url>/2020/05/01/Tips-for-writing/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
-<li>Regardless of …, to the best of our knowlege, few …</li>
-<li>In …, we will first recall …. Then, we review …</li>
-<li>In …, we focus on … since … and …</li>
-<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
-<li>The reason lies in the fact that …</li>
-<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
-<li>For these problems we may happily look forward to a wealth of … success stories.</li>
-<li>The parameters of these comparison approahces are set on the basis of their original papers.</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>writing</tag>
-      </tags>
   </entry>
   <entry>
     <title>Win10环境基于Anaconda安装Tensorflow</title>
