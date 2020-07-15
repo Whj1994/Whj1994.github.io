@@ -11,62 +11,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Highly cited journals</title>
-    <url>/2020/04/29/Highly%20cited%20journals/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
-<thead>
-<tr>
-<th align="left">序号</th>
-<th align="left">期刊全写</th>
-<th align="left">期刊简写</th>
-<th align="left">影响因子</th>
-<th align="left">分区情况</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td align="left">IEEE Transactions on Evolutionary Computation</td>
-<td align="left">IEEE Trans. Evol. Comput.</td>
-<td align="left">IF=8.508</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">IEEE Transactions on Cybernetics</td>
-<td align="left">IEEE Trans. Cybern.</td>
-<td align="left">IF=10.387</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
-<td align="left">IEEE Trans. Knowl. Data Eng.</td>
-<td align="left">IF=3.857</td>
-<td align="left">工程技术：2区；计算机科学：2区</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">IEEE Transactions on Industrial Informatics</td>
-<td align="left">IEEE Trans. Ind. Informat.</td>
-<td align="left">IF=7.377</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>Typora</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>佳作欣赏之 &quot;IF&quot;</title>
     <url>/2020/04/29/IF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="《IF》"><a href="#《IF》" class="headerlink" title="《IF》"></a>《IF》</h2><h4 id="by-Rudyard-Kipling"><a href="#by-Rudyard-Kipling" class="headerlink" title="by Rudyard Kipling"></a>by Rudyard Kipling</h4><p>If you can keep your head when all about you,</p>
@@ -128,29 +72,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Matlab  可变输入输出</title>
-    <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
-<p>varargin 是函数定义语句中的输入变量，放在输入项的最后位置；在函数内是个 1*N 的cell数组，N 是在此位置之后的输入项数, N也可以为0。</p>
-<p>varargout 用在输出位置，情况与 varargin 相同。</p>
-<p>说明： nargin 表所有的输入变量数。</p>
-<p>下面给出一个例子使用：<br>定义函数：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% <span class="keyword">function</span> definition</span><br><span class="line"><span class="keyword">function</span> varargout = calculator(<span class="built_in">type</span>, varargin)</span><br><span class="line">varInput = cell2mat(varargin(:));   % cell to double</span><br><span class="line"><span class="keyword">if</span> strcmp(<span class="built_in">type</span>, <span class="string">'addition'</span>)</span><br><span class="line">    <span class="keyword">if</span> nargin == 3</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">    elseif nargin == 4</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">        varargout&#123;2&#125; = varInput(1) + varInput(2) + varInput(3);</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-
-<p>运行主函数：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% run <span class="keyword">in</span> <span class="built_in">command</span></span><br><span class="line">[res1, res2] = calculator(<span class="string">'addition'</span>, 10, 20, 30);</span><br><span class="line">disp([<span class="string">'res1='</span>, num2str(res1)])</span><br><span class="line">disp([<span class="string">'res2='</span>, num2str(res2)])</span><br></pre></td></tr></table></figure>
-
-<p>输出结果：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">res1=30</span><br><span class="line">res2=60</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Matlab,VBS与HFSS实现器件联调</title>
     <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
@@ -174,6 +95,62 @@
       </tags>
   </entry>
   <entry>
+    <title>Highly cited journals</title>
+    <url>/2020/04/29/Highly%20cited%20journals/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th align="left">期刊全写</th>
+<th align="left">期刊简写</th>
+<th align="left">影响因子</th>
+<th align="left">分区情况</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="left">IEEE Transactions on Evolutionary Computation</td>
+<td align="left">IEEE Trans. Evol. Comput.</td>
+<td align="left">IF=8.508</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">IEEE Transactions on Cybernetics</td>
+<td align="left">IEEE Trans. Cybern.</td>
+<td align="left">IF=10.387</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
+<td align="left">IEEE Trans. Knowl. Data Eng.</td>
+<td align="left">IF=3.857</td>
+<td align="left">工程技术：2区；计算机科学：2区</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">IEEE Transactions on Industrial Informatics</td>
+<td align="left">IEEE Trans. Ind. Informat.</td>
+<td align="left">IF=7.377</td>
+<td align="left">工程技术：1区；计算机科学：1区</td>
+<td align="left">顶刊</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown 语法总结</title>
     <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
@@ -190,16 +167,23 @@
       </tags>
   </entry>
   <entry>
-    <title>Matlab中文本数据混合文件的数据读取</title>
-    <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
-<p>textscan 函数读取的结果是个 1*1 的cell数组，可以展开为 N*1 的cell数组，单个字符串或者单个数据占据其中的一个位置。</p>
-<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/oriFile.png" alt="oriFile"></p>
-<p>代码如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">clc; clear; close all;</span><br><span class="line"></span><br><span class="line">fid=fopen(<span class="string">'test.s2p'</span>); % open file <span class="keyword">in</span> <span class="built_in">read</span> only </span><br><span class="line">    data = textscan(fid,<span class="string">'%s'</span>);   % textscan <span class="keyword">function</span> <span class="built_in">read</span> data</span><br><span class="line">    data = data&#123;:&#125;;</span><br><span class="line">fclose(fid);</span><br></pre></td></tr></table></figure>
+    <title>Matlab  可变输入输出</title>
+    <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
+<p>varargin 是函数定义语句中的输入变量，放在输入项的最后位置；在函数内是个 1*N 的cell数组，N 是在此位置之后的输入项数, N也可以为0。</p>
+<p>varargout 用在输出位置，情况与 varargin 相同。</p>
+<p>说明： nargin 表所有的输入变量数。</p>
+<p>下面给出一个例子使用：<br>定义函数：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% <span class="keyword">function</span> definition</span><br><span class="line"><span class="keyword">function</span> varargout = calculator(<span class="built_in">type</span>, varargin)</span><br><span class="line">varInput = cell2mat(varargin(:));   % cell to double</span><br><span class="line"><span class="keyword">if</span> strcmp(<span class="built_in">type</span>, <span class="string">'addition'</span>)</span><br><span class="line">    <span class="keyword">if</span> nargin == 3</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">    elseif nargin == 4</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">        varargout&#123;2&#125; = varInput(1) + varInput(2) + varInput(3);</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 
-<p>读取后的数据结果：</p>
-<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
+<p>运行主函数：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% run <span class="keyword">in</span> <span class="built_in">command</span></span><br><span class="line">[res1, res2] = calculator(<span class="string">'addition'</span>, 10, 20, 30);</span><br><span class="line">disp([<span class="string">'res1='</span>, num2str(res1)])</span><br><span class="line">disp([<span class="string">'res2='</span>, num2str(res2)])</span><br></pre></td></tr></table></figure>
+
+<p>输出结果：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">res1=30</span><br><span class="line">res2=60</span><br></pre></td></tr></table></figure>
+
+
+
 ]]></content>
       <tags>
         <tag>matlab</tag>
@@ -210,6 +194,22 @@
     <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
 <p>字符串转 double： str2double();</p>
+]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Matlab中文本数据混合文件的数据读取</title>
+    <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
+<p>textscan 函数读取的结果是个 1*1 的cell数组，可以展开为 N*1 的cell数组，单个字符串或者单个数据占据其中的一个位置。</p>
+<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/oriFile.png" alt="oriFile"></p>
+<p>代码如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">clc; clear; close all;</span><br><span class="line"></span><br><span class="line">fid=fopen(<span class="string">'test.s2p'</span>); % open file <span class="keyword">in</span> <span class="built_in">read</span> only </span><br><span class="line">    data = textscan(fid,<span class="string">'%s'</span>);   % textscan <span class="keyword">function</span> <span class="built_in">read</span> data</span><br><span class="line">    data = data&#123;:&#125;;</span><br><span class="line">fclose(fid);</span><br></pre></td></tr></table></figure>
+
+<p>读取后的数据结果：</p>
+<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
 ]]></content>
       <tags>
         <tag>matlab</tag>
@@ -304,35 +304,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Quick Start</title>
-    <url>/2020/04/28/Quick%20Start/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>Tips for Latex</title>
-    <url>/2020/05/10/Tips-for-Latex/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<p>效果如下所示：</p>
-<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
-]]></content>
-      <tags>
-        <tag>latex</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python 调用 C++ 函数</title>
     <url>/2020/06/02/Python-%E8%B0%83%E7%94%A8-C-%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
@@ -374,6 +345,35 @@
       </tags>
   </entry>
   <entry>
+    <title>Quick Start</title>
+    <url>/2020/04/28/Quick%20Start/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Tips for Latex</title>
+    <url>/2020/05/10/Tips-for-Latex/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果如下所示：</p>
+<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
+]]></content>
+      <tags>
+        <tag>latex</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Tips for writing</title>
     <url>/2020/05/01/Tips-for-writing/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
@@ -389,53 +389,6 @@
 ]]></content>
       <tags>
         <tag>writing</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Win10环境基于Anaconda安装Tensorflow</title>
-    <url>/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>搜索打开 Anaconda Prompt: </p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/SearchPrompt.png" alt="SearchPrompt"></p>
-<p>检查 Anaconda和 python 的版本：<br><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/version.png" alt="version"></p>
-<p>更新 pip版本：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
-
-
-<h1 id="配置安装环境"><a href="#配置安装环境" class="headerlink" title="配置安装环境"></a>配置安装环境</h1><p>连接到清华仓库镜像地址，下载提速：</p>
-<p>在 Anaconda Prompt中输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda create -n tensorflow python=3.6</span><br></pre></td></tr></table></figure>
-
-<p>同意安装新的 packages:</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/yes.png" alt="yes"></p>
-<p>安装环境配置成功。</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/activave.png" alt="activave"></p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/envir.png" alt="envir"></p>
-<h1 id="安装tensorflow1-5"><a href="#安装tensorflow1-5" class="headerlink" title="安装tensorflow1.5"></a>安装tensorflow1.5</h1><p>打开安装环境：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda activate tensorflow</span><br></pre></td></tr></table></figure>
-
-<p>输入命令，安装CPU版本tensorflow1.5：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ pip install tensorflow==1.5 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/tf.png" alt="tf"></p>
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>关闭安装环境: </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda deactivate</span><br></pre></td></tr></table></figure>
-
-<p> Anaconda Prompt中输入 python：</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/python.png" alt="python"></p>
-<p>依次输入测试命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ import tensorflow as tf</span><br><span class="line">$ sess = tf.Session()</span><br><span class="line">$ succ = tf.constant(<span class="string">'succeed, tensorflow!'</span>)</span><br><span class="line">$ <span class="built_in">print</span>(sess.run(succ))</span><br></pre></td></tr></table></figure>
-
-<p>出现以下结果表明安装成功：</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/test.png" alt="test"></p>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>在 spyder中导入tensorflow包之前，需要在 Anaconda 的tenserflow环境中重新安装spyder插件：</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/spyder.png" alt="spyder"></p>
-<p>在 spyder中找不到的模块需要在tensorflow环境中重新安装一次，比如 matplotlib 模块:</p>
-<p>Anaconda Prompt中依次输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate tensorflow</span><br><span class="line">conda install matplotlib</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -512,6 +465,53 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Win10环境基于Anaconda安装Tensorflow</title>
+    <url>/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>搜索打开 Anaconda Prompt: </p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/SearchPrompt.png" alt="SearchPrompt"></p>
+<p>检查 Anaconda和 python 的版本：<br><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/version.png" alt="version"></p>
+<p>更新 pip版本：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="配置安装环境"><a href="#配置安装环境" class="headerlink" title="配置安装环境"></a>配置安装环境</h1><p>连接到清华仓库镜像地址，下载提速：</p>
+<p>在 Anaconda Prompt中输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda create -n tensorflow python=3.6</span><br></pre></td></tr></table></figure>
+
+<p>同意安装新的 packages:</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/yes.png" alt="yes"></p>
+<p>安装环境配置成功。</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/activave.png" alt="activave"></p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/envir.png" alt="envir"></p>
+<h1 id="安装tensorflow1-5"><a href="#安装tensorflow1-5" class="headerlink" title="安装tensorflow1.5"></a>安装tensorflow1.5</h1><p>打开安装环境：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda activate tensorflow</span><br></pre></td></tr></table></figure>
+
+<p>输入命令，安装CPU版本tensorflow1.5：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ pip install tensorflow==1.5 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/tf.png" alt="tf"></p>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>关闭安装环境: </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda deactivate</span><br></pre></td></tr></table></figure>
+
+<p> Anaconda Prompt中输入 python：</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/python.png" alt="python"></p>
+<p>依次输入测试命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ import tensorflow as tf</span><br><span class="line">$ sess = tf.Session()</span><br><span class="line">$ succ = tf.constant(<span class="string">'succeed, tensorflow!'</span>)</span><br><span class="line">$ <span class="built_in">print</span>(sess.run(succ))</span><br></pre></td></tr></table></figure>
+
+<p>出现以下结果表明安装成功：</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/test.png" alt="test"></p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>在 spyder中导入tensorflow包之前，需要在 Anaconda 的tenserflow环境中重新安装spyder插件：</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/spyder.png" alt="spyder"></p>
+<p>在 spyder中找不到的模块需要在tensorflow环境中重新安装一次，比如 matplotlib 模块:</p>
+<p>Anaconda Prompt中依次输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate tensorflow</span><br><span class="line">conda install matplotlib</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>“EXCEXCEL 文本表示科学计数法</title>
     <url>/2020/05/29/%E2%80%9CEXCEXCEL-%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
@@ -534,20 +534,6 @@
       </tags>
   </entry>
   <entry>
-    <title>硬件基本知识整理</title>
-    <url>/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="S-参数"><a href="#S-参数" class="headerlink" title="S 参数"></a>S 参数</h1><p>S 参数英文原称是“Scattering Parameter”，即“散射参数”。</p>
-<p>一个二端口的网络，共有四个S参数：S11、S12、S21、S22；</p>
-<p>互易网络满足： S12 = S21；</p>
-<p>对称网络满足： S11 = S22；</p>
-<p>无耗网络中，端口1输入的能量或者反射回端口1或者传输到端口2，满足： S11*S11 + S21*S21 =1。</p>
-<p>高速电路设计中的微带线或者带状线，都有参考平面，通常是不对称结构（比如平行双导线就是对称结构），但是满足互易条件，因此S11!=S22， S12=S21。</p>
-]]></content>
-      <tags>
-        <tag>HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>佳作欣赏之&quot;黄石公《素书》&quot;</title>
     <url>/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="黄石公《素书》"><a href="#黄石公《素书》" class="headerlink" title="黄石公《素书》"></a>黄石公《素书》</h1><h2 id="原始章第一"><a href="#原始章第一" class="headerlink" title="原始章第一"></a>原始章第一</h2><p>夫道、德、仁、义、礼五者，一体也。 道者，人之所蹈，使万物不知其所由。 德者，人之所得，使万物各得其所欲。 仁者，人之所亲，有慈慧恻隐之心，以遂其生存。 义者，人之所宜，赏善罚恶，以立功立事。 礼者，人之所履，夙兴夜寐，以成人伦之序。 夫欲为人之本，不可无一焉。 贤人君子，明于盛衰之道，通乎成败之数，审乎治乱之势，达乎去就之理。故潜居抱道以待其时。 若时至而行，则能极人臣之位； 得机而动，则能成绝代之功。如其不遇，没身而已。 是以其道足高，而名重于后代。</p>
@@ -561,6 +547,20 @@
 ]]></content>
       <tags>
         <tag>read</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>硬件基本知识整理</title>
+    <url>/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="S-参数"><a href="#S-参数" class="headerlink" title="S 参数"></a>S 参数</h1><p>S 参数英文原称是“Scattering Parameter”，即“散射参数”。</p>
+<p>一个二端口的网络，共有四个S参数：S11、S12、S21、S22；</p>
+<p>互易网络满足： S12 = S21；</p>
+<p>对称网络满足： S11 = S22；</p>
+<p>无耗网络中，端口1输入的能量或者反射回端口1或者传输到端口2，满足： S11*S11 + S21*S21 =1。</p>
+<p>高速电路设计中的微带线或者带状线，都有参考平面，通常是不对称结构（比如平行双导线就是对称结构），但是满足互易条件，因此S11!=S22， S12=S21。</p>
+]]></content>
+      <tags>
+        <tag>HFSS</tag>
       </tags>
   </entry>
   <entry>
