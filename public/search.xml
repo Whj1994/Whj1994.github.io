@@ -128,6 +128,22 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown 语法总结</title>
+    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
+<p><strong>粗体：</strong> “ ** ** “</p>
+<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
+<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
+<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
+<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
+<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
+<p>插入链接</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Matlab,VBS与HFSS实现器件联调</title>
     <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
@@ -148,22 +164,6 @@
 ]]></content>
       <tags>
         <tag>Matlab, VBS, HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown 语法总结</title>
-    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
-<p><strong>粗体：</strong> “ ** ** “</p>
-<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
-<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
-<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
-<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
-<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
-<p>插入链接</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -190,6 +190,16 @@
       </tags>
   </entry>
   <entry>
+    <title>Matlab 数据类型转换</title>
+    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
+<p>字符串转 double： str2double();</p>
+]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Matlab中文本数据混合文件的数据读取</title>
     <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
@@ -206,13 +216,21 @@
       </tags>
   </entry>
   <entry>
-    <title>Matlab 数据类型转换</title>
-    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
-<p>字符串转 double： str2double();</p>
+    <title>Origin 学习笔记</title>
+    <url>/2020/06/09/Origin-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="将数据从-matlab-导入到-origin"><a href="#将数据从-matlab-导入到-origin" class="headerlink" title="将数据从 matlab 导入到 origin"></a>将数据从 matlab 导入到 origin</h2><p>Matlab 准备: 属性-&gt;快捷方式-&gt;目标-&gt;  后面填加 /Automation 和 /desktop，如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">"C:\Program Files\MATLAB\R2019a\bin\matlab.exe"</span> /Automation /desktop</span><br></pre></td></tr></table></figure>
+
+<p>运行 matlab 程序，得到相关变量</p>
+<p>打开Origin, Tools-&gt;Matlab Console-&gt; gc 变量， 如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gc data</span><br></pre></td></tr></table></figure>
+
+<p>说明： 上述内容整理自以下链接，侵权无意，告知立删。</p>
+<p>leonSUST: <a href="https://blog.csdn.net/LeonSUST/article/details/84861701" target="_blank" rel="noopener">画图技巧 ： 让Matlab将数据传送给Origin</a></p>
+<h2 id="Book-填入等差数据"><a href="#Book-填入等差数据" class="headerlink" title="Book 填入等差数据"></a>Book 填入等差数据</h2><p>先写入前三个数据，选中后， 按住 Alt 键后下拉</p>
 ]]></content>
       <tags>
-        <tag>matlab</tag>
+        <tag>origin</tag>
       </tags>
   </entry>
   <entry>
@@ -240,24 +258,6 @@
 ]]></content>
       <tags>
         <tag>python matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin 学习笔记</title>
-    <url>/2020/06/09/Origin-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="将数据从-matlab-导入到-origin"><a href="#将数据从-matlab-导入到-origin" class="headerlink" title="将数据从 matlab 导入到 origin"></a>将数据从 matlab 导入到 origin</h2><p>Matlab 准备: 属性-&gt;快捷方式-&gt;目标-&gt;  后面填加 /Automation 和 /desktop，如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">"C:\Program Files\MATLAB\R2019a\bin\matlab.exe"</span> /Automation /desktop</span><br></pre></td></tr></table></figure>
-
-<p>运行 matlab 程序，得到相关变量</p>
-<p>打开Origin, Tools-&gt;Matlab Console-&gt; gc 变量， 如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gc data</span><br></pre></td></tr></table></figure>
-
-<p>说明： 上述内容整理自以下链接，侵权无意，告知立删。</p>
-<p>leonSUST: <a href="https://blog.csdn.net/LeonSUST/article/details/84861701" target="_blank" rel="noopener">画图技巧 ： 让Matlab将数据传送给Origin</a></p>
-<h2 id="Book-填入等差数据"><a href="#Book-填入等差数据" class="headerlink" title="Book 填入等差数据"></a>Book 填入等差数据</h2><p>先写入前三个数据，选中后， 按住 Alt 键后下拉</p>
-]]></content>
-      <tags>
-        <tag>origin</tag>
       </tags>
   </entry>
   <entry>
@@ -374,79 +374,6 @@
       </tags>
   </entry>
   <entry>
-    <title>VMWare15 安装 Centos7 系统</title>
-    <url>/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>基本上参照以下两个链接可以完成安装，这里总结一下需要注意的几个地方：</p>
-<p>第一： 设置密码后，登录名称是“root”，密码为你自己设置的密码；</p>
-<p>第二： 修改内容的命令不是 “vim”， 而是 “vi”；</p>
-<p>第三： 设备的名称不要改</p>
-<p>第四： 修改具体内容，一般是进入目录后，按 “i键” 或者是 “insert”, 然后移动光标进行修改，修改完成后，保存退出，先按“Esc”，然后键入“：wq！”即可；</p>
-<center> <a id="more"></a> </center>
-
-<p>第五： 第一个网络适配器的设备名称是“ens33”，第二个网络适配器的设备名称不一定是“ens37”，可能是“ens34”；</p>
-<p>第六： 第二个网络适配器（外网的）IPADDR要确认在起始的IP范围内，才能ping通。</p>
-<p>第七，安装桌面版，参考第四条链接。</p>
-<p>第八，CentOS 桌面美化，见第五条链接。</p>
-<p>第九，安装VMWare需要先卸载 open-vm-tools，否则安装不上.</p>
-<p>参考链接：</p>
-<p>脚本之家：<a href="https://www.jb51.net/article/187026.htm" target="_blank" rel="noopener">VMware安装Linux CentOS 7.7系统的详细教程</a></p>
-<p>effortsing： <a href="https://www.cnblogs.com/effortsing/p/9996362.html" target="_blank" rel="noopener">vmware安装centos7.5、配置网卡、环境配置</a></p>
-<p>heshengfu1211: <a href="https://blog.csdn.net/heshengfu1211/article/details/87828523" target="_blank" rel="noopener">CentOS7操作系统安装及安装后解决ping不通网络和主机域名的问题</a></p>
-<p>玲珑醉： <a href="https://www.cnblogs.com/sunshine-1/p/8669031.html" target="_blank" rel="noopener">Centos7.1 mini版安装后安装图形界面教程</a></p>
-<p>cloudp： <a href="https://zhuanlan.zhihu.com/p/68845973?utm_source=qq" target="_blank" rel="noopener">CentOS7桌面美化</a></p>
-<h2 id="系统优化"><a href="#系统优化" class="headerlink" title="系统优化"></a>系统优化</h2><h3 id="CentOS7-安装-Chrome"><a href="#CentOS7-安装-Chrome" class="headerlink" title="CentOS7 安装 Chrome"></a>CentOS7 安装 Chrome</h3><ol>
-<li>配置yum 源</li>
-</ol>
-<p>在目录 /etc/yum.repos.d 下新建文件 google-chrome.repo</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vi /etc/yum.repos.d/google-chrome.repo</span></span><br></pre></td></tr></table></figure>
-
-<p>键入‘i’，或者‘Insert’后，新增以下内容：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[google-chrome]</span><br><span class="line">name=google-chrome</span><br><span class="line">baseurl=http://dl.google.com/linux/chrome/rpm/stable/<span class="variable">$basearch</span></span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub</span><br></pre></td></tr></table></figure>
-
-<p>保存退出</p>
-<p>‘Esc’键后，</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:wq！</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>安装google chrome</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</span></span><br><span class="line"><span class="comment"># yum localinstall google-chrome-stable_current_x86_64.rpm</span></span><br></pre></td></tr></table></figure>
-
-<p>内容节选自以下链接，若有侵权，告知立删</p>
-<p><a href="https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-7/" target="_blank" rel="noopener">How to Install Google Chrome Web Browser on CentOS 7</a></p>
-<p>路过sayhi:<a href="https://www.cnblogs.com/vae860514/p/8269002.html" target="_blank" rel="noopener">Centos7 yum安装chrome浏览器</a></p>
-<h3 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h3><p>首先查看防火墙的运行状态</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo firewall-cmd --state</span><br></pre></td></tr></table></figure>
-
-<p>如果是 “running” 状态，则关闭防火墙：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl stop firewalld.service</span><br></pre></td></tr></table></figure>
-
-<h3 id="CentOS7-安装-pycharm"><a href="#CentOS7-安装-pycharm" class="headerlink" title="CentOS7 安装 pycharm"></a>CentOS7 安装 pycharm</h3><p>首先下载liunux版的 pycharm 安装包:<br><a href="https://www.jetbrains.com/pycharm/download/#section=linux" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/#section=linux</a></p>
-<p>其次，移动安装包到安装目录并解压:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xzvf pycharm-2020.1.2.tar.gz</span><br></pre></td></tr></table></figure>
-
-<p>接着进入 bin 目录下安装pycharm：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo sh pycharm.sh</span><br></pre></td></tr></table></figure>
-
-<p>最后创建桌面快捷方式</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vi /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure>
-
-<p>在新出现的页面写入以下内容（’Exec=’和‘Icon=’分别是自己的安装目录下的内容）：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env xdg-open</span></span><br><span class="line">[Desktop Entry]</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">Name=Pycharm</span><br><span class="line">Comment=pycharm-2020.1.2</span><br><span class="line">Exec=/mytest/pycharm-2020.1.2/bin/pycharm.sh</span><br><span class="line">Icon=/mytest/pycharm-2020.1.2/bin/pycharm.png</span><br><span class="line">Terminal=<span class="literal">false</span></span><br><span class="line">StartupNotify=<span class="literal">true</span></span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br></pre></td></tr></table></figure>
-
-<p>最后一步：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chmod a+x /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure>
-
-<p>破解过程参见第三个链接。</p>
-<p>说明： 部分内容节选自以下链接，若有侵权，告知立删</p>
-<p>鱼虫光：<a href="https://www.cnblogs.com/ycg-blog/p/12219942.html" target="_blank" rel="noopener">centos7 下载破解pycharm专业版</a></p>
-<p>山高似水深：<a href="https://www.cnblogs.com/tnsay/p/12297957.html" target="_blank" rel="noopener">最新pycharm 激活码 更新时间 2020年6月24日11:47:52</a></p>
-<p>wangxuanyou：<a href="https://www.cnblogs.com/xyou/p/12596895.html" target="_blank" rel="noopener">Pycharm2020 永久激活</a></p>
-<h3 id="CentOS7-安装-python3"><a href="#CentOS7-安装-python3" class="headerlink" title="CentOS7 安装 python3"></a>CentOS7 安装 python3</h3><p>参见以下链接：</p>
-<p>忧臣解读：<a href="https://www.cnblogs.com/anxminise/p/9650206.html" target="_blank" rel="noopener">Centos7安装Python3.7</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Tips for writing</title>
     <url>/2020/05/01/Tips-for-writing/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
@@ -550,18 +477,77 @@
       </tags>
   </entry>
   <entry>
-    <title>硬件基本知识整理</title>
-    <url>/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="S-参数"><a href="#S-参数" class="headerlink" title="S 参数"></a>S 参数</h1><p>S 参数英文原称是“Scattering Parameter”，即“散射参数”。</p>
-<p>一个二端口的网络，共有四个S参数：S11、S12、S21、S22；</p>
-<p>互易网络满足： S12 = S21；</p>
-<p>对称网络满足： S11 = S22；</p>
-<p>无耗网络中，端口1输入的能量或者反射回端口1或者传输到端口2，满足： S11*S11 + S21*S21 =1。</p>
-<p>高速电路设计中的微带线或者带状线，都有参考平面，通常是不对称结构（比如平行双导线就是对称结构），但是满足互易条件，因此S11!=S22， S12=S21。</p>
+    <title>VMWare15 安装 Centos7 系统</title>
+    <url>/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>基本上参照以下两个链接可以完成安装，这里总结一下需要注意的几个地方：</p>
+<p>第一： 设置密码后，登录名称是“root”，密码为你自己设置的密码；</p>
+<p>第二： 修改内容的命令不是 “vim”， 而是 “vi”；</p>
+<p>第三： 设备的名称不要改</p>
+<p>第四： 修改具体内容，一般是进入目录后，按 “i键” 或者是 “insert”, 然后移动光标进行修改，修改完成后，保存退出，先按“Esc”，然后键入“：wq！”即可；</p>
+<center> <a id="more"></a> </center>
+
+<p>第五： 第一个网络适配器的设备名称是“ens33”，第二个网络适配器的设备名称不一定是“ens37”，可能是“ens34”；</p>
+<p>第六： 第二个网络适配器（外网的）IPADDR要确认在起始的IP范围内，才能ping通。</p>
+<p>第七，安装桌面版，参考第四条链接。</p>
+<p>第八，CentOS 桌面美化，见第五条链接。</p>
+<p>第九，安装VMWare需要先卸载 open-vm-tools，否则安装不上.</p>
+<p>参考链接：</p>
+<p>脚本之家：<a href="https://www.jb51.net/article/187026.htm" target="_blank" rel="noopener">VMware安装Linux CentOS 7.7系统的详细教程</a></p>
+<p>effortsing： <a href="https://www.cnblogs.com/effortsing/p/9996362.html" target="_blank" rel="noopener">vmware安装centos7.5、配置网卡、环境配置</a></p>
+<p>heshengfu1211: <a href="https://blog.csdn.net/heshengfu1211/article/details/87828523" target="_blank" rel="noopener">CentOS7操作系统安装及安装后解决ping不通网络和主机域名的问题</a></p>
+<p>玲珑醉： <a href="https://www.cnblogs.com/sunshine-1/p/8669031.html" target="_blank" rel="noopener">Centos7.1 mini版安装后安装图形界面教程</a></p>
+<p>cloudp： <a href="https://zhuanlan.zhihu.com/p/68845973?utm_source=qq" target="_blank" rel="noopener">CentOS7桌面美化</a></p>
+<h2 id="系统优化"><a href="#系统优化" class="headerlink" title="系统优化"></a>系统优化</h2><h3 id="CentOS7-安装-Chrome"><a href="#CentOS7-安装-Chrome" class="headerlink" title="CentOS7 安装 Chrome"></a>CentOS7 安装 Chrome</h3><ol>
+<li>配置yum 源</li>
+</ol>
+<p>在目录 /etc/yum.repos.d 下新建文件 google-chrome.repo</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vi /etc/yum.repos.d/google-chrome.repo</span></span><br></pre></td></tr></table></figure>
+
+<p>键入‘i’，或者‘Insert’后，新增以下内容：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[google-chrome]</span><br><span class="line">name=google-chrome</span><br><span class="line">baseurl=http://dl.google.com/linux/chrome/rpm/stable/<span class="variable">$basearch</span></span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub</span><br></pre></td></tr></table></figure>
+
+<p>保存退出</p>
+<p>‘Esc’键后，</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:wq！</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>安装google chrome</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</span></span><br><span class="line"><span class="comment"># yum localinstall google-chrome-stable_current_x86_64.rpm</span></span><br></pre></td></tr></table></figure>
+
+<p>内容节选自以下链接，若有侵权，告知立删</p>
+<p><a href="https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-7/" target="_blank" rel="noopener">How to Install Google Chrome Web Browser on CentOS 7</a></p>
+<p>路过sayhi:<a href="https://www.cnblogs.com/vae860514/p/8269002.html" target="_blank" rel="noopener">Centos7 yum安装chrome浏览器</a></p>
+<h3 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h3><p>首先查看防火墙的运行状态</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo firewall-cmd --state</span><br></pre></td></tr></table></figure>
+
+<p>如果是 “running” 状态，则关闭防火墙：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl stop firewalld.service</span><br></pre></td></tr></table></figure>
+
+<h3 id="CentOS7-安装-pycharm"><a href="#CentOS7-安装-pycharm" class="headerlink" title="CentOS7 安装 pycharm"></a>CentOS7 安装 pycharm</h3><p>首先下载liunux版的 pycharm 安装包:<br><a href="https://www.jetbrains.com/pycharm/download/#section=linux" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/#section=linux</a></p>
+<p>其次，移动安装包到安装目录并解压:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xzvf pycharm-2020.1.2.tar.gz</span><br></pre></td></tr></table></figure>
+
+<p>接着进入 bin 目录下安装pycharm：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo sh pycharm.sh</span><br></pre></td></tr></table></figure>
+
+<p>最后创建桌面快捷方式</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vi /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure>
+
+<p>在新出现的页面写入以下内容（’Exec=’和‘Icon=’分别是自己的安装目录下的内容）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env xdg-open</span></span><br><span class="line">[Desktop Entry]</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">Name=Pycharm</span><br><span class="line">Comment=pycharm-2020.1.2</span><br><span class="line">Exec=/mytest/pycharm-2020.1.2/bin/pycharm.sh</span><br><span class="line">Icon=/mytest/pycharm-2020.1.2/bin/pycharm.png</span><br><span class="line">Terminal=<span class="literal">false</span></span><br><span class="line">StartupNotify=<span class="literal">true</span></span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br></pre></td></tr></table></figure>
+
+<p>最后一步：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chmod a+x /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure>
+
+<p>破解过程参见第三个链接。</p>
+<p>说明： 部分内容节选自以下链接，若有侵权，告知立删</p>
+<p>鱼虫光：<a href="https://www.cnblogs.com/ycg-blog/p/12219942.html" target="_blank" rel="noopener">centos7 下载破解pycharm专业版</a></p>
+<p>山高似水深：<a href="https://www.cnblogs.com/tnsay/p/12297957.html" target="_blank" rel="noopener">最新pycharm 激活码 更新时间 2020年6月24日11:47:52</a></p>
+<p>wangxuanyou：<a href="https://www.cnblogs.com/xyou/p/12596895.html" target="_blank" rel="noopener">Pycharm2020 永久激活</a></p>
+<h3 id="CentOS7-安装-python3"><a href="#CentOS7-安装-python3" class="headerlink" title="CentOS7 安装 python3"></a>CentOS7 安装 python3</h3><p>参见以下链接：</p>
+<p>忧臣解读：<a href="https://www.cnblogs.com/anxminise/p/9650206.html" target="_blank" rel="noopener">Centos7安装Python3.7</a></p>
 ]]></content>
-      <tags>
-        <tag>HFSS</tag>
-      </tags>
   </entry>
   <entry>
     <title>《牛客》学习笔记</title>
@@ -586,5 +572,19 @@
 <p>有10^8个村庄排在一条公路上，依次编号为0<del>10^8-1，相邻村庄距离为1，其中有n个村庄居住着牛牛，居住着牛牛的村庄从小到大依次为a0</del>an-1，其中保证a0=0.<br>现在需要建设车站，有两个要求必须被满足：<br>1、每个有牛牛居住的村庄必须修建车站。<br>2、相邻车站的距离必须为1或为某个质数。<br>现给出n和a数组，求需要建设车站的最小数量。</p>
 <p>解题思路来源于牛客网用户_hzy1721： 车站数最少为n， 若相邻车站的距离不是1或者质数，则在中间插入一个或多个车站，使得距离为1或者质数;该题等同于把一个非素数分解为素数的个数，考核内容为<a href="https://zh.wikipedia.org/wiki/%E5%93%A5%E5%BE%B7%E5%B7%B4%E8%B5%AB%E7%8C%9C%E6%83%B3" target="_blank" rel="noopener">哥德巴赫猜想</a>。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>硬件基本知识整理</title>
+    <url>/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="S-参数"><a href="#S-参数" class="headerlink" title="S 参数"></a>S 参数</h1><p>S 参数英文原称是“Scattering Parameter”，即“散射参数”。</p>
+<p>一个二端口的网络，共有四个S参数：S11、S12、S21、S22；</p>
+<p>互易网络满足： S12 = S21；</p>
+<p>对称网络满足： S11 = S22；</p>
+<p>无耗网络中，端口1输入的能量或者反射回端口1或者传输到端口2，满足： S11*S11 + S21*S21 =1。</p>
+<p>高速电路设计中的微带线或者带状线，都有参考平面，通常是不对称结构（比如平行双导线就是对称结构），但是满足互易条件，因此S11!=S22， S12=S21。</p>
+]]></content>
+      <tags>
+        <tag>HFSS</tag>
+      </tags>
   </entry>
 </search>
