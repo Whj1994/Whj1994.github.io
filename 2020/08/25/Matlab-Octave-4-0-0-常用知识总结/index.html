@@ -25,22 +25,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"enable":true,"type":"valine","style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
   </script>
 
-  <meta name="description" content="流程说明： Matlab 的作用：   ① 定义待优化的参数与范围；  ② 构建随机化算法的框架；  ③ 完成vbs文件的编辑。 VBS 的作用：  ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。 HFSS 的作用：  ① 根据随机产生的参数组合仿真得到优化目标的数值；  ② 实际作用相当于纯算法中的评估过程。 流程(1)：  ① 通过dos命令运行‘file1.vbs’文件。 流程(">
+  <meta name="description" content="strsplit 函数： &amp;emsp; 以指定的分隔符分割字符串 &amp;emsp; C &#x3D; strsplit(str);    &amp;emsp; 切割后的结果是cell类型，分隔符可以是下面的任一种 {‘ ‘,’\f’,’\n’,’\r’,’\t’,’\v’}. &amp;emsp; C &#x3D; strsplit(str，delimiter );    &amp;emsp; 可以将字符串str 按指定的 分隔符进行分割. i">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Matlab,VBS与HFSS实现器件联调">
-<meta property="og:url" content="http://yoursite.com/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/index.html">
+<meta property="og:title" content="Matlab(Octave 4.0.0)常用知识总结">
+<meta property="og:url" content="http://yoursite.com/2020/08/25/Matlab-Octave-4-0-0-%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="渐营">
-<meta property="og:description" content="流程说明： Matlab 的作用：   ① 定义待优化的参数与范围；  ② 构建随机化算法的框架；  ③ 完成vbs文件的编辑。 VBS 的作用：  ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。 HFSS 的作用：  ① 根据随机产生的参数组合仿真得到优化目标的数值；  ② 实际作用相当于纯算法中的评估过程。 流程(1)：  ① 通过dos命令运行‘file1.vbs’文件。 流程(">
+<meta property="og:description" content="strsplit 函数： &amp;emsp; 以指定的分隔符分割字符串 &amp;emsp; C &#x3D; strsplit(str);    &amp;emsp; 切割后的结果是cell类型，分隔符可以是下面的任一种 {‘ ‘,’\f’,’\n’,’\r’,’\t’,’\v’}. &amp;emsp; C &#x3D; strsplit(str，delimiter );    &amp;emsp; 可以将字符串str 按指定的 分隔符进行分割. i">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png">
-<meta property="article:published_time" content="2020-05-08T14:06:51.000Z">
-<meta property="article:modified_time" content="2020-05-08T15:16:45.990Z">
+<meta property="article:published_time" content="2020-08-25T05:26:06.000Z">
+<meta property="article:modified_time" content="2020-08-25T09:08:22.469Z">
 <meta property="article:author" content="Wang Haijun">
-<meta property="article:tag" content="Matlab, VBS, HFSS">
+<meta property="article:tag" content="matlab">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png">
 
-<link rel="canonical" href="http://yoursite.com/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/">
+<link rel="canonical" href="http://yoursite.com/2020/08/25/Matlab-Octave-4-0-0-%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/">
 
 
 <script id="page-configurations">
@@ -53,7 +51,7 @@
   };
 </script>
 
-  <title>Matlab,VBS与HFSS实现器件联调 | 渐营</title>
+  <title>Matlab(Octave 4.0.0)常用知识总结 | 渐营</title>
   
 
 
@@ -207,7 +205,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/25/Matlab-Octave-4-0-0-%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/author.jpg">
@@ -220,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Matlab,VBS与HFSS实现器件联调
+          Matlab(Octave 4.0.0)常用知识总结
         </h1>
 
         <div class="post-meta">
@@ -231,7 +229,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-05-08 22:06:51 / 修改时间：23:16:45" itemprop="dateCreated datePublished" datetime="2020-05-08T22:06:51+08:00">2020-05-08</time>
+              <time title="创建时间：2020-08-25 13:26:06 / 修改时间：17:08:22" itemprop="dateCreated datePublished" datetime="2020-08-25T13:26:06+08:00">2020-08-25</time>
             </span>
 
           
@@ -250,8 +248,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/08/25/Matlab-Octave-4-0-0-%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/08/25/Matlab-Octave-4-0-0-%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -266,21 +264,43 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
-<p>流程说明：</p>
-<p>Matlab 的作用：</p>
-<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
-<p>VBS 的作用：</p>
-<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
-<p>HFSS 的作用：</p>
-<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
-<p>流程(1)：</p>
-<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
-<p>流程(2)：</p>
-<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
-<p>流程(3)：</p>
-<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
-<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
+        <p>strsplit 函数： &emsp; 以指定的分隔符分割字符串</p>
+<p>&emsp; C = strsplit(str);    &emsp; 切割后的结果是cell类型，分隔符可以是下面的任一种 {‘ ‘,’\f’,’\n’,’\r’,’\t’,’\v’}.</p>
+<p>&emsp; C = strsplit(str，delimiter );    &emsp; 可以将字符串str 按指定的 分隔符进行分割.</p>
+<p>input 函数： &emsp; 请求用户输入</p>
+<p>&emsp; x = input(prompt);    &emsp; 显示prompt中的文本值并等待 回车键；</p>
+<p>&emsp; str = input(‘’,’s’);    &emsp; 返回输入的文本；</p>
+<p>printf 函数：  将参数按照指定格式输出到屏幕；    fprintf 函数： 可以将参数按照指定格式发送到指定文件; </p>
+<p>&emsp; 用法如下：  printf(format， …)；        fprintf(fid, format， …)</p>
+<p>&emsp; Octave 支持两种； matlab 仅支持 fprintf.</p>
+<p>** matlab 数据类型及类型转换 **</p>
+<p>1.<strong>整数型(int8， unit8, int16, uint16, int32, uint32, int64, uint64)</strong></p>
+<p>&emsp; 可以通过intmax(class) 和 intmin(class) 返回类型的最大最小值</p>
+<p>&emsp; 范围大小: int8:-1*2^7 ~ 2^7-1;     uint8: 0 ~ 2^8-1;    &emsp; 需要特别注意的是，当数据结果溢出后，matlab 采用饱和处理超出上下界时系统讲结果分别取为上下限; C语言出现整数溢出的时候，无符号数时会与范围进行求模，而符号数溢出时，是是未定的行为，不同的编译器可能出现不同的结果。</p>
+<p>int32(double): 四舍五入的整形</p>
+<p>fix()    向0取整；    floor() 向下取整</p>
+<p>round() 四舍五入取整；    ceil() 向上取整</p>
+<p>2.<strong>浮点型(single,dounle)</strong></p>
+<p>&emsp; 分别表示单精度和双精度，使用 realmax(class) 和 realmin(class) 可以返回表示的最大值或和最小值。</p>
+<p>3.<strong>逻辑型(logic)</strong></p>
+<p>4.<strong>字符型(char)</strong></p>
+<p>&emsp; 当字符数组的字符串长度不等时，matlab 会自动填充空字符使长度相等</p>
+<p>常见的的字符操作函数：</p>
+<p>abs(s) 将字符串转化成ascii 码； char(num) 将ascii 码转化成字符串</p>
+<p>blank(n) 返回n个空字符；    deblank(s) 移除字符串尾部包含的空字符</p>
+<p>(string) 将字符串作为命令执行；    findstr(s1,s2) 搜索字符串</p>
+<p>ischar(s) 判断是否为字符串；        isletter(s) 判断是都为字母</p>
+<p>lower(s) 转换为小写；        upper(s) 转换为大写</p>
+<p>strcmp(s1,s2) 比较字符串是否相同    strncmp(s1,s2,n) 比较字符串中的前n个字符串是否相同</p>
+<p>strrep(s1,s2,s3) 将s1中的字符s2替换为s3</p>
+<p>5.<strong>日期和时间</strong></p>
+<p>6.<strong>结构</strong></p>
+<p>7.<strong>构建结构数组</strong></p>
+<p>8.<strong>元胞数组(cell)</strong></p>
+<p>&amp;emsp； 需要使用花括号{}进行访问。</p>
+<p>9.<strong>函数句柄</strong></p>
+<p>说明： 上述内容节选自以下链接，若有侵权，告知立删：</p>
+<p>&emsp; iteye_13202：<a href="https://blog.csdn.net/iteye_13202/article/details/82006786?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param" target="_blank" rel="noopener">matlab数据类型和转换</a> </p>
 
     </div>
 
@@ -290,7 +310,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Matlab-VBS-HFSS/" rel="tag"># Matlab, VBS, HFSS</a>
+              <a href="/tags/matlab/" rel="tag"># matlab</a>
           </div>
 
         
@@ -299,13 +319,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" rel="prev" title="Matlab  可变输入输出">
-      <i class="fa fa-chevron-left"></i> Matlab  可变输入输出
+    <a href="/2020/08/16/%E5%A4%9A%E7%9B%AE%E6%A0%87%E7%AE%97%E6%B3%95%E4%B9%8BMOEAD/" rel="prev" title="多目标算法之MOEAD">
+      <i class="fa fa-chevron-left"></i> 多目标算法之MOEAD
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/05/10/Tips-for-Latex/" rel="next" title="Tips for Latex">
-      Tips for Latex <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
