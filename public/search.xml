@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>MOP 学习记录</title>
-    <url>/2020/07/17/MOP-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>2020.7.17</p>
-<p>问：目前是否有适用于具有混合连续-离散型决策变量的多目标优化问题的测试集</p>
-<p>答：没有，测试集的编码就是单一的。混合编码并不会提升难度，没有太大意义。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Action After Review (AAR)</title>
-    <url>/2020/05/04/Action-After-Review-AAR/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
-<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
+    <title>CentOS 学习笔记</title>
+    <url>/2020/08/27/CentOS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>1. 常用命令:</strong></p>
+<p>删除文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rm -r /folder   <span class="comment"># -r 递归删除目录及子目录，包含写保护文件有提示</span></span><br><span class="line">rm -rf /folder	<span class="comment"># f 不提示用户  </span></span><br><span class="line">rm -ir /folder  <span class="comment"># -i 交互模式，删除任何文件前提示确认</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<p><strong>2. 设置anydesk开机自启动</strong></p>
+<p>将anydesk的启动命令添加到 /etc/rc.d/rc.local 内：</p>
+<pre><code class="bash">vi /etc/rc.d/rc.local
+
+<span class="meta">#!/bin/sh</span>
+<span class="comment">#</span>
+<span class="comment"># This script will be executed *after* all the other init scripts.</span>
+<span class="comment"># You can put your own initialization stuff in here if you don't</span>
+<span class="comment"># want to do the full Sys V style init stuff.</span>
+
+touch /var/lock/subsys/<span class="built_in">local</span>
+/etc/init.d/anydesk start  <span class="comment"># 添加的anydesk 启动命令</span></code></pre>
+<p>内容节选自以下链接，若有侵权，告知立删：<br><br><br>[博客园]HorseShoe2016:<a href="https://www.cnblogs.com/dongling/p/6232730.html" target="_blank" rel="noopener">CentOS6.5系统下设置自己安装的程序开机自动启动</a><br><br></p>
+<p><strong>3. vi 和vim 的区别</strong></p>
+<p>vi和vim都是多模式编辑器，且vim是vi的升级版本, 除了完全兼容vi，还有具有以下特性：</p>
+<p>&emsp; ①多级撤销 (vi中，键u只能撤销上次命令，而vim 可以无限制撤销)</p>
+<p>&emsp; ②易用性 (vim 可以运行与更多的操作平台)</p>
+<p>&emsp; ③语法加亮 (vim可以用不同的颜色来加亮代码)</p>
+<p>&emsp; ④可视化操作 (vim 除了用于终端还可以用于桌面)</p>
+<p>vi有3个模式：<strong>插入模式</strong> 可以输入字符，Esc 可以回到命令模式; <strong>命令模式</strong>可以移动光标，删除字符等操作； <strong>低行模式</strong>可以保存文件，退出vi，设置vi及查找等功能。<br><br><br>内容节选自以下链接，若有侵权，告知立删：</p>
+<p>[博客园]yvioo:<a href="https://www.cnblogs.com/pxblog/archive/2019/03/12/10519719.html" target="_blank" rel="noopener">Centos 中 vi 和vim 的区别</a><br><br></p>
 ]]></content>
       <tags>
-        <tag>methodology</tag>
+        <tag>centos</tag>
       </tags>
   </entry>
   <entry>
@@ -72,6 +88,40 @@
       <tags>
         <tag>Typora</tag>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Action After Review (AAR)</title>
+    <url>/2020/05/04/Action-After-Review-AAR/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
+<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
+]]></content>
+      <tags>
+        <tag>methodology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MOP 学习记录</title>
+    <url>/2020/07/17/MOP-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>2020.7.17</p>
+<p>问：目前是否有适用于具有混合连续-离散型决策变量的多目标优化问题的测试集</p>
+<p>答：没有，测试集的编码就是单一的。混合编码并不会提升难度，没有太大意义。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Markdown 语法总结</title>
+    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
+<p><strong>粗体：</strong> “ ** ** “</p>
+<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
+<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
+<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
+<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
+<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
+<p>插入链接</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -136,6 +186,52 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Matlab,VBS与HFSS实现器件联调</title>
+    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
+<p>流程说明：</p>
+<p>Matlab 的作用：</p>
+<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
+<p>VBS 的作用：</p>
+<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
+<p>HFSS 的作用：</p>
+<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
+<p>流程(1)：</p>
+<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
+<p>流程(2)：</p>
+<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
+<p>流程(3)：</p>
+<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
+<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
+]]></content>
+      <tags>
+        <tag>Matlab, VBS, HFSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Matlab  可变输入输出</title>
+    <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
+<p>varargin 是函数定义语句中的输入变量，放在输入项的最后位置；在函数内是个 1*N 的cell数组，N 是在此位置之后的输入项数, N也可以为0。</p>
+<p>varargout 用在输出位置，情况与 varargin 相同。</p>
+<p>说明： nargin 表所有的输入变量数。</p>
+<p>下面给出一个例子使用：<br>定义函数：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% <span class="keyword">function</span> definition</span><br><span class="line"><span class="keyword">function</span> varargout = calculator(<span class="built_in">type</span>, varargin)</span><br><span class="line">varInput = cell2mat(varargin(:));   % cell to double</span><br><span class="line"><span class="keyword">if</span> strcmp(<span class="built_in">type</span>, <span class="string">'addition'</span>)</span><br><span class="line">    <span class="keyword">if</span> nargin == 3</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">    elseif nargin == 4</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">        varargout&#123;2&#125; = varInput(1) + varInput(2) + varInput(3);</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+
+<p>运行主函数：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% run <span class="keyword">in</span> <span class="built_in">command</span></span><br><span class="line">[res1, res2] = calculator(<span class="string">'addition'</span>, 10, 20, 30);</span><br><span class="line">disp([<span class="string">'res1='</span>, num2str(res1)])</span><br><span class="line">disp([<span class="string">'res2='</span>, num2str(res2)])</span><br></pre></td></tr></table></figure>
+
+<p>输出结果：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">res1=30</span><br><span class="line">res2=60</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Matlab(Octave 4.0.0)常用知识总结</title>
     <url>/2020/08/25/Matlab-Octave-4-0-0-%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>strsplit 函数： &emsp; 以指定的分隔符分割字符串</p>
@@ -181,78 +277,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown 语法总结</title>
-    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
-<p><strong>粗体：</strong> “ ** ** “</p>
-<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
-<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
-<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
-<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
-<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
-<p>插入链接</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab  可变输入输出</title>
-    <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
-<p>varargin 是函数定义语句中的输入变量，放在输入项的最后位置；在函数内是个 1*N 的cell数组，N 是在此位置之后的输入项数, N也可以为0。</p>
-<p>varargout 用在输出位置，情况与 varargin 相同。</p>
-<p>说明： nargin 表所有的输入变量数。</p>
-<p>下面给出一个例子使用：<br>定义函数：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% <span class="keyword">function</span> definition</span><br><span class="line"><span class="keyword">function</span> varargout = calculator(<span class="built_in">type</span>, varargin)</span><br><span class="line">varInput = cell2mat(varargin(:));   % cell to double</span><br><span class="line"><span class="keyword">if</span> strcmp(<span class="built_in">type</span>, <span class="string">'addition'</span>)</span><br><span class="line">    <span class="keyword">if</span> nargin == 3</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">    elseif nargin == 4</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">        varargout&#123;2&#125; = varInput(1) + varInput(2) + varInput(3);</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-
-<p>运行主函数：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% run <span class="keyword">in</span> <span class="built_in">command</span></span><br><span class="line">[res1, res2] = calculator(<span class="string">'addition'</span>, 10, 20, 30);</span><br><span class="line">disp([<span class="string">'res1='</span>, num2str(res1)])</span><br><span class="line">disp([<span class="string">'res2='</span>, num2str(res2)])</span><br></pre></td></tr></table></figure>
-
-<p>输出结果：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">res1=30</span><br><span class="line">res2=60</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab,VBS与HFSS实现器件联调</title>
-    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
-<p>流程说明：</p>
-<p>Matlab 的作用：</p>
-<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
-<p>VBS 的作用：</p>
-<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
-<p>HFSS 的作用：</p>
-<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
-<p>流程(1)：</p>
-<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
-<p>流程(2)：</p>
-<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
-<p>流程(3)：</p>
-<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
-<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
-]]></content>
-      <tags>
-        <tag>Matlab, VBS, HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab 数据类型转换</title>
-    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
-<p>字符串转 double： str2double();</p>
-]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Matlab中文本数据混合文件的数据读取</title>
     <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
@@ -263,6 +287,16 @@
 
 <p>读取后的数据结果：</p>
 <p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
+]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Matlab 数据类型转换</title>
+    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
+<p>字符串转 double： str2double();</p>
 ]]></content>
       <tags>
         <tag>matlab</tag>
@@ -287,6 +321,18 @@
       </tags>
   </entry>
   <entry>
+    <title>PhotoShop 学习笔记</title>
+    <url>/2020/06/10/PhotoShop-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="像素，分辨率，英寸（厘米）的区分"><a href="#像素，分辨率，英寸（厘米）的区分" class="headerlink" title="像素，分辨率，英寸（厘米）的区分"></a>像素，分辨率，英寸（厘米）的区分</h2><p>像素： 构成图片的小色点。</p>
+<p>分辨率： dpi(Dots Per Inch)，即是每英寸上像素的数量，也就是小色点的分布密度。</p>
+<p>实际尺寸（英寸）= 像素/分辨率， 1英寸=2.54厘米。</p>
+<p>说明： 内容节选自以下链接，无意侵权，告知立删。<br>改图宝：<a href="https://www.gaitubao.com/tools/pixel2cm.html" target="_blank" rel="noopener">图片像素尺寸(厘米/英寸)换算器、在线转换</a></p>
+]]></content>
+      <tags>
+        <tag>Photoshop</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python 中 numpy.sort() 与 Matlab 中 sort() 排序</title>
     <url>/2020/07/14/Python-%E4%B8%AD-numpy-sort-%E4%B8%8E-Matlab-%E4%B8%AD-sort-%E6%8E%92%E5%BA%8F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp; 通过近一整天的debug发现，python 中的 numpy.sort() 函数与 matlab 中的 sort() 函数的默认排序方法不同，从而也导致了当待排序的数组中存在多个相同数值时最后的排序结果也不尽相同。</p>
@@ -299,18 +345,6 @@
 ]]></content>
       <tags>
         <tag>python matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PhotoShop 学习笔记</title>
-    <url>/2020/06/10/PhotoShop-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="像素，分辨率，英寸（厘米）的区分"><a href="#像素，分辨率，英寸（厘米）的区分" class="headerlink" title="像素，分辨率，英寸（厘米）的区分"></a>像素，分辨率，英寸（厘米）的区分</h2><p>像素： 构成图片的小色点。</p>
-<p>分辨率： dpi(Dots Per Inch)，即是每英寸上像素的数量，也就是小色点的分布密度。</p>
-<p>实际尺寸（英寸）= 像素/分辨率， 1英寸=2.54厘米。</p>
-<p>说明： 内容节选自以下链接，无意侵权，告知立删。<br>改图宝：<a href="https://www.gaitubao.com/tools/pixel2cm.html" target="_blank" rel="noopener">图片像素尺寸(厘米/英寸)换算器、在线转换</a></p>
-]]></content>
-      <tags>
-        <tag>Photoshop</tag>
       </tags>
   </entry>
   <entry>
@@ -415,65 +449,6 @@
 <h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
-    <title>Tips for Latex</title>
-    <url>/2020/05/10/Tips-for-Latex/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<p>效果如下所示：</p>
-<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
-]]></content>
-      <tags>
-        <tag>latex</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Win10环境基于Anaconda安装Tensorflow</title>
-    <url>/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>搜索打开 Anaconda Prompt: </p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/SearchPrompt.png" alt="SearchPrompt"></p>
-<p>检查 Anaconda和 python 的版本：<br><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/version.png" alt="version"></p>
-<p>更新 pip版本：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
-
-
-<h1 id="配置安装环境"><a href="#配置安装环境" class="headerlink" title="配置安装环境"></a>配置安装环境</h1><p>连接到清华仓库镜像地址，下载提速：</p>
-<p>在 Anaconda Prompt中输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda create -n tensorflow python=3.6</span><br></pre></td></tr></table></figure>
-
-<p>同意安装新的 packages:</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/yes.png" alt="yes"></p>
-<p>安装环境配置成功。</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/activave.png" alt="activave"></p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/envir.png" alt="envir"></p>
-<h1 id="安装tensorflow1-5"><a href="#安装tensorflow1-5" class="headerlink" title="安装tensorflow1.5"></a>安装tensorflow1.5</h1><p>打开安装环境：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda activate tensorflow</span><br></pre></td></tr></table></figure>
-
-<p>输入命令，安装CPU版本tensorflow1.5：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ pip install tensorflow==1.5 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/tf.png" alt="tf"></p>
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>关闭安装环境: </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda deactivate</span><br></pre></td></tr></table></figure>
-
-<p> Anaconda Prompt中输入 python：</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/python.png" alt="python"></p>
-<p>依次输入测试命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ import tensorflow as tf</span><br><span class="line">$ sess = tf.Session()</span><br><span class="line">$ succ = tf.constant(<span class="string">'succeed, tensorflow!'</span>)</span><br><span class="line">$ <span class="built_in">print</span>(sess.run(succ))</span><br></pre></td></tr></table></figure>
-
-<p>出现以下结果表明安装成功：</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/test.png" alt="test"></p>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>在 spyder中导入tensorflow包之前，需要在 Anaconda 的tenserflow环境中重新安装spyder插件：</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/spyder.png" alt="spyder"></p>
-<p>在 spyder中找不到的模块需要在tensorflow环境中重新安装一次，比如 matplotlib 模块:</p>
-<p>Anaconda Prompt中依次输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate tensorflow</span><br><span class="line">conda install matplotlib</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>VMWare15 安装 Centos7 系统</title>
     <url>/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>基本上参照以下两个链接可以完成安装，这里总结一下需要注意的几个地方：</p>
@@ -547,6 +522,18 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Tips for Latex</title>
+    <url>/2020/05/10/Tips-for-Latex/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果如下所示：</p>
+<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
+]]></content>
+      <tags>
+        <tag>latex</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Tips for writing</title>
     <url>/2020/05/01/Tips-for-writing/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
@@ -602,6 +589,53 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C1 =TEXT(A1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">" "</span>&amp; <span class="string">"("</span> &amp; TEXT(B1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">")"</span></span><br></pre></td></tr></table></figure>]]></content>
       <tags>
         <tag>Excel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Win10环境基于Anaconda安装Tensorflow</title>
+    <url>/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>搜索打开 Anaconda Prompt: </p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/SearchPrompt.png" alt="SearchPrompt"></p>
+<p>检查 Anaconda和 python 的版本：<br><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/version.png" alt="version"></p>
+<p>更新 pip版本：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="配置安装环境"><a href="#配置安装环境" class="headerlink" title="配置安装环境"></a>配置安装环境</h1><p>连接到清华仓库镜像地址，下载提速：</p>
+<p>在 Anaconda Prompt中输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda create -n tensorflow python=3.6</span><br></pre></td></tr></table></figure>
+
+<p>同意安装新的 packages:</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/yes.png" alt="yes"></p>
+<p>安装环境配置成功。</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/activave.png" alt="activave"></p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/envir.png" alt="envir"></p>
+<h1 id="安装tensorflow1-5"><a href="#安装tensorflow1-5" class="headerlink" title="安装tensorflow1.5"></a>安装tensorflow1.5</h1><p>打开安装环境：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda activate tensorflow</span><br></pre></td></tr></table></figure>
+
+<p>输入命令，安装CPU版本tensorflow1.5：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ pip install tensorflow==1.5 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/tf.png" alt="tf"></p>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>关闭安装环境: </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda deactivate</span><br></pre></td></tr></table></figure>
+
+<p> Anaconda Prompt中输入 python：</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/python.png" alt="python"></p>
+<p>依次输入测试命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ import tensorflow as tf</span><br><span class="line">$ sess = tf.Session()</span><br><span class="line">$ succ = tf.constant(<span class="string">'succeed, tensorflow!'</span>)</span><br><span class="line">$ <span class="built_in">print</span>(sess.run(succ))</span><br></pre></td></tr></table></figure>
+
+<p>出现以下结果表明安装成功：</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/test.png" alt="test"></p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>在 spyder中导入tensorflow包之前，需要在 Anaconda 的tenserflow环境中重新安装spyder插件：</p>
+<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/spyder.png" alt="spyder"></p>
+<p>在 spyder中找不到的模块需要在tensorflow环境中重新安装一次，比如 matplotlib 模块:</p>
+<p>Anaconda Prompt中依次输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate tensorflow</span><br><span class="line">conda install matplotlib</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -667,41 +701,6 @@
 ]]></content>
       <tags>
         <tag>HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CentOS 学习笔记</title>
-    <url>/2020/08/27/CentOS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>1. 常用命令:</strong></p>
-<p>删除文件夹：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rm -r /folder   <span class="comment"># -r 递归删除目录及子目录，包含写保护文件有提示</span></span><br><span class="line">rm -rf /folder	<span class="comment"># f 不提示用户  </span></span><br><span class="line">rm -ir /folder  <span class="comment"># -i 交互模式，删除任何文件前提示确认</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>2. 设置anydesk开机自启动</strong></p>
-<p>将anydesk的启动命令添加到 /etc/rc.d/rc.local 内：</p>
-<pre><code class="bash">vi /etc/rc.d/rc.local
-
-<span class="meta">#!/bin/sh</span>
-<span class="comment">#</span>
-<span class="comment"># This script will be executed *after* all the other init scripts.</span>
-<span class="comment"># You can put your own initialization stuff in here if you don't</span>
-<span class="comment"># want to do the full Sys V style init stuff.</span>
-
-touch /var/lock/subsys/<span class="built_in">local</span>
-/etc/init.d/anydesk start  <span class="comment"># 添加的anydesk 启动命令</span></code></pre>
-<p>内容节选自以下链接，若有侵权，告知立删：</p>
-<p>[博客园]HorseShoe2016:<a href="https://www.cnblogs.com/dongling/p/6232730.html" target="_blank" rel="noopener">CentOS6.5系统下设置自己安装的程序开机自动启动</a></p>
-<p><strong>3. vi 和vim 的区别</strong></p>
-<p>vi和vim都是多模式编辑器，且vim是vi的升级版本, 除了完全兼容vi，还有具有以下特性：</p>
-<p>&emsp; ①多级撤销 (vi中，键u只能撤销上次命令，而vim 可以无限制撤销)</p>
-<p>&emsp; ②易用性 (vim 可以运行与更多的操作平台)</p>
-<p>&emsp; ③语法加亮 (vim可以用不同的颜色来加亮代码)</p>
-<p>&emsp; ④可视化操作 (vim 除了用于终端还可以用于桌面)</p>
-<p>vi有3个模式：<strong>插入模式</strong> 可以输入字符，Esc 可以回到命令模式; <strong>命令模式</strong>可以移动光标，删除字符等操作； <strong>低行模式</strong>可以保存文件，退出vi，设置vi及查找等功能。</p>
-<p><br>+1<br>内容节选自以下链接，若有侵权，告知立删：</p>
-<p>[博客园]yvioo:<a href="https://www.cnblogs.com/pxblog/archive/2019/03/12/10519719.html" target="_blank" rel="noopener">Centos 中 vi 和vim 的区别</a></p>
-]]></content>
-      <tags>
-        <tag>centos</tag>
       </tags>
   </entry>
 </search>
