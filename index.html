@@ -232,7 +232,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-29 20:15:49" itemprop="dateModified" datetime="2020-08-29T20:15:49+08:00">2020-08-29</time>
+                <time title="修改时间：2020-08-29 20:39:09" itemprop="dateModified" datetime="2020-08-29T20:39:09+08:00">2020-08-29</time>
               </span>
 
           
@@ -277,7 +277,10 @@
 
 touch /var/lock/subsys/<span class="built_in">local</span>
 /etc/init.d/anydesk start  <span class="comment"># 添加的anydesk 启动命令</span></code></pre>
-<p>内容节选自以下链接，若有侵权，告知立删：<br><br><br>[博客园]HorseShoe2016:<a href="https://www.cnblogs.com/dongling/p/6232730.html" target="_blank" rel="noopener">CentOS6.5系统下设置自己安装的程序开机自动启动</a><br><br></p>
+<br>
+内容节选自以下链接，若有侵权，告知立删：
+
+<p>[博客园]HorseShoe2016:<a href="https://www.cnblogs.com/dongling/p/6232730.html" target="_blank" rel="noopener">CentOS6.5系统下设置自己安装的程序开机自动启动</a><br><br></p>
 <p><strong>3. vi 和vim 的区别</strong></p>
 <p>vi和vim都是多模式编辑器，且vim是vi的升级版本, 除了完全兼容vi，还有具有以下特性：</p>
 <p>&emsp; ①多级撤销 (vi中，键u只能撤销上次命令，而vim 可以无限制撤销)</p>
@@ -286,6 +289,17 @@ touch /var/lock/subsys/<span class="built_in">local</span>
 <p>&emsp; ④可视化操作 (vim 除了用于终端还可以用于桌面)</p>
 <p>vi有3个模式：<strong>插入模式</strong> 可以输入字符，Esc 可以回到命令模式; <strong>命令模式</strong>可以移动光标，删除字符等操作； <strong>低行模式</strong>可以保存文件，退出vi，设置vi及查找等功能。<br><br><br>内容节选自以下链接，若有侵权，告知立删：</p>
 <p>[博客园]yvioo:<a href="https://www.cnblogs.com/pxblog/archive/2019/03/12/10519719.html" target="_blank" rel="noopener">Centos 中 vi 和vim 的区别</a><br><br></p>
+<p><strong>4. rpm 和yum 的区别</strong></p>
+<p><strong>rpm：</strong></p>
+<p>&emsp; 全称 Red-Hat Package Manager,是一种底层的包管理工具，可以进行软件的安装，查询，卸载，升级等操作。安装软件时只会安装指定的软件，不会安装依赖性文件，如果缺失就会报错。</p>
+<p><strong>yum：</strong></p>
+<p>&emsp; 全称 Yellow dog Updater, Modified，是基于rpm 上层软件包管理。 yum 拥有rpm的功能，且具备从服务上下载rpm包及相关的依赖包。</p>
+<p><strong>yum 源：</strong></p>
+<p>&emsp; yum 下载rpm包的指定位置们可以是网络源，也可以是本地源。<br>&emsp; 网络yum源配置文件位于 /etc/yum.repos.d/目录下，文件扩展名为”.repo”。</p>
+<br> 
+内容精简自下述链接，若有侵权，告知立删：
+
+<p>[博客园]脆落花漾：<a href="https://www.cnblogs.com/guan-zl/p/12915761.html" target="_blank" rel="noopener">CentOS中rpm和yum到底有什么区别？</a><br><br></p>
 
       
     </div>
