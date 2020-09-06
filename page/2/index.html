@@ -201,6 +201,119 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/03/Python-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/author.jpg">
+      <meta itemprop="name" content="Wang Haijun">
+      <meta itemprop="description" content="谩对黄河叹此心">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="渐营">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/03/Python-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Python 学习笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 02:43:06" itemprop="dateCreated datePublished" datetime="2020-06-03T02:43:06+08:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-29 17:05:58" itemprop="dateModified" datetime="2020-06-29T17:05:58+08:00">2020-06-29</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/06/03/Python-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/06/03/Python-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="什么是python"><a href="#什么是python" class="headerlink" title="什么是python"></a>什么是python</h2><p>Python是“一种解释型的，面向对象的，带有动态语义的高级程序设计语言”。</p>
+<h2 id="定义一个3-3的矩阵"><a href="#定义一个3-3的矩阵" class="headerlink" title="定义一个3*3的矩阵"></a>定义一个3*3的矩阵</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">X= np.array([[1,2,3],[4,5,6],[7,8,9]])</span><br></pre></td></tr></table></figure>
+
+<h2 id="spyder-注释"><a href="#spyder-注释" class="headerlink" title="spyder 注释"></a>spyder 注释</h2><p>注释/反注释:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ctrl + 1</span><br></pre></td></tr></table></figure>
+
+<p>块注释/块反注释</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ctrl + 4/5</span><br></pre></td></tr></table></figure>
+
+<h2 id="Pyhon-安装完成后，命令提示符”-‘python’-不是内部或外部命令，也不是可运行的程序”"><a href="#Pyhon-安装完成后，命令提示符”-‘python’-不是内部或外部命令，也不是可运行的程序”" class="headerlink" title="Pyhon 安装完成后，命令提示符” ‘python’ 不是内部或外部命令，也不是可运行的程序”:"></a>Pyhon 安装完成后，命令提示符” ‘python’ 不是内部或外部命令，也不是可运行的程序”:</h2><p>原因： python的安装路径没有填加到环境变量。</p>
+<h2 id="命令提示符不能进入到指定的路径："><a href="#命令提示符不能进入到指定的路径：" class="headerlink" title="命令提示符不能进入到指定的路径："></a>命令提示符不能进入到指定的路径：</h2><p>首先</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ..</span><br></pre></td></tr></table></figure>
+<p>退回到 C:盘符，然后进入目标盘符，再然后进入到目标路径。</p>
+<h2 id="测试函数模块-optproblems的安装"><a href="#测试函数模块-optproblems的安装" class="headerlink" title="测试函数模块 optproblems的安装"></a>测试函数模块 optproblems的安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install optproblems</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="统计运行时长"><a href="#统计运行时长" class="headerlink" title="统计运行时长"></a>统计运行时长</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import time</span><br><span class="line">start = time.time()</span><br><span class="line">main_function()</span><br><span class="line">end = time.time()</span><br><span class="line"><span class="built_in">print</span> str(end-start)</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用plot-画图"><a href="#使用plot-画图" class="headerlink" title="使用plot 画图"></a>使用plot 画图</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">data = random.uniform()</span><br></pre></td></tr></table></figure>
+
+<h2 id="读取-pf-文件"><a href="#读取-pf-文件" class="headerlink" title="读取 .pf 文件"></a>读取 .pf 文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line"><span class="built_in">source</span> = open(<span class="string">"ZDT1.pf"</span>, <span class="string">"r"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">values = source.readlines()</span><br><span class="line"></span><br><span class="line">data = np.zeros(shape=(len(values),2))</span><br><span class="line"><span class="keyword">for</span> index, value <span class="keyword">in</span> enumerate(values):</span><br><span class="line">    dataTmp= value.split()</span><br><span class="line">    data[index,0] = <span class="built_in">float</span>(dataTmp[0])</span><br><span class="line">    data[index,1] = <span class="built_in">float</span>(dataTmp[1])</span><br></pre></td></tr></table></figure>
+
+<h2 id="对数组先平方再求和"><a href="#对数组先平方再求和" class="headerlink" title="对数组先平方再求和"></a>对数组先平方再求和</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="python学习第一讲：使用pycharm-运行第一个python程序"><a href="#python学习第一讲：使用pycharm-运行第一个python程序" class="headerlink" title="python学习第一讲：使用pycharm 运行第一个python程序"></a>python学习第一讲：使用pycharm 运行第一个python程序</h2><p>准备工作：为pycharm 设置 python 解释器</p>
+<p>1). 什么是python 解释器：<br>python解释器是“帮助我们将python代码交给机器可以执行的工具”。 </p>
+<p>2). Python 解释器的作用：<br>通俗来讲，解释器是将源码转化成字节码（机器不能执行），再由python中的虚拟机来执行这些字节码（字节码不依赖操作系统，因此可以由虚拟机来实现跨平台运行）。</p>
+<p>具体介绍可参见下面链接：<br>田阅川：<a href="https://www.jianshu.com/p/c70474e1db0a" target="_blank" rel="noopener">Python解释器详解</a></p>
+<p>补充: 解释型语言与编译型语言辨析</p>
+<p>共同目标：将我们认识的语句（循环、判断等）转化成二进制代码，然后交给计算机执行。</p>
+<p>区别： 编译型语言在程序写完以后，把代码完全翻译成二进制文件，通过执行二进制文件来执行程序；生成的二进制文件可以直接执行。 解释型语言没有转化为二进制代码的过程，需要的时候再编译；因此解释型语言需要随时带着解释器。</p>
+<p>知乎玖玖：<a href="https://zhuanlan.zhihu.com/p/141212114" target="_blank" rel="noopener">python解释器到底是什么？</a></p>
+<p>3). pycharm 设置python解释器步骤：</p>
+<p>1.打开pycharm, 新建一个project,在Location处修改项目名称为 FirstDemo</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/02/Python-%E8%B0%83%E7%94%A8-C-%E5%87%BD%E6%95%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -516,7 +629,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-02 00:34:27" itemprop="dateModified" datetime="2020-06-02T00:34:27+08:00">2020-06-02</time>
+                <time title="修改时间：2020-09-03 16:24:32" itemprop="dateModified" datetime="2020-09-03T16:24:32+08:00">2020-09-03</time>
               </span>
 
           
@@ -553,6 +666,12 @@
 <p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
 <p>插入链接</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>上标： &lt;sup&gt; xxx &lt;/sup&gt;</p>
+<p>下标： &lt;sub&gt; xxx &lt;/sub&gt;</p>
+<p>\lambda : $\lambda$</p>
+<p>\Lambda : $\Lambda$</p>
+
       
     </div>
 
@@ -840,7 +959,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-30 16:38:35" itemprop="dateModified" datetime="2020-08-30T16:38:35+08:00">2020-08-30</time>
+                <time title="修改时间：2020-08-30 16:54:17" itemprop="dateModified" datetime="2020-08-30T16:54:17+08:00">2020-08-30</time>
               </span>
 
           
@@ -874,8 +993,17 @@
 <p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
 <br>
 
-<h1 id="TeXstudio-使用技巧"><a href="#TeXstudio-使用技巧" class="headerlink" title="TeXstudio 使用技巧"></a>TeXstudio 使用技巧</h1><h2 id="快捷键的使用"><a href="#快捷键的使用" class="headerlink" title="快捷键的使用"></a>快捷键的使用</h2><p>&emsp; 1. 注释与反注释：</p>
+<h1 id="TeXstudio-使用技巧"><a href="#TeXstudio-使用技巧" class="headerlink" title="TeXstudio 使用技巧"></a>TeXstudio 使用技巧</h1><h2 id="快捷键的使用"><a href="#快捷键的使用" class="headerlink" title="快捷键的使用"></a>快捷键的使用</h2><ol>
+<li>注释与反注释：</li>
+</ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Ctrl + T <span class="comment"># 注释</span></span><br><span class="line">Ctrl + U <span class="comment"># 反注释</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="编译报错"><a href="#编译报错" class="headerlink" title="编译报错"></a>编译报错</h2><ol>
+<li>Error: Undefinded control sequence. \begin{document}</li>
+</ol>
+<p>原因： 可能是导言区内某个包的引用有问题，或者某个包需要更新<br><br><br>内容参考以下链接，若有侵权，告知立删</p>
+<p>[CSDN]doubleslow; : <a href="https://blog.csdn.net/qq_36607894/article/details/103639607" target="_blank" rel="noopener">Texstudio error : Undefined control sequence. \begin{document} （subfigure已经被废弃了，用subcaption!!!）</a></p>
+
       
     </div>
 
@@ -977,93 +1105,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/author.jpg">
-      <meta itemprop="name" content="Wang Haijun">
-      <meta itemprop="description" content="谩对黄河叹此心">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="渐营">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" class="post-title-link" itemprop="url">Matlab  可变输入输出</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-08 15:46:54 / 修改时间：17:42:19" itemprop="dateCreated datePublished" datetime="2020-05-08T15:46:54+08:00">2020-05-08</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
-<p>varargin 是函数定义语句中的输入变量，放在输入项的最后位置；在函数内是个 1*N 的cell数组，N 是在此位置之后的输入项数, N也可以为0。</p>
-<p>varargout 用在输出位置，情况与 varargin 相同。</p>
-<p>说明： nargin 表所有的输入变量数。</p>
-<p>下面给出一个例子使用：<br>定义函数：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">% <span class="keyword">function</span> definition</span><br><span class="line"><span class="keyword">function</span> varargout = calculator(<span class="built_in">type</span>, varargin)</span><br><span class="line">varInput = cell2mat(varargin(:));   % cell to double</span><br><span class="line"><span class="keyword">if</span> strcmp(<span class="built_in">type</span>, <span class="string">'addition'</span>)</span><br><span class="line">    <span class="keyword">if</span> nargin == 3</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">    elseif nargin == 4</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">        varargout&#123;2&#125; = varInput(1) + varInput(2) + varInput(3);</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-
-<p>运行主函数：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">% run <span class="keyword">in</span> <span class="built_in">command</span></span><br><span class="line">[res1, res2] = calculator(<span class="string">'addition'</span>, 10, 20, 30);</span><br><span class="line">disp([<span class="string">'res1='</span>, num2str(res1)])</span><br><span class="line">disp([<span class="string">'res2='</span>, num2str(res2)])</span><br></pre></td></tr></table></figure>
-
-<p>输出结果：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">res1=30</span><br><span class="line">res2=60</span><br></pre></td></tr></table></figure>
-
-
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1135,7 +1176,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-count">27</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1148,7 +1189,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-count">19</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
