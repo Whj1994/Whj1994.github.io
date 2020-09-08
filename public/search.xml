@@ -67,6 +67,36 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown 语法总结</title>
+    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
+<p><strong>粗体：</strong> “ ** ** “</p>
+<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
+<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
+<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
+<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
+<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
+<p>插入链接</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>上标： &lt;sup&gt; xxx &lt;/sup&gt;</p>
+<p>下标： &lt;sub&gt; xxx &lt;/sub&gt;</p>
+<p>\lambda : $\lambda$</p>
+<p>\Lambda : $\Lambda$</p>
+]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MOP 学习记录</title>
+    <url>/2020/07/17/MOP-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>2020.7.17</p>
+<p>问：目前是否有适用于具有混合连续-离散型决策变量的多目标优化问题的测试集</p>
+<p>答：没有，测试集的编码就是单一的。混合编码并不会提升难度，没有太大意义。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>佳作欣赏之 &quot;IF&quot;</title>
     <url>/2020/04/29/IF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="《IF》"><a href="#《IF》" class="headerlink" title="《IF》"></a>《IF》</h2><h4 id="by-Rudyard-Kipling"><a href="#by-Rudyard-Kipling" class="headerlink" title="by Rudyard Kipling"></a>by Rudyard Kipling</h4><p>If you can keep your head when all about you,</p>
@@ -176,33 +206,26 @@ touch /var/lock/subsys/<span class="built_in">local</span>
       </tags>
   </entry>
   <entry>
-    <title>MOP 学习记录</title>
-    <url>/2020/07/17/MOP-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>2020.7.17</p>
-<p>问：目前是否有适用于具有混合连续-离散型决策变量的多目标优化问题的测试集</p>
-<p>答：没有，测试集的编码就是单一的。混合编码并不会提升难度，没有太大意义。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Markdown 语法总结</title>
-    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
-<p><strong>粗体：</strong> “ ** ** “</p>
-<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
-<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
-<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
-<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
-<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
-<p>插入链接</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>
-
-<p>上标： &lt;sup&gt; xxx &lt;/sup&gt;</p>
-<p>下标： &lt;sub&gt; xxx &lt;/sub&gt;</p>
-<p>\lambda : $\lambda$</p>
-<p>\Lambda : $\Lambda$</p>
+    <title>Matlab,VBS与HFSS实现器件联调</title>
+    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
+<p>流程说明：</p>
+<p>Matlab 的作用：</p>
+<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
+<p>VBS 的作用：</p>
+<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
+<p>HFSS 的作用：</p>
+<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
+<p>流程(1)：</p>
+<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
+<p>流程(2)：</p>
+<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
+<p>流程(3)：</p>
+<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
+<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
 ]]></content>
       <tags>
-        <tag>markdown</tag>
+        <tag>Matlab, VBS, HFSS</tag>
       </tags>
   </entry>
   <entry>
@@ -251,29 +274,6 @@ touch /var/lock/subsys/<span class="built_in">local</span>
       </tags>
   </entry>
   <entry>
-    <title>Matlab,VBS与HFSS实现器件联调</title>
-    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
-<p>流程说明：</p>
-<p>Matlab 的作用：</p>
-<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
-<p>VBS 的作用：</p>
-<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
-<p>HFSS 的作用：</p>
-<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
-<p>流程(1)：</p>
-<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
-<p>流程(2)：</p>
-<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
-<p>流程(3)：</p>
-<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
-<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
-]]></content>
-      <tags>
-        <tag>Matlab, VBS, HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Matlab  可变输入输出</title>
     <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
@@ -297,16 +297,6 @@ touch /var/lock/subsys/<span class="built_in">local</span>
       </tags>
   </entry>
   <entry>
-    <title>Matlab 数据类型转换</title>
-    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
-<p>字符串转 double： str2double();</p>
-]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Matlab中文本数据混合文件的数据读取</title>
     <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
@@ -317,6 +307,16 @@ touch /var/lock/subsys/<span class="built_in">local</span>
 
 <p>读取后的数据结果：</p>
 <p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
+]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Matlab 数据类型转换</title>
+    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
+<p>字符串转 double： str2double();</p>
 ]]></content>
       <tags>
         <tag>matlab</tag>
@@ -350,6 +350,21 @@ touch /var/lock/subsys/<span class="built_in">local</span>
 ]]></content>
       <tags>
         <tag>Photoshop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python 中 numpy.sort() 与 Matlab 中 sort() 排序</title>
+    <url>/2020/07/14/Python-%E4%B8%AD-numpy-sort-%E4%B8%8E-Matlab-%E4%B8%AD-sort-%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp; 通过近一整天的debug发现，python 中的 numpy.sort() 函数与 matlab 中的 sort() 函数的默认排序方法不同，从而也导致了当待排序的数组中存在多个相同数值时最后的排序结果也不尽相同。</p>
+<p>&emsp; 当待排序的数组有多个可以排序的属性后，使用 matlab 中的 sort() 函数经过不同属性的多次排序后，可以得到想要的多个属性排序后排列数组（主要体现在数值相同的情况下）； 而 python 中的 numpy.sort() 中快速排序、 归并排序和堆排序则达不到这个效果。</p>
+<p>&emsp; sort()函数的三种排序方法都是不稳定排序，因此python 可以考虑使用稳定的 sorted() 函数。 如果要返回稳定排序后的下标，可以在sorted()函数内部使用enumerate（）函数。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">itemSorted = sorted(emuerate(item), key=lambda x:x[1])</span><br><span class="line">index = [ii[0] <span class="keyword">for</span> ii <span class="keyword">in</span> itemSorted]</span><br><span class="line">val = [jj[1] <span class="keyword">for</span> jj <span class="keyword">in</span> itemSorted]</span><br></pre></td></tr></table></figure>
+
+<p>部分内容节选自以下链接，侵权无意，告知立删：</p>
+<p>sbj123456789： <a href="https://www.cnblogs.com/sbj123456789/p/10951598.html" target="_blank" rel="noopener">python中sorted排序后返回同时返回下标</a></p>
+]]></content>
+      <tags>
+        <tag>python matlab</tag>
       </tags>
   </entry>
   <entry>
@@ -554,6 +569,28 @@ touch /var/lock/subsys/<span class="built_in">local</span>
 ]]></content>
   </entry>
   <entry>
+    <title>Tips for writing</title>
+    <url>/2020/05/01/Tips-for-writing/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
+<li>Regardless of …, to the best of our knowlege, few …</li>
+<li>In …, we will first recall …. Then, we review …</li>
+<li>In …, we focus on … since … and …</li>
+<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
+<li>The reason lies in the fact that …</li>
+<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
+<li>For these problems we may happily look forward to a wealth of … success stories.</li>
+<li>The parameters of these comparison approahces are set on the basis of their original papers.</li>
+<li>Loosely speaking, </li>
+<li>First and foremost, …, then, …, afterwards, ….</li>
+<li>The derived …</li>
+<li>… is pivotal to the success of …</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>writing</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Win10环境基于Anaconda安装Tensorflow</title>
     <url>/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>搜索打开 Anaconda Prompt: </p>
@@ -601,43 +638,6 @@ touch /var/lock/subsys/<span class="built_in">local</span>
       </tags>
   </entry>
   <entry>
-    <title>Python 中 numpy.sort() 与 Matlab 中 sort() 排序</title>
-    <url>/2020/07/14/Python-%E4%B8%AD-numpy-sort-%E4%B8%8E-Matlab-%E4%B8%AD-sort-%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp; 通过近一整天的debug发现，python 中的 numpy.sort() 函数与 matlab 中的 sort() 函数的默认排序方法不同，从而也导致了当待排序的数组中存在多个相同数值时最后的排序结果也不尽相同。</p>
-<p>&emsp; 当待排序的数组有多个可以排序的属性后，使用 matlab 中的 sort() 函数经过不同属性的多次排序后，可以得到想要的多个属性排序后排列数组（主要体现在数值相同的情况下）； 而 python 中的 numpy.sort() 中快速排序、 归并排序和堆排序则达不到这个效果。</p>
-<p>&emsp; sort()函数的三种排序方法都是不稳定排序，因此python 可以考虑使用稳定的 sorted() 函数。 如果要返回稳定排序后的下标，可以在sorted()函数内部使用enumerate（）函数。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">itemSorted = sorted(emuerate(item), key=lambda x:x[1])</span><br><span class="line">index = [ii[0] <span class="keyword">for</span> ii <span class="keyword">in</span> itemSorted]</span><br><span class="line">val = [jj[1] <span class="keyword">for</span> jj <span class="keyword">in</span> itemSorted]</span><br></pre></td></tr></table></figure>
-
-<p>部分内容节选自以下链接，侵权无意，告知立删：</p>
-<p>sbj123456789： <a href="https://www.cnblogs.com/sbj123456789/p/10951598.html" target="_blank" rel="noopener">python中sorted排序后返回同时返回下标</a></p>
-]]></content>
-      <tags>
-        <tag>python matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tips for writing</title>
-    <url>/2020/05/01/Tips-for-writing/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
-<li>Regardless of …, to the best of our knowlege, few …</li>
-<li>In …, we will first recall …. Then, we review …</li>
-<li>In …, we focus on … since … and …</li>
-<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
-<li>The reason lies in the fact that …</li>
-<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
-<li>For these problems we may happily look forward to a wealth of … success stories.</li>
-<li>The parameters of these comparison approahces are set on the basis of their original papers.</li>
-<li>Loosely speaking, </li>
-<li>First and foremost, …, then, …, afterwards, ….</li>
-<li>The derived …</li>
-<li>… is pivotal to the success of …</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>writing</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>“EXCEL 文本表示科学计数法</title>
     <url>/2020/05/29/%E2%80%9CEXCEXCEL-%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
@@ -677,22 +677,6 @@ touch /var/lock/subsys/<span class="built_in">local</span>
       </tags>
   </entry>
   <entry>
-    <title>佳作欣赏之&quot;黄石公《素书》&quot;</title>
-    <url>/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="黄石公《素书》"><a href="#黄石公《素书》" class="headerlink" title="黄石公《素书》"></a>黄石公《素书》</h1><h2 id="原始章第一"><a href="#原始章第一" class="headerlink" title="原始章第一"></a>原始章第一</h2><p>夫道、德、仁、义、礼五者，一体也。 道者，人之所蹈，使万物不知其所由。 德者，人之所得，使万物各得其所欲。 仁者，人之所亲，有慈慧恻隐之心，以遂其生存。 义者，人之所宜，赏善罚恶，以立功立事。 礼者，人之所履，夙兴夜寐，以成人伦之序。 夫欲为人之本，不可无一焉。 贤人君子，明于盛衰之道，通乎成败之数，审乎治乱之势，达乎去就之理。故潜居抱道以待其时。 若时至而行，则能极人臣之位； 得机而动，则能成绝代之功。如其不遇，没身而已。 是以其道足高，而名重于后代。</p>
-<center> <a id="more"></a> </center>
-
-<h2 id="正道章第二"><a href="#正道章第二" class="headerlink" title="正道章第二"></a>正道章第二</h2><p>德足以怀远，信足以一异，义足以得众，才足以鉴古，明足以照下，此人之俊也。 行足以为仪表，智足以决嫌疑，信可以使守约，廉可以使分财，此人之豪也。 守职而不废，处义而不回，见嫌而不苟免，见利而不苟得，此人之杰也。</p>
-<h2 id="求人之志章第三"><a href="#求人之志章第三" class="headerlink" title="求人之志章第三"></a>求人之志章第三</h2><p>绝嗜禁欲，所以除累。抑非损恶，所以让过。贬酒阙色，所以无污。 避嫌远疑，所以不误。博学切问，所以广知。高行微言，所以修身。 恭俭谦约，所以自守。深计远虑，所以不穷。亲仁友直，所以扶颠。 近恕笃行，所以接人。任材使能，所以济物。殚恶斥谗，所以止乱。 推古验今，所以不惑。先揆后度，所以应卒。设变致权，所以解结。 括囊顺会，所以无咎。橛橛梗梗，所以立功。孜孜淑淑，所以保终。</p>
-<h2 id="本德宗道章第四"><a href="#本德宗道章第四" class="headerlink" title="本德宗道章第四"></a>本德宗道章第四</h2><p>夫志，心独行之术。长没长于博谋，安没安于忍辱，先没先于修德，乐没乐于好善，神没神于至诚，明没明于体物，吉没吉于知足，苦没苦于多愿，悲没悲于精散，病没病于无常，短没短于苟得，幽没幽于贪鄙，孤没孤于自恃，危没危于任疑，败没败于多私。</p>
-<h2 id="道义章第五"><a href="#道义章第五" class="headerlink" title="道义章第五"></a>道义章第五</h2><p>以明示下者暗，有过不知者蔽，迷而不返者惑，以言取怨者祸，令与心乖者废，后令缪前者毁，怒而无威者犯，好众辱人者殃，戮辱所任者危，慢其所敬者凶，貌合心离者孤，亲谗远忠者亡，近色远贤者昏，女谒公行者乱，私人以官者浮，凌下取胜者侵，名不胜实者耗。略己而责人者不治，自厚而薄人者弃废。以过弃功者损，群下外异者沦，既用不任者疏，行赏吝色者沮，多许少与者怨，既迎而拒者乖。薄施厚望者不报，贵而忘贱者不久。念旧而弃新功者凶，用人不得正者殆，强用人者不畜，为人择官者乱，失其所强者弱，决策于不仁者险，阴计外泄者败，厚敛薄施者凋。战士贫，游士富者衰；货赂公行者昧；闻善忽略，记过不忘者暴；所任不可信，所信不可任者浊。牧人以德者集，绳人以刑者散。小功不赏，则大功不立；小怨不赦，则大怨必生。赏不服人，罚不甘心者叛。赏及无功，罚及无罪者酷。听谗而美，闻谏而仇者亡。能有其有者安，贪人之有者残。</p>
-<h2 id="安礼章第六"><a href="#安礼章第六" class="headerlink" title="安礼章第六"></a>安礼章第六</h2><p>怨在不舍小过，患在不预定谋。福在积善，祸在积恶。饥在贱农，寒在堕织。安在得人，危在失事。富在迎来，贫在弃时。上无常操，下多疑心。轻上生罪，侮下无亲。近臣不重，远臣轻之。自疑不信人，自信不疑人。枉士无正友，曲上无直下。危国无贤人，乱政无善人。爱人深者求贤急，乐得贤者养人厚。国将霸者士皆归，邦将亡者贤先避。地薄者大物不产，水浅者大鱼不游，树秃者大禽不栖，林疏者大兽不居。山峭者崩，泽满者溢。弃玉取石者盲，羊质虎皮者柔。衣不举领者倒，走不视地者颠。柱弱者屋坏，辅弱者国倾。足寒伤心，人怨伤国。山将崩者下先隳，国将衰者人先弊。根枯枝朽，人困国残。与覆车同轨者倾，与亡国同事者灭。见已生者慎将生，恶其迹者须避之。畏危者安，畏亡者存。夫人之所行，有道则吉，无道则凶。吉者，百福所归；凶者，百祸所攻。非其神圣，自然所钟。务善策者无恶事，无远虑者有近忧。同志相得，同仁相忧，同恶相党，同爱相求，同美相妒，同智相谋，同贵相害，同利相忌，同声相应，同气相感，同类相依，同义相亲，同难相济，同道相成，同艺相规，同巧相胜：此乃数之所得，不可与理违。释己而教人者逆，正己而化人者顺。逆者难从，顺者易行，难从则乱，易行则理。如此理身、理国、理家，可也！</p>
-]]></content>
-      <tags>
-        <tag>read</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>多目标算法之MOEAD</title>
     <url>/2020/08/16/%E5%A4%9A%E7%9B%AE%E6%A0%87%E7%AE%97%E6%B3%95%E4%B9%8BMOEAD/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>MOEAD 优化框架（契比雪夫分解方法求解最小值问题）</p>
@@ -717,6 +701,22 @@ touch /var/lock/subsys/<span class="built_in">local</span>
 ]]></content>
       <tags>
         <tag>MOP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>佳作欣赏之&quot;黄石公《素书》&quot;</title>
+    <url>/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="黄石公《素书》"><a href="#黄石公《素书》" class="headerlink" title="黄石公《素书》"></a>黄石公《素书》</h1><h2 id="原始章第一"><a href="#原始章第一" class="headerlink" title="原始章第一"></a>原始章第一</h2><p>夫道、德、仁、义、礼五者，一体也。 道者，人之所蹈，使万物不知其所由。 德者，人之所得，使万物各得其所欲。 仁者，人之所亲，有慈慧恻隐之心，以遂其生存。 义者，人之所宜，赏善罚恶，以立功立事。 礼者，人之所履，夙兴夜寐，以成人伦之序。 夫欲为人之本，不可无一焉。 贤人君子，明于盛衰之道，通乎成败之数，审乎治乱之势，达乎去就之理。故潜居抱道以待其时。 若时至而行，则能极人臣之位； 得机而动，则能成绝代之功。如其不遇，没身而已。 是以其道足高，而名重于后代。</p>
+<center> <a id="more"></a> </center>
+
+<h2 id="正道章第二"><a href="#正道章第二" class="headerlink" title="正道章第二"></a>正道章第二</h2><p>德足以怀远，信足以一异，义足以得众，才足以鉴古，明足以照下，此人之俊也。 行足以为仪表，智足以决嫌疑，信可以使守约，廉可以使分财，此人之豪也。 守职而不废，处义而不回，见嫌而不苟免，见利而不苟得，此人之杰也。</p>
+<h2 id="求人之志章第三"><a href="#求人之志章第三" class="headerlink" title="求人之志章第三"></a>求人之志章第三</h2><p>绝嗜禁欲，所以除累。抑非损恶，所以让过。贬酒阙色，所以无污。 避嫌远疑，所以不误。博学切问，所以广知。高行微言，所以修身。 恭俭谦约，所以自守。深计远虑，所以不穷。亲仁友直，所以扶颠。 近恕笃行，所以接人。任材使能，所以济物。殚恶斥谗，所以止乱。 推古验今，所以不惑。先揆后度，所以应卒。设变致权，所以解结。 括囊顺会，所以无咎。橛橛梗梗，所以立功。孜孜淑淑，所以保终。</p>
+<h2 id="本德宗道章第四"><a href="#本德宗道章第四" class="headerlink" title="本德宗道章第四"></a>本德宗道章第四</h2><p>夫志，心独行之术。长没长于博谋，安没安于忍辱，先没先于修德，乐没乐于好善，神没神于至诚，明没明于体物，吉没吉于知足，苦没苦于多愿，悲没悲于精散，病没病于无常，短没短于苟得，幽没幽于贪鄙，孤没孤于自恃，危没危于任疑，败没败于多私。</p>
+<h2 id="道义章第五"><a href="#道义章第五" class="headerlink" title="道义章第五"></a>道义章第五</h2><p>以明示下者暗，有过不知者蔽，迷而不返者惑，以言取怨者祸，令与心乖者废，后令缪前者毁，怒而无威者犯，好众辱人者殃，戮辱所任者危，慢其所敬者凶，貌合心离者孤，亲谗远忠者亡，近色远贤者昏，女谒公行者乱，私人以官者浮，凌下取胜者侵，名不胜实者耗。略己而责人者不治，自厚而薄人者弃废。以过弃功者损，群下外异者沦，既用不任者疏，行赏吝色者沮，多许少与者怨，既迎而拒者乖。薄施厚望者不报，贵而忘贱者不久。念旧而弃新功者凶，用人不得正者殆，强用人者不畜，为人择官者乱，失其所强者弱，决策于不仁者险，阴计外泄者败，厚敛薄施者凋。战士贫，游士富者衰；货赂公行者昧；闻善忽略，记过不忘者暴；所任不可信，所信不可任者浊。牧人以德者集，绳人以刑者散。小功不赏，则大功不立；小怨不赦，则大怨必生。赏不服人，罚不甘心者叛。赏及无功，罚及无罪者酷。听谗而美，闻谏而仇者亡。能有其有者安，贪人之有者残。</p>
+<h2 id="安礼章第六"><a href="#安礼章第六" class="headerlink" title="安礼章第六"></a>安礼章第六</h2><p>怨在不舍小过，患在不预定谋。福在积善，祸在积恶。饥在贱农，寒在堕织。安在得人，危在失事。富在迎来，贫在弃时。上无常操，下多疑心。轻上生罪，侮下无亲。近臣不重，远臣轻之。自疑不信人，自信不疑人。枉士无正友，曲上无直下。危国无贤人，乱政无善人。爱人深者求贤急，乐得贤者养人厚。国将霸者士皆归，邦将亡者贤先避。地薄者大物不产，水浅者大鱼不游，树秃者大禽不栖，林疏者大兽不居。山峭者崩，泽满者溢。弃玉取石者盲，羊质虎皮者柔。衣不举领者倒，走不视地者颠。柱弱者屋坏，辅弱者国倾。足寒伤心，人怨伤国。山将崩者下先隳，国将衰者人先弊。根枯枝朽，人困国残。与覆车同轨者倾，与亡国同事者灭。见已生者慎将生，恶其迹者须避之。畏危者安，畏亡者存。夫人之所行，有道则吉，无道则凶。吉者，百福所归；凶者，百祸所攻。非其神圣，自然所钟。务善策者无恶事，无远虑者有近忧。同志相得，同仁相忧，同恶相党，同爱相求，同美相妒，同智相谋，同贵相害，同利相忌，同声相应，同气相感，同类相依，同义相亲，同难相济，同道相成，同艺相规，同巧相胜：此乃数之所得，不可与理违。释己而教人者逆，正己而化人者顺。逆者难从，顺者易行，难从则乱，易行则理。如此理身、理国、理家，可也！</p>
+]]></content>
+      <tags>
+        <tag>read</tag>
       </tags>
   </entry>
   <entry>
