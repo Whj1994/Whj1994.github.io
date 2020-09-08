@@ -8,7 +8,7 @@
 	left: 0;
 	margin-left: -100px;
 	padding: 5px 2px 5px 5px;
-	position: fixed;
+	position: right;
 	transition: margin-left 1s;
 	width: 60px;
 	writing-mode: vertical-rl;
@@ -27,7 +27,7 @@
 	left: 0;
 	line-height: 0;
 	margin-bottom: -10px;
-	position: fixed;
+	position: right;
 	transform: translateY(3px);
 	transition: transform .3s ease-in-out, bottom 3s ease-in-out;
 	z-index: 1;
