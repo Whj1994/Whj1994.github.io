@@ -1,822 +1,530 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>佳作欣赏之 &quot;IF&quot;</title>
-    <url>/2020/04/29/IF/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="《IF》"><a href="#《IF》" class="headerlink" title="《IF》"></a>《IF》</h2><h4 id="by-Rudyard-Kipling"><a href="#by-Rudyard-Kipling" class="headerlink" title="by Rudyard Kipling"></a>by Rudyard Kipling</h4><p>If you can keep your head when all about you,</p>
-<p>&emsp; Are losing theirs and blaming it on you;</p>
-<p>If you can trust yourself when all men doubt you,</p>
-<p>&emsp; But make allowance for their doubting too;</p>
-<p>If you can wait and not be tired by waiting,</p>
-<p>&emsp; Or being lied about, don’t deal in lies;</p>
-<p>Or being hated, don’t give way to hating,</p>
-<p>&emsp; And yet don’t look too good, nor talk too wise;</p>
-<p>If you can dream–and not make dreams your master,</p>
-<p>&emsp; If you can think–and not make thoughts your aim;</p>
-<p>If you can meet with Triumph and Disaster,</p>
-<p>&emsp; And treat those two impostors just the same;</p>
-<p>If you can bear to hear the truth you’ve spoken</p>
-<p>&emsp; Twisted by knaves to make a trap for fools;</p>
-<p>Or watch the things you gave your life to, broken,</p>
-<p>&emsp; And stoop and build ‘em up with worn-out tools;</p>
-<p>If you can make one heap of all your winnings,</p>
-<p>&emsp; And risk it all on one turn of pitch-and-toss;</p>
-<p>And lose, and start again at your beginnings,</p>
-<p>&emsp; And never breath a word about your loss;</p>
-<p>If you can force your heart and nerve and sinew,</p>
-<p>&emsp; To serve your turn long after they are gone;</p>
-<p>And so hold on when there is nothing in you,</p>
-<p>&emsp; Except the Will which says to them: “Hold on!”</p>
-<p>If you can talk with crowds and keep your virtue,</p>
-<p>&emsp; Or walk with kings–nor lose the common touch;</p>
-<p>If neither foes nor loving friends can hurt you;</p>
-<p>&emsp; If all men count with you, but none too much;</p>
-<p>If you can fill the unforgiving minute,</p>
-<p>&emsp; With sixty seconds’ worth of distance run,</p>
-<p>Yours is the Earth and everything that’s in it,</p>
-<p>&emsp; And–which is more–you’ll be a Man, my son!</p>
-<h2 id="《如果》"><a href="#《如果》" class="headerlink" title="《如果》"></a>《如果》</h2><h4 id="英-吉卜林"><a href="#英-吉卜林" class="headerlink" title="[英]吉卜林"></a>[英]吉卜林</h4><p>如果在众人六神无主之时,</p>
-<p>你镇定自若而不是人云亦云;</p>
-<p>如果被众人猜忌怀疑时,</p>
-<p>你能自信如常而不去妄加辩论;</p>
-<p>如果你有梦想,</p>
-<p>又能不迷失自我;</p>
-<p>如果你有神思,</p>
-<p>又不至于走火入魔;</p>
-<p>如果在成功之中能不忘形于色,</p>
-<p>而在灾难之后也勇于咀嚼苦果;</p>
-<p>如果看到自己追求的美好破灭为一摊零碎的瓦砾,</p>
-<p>也不说放弃;</p>
-<p>如果你辛苦劳作,</p>
-<p>已是功成名就,</p>
-<p>为了新目标,</p>
-<p>你依旧冒险一搏,</p>
-<p>哪怕功名成乌有;</p>
-<p>如果你跟村夫交谈而不变谦恭之态,</p>
-<p>和王侯散步而不露谄媚之颜;</p>
-<p>如果他人的爱憎左右不了你,</p>
-<p>如果你与任何人为伍都能卓然独立;</p>
-<p>如果昏惑的骚扰动摇不了你的意志,</p>
-<p>你能等自己平心静气再做答时……</p>
-<p>那么，你的修养就会如天地般博大，而你，就是个真正的男子汉了，我的儿子！</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>CentOS 学习笔记</title>
-    <url>/2020/08/27/CentOS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>1. 常用命令:</strong></p>
-<p>删除文件夹：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rm -r /folder   <span class="comment"># -r 递归删除目录及子目录，包含写保护文件有提示</span></span><br><span class="line">rm -rf /folder	<span class="comment"># f 不提示用户  </span></span><br><span class="line">rm -ir /folder  <span class="comment"># -i 交互模式，删除任何文件前提示确认</span></span><br></pre></td></tr></table></figure>
-<br>
-
-<p><strong>2. 设置anydesk开机自启动</strong></p>
-<p>将anydesk的启动命令添加到 /etc/rc.d/rc.local 内：</p>
-<pre><code class="bash">vi /etc/rc.d/rc.local
-
-<span class="meta">#!/bin/sh</span>
-<span class="comment">#</span>
-<span class="comment"># This script will be executed *after* all the other init scripts.</span>
-<span class="comment"># You can put your own initialization stuff in here if you don't</span>
-<span class="comment"># want to do the full Sys V style init stuff.</span>
-
-touch /var/lock/subsys/<span class="built_in">local</span>
-/etc/init.d/anydesk start  <span class="comment"># 添加的anydesk 启动命令</span></code></pre>
-<br>
-内容节选自以下链接，若有侵权，告知立删：
-
-<p>[博客园]HorseShoe2016:<a href="https://www.cnblogs.com/dongling/p/6232730.html" target="_blank" rel="noopener">CentOS6.5系统下设置自己安装的程序开机自动启动</a><br><br></p>
-<p><strong>3. vi 和vim 的区别</strong></p>
-<p>vi和vim都是多模式编辑器，且vim是vi的升级版本, 除了完全兼容vi，还有具有以下特性：</p>
-<p>&emsp; ①多级撤销 (vi中，键u只能撤销上次命令，而vim 可以无限制撤销)</p>
-<p>&emsp; ②易用性 (vim 可以运行与更多的操作平台)</p>
-<p>&emsp; ③语法加亮 (vim可以用不同的颜色来加亮代码)</p>
-<p>&emsp; ④可视化操作 (vim 除了用于终端还可以用于桌面)</p>
-<p>vi有3个模式：<strong>插入模式</strong> 可以输入字符，Esc 可以回到命令模式; <strong>命令模式</strong>可以移动光标，删除字符等操作； <strong>低行模式</strong>可以保存文件，退出vi，设置vi及查找等功能。<br><br><br>内容节选自以下链接，若有侵权，告知立删：</p>
-<p>[博客园]yvioo:<a href="https://www.cnblogs.com/pxblog/archive/2019/03/12/10519719.html" target="_blank" rel="noopener">Centos 中 vi 和vim 的区别</a><br><br></p>
-<p><strong>4. rpm 和yum 的区别</strong></p>
-<p><strong>rpm：</strong></p>
-<p>&emsp; 全称 Red-Hat Package Manager,是一种底层的包管理工具，可以进行软件的安装，查询，卸载，升级等操作。安装软件时只会安装指定的软件，不会安装依赖性文件，如果缺失就会报错。</p>
-<p><strong>yum：</strong></p>
-<p>&emsp; 全称 Yellow dog Updater, Modified，是基于rpm 上层软件包管理。 yum 拥有rpm的功能，且具备从服务上下载rpm包及相关的依赖包。</p>
-<p><strong>yum 源：</strong></p>
-<p>&emsp; yum 下载rpm包的指定位置们可以是网络源，也可以是本地源。<br>&emsp; 网络yum源配置文件位于 /etc/yum.repos.d/目录下，文件扩展名为”.repo”。</p>
-<br> 
-内容精简自下述链接，若有侵权，告知立删：
-
-<p>[博客园]脆落花漾：<a href="https://www.cnblogs.com/guan-zl/p/12915761.html" target="_blank" rel="noopener">CentOS中rpm和yum到底有什么区别？</a><br><br></p>
-]]></content>
-      <tags>
-        <tag>centos</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Highly cited journals</title>
-    <url>/2020/04/29/Highly%20cited%20journals/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
-<thead>
-<tr>
-<th align="left">序号</th>
-<th align="left">期刊全写</th>
-<th align="left">期刊简写</th>
-<th align="left">影响因子</th>
-<th align="left">分区情况</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td align="left">IEEE Transactions on Evolutionary Computation</td>
-<td align="left">IEEE Trans. Evol. Comput.</td>
-<td align="left">IF=8.508</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">IEEE Transactions on Cybernetics</td>
-<td align="left">IEEE Trans. Cybern.</td>
-<td align="left">IF=10.387</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">IEEE Transactions on Knowledge and Data Engineering</td>
-<td align="left">IEEE Trans. Knowl. Data Eng.</td>
-<td align="left">IF=3.857</td>
-<td align="left">工程技术：2区；计算机科学：2区</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">IEEE Transactions on Industrial Informatics</td>
-<td align="left">IEEE Trans. Ind. Informat.</td>
-<td align="left">IF=7.377</td>
-<td align="left">工程技术：1区；计算机科学：1区</td>
-<td align="left">顶刊</td>
-</tr>
-</tbody></table>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>算法类专利申请的注意事项</title>
+      <link href="/2020/09/19/%E7%AE%97%E6%B3%95%E7%B1%BB%E4%B8%93%E5%88%A9%E7%94%B3%E8%AF%B7%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+      <url>/2020/09/19/%E7%AE%97%E6%B3%95%E7%B1%BB%E4%B8%93%E5%88%A9%E7%94%B3%E8%AF%B7%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="中华人名共和国专利法释义："><a href="#中华人名共和国专利法释义：" class="headerlink" title="中华人名共和国专利法释义："></a><strong>中华人名共和国专利法释义：</strong></h2><p>&emsp; 第二十五条 对下列各项，不授予专利权：</p><p>&emsp; 一） 科学发现;<br>&emsp; 二） 智力活动的规则和方法；<br>&emsp; 三） 疾病的诊断和治疗方法；<br>&emsp; 四） 动物和植物品种；<br>&emsp; 五） 用原子核变换方法获得的物质。</p><p>&emsp; 对前款第 四）项所列产品的生产方法，可以依照本法规定授予专利权。</p><p>&emps; 【释义】本条是关于不授予专利权的智力活动成果的规定。</p><p>&emsp; 一、 建立专利制度的目的，是为了保护法定范围内的智力活动成果。 具备<strong>新颖性</strong>、<strong>创造性</strong>和<strong>实用性</strong>，并<strong>符合专利法规定</strong>的其它条件的发明创造，属于专利保护的智力成果，可以依法取得专利权。 按照本条规定，下列几类智力活动的成果，不属于专利保护的范围，不授予专利权：<br>&emsp; 1.科学发现。 指对自然界中<strong>已经客观存在的未知物质、现象、变化过程及其特性和规律</strong>的发现和认识。 这些本身<strong>不是一种技术方案</strong>，不是专利法意义上的发明创造，不能直接实施用以解决一定领域内的特定技术问题。<br>&emsp; 2.智力活动的规则和方法。 指人的思维活动，是大脑进行精神和智能活动的手段或过程，仅是指导人们对表达的信息进行思维、判断和记忆，不需要采用技术手段或者遵循自然法则，<strong>不具备技术特征</strong>。<br>&emsp; 3.疾病的诊断和治疗方法。 <strong>涉及人体健康，不能被少数人所独占</strong>。 治疗或者诊断无法在产业上制造或使用，<strong>不具备实用性</strong>。<br>&emsp; 4.动物和植物品种。 指以生物学方法培育出来的动植物新品种。 是大自然的产物，不是人们创造出来的，不能以工业方法生产，<strong>不具备专利法意义上的创造性和使用性</strong>。 可以通过专利法意外的其它法律保护。<br>&emsp; 5.用原子核变换方法获得的物质。 指通过核裂变、核聚变等方法获得的元素或化合物。 原子核变换方法获得的物质关系到国家的经济、国防、科研和公共生活的重大利益，关系国家安全，<strong>不宜公开</strong>。</p><p>&emsp; 二、 对于动物和植物品种的生产方法，可以授予专利权。 这里的 “生产方法”指非生物学的方法，这类方法由于<strong>有技术成分的介入</strong>，并对最终达到的目的或效果起到了主要的<strong>控制作用或者决定性的作用</strong>，因而可以被授予专利权。 对于微生物和微生物方法可以获得专利保护。</p><br>&emsp; 第三十三条 <p>&emsp; 申请人可以对其专利申请文件进行修改，但是，对发明和实用新型专利申请文件的修改不得超出原说明书和权利要求书记载的范围，对外观设计专利申请文件修改不得超出原图片或者照片表示的范围。</p><p>&emsp; 【释义】本条是关于申请人对专利申请呃修改权的规定。</p><p>&emsp; 一、这里规定的申请人对专利文件的修改，与本法第三十七条所规定的的申请人应国务院专利行政部门的要求对其专利申请的修改是不同的，这里是申请人主动提出的修改。 按照《专利法实施细则》的相关规定，<strong>发明专利申请人</strong>在提出实质审查请求或者在对专利局第一次实质审查意见作出答复时，可以对发明专利申请主动提出修改。 <strong>实用新型或者外观设计专利申请人</strong>自申请日起三个月内，可以对专利申请主动提出修改。 可以对原来的文字、图片进行修改，使其更加清楚、准确；或者对原来的技术方案进行修改、补充，使其更加完善。 但是，<strong>修改不得超出法律规定的范围</strong>。</p><p>&emsp; 二、关于申请人对专利申请文件的修改范围。 按本条规定，对发明和实用新型专利申请文件的修改不得超出原说明书和权利要求书记载的范围； 对外观设计专利申请文件的修改不得超出原图片或者照片的范围。</p><br><p>引用：</p><p>&emsp; [1] 安建.中华人民共和国专利法释义[M].北京：法律出版社，2009.</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>佳作欣赏之《菜根谭》</title>
+      <link href="/2020/09/10/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E8%8F%9C%E6%A0%B9%E8%B0%AD%E3%80%8B/"/>
+      <url>/2020/09/10/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E8%8F%9C%E6%A0%B9%E8%B0%AD%E3%80%8B/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="《菜根谭》"><a href="#《菜根谭》" class="headerlink" title=" 《菜根谭》 "></a><center> 《菜根谭》 </center></h1><center> [明]洪应明 </center><h2 id="概论"><a href="#概论" class="headerlink" title="概论"></a>概论</h2><p>君子之心事，天青日白，不可使人知；君子之才华，玉韫珠藏，不可使人易知。</p><p>耳中常闻逆耳之言，心中常有拂心之事，才是进德修行的砥石。若言言悦耳，事事快心，便把此生埋在鸩毒中矣。</p><p>疾风怒雨，禽鸟戚戚；霁月风光，草木欣欣，可见天地不可一日无和气，人心不可一日无喜神。</p><p>醲(No2ng)肥辛甘非真味，真味只是淡；神奇卓异非至人，至人只是常。</p><p>夜深人静独坐观心；始知妄穷而真独露，每于此中得大机趣；既觉真现而妄难逃，又于此中得大惭忸。</p><p>恩里由来生害，故快意时须早回头；败后或反成功，故拂心处切莫停手。</p><p>藜口苋肠者，多冰清玉洁；衮衣玉食者，甘婢膝奴颜。盖志以淡泊明，而节从肥甘丧矣。</p><p>面前的田地要放的宽，使人无不平之叹；身后的惠泽要流得长，使人有不匮之思。</p><p>路径窄处留一步，与人行；滋味浓的减三分，让人嗜。此是涉世一极乐法。</p><p>做人无甚高远的事业，摆脱得俗情便入名流；为学无甚增益的功夫，减除得物累便臻圣境。</p><p>宠利毋居人前，德业毋落人后，受享毋逾分外，修持毋减分中。</p><p>处世让一步为高，退步即进步的张本；待人宽一分是福，利人利己的根基。</p><p>盖世的功劳，当不得一个矜字；弥天的罪过，当不得一个悔字。</p><p>完名美节，不宜独任，分些与人，可以远害全身；辱行污名，不宜全推，引些归己，可以韬光养德。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> read </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《微波工程》第一章：电磁理论</title>
+      <link href="/2020/09/03/%E3%80%8A%E5%BE%AE%E6%B3%A2%E5%B7%A5%E7%A8%8B%E3%80%8B%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E7%94%B5%E7%A3%81%E7%90%86%E8%AE%BA/"/>
+      <url>/2020/09/03/%E3%80%8A%E5%BE%AE%E6%B3%A2%E5%B7%A5%E7%A8%8B%E3%80%8B%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E7%94%B5%E7%A3%81%E7%90%86%E8%AE%BA/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="第1章-电磁理论"><a href="#第1章-电磁理论" class="headerlink" title=" 第1章 电磁理论 "></a><center> 第1章 电磁理论 </center></h1><p>&emsp; 简要回顾微波工程的历史和重要应用，然后综述电磁理论的基本课题。</p><h2 id="1-1-微波工程简介"><a href="#1-1-微波工程简介" class="headerlink" title="1.1 微波工程简介"></a>1.1 微波工程简介</h2><p>&emsp; <strong>微波</strong>(microwave) 指频率在 300MHz(3x10<sup>8</sup>Hz)到 300GHz(3x10<sup>11</sup>Hz)、对应的电波长在 $\lambda=c/f=1m$ 和 $\lambda=1mm$ 之间的交变电流信号。波长在毫米量级的信号，称为<strong>毫米波</strong>(millimeterwaves)。</p><p>&emsp; 常规电路理论是麦克斯韦方程所描述的范围较宽的电磁理论的近似或特定使用，一般情况下，电路理论的集总电路元件近似在微波频段是不成立的，因此一般不能直接应用于求解微波网络问题(微波频率高/波长短)。</p><p>&emsp; 微波元件常常是分布元件，因为器件的尺度与微波波长同一数量级，其中电压或电流的相位在器件的物理尺寸内有明显变化。 在极低频率下，波长足够长，在贯穿一个元件的线度范围内，其相位也没有明显的变化。</p><p>&emsp; 频率的另一个极端被确定为光工程，波长比元件的尺寸短得多。 此时， 麦克斯韦方程可以简化为几何光学，光学系统可以用几何光学的理论来设计。这些技术也可以应用于毫米波系统，称为准光学。</p><br><p>&emsp; 微波工程中，人们通常从麦克斯韦方程及它的解开始，然而麦克斯韦方程包含了作为空间坐标函数的矢量场量的矢量微分或积分的运算，从而增加了数学上的复杂性。</p><p>&emsp; 场理论的解通常给出了空间中每一点的电磁场的完整描述，比绝大多数实际应用中所需的信息多得多。一般情况下，我们更关心<strong>终端的量</strong>，例如功率、阻抗、电压和电流等常用电路理论概念表达的量。正是这种复杂性给微波工程增加了挑战性，而本书的目标是试图将场理论的解简化为可以用更简单的电路理论来表达结果。</p><h3 id="1-1-1-微波工程的应用"><a href="#1-1-1-微波工程的应用" class="headerlink" title="1.1.1 微波工程的应用"></a>1.1.1 微波工程的应用</h3><p>&emsp; 尽管微波能量的高频率和短波长让微波元件与系统的分析与设计变得困难，但同时也为微波系统的应用提供了很大的便利。 比如以下这些例子：<br>&emsp; 1) 天线增益与天线的电尺寸成比例。<br>&emsp; 2) 在频率较高时可以实现更大的带宽（携带信息的容量）。<br>&emsp; 3) 微波信号按视线传播，而不会像较低频率信号那样进入电离层时传输路径会弯曲。<br>&emsp; 4) 雷达目标的反射面积（雷达散射截面）总是与目标的电尺寸成比例。<br>&emsp; 5) 各种分子，原子和原子核的谐振都发生在微波频率下，使得微波在基础科学领域、遥感、医学诊断和治疗及加热方法等方面具有独特的应用。</p><p>&emsp; 当今，微波技术的主要应用是通信、雷达、环境遥感和医学系统。 微波技术的首次应用可能是在20世纪70年代首次提出的蜂窝电话系统中。</p><center> ![The electromagnetic spectrum](Spectrum.png) </center>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Microwave </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CentOS 学习笔记</title>
+      <link href="/2020/08/27/CentOS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/2020/08/27/CentOS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>1. 常用命令:</strong></p><p>删除文件夹：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rm -r /folder   <span class="comment"># -r 递归删除目录及子目录，包含写保护文件有提示</span></span><br><span class="line">rm -rf /folder<span class="comment"># f 不提示用户  </span></span><br><span class="line">rm -ir /folder  <span class="comment"># -i 交互模式，删除任何文件前提示确认</span></span><br></pre></td></tr></table></figure><br><p><strong>2. 设置anydesk开机自启动</strong></p><p>将anydesk的启动命令添加到 /etc/rc.d/rc.local 内：</p><pre><code class="bash">vi /etc/rc.d/rc.local<span class="meta">#!/bin/sh</span><span class="comment">#</span><span class="comment"># This script will be executed *after* all the other init scripts.</span><span class="comment"># You can put your own initialization stuff in here if you don't</span><span class="comment"># want to do the full Sys V style init stuff.</span>touch /var/lock/subsys/<span class="built_in">local</span>/etc/init.d/anydesk start  <span class="comment"># 添加的anydesk 启动命令</span></code></pre><br>内容节选自以下链接，若有侵权，告知立删：<p>[博客园]HorseShoe2016:<a href="https://www.cnblogs.com/dongling/p/6232730.html" target="_blank" rel="noopener">CentOS6.5系统下设置自己安装的程序开机自动启动</a><br><br></p><p><strong>3. vi 和vim 的区别</strong></p><p>vi和vim都是多模式编辑器，且vim是vi的升级版本, 除了完全兼容vi，还有具有以下特性：</p><p>&emsp; ①多级撤销 (vi中，键u只能撤销上次命令，而vim 可以无限制撤销)</p><p>&emsp; ②易用性 (vim 可以运行与更多的操作平台)</p><p>&emsp; ③语法加亮 (vim可以用不同的颜色来加亮代码)</p><p>&emsp; ④可视化操作 (vim 除了用于终端还可以用于桌面)</p><p>vi有3个模式：<strong>插入模式</strong> 可以输入字符，Esc 可以回到命令模式; <strong>命令模式</strong>可以移动光标，删除字符等操作； <strong>低行模式</strong>可以保存文件，退出vi，设置vi及查找等功能。<br><br><br>内容节选自以下链接，若有侵权，告知立删：</p><p>[博客园]yvioo:<a href="https://www.cnblogs.com/pxblog/archive/2019/03/12/10519719.html" target="_blank" rel="noopener">Centos 中 vi 和vim 的区别</a><br><br></p><p><strong>4. rpm 和yum 的区别</strong></p><p><strong>rpm：</strong></p><p>&emsp; 全称 Red-Hat Package Manager,是一种底层的包管理工具，可以进行软件的安装，查询，卸载，升级等操作。安装软件时只会安装指定的软件，不会安装依赖性文件，如果缺失就会报错。</p><p><strong>yum：</strong></p><p>&emsp; 全称 Yellow dog Updater, Modified，是基于rpm 上层软件包管理。 yum 拥有rpm的功能，且具备从服务上下载rpm包及相关的依赖包。</p><p><strong>yum 源：</strong></p><p>&emsp; yum 下载rpm包的指定位置们可以是网络源，也可以是本地源。<br>&emsp; 网络yum源配置文件位于 /etc/yum.repos.d/目录下，文件扩展名为”.repo”。</p><br> 内容精简自下述链接，若有侵权，告知立删：<p>[博客园]脆落花漾：<a href="https://www.cnblogs.com/guan-zl/p/12915761.html" target="_blank" rel="noopener">CentOS中rpm和yum到底有什么区别？</a><br><br></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> centos </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Matlab(Octave 4.0.0)常用知识总结</title>
+      <link href="/2020/08/25/Matlab-Octave-4-0-0-%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
+      <url>/2020/08/25/Matlab-Octave-4-0-0-%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>strsplit 函数： &emsp; 以指定的分隔符分割字符串</p><p>&emsp; C = strsplit(str);    &emsp; 切割后的结果是cell类型，分隔符可以是下面的任一种 {‘ ‘,’\f’,’\n’,’\r’,’\t’,’\v’}.</p><p>&emsp; C = strsplit(str，delimiter );    &emsp; 可以将字符串str 按指定的 分隔符进行分割.</p><p>input 函数： &emsp; 请求用户输入</p><p>&emsp; x = input(prompt);    &emsp; 显示prompt中的文本值并等待 回车键；</p><p>&emsp; str = input(‘’,’s’);    &emsp; 返回输入的文本；</p><p>printf 函数：  将参数按照指定格式输出到屏幕；    fprintf 函数： 可以将参数按照指定格式发送到指定文件; </p><p>&emsp; 用法如下：  printf(format， …)；        fprintf(fid, format， …)</p><p>&emsp; Octave 支持两种； matlab 仅支持 fprintf.</p><p>** matlab 数据类型及类型转换 **</p><p>1.<strong>整数型(int8， unit8, int16, uint16, int32, uint32, int64, uint64)</strong></p><p>&emsp; 可以通过intmax(class) 和 intmin(class) 返回类型的最大最小值</p><p>&emsp; 范围大小: int8:-1*2^7 ~ 2^7-1;     uint8: 0 ~ 2^8-1;    &emsp; 需要特别注意的是，当数据结果溢出后，matlab 采用饱和处理超出上下界时系统讲结果分别取为上下限; C语言出现整数溢出的时候，无符号数时会与范围进行求模，而符号数溢出时，是是未定的行为，不同的编译器可能出现不同的结果。</p><p>int32(double): 四舍五入的整形</p><p>fix()    向0取整；    floor() 向下取整</p><p>round() 四舍五入取整；    ceil() 向上取整</p><p>2.<strong>浮点型(single,dounle)</strong></p><p>&emsp; 分别表示单精度和双精度，使用 realmax(class) 和 realmin(class) 可以返回表示的最大值或和最小值。</p><p>3.<strong>逻辑型(logic)</strong></p><p>4.<strong>字符型(char)</strong></p><p>&emsp; 当字符数组的字符串长度不等时，matlab 会自动填充空字符使长度相等</p><p>常见的的字符操作函数：</p><p>abs(s) 将字符串转化成ascii 码； char(num) 将ascii 码转化成字符串</p><p>blank(n) 返回n个空字符；    deblank(s) 移除字符串尾部包含的空字符</p><p>(string) 将字符串作为命令执行；    findstr(s1,s2) 搜索字符串</p><p>ischar(s) 判断是否为字符串；        isletter(s) 判断是都为字母</p><p>lower(s) 转换为小写；        upper(s) 转换为大写</p><p>strcmp(s1,s2) 比较字符串是否相同    strncmp(s1,s2,n) 比较字符串中的前n个字符串是否相同</p><p>strrep(s1,s2,s3) 将s1中的字符s2替换为s3</p><p>strfind(s1,s2) 字符串内查找字符串； 输出 s2 在 s1 中每次出现的起始索引。</p><p>5.<strong>日期和时间</strong></p><p>6.<strong>结构</strong></p><p>7.<strong>构建结构数组</strong></p><p>8.<strong>元胞数组(cell)</strong></p><p>&emsp; 8.1 每个单元可以包含任意类型的数据结构；</p><p>&emsp; 8.2 创建： 可以直接赋值，也可以先用cell初始化，然后再赋值；</p><p>&emsp; 8.3 访问： cellVar(n) 访问的是第n个单元； cellVar{n} 访问的是第n个单元存储的内容；</p><p>&emsp; 函数： cell2mat: 将cell转化成普通矩阵(cell 单元的内容类型必须相同)； mat2cell： 将普通矩阵转化为cell</p><br>**说明：** 上述内容节选自以下链接，若有侵权，告知立删：<p>CSDN:fff2zrx <a href="https://blog.csdn.net/qq_38412868/article/details/79303083" target="_blank" rel="noopener">matlab中cell数组用法</a></p><p>9.<strong>函数句柄</strong></p><p>说明： 上述内容节选自以下链接，若有侵权，告知立删：</p><p>&emsp; iteye_13202：<a href="https://blog.csdn.net/iteye_13202/article/details/82006786?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param" target="_blank" rel="noopener">matlab数据类型和转换</a> </p><h2 id="Input-函数使用扩展"><a href="#Input-函数使用扩展" class="headerlink" title="Input 函数使用扩展"></a>Input 函数使用扩展</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">clc; clear; close all;  <span class="comment"># initialize</span></span><br><span class="line">try</span><br><span class="line">    ii = 0;<span class="comment"># count for number of input lines</span></span><br><span class="line">    <span class="keyword">while</span> 1</span><br><span class="line">        ii = ii + 1;</span><br><span class="line">        inStr = input(<span class="string">''</span>,<span class="string">'s'</span>);<span class="comment"># inStr: 1*m1 char </span></span><br><span class="line">        data&#123;ii&#125; = inStr;<span class="comment"># data: 1*n cell,         </span></span><br><span class="line">        basInfo = strsplit(data&#123;1&#125;);<span class="comment"># 1*m2 cell</span></span><br><span class="line">        nStud = str2num(basInfo&#123;1&#125;);<span class="comment"># 1*1 double</span></span><br><span class="line">        nOper = str2num(basInfo&#123;2&#125;);<span class="comment"># 1*1 double</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> ii == 2</span><br><span class="line">            score = str2num(inStr);<span class="comment"># 1*m3 double</span></span><br><span class="line">        elseif ii &gt; 2<span class="comment"># strOper: (n-2)*m4 cell</span></span><br><span class="line">            strOper(ii-2,:) = strsplit(data&#123;ii&#125;);</span><br><span class="line">        end</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> ii == nOper + 2</span><br><span class="line">            <span class="keyword">for</span> jj = 1 : nOper</span><br><span class="line">                <span class="keyword">if</span> strcmp(strOper(jj,1),<span class="string">'Q'</span>)<span class="comment"># logic 1 or 0</span></span><br><span class="line">                    indBe = str2num(cell2mat(strOper(jj,2)));<span class="comment"># cell2char2double</span></span><br><span class="line">                    indEn = str2num(cell2mat(strOper(jj,3)));<span class="comment"># cell2char2double</span></span><br><span class="line">                    maxScore = max(score(indBe:indEn));<span class="comment"># double</span></span><br><span class="line">                    disp(maxScore);</span><br><span class="line">                    </span><br><span class="line">                elseif strcmp(strOper(jj,1),<span class="string">'U'</span>)</span><br><span class="line">                    indPos = str2num(cell2mat(strOper(jj,2)));<span class="comment"># cell2char2double</span></span><br><span class="line">                    upgVal = str2num(cell2mat(strOper(jj,3)));<span class="comment"># cell2char2double</span></span><br><span class="line">                    score(indPos) = upgVal;<span class="comment"># double</span></span><br><span class="line">                end</span><br><span class="line">            end</span><br><span class="line">            ii = inf;<span class="comment"># break the inner while</span></span><br><span class="line">        end</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    end</span><br><span class="line">    </span><br><span class="line">catch</span><br><span class="line">end</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> matlab </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>多目标算法之MOEAD</title>
+      <link href="/2020/08/16/%E5%A4%9A%E7%9B%AE%E6%A0%87%E7%AE%97%E6%B3%95%E4%B9%8BMOEAD/"/>
+      <url>/2020/08/16/%E5%A4%9A%E7%9B%AE%E6%A0%87%E7%AE%97%E6%B3%95%E4%B9%8BMOEAD/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>MOEAD 优化框架（契比雪夫分解方法求解最小值问题）</p><p>m: 多目标的个数</p><p>输入：</p><p>&emsp; 1) N: 种群规模</p><p>&emsp; 2）W: 均匀分布的权重向量，N*m</p><p>&emsp; 3) T: 邻域的规模</p><p>初始化：</p><p>&emsp; 1) 外部种群： EP = \varnothing</p><p>&emsp; 2) 计算任意两个权重向量的欧式距离，为每个权重向量找到 T 个相邻向量 B(i); B = N*T;</p><p>&emsp; 3) 产生初始种群pop 评估得到目标向量 FV</p><p>&emsp; 4) 初始化参考点 Z* (最小化问题， Zi*=min(FVi))</p><p>迭代：</p><p>&emsp; 种群成员遍历：</p><p>&emsp; &emsp; 1) 根据当前成员的邻域内任意两个成员产生新得子代</p><p>&emsp; &emsp; 2）若子代超出边界则调整进边界内</p><p>&emsp; &emsp; 3) 更新参考点Z*（替换为任意子代更小目标值）</p><p>&emsp; &emsp; 4) 更新邻域内成员（如果子代的目标切比雪夫分解值小于父本的值，则子代替换父本）</p><p>&emsp; &emsp; 5）从EP中删除被子代目标值所支配的所有成员； 如果没有子代目标值不能被任一成员支配，则将子代添加进EP</p><p>满足终止条件输出EP。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> MOP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MOP 学习记录</title>
+      <link href="/2020/07/17/MOP-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+      <url>/2020/07/17/MOP-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>2020.7.17</p><p>问：目前是否有适用于具有混合连续-离散型决策变量的多目标优化问题的测试集</p><p>答：没有，测试集的编码就是单一的。混合编码并不会提升难度，没有太大意义。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python 中 numpy.sort() 与 Matlab 中 sort() 排序</title>
+      <link href="/2020/07/14/Python-%E4%B8%AD-numpy-sort-%E4%B8%8E-Matlab-%E4%B8%AD-sort-%E6%8E%92%E5%BA%8F/"/>
+      <url>/2020/07/14/Python-%E4%B8%AD-numpy-sort-%E4%B8%8E-Matlab-%E4%B8%AD-sort-%E6%8E%92%E5%BA%8F/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp; 通过近一整天的debug发现，python 中的 numpy.sort() 函数与 matlab 中的 sort() 函数的默认排序方法不同，从而也导致了当待排序的数组中存在多个相同数值时最后的排序结果也不尽相同。</p><p>&emsp; 当待排序的数组有多个可以排序的属性后，使用 matlab 中的 sort() 函数经过不同属性的多次排序后，可以得到想要的多个属性排序后排列数组（主要体现在数值相同的情况下）； 而 python 中的 numpy.sort() 中快速排序、 归并排序和堆排序则达不到这个效果。</p><p>&emsp; sort()函数的三种排序方法都是不稳定排序，因此python 可以考虑使用稳定的 sorted() 函数。 如果要返回稳定排序后的下标，可以在sorted()函数内部使用enumerate（）函数。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">itemSorted = sorted(emuerate(item), key=lambda x:x[1])</span><br><span class="line">index = [ii[0] <span class="keyword">for</span> ii <span class="keyword">in</span> itemSorted]</span><br><span class="line">val = [jj[1] <span class="keyword">for</span> jj <span class="keyword">in</span> itemSorted]</span><br></pre></td></tr></table></figure><p>部分内容节选自以下链接，侵权无意，告知立删：</p><p>sbj123456789： <a href="https://www.cnblogs.com/sbj123456789/p/10951598.html" target="_blank" rel="noopener">python中sorted排序后返回同时返回下标</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python matlab </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VMWare15 安装 Centos7 系统</title>
+      <link href="/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/"/>
+      <url>/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>基本上参照以下两个链接可以完成安装，这里总结一下需要注意的几个地方：</p><p>第一： 设置密码后，登录名称是“root”，密码为你自己设置的密码；</p><p>第二： 修改内容的命令不是 “vim”， 而是 “vi”；</p><p>第三： 设备的名称不要改</p><p>第四： 修改具体内容，一般是进入目录后，按 “i键” 或者是 “insert”, 然后移动光标进行修改，修改完成后，保存退出，先按“Esc”，然后键入“：wq！”即可；</p><center> <a id="more"></a> </center><p>第五： 第一个网络适配器的设备名称是“ens33”，第二个网络适配器的设备名称不一定是“ens37”，可能是“ens34”；</p><p>第六： 第二个网络适配器（外网的）IPADDR要确认在起始的IP范围内，才能ping通。</p><p>第七，安装桌面版，参考第四条链接。</p><p>第八，CentOS 桌面美化，见第五条链接。</p><p>第九，安装VMWare需要先卸载 open-vm-tools，否则安装不上.</p><p>参考链接：</p><p>脚本之家：<a href="https://www.jb51.net/article/187026.htm" target="_blank" rel="noopener">VMware安装Linux CentOS 7.7系统的详细教程</a></p><p>effortsing： <a href="https://www.cnblogs.com/effortsing/p/9996362.html" target="_blank" rel="noopener">vmware安装centos7.5、配置网卡、环境配置</a></p><p>heshengfu1211: <a href="https://blog.csdn.net/heshengfu1211/article/details/87828523" target="_blank" rel="noopener">CentOS7操作系统安装及安装后解决ping不通网络和主机域名的问题</a></p><p>玲珑醉： <a href="https://www.cnblogs.com/sunshine-1/p/8669031.html" target="_blank" rel="noopener">Centos7.1 mini版安装后安装图形界面教程</a></p><p>cloudp： <a href="https://zhuanlan.zhihu.com/p/68845973?utm_source=qq" target="_blank" rel="noopener">CentOS7桌面美化</a></p><h2 id="系统优化"><a href="#系统优化" class="headerlink" title="系统优化"></a>系统优化</h2><h3 id="CentOS7-安装-Chrome"><a href="#CentOS7-安装-Chrome" class="headerlink" title="CentOS7 安装 Chrome"></a>CentOS7 安装 Chrome</h3><ol><li>配置yum 源</li></ol><p>在目录 /etc/yum.repos.d 下新建文件 google-chrome.repo</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vi /etc/yum.repos.d/google-chrome.repo</span></span><br></pre></td></tr></table></figure><p>键入‘i’，或者‘Insert’后，新增以下内容：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[google-chrome]</span><br><span class="line">name=google-chrome</span><br><span class="line">baseurl=http://dl.google.com/linux/chrome/rpm/stable/<span class="variable">$basearch</span></span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub</span><br></pre></td></tr></table></figure><p>保存退出</p><p>‘Esc’键后，</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:wq！</span><br></pre></td></tr></table></figure><ol start="2"><li>安装google chrome</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</span></span><br><span class="line"><span class="comment"># yum localinstall google-chrome-stable_current_x86_64.rpm</span></span><br></pre></td></tr></table></figure><p>内容节选自以下链接，若有侵权，告知立删</p><p><a href="https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-7/" target="_blank" rel="noopener">How to Install Google Chrome Web Browser on CentOS 7</a></p><p>路过sayhi:<a href="https://www.cnblogs.com/vae860514/p/8269002.html" target="_blank" rel="noopener">Centos7 yum安装chrome浏览器</a></p><h3 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h3><p>首先查看防火墙的运行状态</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --state</span><br></pre></td></tr></table></figure><p>如果是 “running” 状态，则关闭防火墙：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl stop firewalld.service</span><br></pre></td></tr></table></figure><h3 id="CentOS7-安装-pycharm"><a href="#CentOS7-安装-pycharm" class="headerlink" title="CentOS7 安装 pycharm"></a>CentOS7 安装 pycharm</h3><p>首先下载liunux版的 pycharm 安装包:<br><a href="https://www.jetbrains.com/pycharm/download/#section=linux" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/#section=linux</a></p><p>其次，移动安装包到安装目录并解压:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xzvf pycharm-2020.1.2.tar.gz</span><br></pre></td></tr></table></figure><p>接着进入 bin 目录下安装pycharm：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo sh pycharm.sh</span><br></pre></td></tr></table></figure><p>最后创建桌面快捷方式</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure><p>在新出现的页面写入以下内容（’Exec=’和‘Icon=’分别是自己的安装目录下的内容）：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env xdg-open</span></span><br><span class="line">[Desktop Entry]</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">Name=Pycharm</span><br><span class="line">Comment=pycharm-2020.1.2</span><br><span class="line">Exec=/mytest/pycharm-2020.1.2/bin/pycharm.sh</span><br><span class="line">Icon=/mytest/pycharm-2020.1.2/bin/pycharm.png</span><br><span class="line">Terminal=<span class="literal">false</span></span><br><span class="line">StartupNotify=<span class="literal">true</span></span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br></pre></td></tr></table></figure><p>最后一步：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod a+x /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure><p>破解过程参见第三个链接。</p><p>说明： 部分内容节选自以下链接，若有侵权，告知立删</p><p>鱼虫光：<a href="https://www.cnblogs.com/ycg-blog/p/12219942.html" target="_blank" rel="noopener">centos7 下载破解pycharm专业版</a></p><p>山高似水深：<a href="https://www.cnblogs.com/tnsay/p/12297957.html" target="_blank" rel="noopener">最新pycharm 激活码 更新时间 2020年6月24日11:47:52</a></p><p>wangxuanyou：<a href="https://www.cnblogs.com/xyou/p/12596895.html" target="_blank" rel="noopener">Pycharm2020 永久激活</a></p><h3 id="CentOS7-安装-python3"><a href="#CentOS7-安装-python3" class="headerlink" title="CentOS7 安装 python3"></a>CentOS7 安装 python3</h3><p>参见以下链接：</p><p>忧臣解读：<a href="https://www.cnblogs.com/anxminise/p/9650206.html" target="_blank" rel="noopener">Centos7安装Python3.7</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《牛客》学习笔记</title>
+      <link href="/2020/06/16/%E7%AC%94%E8%AF%95%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
+      <url>/2020/06/16/%E7%AC%94%E8%AF%95%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h1><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>排序算法的复杂度</p><p><img src="/2020/06/16/%E7%AC%94%E8%AF%95%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/sortComp.png" alt="The complexity of sorting algorithm"></p><p>二叉树：</p><p>树：不包含回路的连通无向图</p><p>二叉树：特殊的树，不为空则有根节点，左子树与右子树组成</p><p>满二叉树： 每个分支节点都有左子树和右子树，所有叶子都在同一层上。</p><p>完全二叉树： 从右向左减少叶子节点的满二叉树。</p><p>堆排序：</p><p>堆:一种特殊的完全二叉树</p><p>大顶堆：所有父节点都大于等于子节点</p><p>小顶堆：所有父节点都小于等于子节点</p><p>推的存储： 从上到下，从左到右，父节点编号为k,左儿子编号为2<em>k,右儿子编号为2</em>k+1.</p><p>堆排序的基本思想：将序列构成大顶推，将根节点与末尾元素进行交换； 将剩余n-1个元素重新构造堆，反复执行，得到有序序列。</p><p>说明：内容节选自以下链接，若有侵权，告知立删</p><p>MaxineZhou：<a href="https://blog.csdn.net/MaxineZhou/article/details/89314044" target="_blank" rel="noopener">什么是堆以及堆排序原理</a></p><p>dreamcatcher-cx：<a href="https://www.cnblogs.com/chengxiao/p/6129630.html" target="_blank" rel="noopener">图解排序算法(三)之堆排序</a></p><h2 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h2><h3 id="题1"><a href="#题1" class="headerlink" title="题1"></a>题1</h3><p>来源：牛客网  链接：<a href="https://www.nowcoder.com/questionTerminal/9fededa1b63a41798e5d43344d7bf216?f=discussion" target="_blank" rel="noopener">车站建造问题</a></p><p>有10^8个村庄排在一条公路上，依次编号为0<del>10^8-1，相邻村庄距离为1，其中有n个村庄居住着牛牛，居住着牛牛的村庄从小到大依次为a0</del>an-1，其中保证a0=0.<br>现在需要建设车站，有两个要求必须被满足：<br>1、每个有牛牛居住的村庄必须修建车站。<br>2、相邻车站的距离必须为1或为某个质数。<br>现给出n和a数组，求需要建设车站的最小数量。</p><p>解题思路来源于牛客网用户_hzy1721： 车站数最少为n， 若相邻车站的距离不是1或者质数，则在中间插入一个或多个车站，使得距离为1或者质数;该题等同于把一个非素数分解为素数的个数，考核内容为<a href="https://zh.wikipedia.org/wiki/%E5%93%A5%E5%BE%B7%E5%B7%B4%E8%B5%AB%E7%8C%9C%E6%83%B3" target="_blank" rel="noopener">哥德巴赫猜想</a>。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PhotoShop 学习笔记</title>
+      <link href="/2020/06/10/PhotoShop-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/2020/06/10/PhotoShop-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="像素，分辨率，英寸（厘米）的区分"><a href="#像素，分辨率，英寸（厘米）的区分" class="headerlink" title="像素，分辨率，英寸（厘米）的区分"></a>像素，分辨率，英寸（厘米）的区分</h2><p>像素： 构成图片的小色点。</p><p>分辨率： dpi(Dots Per Inch)，即是每英寸上像素的数量，也就是小色点的分布密度。</p><p>实际尺寸（英寸）= 像素/分辨率， 1英寸=2.54厘米。</p><p>说明： 内容节选自以下链接，无意侵权，告知立删。<br>改图宝：<a href="https://www.gaitubao.com/tools/pixel2cm.html" target="_blank" rel="noopener">图片像素尺寸(厘米/英寸)换算器、在线转换</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Photoshop </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Origin 学习笔记</title>
+      <link href="/2020/06/09/Origin-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/2020/06/09/Origin-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="将数据从-matlab-导入到-origin"><a href="#将数据从-matlab-导入到-origin" class="headerlink" title="将数据从 matlab 导入到 origin"></a>将数据从 matlab 导入到 origin</h2><p>Matlab 准备: 属性-&gt;快捷方式-&gt;目标-&gt;  后面填加 /Automation 和 /desktop，如：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"C:\Program Files\MATLAB\R2019a\bin\matlab.exe"</span> /Automation /desktop</span><br></pre></td></tr></table></figure><p>运行 matlab 程序，得到相关变量</p><p>打开Origin, Tools-&gt;Matlab Console-&gt; gc 变量， 如：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gc data</span><br></pre></td></tr></table></figure><p>说明： 上述内容整理自以下链接，侵权无意，告知立删。</p><p>leonSUST: <a href="https://blog.csdn.net/LeonSUST/article/details/84861701" target="_blank" rel="noopener">画图技巧 ： 让Matlab将数据传送给Origin</a></p><h2 id="Book-填入等差数据"><a href="#Book-填入等差数据" class="headerlink" title="Book 填入等差数据"></a>Book 填入等差数据</h2><p>先写入前三个数据，选中后， 按住 Alt 键后下拉</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> origin </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python 学习笔记</title>
+      <link href="/2020/06/03/Python-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/2020/06/03/Python-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="什么是python"><a href="#什么是python" class="headerlink" title="什么是python"></a>什么是python</h2><p>Python是“一种解释型的，面向对象的，带有动态语义的高级程序设计语言”。</p><h2 id="定义一个3-3的矩阵"><a href="#定义一个3-3的矩阵" class="headerlink" title="定义一个3*3的矩阵"></a>定义一个3*3的矩阵</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">X= np.array([[1,2,3],[4,5,6],[7,8,9]])</span><br></pre></td></tr></table></figure><h2 id="spyder-注释"><a href="#spyder-注释" class="headerlink" title="spyder 注释"></a>spyder 注释</h2><p>注释/反注释:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ctrl + 1</span><br></pre></td></tr></table></figure><p>块注释/块反注释</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ctrl + 4/5</span><br></pre></td></tr></table></figure><h2 id="Pyhon-安装完成后，命令提示符”-‘python’-不是内部或外部命令，也不是可运行的程序”"><a href="#Pyhon-安装完成后，命令提示符”-‘python’-不是内部或外部命令，也不是可运行的程序”" class="headerlink" title="Pyhon 安装完成后，命令提示符” ‘python’ 不是内部或外部命令，也不是可运行的程序”:"></a>Pyhon 安装完成后，命令提示符” ‘python’ 不是内部或外部命令，也不是可运行的程序”:</h2><p>原因： python的安装路径没有填加到环境变量。</p><h2 id="命令提示符不能进入到指定的路径："><a href="#命令提示符不能进入到指定的路径：" class="headerlink" title="命令提示符不能进入到指定的路径："></a>命令提示符不能进入到指定的路径：</h2><p>首先</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ..</span><br></pre></td></tr></table></figure><p>退回到 C:盘符，然后进入目标盘符，再然后进入到目标路径。</p><h2 id="测试函数模块-optproblems的安装"><a href="#测试函数模块-optproblems的安装" class="headerlink" title="测试函数模块 optproblems的安装"></a>测试函数模块 optproblems的安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install optproblems</span><br></pre></td></tr></table></figure><h2 id="统计运行时长"><a href="#统计运行时长" class="headerlink" title="统计运行时长"></a>统计运行时长</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import time</span><br><span class="line">start = time.time()</span><br><span class="line">main_function()</span><br><span class="line">end = time.time()</span><br><span class="line"><span class="built_in">print</span> str(end-start)</span><br></pre></td></tr></table></figure><h2 id="使用plot-画图"><a href="#使用plot-画图" class="headerlink" title="使用plot 画图"></a>使用plot 画图</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">data = random.uniform()</span><br></pre></td></tr></table></figure><h2 id="读取-pf-文件"><a href="#读取-pf-文件" class="headerlink" title="读取 .pf 文件"></a>读取 .pf 文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line"><span class="built_in">source</span> = open(<span class="string">"ZDT1.pf"</span>, <span class="string">"r"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">values = source.readlines()</span><br><span class="line"></span><br><span class="line">data = np.zeros(shape=(len(values),2))</span><br><span class="line"><span class="keyword">for</span> index, value <span class="keyword">in</span> enumerate(values):</span><br><span class="line">    dataTmp= value.split()</span><br><span class="line">    data[index,0] = <span class="built_in">float</span>(dataTmp[0])</span><br><span class="line">    data[index,1] = <span class="built_in">float</span>(dataTmp[1])</span><br></pre></td></tr></table></figure><h2 id="对数组先平方再求和"><a href="#对数组先平方再求和" class="headerlink" title="对数组先平方再求和"></a>对数组先平方再求和</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><br><h2 id="python学习第一讲：使用pycharm-运行第一个python程序"><a href="#python学习第一讲：使用pycharm-运行第一个python程序" class="headerlink" title="python学习第一讲：使用pycharm 运行第一个python程序"></a>python学习第一讲：使用pycharm 运行第一个python程序</h2><p>准备工作：为pycharm 设置 python 解释器</p><p>1). 什么是python 解释器：<br>python解释器是“帮助我们将python代码交给机器可以执行的工具”。 </p><p>2). Python 解释器的作用：<br>通俗来讲，解释器是将源码转化成字节码（机器不能执行），再由python中的虚拟机来执行这些字节码（字节码不依赖操作系统，因此可以由虚拟机来实现跨平台运行）。</p><p>具体介绍可参见下面链接：<br>田阅川：<a href="https://www.jianshu.com/p/c70474e1db0a" target="_blank" rel="noopener">Python解释器详解</a></p><p>补充: 解释型语言与编译型语言辨析</p><p>共同目标：将我们认识的语句（循环、判断等）转化成二进制代码，然后交给计算机执行。</p><p>区别： 编译型语言在程序写完以后，把代码完全翻译成二进制文件，通过执行二进制文件来执行程序；生成的二进制文件可以直接执行。 解释型语言没有转化为二进制代码的过程，需要的时候再编译；因此解释型语言需要随时带着解释器。</p><p>知乎玖玖：<a href="https://zhuanlan.zhihu.com/p/141212114" target="_blank" rel="noopener">python解释器到底是什么？</a></p><br><p>3). pycharm 设置python解释器步骤：</p><p>&emsp; File-&gt; Setting-&gt; Project: pythonProject (Python interpreter) -&gt; 点击右面的设置，点击Add -&gt; 在Existing enviroment下定位到Python安装路径，找到python3.7.exe，勾选适用于所有项目， 点击 Apply 就可以了。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python 调用 C++ 函数</title>
+      <link href="/2020/06/02/Python-%E8%B0%83%E7%94%A8-C-%E5%87%BD%E6%95%B0/"/>
+      <url>/2020/06/02/Python-%E8%B0%83%E7%94%A8-C-%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol><li><p>“.cpp” 文件是”C++”语言的文件，国际一般读作”C Plus Plus”，因此后缀为”.cpp”.</p></li><li><p>python 调用C/C++的方法有： boost.python， swig， ctypes， pybind11 等方法。</p></li><li><p>pybind11 是一个只包含头文件的库，语法与目标非常像Boost.Python； Boost.Python 兼容所有的C++编译器，Pybind11 只支持Python2.7以上和C++ 11以上的编译器。</p></li><li><p>使用Pybind11， 需要支持C++11标准的编译器(VS2015以上)，还需要下载CMake.</p></li><li><p>CMake是一个跨平台的安装（编译）工具，可以用简单的语句来描述所有平台的安装；可以输出各种各样的makefile或者project文件，只是它的组态档取名为 CMakeLists.txt。</p></li><li><p>CMake 在windows 上编译C++的简单使用<br>1）CMake安装好以后，编写一个简单.cpp程序；<br>2）在cpp文件相同目录下建立一个CMakeLists.txt文件，例如：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required (VERSION 2.6)</span><br><span class="line">project (HelloWorld)</span><br><span class="line">add_executable (HelloWorld HelloWorld.cpp)</span><br></pre></td></tr></table></figure><p>3）到CMakeLists.txt文件的目录，运行CMake:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmake .</span><br></pre></td></tr></table></figure><p>4) 生成.sln, .vcxproj文件，可以使用VS打开.sln文件来编译，运行，调试程序。<br>5）构建程序</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msbuild Helloworld.sln</span><br></pre></td></tr></table></figure><p>就可以在Debug目录下找到HelloWorld.exe 程序。</p></li><li><p>Pybind11 是header-only,因此不需要编译动态链接库，直接使用include 就可以。<br>1） VS2017新建 C++ 空白工程</p><pre><code>项目属性页-&gt;常规-&gt;调整输出类型为dll, 调整输出文件名为pyd;项目属性页-&gt;VC++目录-&gt;包含目录-&gt;（Anaconda3\include,Pybind11\include）,库目录（Anaconda3\libs）;项目属性页-&gt;链接器-&gt;输入-&gt;附加依赖项-&gt;手动输入（python36.lib，python3.lib）</code></pre><p>2）添加源文件，添加头文件，编译，运行，生成.pyd文件</p><p>3）复制.pyd文件到要引用相同目录下，直接import就可以使用</p></li></ol><p>说明： 以上内容整理自以下链接，侵权无意，告知立删。</p><p>fitzzhang：<a href="https://blog.csdn.net/fitzzhang/article/details/78988682" target="_blank" rel="noopener">python调用C++之pybind11入门</a></p><p>boonya：<a href="https://blog.csdn.net/boonya/article/details/88851372" target="_blank" rel="noopener">使用cmake在Windows上编译c++</a></p><p>kupe87826：<a href="https://blog.csdn.net/kupepoem/article/details/105072604" target="_blank" rel="noopener">Pybind11实现python调用c++</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>“EXCEL 文本表示科学计数法</title>
+      <link href="/2020/05/29/%E2%80%9CEXCEXCEL-%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/"/>
+      <url>/2020/05/29/%E2%80%9CEXCEXCEL-%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table><thead><tr><th align="left">A1</th><th align="left">B1</th><th align="left">C1</th></tr></thead><tbody><tr><td align="left">0.00E+00</td><td align="left">0.00E+00</td><td align="left">0.00E+00 (0.00E+00)</td></tr></tbody></table><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C1 =TEXT(A1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">" "</span>&amp; <span class="string">"("</span> &amp; TEXT(B1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">")"</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Excel </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>佳作欣赏之&quot;黄石公《素书》&quot;</title>
+      <link href="/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/"/>
+      <url>/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="黄石公《素书》"><a href="#黄石公《素书》" class="headerlink" title=" 黄石公《素书》 "></a><center> 黄石公《素书》 </center></h1><h2 id="原始章第一"><a href="#原始章第一" class="headerlink" title="原始章第一"></a>原始章第一</h2><p>夫道、德、仁、义、礼五者，一体也。 道者，人之所蹈，使万物不知其所由。 德者，人之所得，使万物各得其所欲。 仁者，人之所亲，有慈慧恻隐之心，以遂其生存。 义者，人之所宜，赏善罚恶，以立功立事。 礼者，人之所履，夙兴夜寐，以成人伦之序。 夫欲为人之本，不可无一焉。 贤人君子，明于盛衰之道，通乎成败之数，审乎治乱之势，达乎去就之理。故潜居抱道以待其时。 若时至而行，则能极人臣之位； 得机而动，则能成绝代之功。如其不遇，没身而已。 是以其道足高，而名重于后代。</p><center> <a id="more"></a> </center><h2 id="正道章第二"><a href="#正道章第二" class="headerlink" title="正道章第二"></a>正道章第二</h2><p>德足以怀远，信足以一异，义足以得众，才足以鉴古，明足以照下，此人之俊也。 行足以为仪表，智足以决嫌疑，信可以使守约，廉可以使分财，此人之豪也。 守职而不废，处义而不回，见嫌而不苟免，见利而不苟得，此人之杰也。</p><h2 id="求人之志章第三"><a href="#求人之志章第三" class="headerlink" title="求人之志章第三"></a>求人之志章第三</h2><p>绝嗜禁欲，所以除累。抑非损恶，所以让过。贬酒阙色，所以无污。 避嫌远疑，所以不误。博学切问，所以广知。高行微言，所以修身。 恭俭谦约，所以自守。深计远虑，所以不穷。亲仁友直，所以扶颠。 近恕笃行，所以接人。任材使能，所以济物。殚恶斥谗，所以止乱。 推古验今，所以不惑。先揆后度，所以应卒。设变致权，所以解结。 括囊顺会，所以无咎。橛橛梗梗，所以立功。孜孜淑淑，所以保终。</p><h2 id="本德宗道章第四"><a href="#本德宗道章第四" class="headerlink" title="本德宗道章第四"></a>本德宗道章第四</h2><p>夫志，心独行之术。长没长于博谋，安没安于忍辱，先没先于修德，乐没乐于好善，神没神于至诚，明没明于体物，吉没吉于知足，苦没苦于多愿，悲没悲于精散，病没病于无常，短没短于苟得，幽没幽于贪鄙，孤没孤于自恃，危没危于任疑，败没败于多私。</p><h2 id="道义章第五"><a href="#道义章第五" class="headerlink" title="道义章第五"></a>道义章第五</h2><p>以明示下者暗，有过不知者蔽，迷而不返者惑，以言取怨者祸，令与心乖者废，后令缪前者毁，怒而无威者犯，好众辱人者殃，戮辱所任者危，慢其所敬者凶，貌合心离者孤，亲谗远忠者亡，近色远贤者昏，女谒公行者乱，私人以官者浮，凌下取胜者侵，名不胜实者耗。略己而责人者不治，自厚而薄人者弃废。以过弃功者损，群下外异者沦，既用不任者疏，行赏吝色者沮，多许少与者怨，既迎而拒者乖。薄施厚望者不报，贵而忘贱者不久。念旧而弃新功者凶，用人不得正者殆，强用人者不畜，为人择官者乱，失其所强者弱，决策于不仁者险，阴计外泄者败，厚敛薄施者凋。战士贫，游士富者衰；货赂公行者昧；闻善忽略，记过不忘者暴；所任不可信，所信不可任者浊。牧人以德者集，绳人以刑者散。小功不赏，则大功不立；小怨不赦，则大怨必生。赏不服人，罚不甘心者叛。赏及无功，罚及无罪者酷。听谗而美，闻谏而仇者亡。能有其有者安，贪人之有者残。</p><h2 id="安礼章第六"><a href="#安礼章第六" class="headerlink" title="安礼章第六"></a>安礼章第六</h2><p>怨在不舍小过，患在不预定谋。福在积善，祸在积恶。饥在贱农，寒在堕织。安在得人，危在失事。富在迎来，贫在弃时。上无常操，下多疑心。轻上生罪，侮下无亲。近臣不重，远臣轻之。自疑不信人，自信不疑人。枉士无正友，曲上无直下。危国无贤人，乱政无善人。爱人深者求贤急，乐得贤者养人厚。国将霸者士皆归，邦将亡者贤先避。地薄者大物不产，水浅者大鱼不游，树秃者大禽不栖，林疏者大兽不居。山峭者崩，泽满者溢。弃玉取石者盲，羊质虎皮者柔。衣不举领者倒，走不视地者颠。柱弱者屋坏，辅弱者国倾。足寒伤心，人怨伤国。山将崩者下先隳，国将衰者人先弊。根枯枝朽，人困国残。与覆车同轨者倾，与亡国同事者灭。见已生者慎将生，恶其迹者须避之。畏危者安，畏亡者存。夫人之所行，有道则吉，无道则凶。吉者，百福所归；凶者，百祸所攻。非其神圣，自然所钟。务善策者无恶事，无远虑者有近忧。同志相得，同仁相忧，同恶相党，同爱相求，同美相妒，同智相谋，同贵相害，同利相忌，同声相应，同气相感，同类相依，同义相亲，同难相济，同道相成，同艺相规，同巧相胜：此乃数之所得，不可与理违。释己而教人者逆，正己而化人者顺。逆者难从，顺者易行，难从则乱，易行则理。如此理身、理国、理家，可也！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> read </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown 语法总结</title>
+      <link href="/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+      <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p><p><strong>粗体：</strong> “ ** ** “</p><p><strong><em>粗斜体:</em></strong> “ *** *** “</p><p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p><p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p><p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p><p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p><p>插入链接</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure><p>上标： &lt;sup&gt; xxx &lt;/sup&gt;</p><p>下标： &lt;sub&gt; xxx &lt;/sub&gt;</p><p>\lambda : $\lambda$</p><p>\Lambda : $\Lambda$</p><p>换行： 空格，空格，回车</p><p>插入图片格式： <img src="/home/picture/1.png" alt="avatar"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>硬件基本知识整理</title>
+      <link href="/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
+      <url>/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="S-参数"><a href="#S-参数" class="headerlink" title="S 参数"></a>S 参数</h1><p>S 参数英文原称是“Scattering Parameter”，即“散射参数”。</p><p>一个二端口的网络，共有四个S参数：S11、S12、S21、S22；</p><p>互易网络满足： S12 = S21；</p><p>对称网络满足： S11 = S22；</p><p>无耗网络中，端口1输入的能量或者反射回端口1或者传输到端口2，满足： S11*S11 + S21*S21 =1。</p><p>高速电路设计中的微带线或者带状线，都有参考平面，通常是不对称结构（比如平行双导线就是对称结构），但是满足互易条件，因此S11!=S22， S12=S21。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> HFSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Matlab 数据类型转换</title>
+      <link href="/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/"/>
+      <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p><p>字符串转 double： str2double();</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> matlab </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Matlab中文本数据混合文件的数据读取</title>
+      <link href="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/"/>
+      <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p><p>textscan 函数读取的结果是个 1*1 的cell数组，可以展开为 N*1 的cell数组，单个字符串或者单个数据占据其中的一个位置。</p><p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/oriFile.png" alt="oriFile"></p><p>代码如下所示：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">clc; clear; close all;</span><br><span class="line"></span><br><span class="line">fid=fopen(<span class="string">'test.s2p'</span>); % open file <span class="keyword">in</span> <span class="built_in">read</span> only </span><br><span class="line">    data = textscan(fid,<span class="string">'%s'</span>);   % textscan <span class="keyword">function</span> <span class="built_in">read</span> data</span><br><span class="line">    data = data&#123;:&#125;;</span><br><span class="line">fclose(fid);</span><br></pre></td></tr></table></figure><p>读取后的数据结果：</p><p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> matlab </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Tips for Latex</title>
+      <link href="/2020/05/10/Tips-for-Latex/"/>
+      <url>/2020/05/10/Tips-for-Latex/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">二级机构\\</span><br><span class="line">一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">\subsection&#123;节标题&#125;</span><br><span class="line">\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">\centering</span><br><span class="line">正文部分</span><br><span class="line">\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure><p>效果如下所示：</p><p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p><br><h1 id="TeXstudio-使用技巧"><a href="#TeXstudio-使用技巧" class="headerlink" title="TeXstudio 使用技巧"></a>TeXstudio 使用技巧</h1><h2 id="快捷键的使用"><a href="#快捷键的使用" class="headerlink" title="快捷键的使用"></a>快捷键的使用</h2><ol><li>注释与反注释：</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Ctrl + T <span class="comment"># 注释</span></span><br><span class="line">Ctrl + U <span class="comment"># 反注释</span></span><br></pre></td></tr></table></figure><h2 id="编译报错"><a href="#编译报错" class="headerlink" title="编译报错"></a>编译报错</h2><ol><li>Error: Undefinded control sequence. \begin{document}</li></ol><p>原因： 可能是导言区内某个包的引用有问题，或者某个包需要更新<br><br><br>内容参考以下链接，若有侵权，告知立删</p><p>[CSDN]doubleslow; : <a href="https://blog.csdn.net/qq_36607894/article/details/103639607" target="_blank" rel="noopener">Texstudio error : Undefined control sequence. \begin{document} （subfigure已经被废弃了，用subcaption!!!）</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> latex </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Matlab,VBS与HFSS实现器件联调</title>
+      <link href="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/"/>
+      <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p><p>流程说明：</p><p>Matlab 的作用：</p><p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p><p>VBS 的作用：</p><p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p><p>HFSS 的作用：</p><p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p><p>流程(1)：</p><p> ① 通过dos命令运行‘file1.vbs’文件。</p><p>流程(2)：</p><p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p><p>流程(3)：</p><p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p><p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Matlab, VBS, HFSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Matlab  可变输入输出</title>
+      <link href="/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/"/>
+      <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p><p>varargin 是函数定义语句中的输入变量，放在输入项的最后位置；在函数内是个 1*N 的cell数组，N 是在此位置之后的输入项数, N也可以为0。</p><p>varargout 用在输出位置，情况与 varargin 相同。</p><p>说明： nargin 表所有的输入变量数。</p><p>下面给出一个例子使用：<br>定义函数：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">% <span class="keyword">function</span> definition</span><br><span class="line"><span class="keyword">function</span> varargout = calculator(<span class="built_in">type</span>, varargin)</span><br><span class="line">varInput = cell2mat(varargin(:));   % cell to double</span><br><span class="line"><span class="keyword">if</span> strcmp(<span class="built_in">type</span>, <span class="string">'addition'</span>)</span><br><span class="line">    <span class="keyword">if</span> nargin == 3</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">    elseif nargin == 4</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">        varargout&#123;2&#125; = varInput(1) + varInput(2) + varInput(3);</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line">end</span><br></pre></td></tr></table></figure><p>运行主函数：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">% run <span class="keyword">in</span> <span class="built_in">command</span></span><br><span class="line">[res1, res2] = calculator(<span class="string">'addition'</span>, 10, 20, 30);</span><br><span class="line">disp([<span class="string">'res1='</span>, num2str(res1)])</span><br><span class="line">disp([<span class="string">'res2='</span>, num2str(res2)])</span><br></pre></td></tr></table></figure><p>输出结果：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">res1=30</span><br><span class="line">res2=60</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> matlab </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Win10环境基于Anaconda安装Tensorflow</title>
+      <link href="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/"/>
+      <url>/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>搜索打开 Anaconda Prompt: </p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/SearchPrompt.png" alt="SearchPrompt"></p><p>检查 Anaconda和 python 的版本：<br><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/version.png" alt="version"></p><p>更新 pip版本：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure><h1 id="配置安装环境"><a href="#配置安装环境" class="headerlink" title="配置安装环境"></a>配置安装环境</h1><p>连接到清华仓库镜像地址，下载提速：</p><p>在 Anaconda Prompt中输入：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ conda create -n tensorflow python=3.6</span><br></pre></td></tr></table></figure><p>同意安装新的 packages:</p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/yes.png" alt="yes"></p><p>安装环境配置成功。</p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/activave.png" alt="activave"></p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/envir.png" alt="envir"></p><h1 id="安装tensorflow1-5"><a href="#安装tensorflow1-5" class="headerlink" title="安装tensorflow1.5"></a>安装tensorflow1.5</h1><p>打开安装环境：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ conda activate tensorflow</span><br></pre></td></tr></table></figure><p>输入命令，安装CPU版本tensorflow1.5：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip install tensorflow==1.5 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com</span><br></pre></td></tr></table></figure><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/tf.png" alt="tf"></p><h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>关闭安装环境: </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ conda deactivate</span><br></pre></td></tr></table></figure><p> Anaconda Prompt中输入 python：</p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/python.png" alt="python"></p><p>依次输入测试命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ import tensorflow as tf</span><br><span class="line">$ sess = tf.Session()</span><br><span class="line">$ succ = tf.constant(<span class="string">'succeed, tensorflow!'</span>)</span><br><span class="line">$ <span class="built_in">print</span>(sess.run(succ))</span><br></pre></td></tr></table></figure><p>出现以下结果表明安装成功：</p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/test.png" alt="test"></p><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>在 spyder中导入tensorflow包之前，需要在 Anaconda 的tenserflow环境中重新安装spyder插件：</p><p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/spyder.png" alt="spyder"></p><p>在 spyder中找不到的模块需要在tensorflow环境中重新安装一次，比如 matplotlib 模块:</p><p>Anaconda Prompt中依次输入</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda activate tensorflow</span><br><span class="line">conda install matplotlib</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Action After Review (AAR)</title>
+      <link href="/2020/05/04/Action-After-Review-AAR/"/>
+      <url>/2020/05/04/Action-After-Review-AAR/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p><h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> methodology </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Tips for writing</title>
+      <link href="/2020/05/01/Tips-for-writing/"/>
+      <url>/2020/05/01/Tips-for-writing/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol><li>Regardless of …, to the best of our knowlege, few …</li><li>In …, we will first recall …. Then, we review …</li><li>In …, we focus on … since … and …</li><li>For this reason, in … we suggest … by …, which is the main difference with …</li><li>The reason lies in the fact that …</li><li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li><li>For these problems we may happily look forward to a wealth of … success stories.</li><li>The parameters of these comparison approahces are set on the basis of their original papers.</li><li>Loosely speaking, </li><li>First and foremost, …, then, …, afterwards, ….</li><li>The derived …</li><li>… is pivotal to the success of …</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> writing </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>佳作欣赏之 &quot;IF&quot;</title>
+      <link href="/2020/04/29/IF/"/>
+      <url>/2020/04/29/IF/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="《IF》"><a href="#《IF》" class="headerlink" title="《IF》"></a>《IF》</h2><h4 id="by-Rudyard-Kipling"><a href="#by-Rudyard-Kipling" class="headerlink" title="by Rudyard Kipling"></a>by Rudyard Kipling</h4><p>If you can keep your head when all about you,</p><p>&emsp; Are losing theirs and blaming it on you;</p><p>If you can trust yourself when all men doubt you,</p><p>&emsp; But make allowance for their doubting too;</p><p>If you can wait and not be tired by waiting,</p><p>&emsp; Or being lied about, don’t deal in lies;</p><p>Or being hated, don’t give way to hating,</p><p>&emsp; And yet don’t look too good, nor talk too wise;</p><p>If you can dream–and not make dreams your master,</p><p>&emsp; If you can think–and not make thoughts your aim;</p><p>If you can meet with Triumph and Disaster,</p><p>&emsp; And treat those two impostors just the same;</p><p>If you can bear to hear the truth you’ve spoken</p><p>&emsp; Twisted by knaves to make a trap for fools;</p><p>Or watch the things you gave your life to, broken,</p><p>&emsp; And stoop and build ‘em up with worn-out tools;</p><p>If you can make one heap of all your winnings,</p><p>&emsp; And risk it all on one turn of pitch-and-toss;</p><p>And lose, and start again at your beginnings,</p><p>&emsp; And never breath a word about your loss;</p><p>If you can force your heart and nerve and sinew,</p><p>&emsp; To serve your turn long after they are gone;</p><p>And so hold on when there is nothing in you,</p><p>&emsp; Except the Will which says to them: “Hold on!”</p><p>If you can talk with crowds and keep your virtue,</p><p>&emsp; Or walk with kings–nor lose the common touch;</p><p>If neither foes nor loving friends can hurt you;</p><p>&emsp; If all men count with you, but none too much;</p><p>If you can fill the unforgiving minute,</p><p>&emsp; With sixty seconds’ worth of distance run,</p><p>Yours is the Earth and everything that’s in it,</p><p>&emsp; And–which is more–you’ll be a Man, my son!</p><h2 id="《如果》"><a href="#《如果》" class="headerlink" title="《如果》"></a>《如果》</h2><h4 id="英-吉卜林"><a href="#英-吉卜林" class="headerlink" title="[英]吉卜林"></a>[英]吉卜林</h4><p>如果在众人六神无主之时,</p><p>你镇定自若而不是人云亦云;</p><p>如果被众人猜忌怀疑时,</p><p>你能自信如常而不去妄加辩论;</p><p>如果你有梦想,</p><p>又能不迷失自我;</p><p>如果你有神思,</p><p>又不至于走火入魔;</p><p>如果在成功之中能不忘形于色,</p><p>而在灾难之后也勇于咀嚼苦果;</p><p>如果看到自己追求的美好破灭为一摊零碎的瓦砾,</p><p>也不说放弃;</p><p>如果你辛苦劳作,</p><p>已是功成名就,</p><p>为了新目标,</p><p>你依旧冒险一搏,</p><p>哪怕功名成乌有;</p><p>如果你跟村夫交谈而不变谦恭之态,</p><p>和王侯散步而不露谄媚之颜;</p><p>如果他人的爱憎左右不了你,</p><p>如果你与任何人为伍都能卓然独立;</p><p>如果昏惑的骚扰动摇不了你的意志,</p><p>你能等自己平心静气再做答时……</p><p>那么，你的修养就会如天地般博大，而你，就是个真正的男子汉了，我的儿子！</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Highly cited journals</title>
+      <link href="/2020/04/29/Highly%20cited%20journals/"/>
+      <url>/2020/04/29/Highly%20cited%20journals/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table><thead><tr><th align="left">序号</th><th align="left">期刊全写</th><th align="left">期刊简写</th><th align="left">影响因子</th><th align="left">分区情况</th><th align="left">备注</th></tr></thead><tbody><tr><td align="left">1</td><td align="left">IEEE Transactions on Evolutionary Computation</td><td align="left">IEEE Trans. Evol. Comput.</td><td align="left">IF=8.508</td><td align="left">工程技术：1区；计算机科学：1区</td><td align="left">顶刊</td></tr><tr><td align="left">2</td><td align="left">IEEE Transactions on Cybernetics</td><td align="left">IEEE Trans. Cybern.</td><td align="left">IF=10.387</td><td align="left">工程技术：1区；计算机科学：1区</td><td align="left">顶刊</td></tr><tr><td align="left">3</td><td align="left">IEEE Transactions on Knowledge and Data Engineering</td><td align="left">IEEE Trans. Knowl. Data Eng.</td><td align="left">IF=3.857</td><td align="left">工程技术：2区；计算机科学：2区</td><td align="left"></td></tr><tr><td align="left">4</td><td align="left">IEEE Transactions on Industrial Informatics</td><td align="left">IEEE Trans. Ind. Informat.</td><td align="left">IF=7.377</td><td align="left">工程技术：1区；计算机科学：1区</td><td align="left">顶刊</td></tr></tbody></table>]]></content>
+      
+      
       <categories>
-        <category>Markdown</category>
+          
+          <category> Markdown </category>
+          
       </categories>
-      <tags>
-        <tag>Typora</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Action After Review (AAR)</title>
-    <url>/2020/05/04/Action-After-Review-AAR/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
-<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
-]]></content>
-      <tags>
-        <tag>methodology</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MOP 学习记录</title>
-    <url>/2020/07/17/MOP-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>2020.7.17</p>
-<p>问：目前是否有适用于具有混合连续-离散型决策变量的多目标优化问题的测试集</p>
-<p>答：没有，测试集的编码就是单一的。混合编码并不会提升难度，没有太大意义。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Markdown 语法总结</title>
-    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
-<p><strong>粗体：</strong> “ ** ** “</p>
-<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
-<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
-<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
-<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
-<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
-<p>插入链接</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>
-
-<p>上标： &lt;sup&gt; xxx &lt;/sup&gt;</p>
-<p>下标： &lt;sub&gt; xxx &lt;/sub&gt;</p>
-<p>\lambda : $\lambda$</p>
-<p>\Lambda : $\Lambda$</p>
-<p>换行： 空格，空格，回车</p>
-<p>插入图片格式： <img src="/home/picture/1.png" alt="avatar"></p>
-]]></content>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab(Octave 4.0.0)常用知识总结</title>
-    <url>/2020/08/25/Matlab-Octave-4-0-0-%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>strsplit 函数： &emsp; 以指定的分隔符分割字符串</p>
-<p>&emsp; C = strsplit(str);    &emsp; 切割后的结果是cell类型，分隔符可以是下面的任一种 {‘ ‘,’\f’,’\n’,’\r’,’\t’,’\v’}.</p>
-<p>&emsp; C = strsplit(str，delimiter );    &emsp; 可以将字符串str 按指定的 分隔符进行分割.</p>
-<p>input 函数： &emsp; 请求用户输入</p>
-<p>&emsp; x = input(prompt);    &emsp; 显示prompt中的文本值并等待 回车键；</p>
-<p>&emsp; str = input(‘’,’s’);    &emsp; 返回输入的文本；</p>
-<p>printf 函数：  将参数按照指定格式输出到屏幕；    fprintf 函数： 可以将参数按照指定格式发送到指定文件; </p>
-<p>&emsp; 用法如下：  printf(format， …)；        fprintf(fid, format， …)</p>
-<p>&emsp; Octave 支持两种； matlab 仅支持 fprintf.</p>
-<p>** matlab 数据类型及类型转换 **</p>
-<p>1.<strong>整数型(int8， unit8, int16, uint16, int32, uint32, int64, uint64)</strong></p>
-<p>&emsp; 可以通过intmax(class) 和 intmin(class) 返回类型的最大最小值</p>
-<p>&emsp; 范围大小: int8:-1*2^7 ~ 2^7-1;     uint8: 0 ~ 2^8-1;    &emsp; 需要特别注意的是，当数据结果溢出后，matlab 采用饱和处理超出上下界时系统讲结果分别取为上下限; C语言出现整数溢出的时候，无符号数时会与范围进行求模，而符号数溢出时，是是未定的行为，不同的编译器可能出现不同的结果。</p>
-<p>int32(double): 四舍五入的整形</p>
-<p>fix()    向0取整；    floor() 向下取整</p>
-<p>round() 四舍五入取整；    ceil() 向上取整</p>
-<p>2.<strong>浮点型(single,dounle)</strong></p>
-<p>&emsp; 分别表示单精度和双精度，使用 realmax(class) 和 realmin(class) 可以返回表示的最大值或和最小值。</p>
-<p>3.<strong>逻辑型(logic)</strong></p>
-<p>4.<strong>字符型(char)</strong></p>
-<p>&emsp; 当字符数组的字符串长度不等时，matlab 会自动填充空字符使长度相等</p>
-<p>常见的的字符操作函数：</p>
-<p>abs(s) 将字符串转化成ascii 码； char(num) 将ascii 码转化成字符串</p>
-<p>blank(n) 返回n个空字符；    deblank(s) 移除字符串尾部包含的空字符</p>
-<p>(string) 将字符串作为命令执行；    findstr(s1,s2) 搜索字符串</p>
-<p>ischar(s) 判断是否为字符串；        isletter(s) 判断是都为字母</p>
-<p>lower(s) 转换为小写；        upper(s) 转换为大写</p>
-<p>strcmp(s1,s2) 比较字符串是否相同    strncmp(s1,s2,n) 比较字符串中的前n个字符串是否相同</p>
-<p>strrep(s1,s2,s3) 将s1中的字符s2替换为s3</p>
-<p>strfind(s1,s2) 字符串内查找字符串； 输出 s2 在 s1 中每次出现的起始索引。</p>
-<p>5.<strong>日期和时间</strong></p>
-<p>6.<strong>结构</strong></p>
-<p>7.<strong>构建结构数组</strong></p>
-<p>8.<strong>元胞数组(cell)</strong></p>
-<p>&emsp; 8.1 每个单元可以包含任意类型的数据结构；</p>
-<p>&emsp; 8.2 创建： 可以直接赋值，也可以先用cell初始化，然后再赋值；</p>
-<p>&emsp; 8.3 访问： cellVar(n) 访问的是第n个单元； cellVar{n} 访问的是第n个单元存储的内容；</p>
-<p>&emsp; 函数： cell2mat: 将cell转化成普通矩阵(cell 单元的内容类型必须相同)； mat2cell： 将普通矩阵转化为cell</p>
-<br>
-**说明：** 上述内容节选自以下链接，若有侵权，告知立删：
-
-<p>CSDN:fff2zrx <a href="https://blog.csdn.net/qq_38412868/article/details/79303083" target="_blank" rel="noopener">matlab中cell数组用法</a></p>
-<p>9.<strong>函数句柄</strong></p>
-<p>说明： 上述内容节选自以下链接，若有侵权，告知立删：</p>
-<p>&emsp; iteye_13202：<a href="https://blog.csdn.net/iteye_13202/article/details/82006786?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param" target="_blank" rel="noopener">matlab数据类型和转换</a> </p>
-<h2 id="Input-函数使用扩展"><a href="#Input-函数使用扩展" class="headerlink" title="Input 函数使用扩展"></a>Input 函数使用扩展</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">clc; clear; close all;  <span class="comment"># initialize</span></span><br><span class="line">try</span><br><span class="line">    ii = 0;				<span class="comment"># count for number of input lines</span></span><br><span class="line">    <span class="keyword">while</span> 1</span><br><span class="line">        ii = ii + 1;</span><br><span class="line">        inStr = input(<span class="string">''</span>,<span class="string">'s'</span>);	<span class="comment"># inStr: 1*m1 char </span></span><br><span class="line">        data&#123;ii&#125; = inStr;		<span class="comment"># data: 1*n cell,         </span></span><br><span class="line">        basInfo = strsplit(data&#123;1&#125;);	<span class="comment"># 1*m2 cell</span></span><br><span class="line">        nStud = str2num(basInfo&#123;1&#125;);	<span class="comment"># 1*1 double</span></span><br><span class="line">        nOper = str2num(basInfo&#123;2&#125;);	<span class="comment"># 1*1 double</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> ii == 2</span><br><span class="line">            score = str2num(inStr);		<span class="comment"># 1*m3 double</span></span><br><span class="line">        elseif ii &gt; 2				<span class="comment"># strOper: (n-2)*m4 cell</span></span><br><span class="line">            strOper(ii-2,:) = strsplit(data&#123;ii&#125;);</span><br><span class="line">        end</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> ii == nOper + 2</span><br><span class="line">            <span class="keyword">for</span> jj = 1 : nOper</span><br><span class="line">                <span class="keyword">if</span> strcmp(strOper(jj,1),<span class="string">'Q'</span>)	<span class="comment"># logic 1 or 0</span></span><br><span class="line">                    indBe = str2num(cell2mat(strOper(jj,2)));	<span class="comment"># cell2char2double</span></span><br><span class="line">                    indEn = str2num(cell2mat(strOper(jj,3)));	<span class="comment"># cell2char2double</span></span><br><span class="line">                    maxScore = max(score(indBe:indEn));		<span class="comment"># double</span></span><br><span class="line">                    disp(maxScore);</span><br><span class="line">                    </span><br><span class="line">                elseif strcmp(strOper(jj,1),<span class="string">'U'</span>)</span><br><span class="line">                    indPos = str2num(cell2mat(strOper(jj,2)));	<span class="comment"># cell2char2double</span></span><br><span class="line">                    upgVal = str2num(cell2mat(strOper(jj,3)));	<span class="comment"># cell2char2double</span></span><br><span class="line">                    score(indPos) = upgVal;			<span class="comment"># double</span></span><br><span class="line">                end</span><br><span class="line">            end</span><br><span class="line">            ii = inf;		<span class="comment"># break the inner while</span></span><br><span class="line">        end</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    end</span><br><span class="line">    </span><br><span class="line">catch</span><br><span class="line">end</span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab,VBS与HFSS实现器件联调</title>
-    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
-<p>流程说明：</p>
-<p>Matlab 的作用：</p>
-<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
-<p>VBS 的作用：</p>
-<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
-<p>HFSS 的作用：</p>
-<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
-<p>流程(1)：</p>
-<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
-<p>流程(2)：</p>
-<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
-<p>流程(3)：</p>
-<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
-<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
-]]></content>
-      <tags>
-        <tag>Matlab, VBS, HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab 数据类型转换</title>
-    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
-<p>字符串转 double： str2double();</p>
-]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab  可变输入输出</title>
-    <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
-<p>varargin 是函数定义语句中的输入变量，放在输入项的最后位置；在函数内是个 1*N 的cell数组，N 是在此位置之后的输入项数, N也可以为0。</p>
-<p>varargout 用在输出位置，情况与 varargin 相同。</p>
-<p>说明： nargin 表所有的输入变量数。</p>
-<p>下面给出一个例子使用：<br>定义函数：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% <span class="keyword">function</span> definition</span><br><span class="line"><span class="keyword">function</span> varargout = calculator(<span class="built_in">type</span>, varargin)</span><br><span class="line">varInput = cell2mat(varargin(:));   % cell to double</span><br><span class="line"><span class="keyword">if</span> strcmp(<span class="built_in">type</span>, <span class="string">'addition'</span>)</span><br><span class="line">    <span class="keyword">if</span> nargin == 3</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">    elseif nargin == 4</span><br><span class="line">        varargout&#123;1&#125; = varInput(1) + varInput(2);</span><br><span class="line">        varargout&#123;2&#125; = varInput(1) + varInput(2) + varInput(3);</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-
-<p>运行主函数：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% run <span class="keyword">in</span> <span class="built_in">command</span></span><br><span class="line">[res1, res2] = calculator(<span class="string">'addition'</span>, 10, 20, 30);</span><br><span class="line">disp([<span class="string">'res1='</span>, num2str(res1)])</span><br><span class="line">disp([<span class="string">'res2='</span>, num2str(res2)])</span><br></pre></td></tr></table></figure>
-
-<p>输出结果：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">res1=30</span><br><span class="line">res2=60</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab中文本数据混合文件的数据读取</title>
-    <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
-<p>textscan 函数读取的结果是个 1*1 的cell数组，可以展开为 N*1 的cell数组，单个字符串或者单个数据占据其中的一个位置。</p>
-<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/oriFile.png" alt="oriFile"></p>
-<p>代码如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">clc; clear; close all;</span><br><span class="line"></span><br><span class="line">fid=fopen(<span class="string">'test.s2p'</span>); % open file <span class="keyword">in</span> <span class="built_in">read</span> only </span><br><span class="line">    data = textscan(fid,<span class="string">'%s'</span>);   % textscan <span class="keyword">function</span> <span class="built_in">read</span> data</span><br><span class="line">    data = data&#123;:&#125;;</span><br><span class="line">fclose(fid);</span><br></pre></td></tr></table></figure>
-
-<p>读取后的数据结果：</p>
-<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
-]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PhotoShop 学习笔记</title>
-    <url>/2020/06/10/PhotoShop-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="像素，分辨率，英寸（厘米）的区分"><a href="#像素，分辨率，英寸（厘米）的区分" class="headerlink" title="像素，分辨率，英寸（厘米）的区分"></a>像素，分辨率，英寸（厘米）的区分</h2><p>像素： 构成图片的小色点。</p>
-<p>分辨率： dpi(Dots Per Inch)，即是每英寸上像素的数量，也就是小色点的分布密度。</p>
-<p>实际尺寸（英寸）= 像素/分辨率， 1英寸=2.54厘米。</p>
-<p>说明： 内容节选自以下链接，无意侵权，告知立删。<br>改图宝：<a href="https://www.gaitubao.com/tools/pixel2cm.html" target="_blank" rel="noopener">图片像素尺寸(厘米/英寸)换算器、在线转换</a></p>
-]]></content>
-      <tags>
-        <tag>Photoshop</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin 学习笔记</title>
-    <url>/2020/06/09/Origin-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="将数据从-matlab-导入到-origin"><a href="#将数据从-matlab-导入到-origin" class="headerlink" title="将数据从 matlab 导入到 origin"></a>将数据从 matlab 导入到 origin</h2><p>Matlab 准备: 属性-&gt;快捷方式-&gt;目标-&gt;  后面填加 /Automation 和 /desktop，如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">"C:\Program Files\MATLAB\R2019a\bin\matlab.exe"</span> /Automation /desktop</span><br></pre></td></tr></table></figure>
-
-<p>运行 matlab 程序，得到相关变量</p>
-<p>打开Origin, Tools-&gt;Matlab Console-&gt; gc 变量， 如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gc data</span><br></pre></td></tr></table></figure>
-
-<p>说明： 上述内容整理自以下链接，侵权无意，告知立删。</p>
-<p>leonSUST: <a href="https://blog.csdn.net/LeonSUST/article/details/84861701" target="_blank" rel="noopener">画图技巧 ： 让Matlab将数据传送给Origin</a></p>
-<h2 id="Book-填入等差数据"><a href="#Book-填入等差数据" class="headerlink" title="Book 填入等差数据"></a>Book 填入等差数据</h2><p>先写入前三个数据，选中后， 按住 Alt 键后下拉</p>
-]]></content>
-      <tags>
-        <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python 学习笔记</title>
-    <url>/2020/06/03/Python-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="什么是python"><a href="#什么是python" class="headerlink" title="什么是python"></a>什么是python</h2><p>Python是“一种解释型的，面向对象的，带有动态语义的高级程序设计语言”。</p>
-<h2 id="定义一个3-3的矩阵"><a href="#定义一个3-3的矩阵" class="headerlink" title="定义一个3*3的矩阵"></a>定义一个3*3的矩阵</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">X= np.array([[1,2,3],[4,5,6],[7,8,9]])</span><br></pre></td></tr></table></figure>
-
-<h2 id="spyder-注释"><a href="#spyder-注释" class="headerlink" title="spyder 注释"></a>spyder 注释</h2><p>注释/反注释:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ctrl + 1</span><br></pre></td></tr></table></figure>
-
-<p>块注释/块反注释</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ctrl + 4/5</span><br></pre></td></tr></table></figure>
-
-<h2 id="Pyhon-安装完成后，命令提示符”-‘python’-不是内部或外部命令，也不是可运行的程序”"><a href="#Pyhon-安装完成后，命令提示符”-‘python’-不是内部或外部命令，也不是可运行的程序”" class="headerlink" title="Pyhon 安装完成后，命令提示符” ‘python’ 不是内部或外部命令，也不是可运行的程序”:"></a>Pyhon 安装完成后，命令提示符” ‘python’ 不是内部或外部命令，也不是可运行的程序”:</h2><p>原因： python的安装路径没有填加到环境变量。</p>
-<h2 id="命令提示符不能进入到指定的路径："><a href="#命令提示符不能进入到指定的路径：" class="headerlink" title="命令提示符不能进入到指定的路径："></a>命令提示符不能进入到指定的路径：</h2><p>首先</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ..</span><br></pre></td></tr></table></figure>
-<p>退回到 C:盘符，然后进入目标盘符，再然后进入到目标路径。</p>
-<h2 id="测试函数模块-optproblems的安装"><a href="#测试函数模块-optproblems的安装" class="headerlink" title="测试函数模块 optproblems的安装"></a>测试函数模块 optproblems的安装</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install optproblems</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="统计运行时长"><a href="#统计运行时长" class="headerlink" title="统计运行时长"></a>统计运行时长</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import time</span><br><span class="line">start = time.time()</span><br><span class="line">main_function()</span><br><span class="line">end = time.time()</span><br><span class="line"><span class="built_in">print</span> str(end-start)</span><br></pre></td></tr></table></figure>
-
-<h2 id="使用plot-画图"><a href="#使用plot-画图" class="headerlink" title="使用plot 画图"></a>使用plot 画图</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import random</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">data = random.uniform()</span><br></pre></td></tr></table></figure>
-
-<h2 id="读取-pf-文件"><a href="#读取-pf-文件" class="headerlink" title="读取 .pf 文件"></a>读取 .pf 文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line"><span class="built_in">source</span> = open(<span class="string">"ZDT1.pf"</span>, <span class="string">"r"</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">values = source.readlines()</span><br><span class="line"></span><br><span class="line">data = np.zeros(shape=(len(values),2))</span><br><span class="line"><span class="keyword">for</span> index, value <span class="keyword">in</span> enumerate(values):</span><br><span class="line">    dataTmp= value.split()</span><br><span class="line">    data[index,0] = <span class="built_in">float</span>(dataTmp[0])</span><br><span class="line">    data[index,1] = <span class="built_in">float</span>(dataTmp[1])</span><br></pre></td></tr></table></figure>
-
-<h2 id="对数组先平方再求和"><a href="#对数组先平方再求和" class="headerlink" title="对数组先平方再求和"></a>对数组先平方再求和</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<br>
-
-<h2 id="python学习第一讲：使用pycharm-运行第一个python程序"><a href="#python学习第一讲：使用pycharm-运行第一个python程序" class="headerlink" title="python学习第一讲：使用pycharm 运行第一个python程序"></a>python学习第一讲：使用pycharm 运行第一个python程序</h2><p>准备工作：为pycharm 设置 python 解释器</p>
-<p>1). 什么是python 解释器：<br>python解释器是“帮助我们将python代码交给机器可以执行的工具”。 </p>
-<p>2). Python 解释器的作用：<br>通俗来讲，解释器是将源码转化成字节码（机器不能执行），再由python中的虚拟机来执行这些字节码（字节码不依赖操作系统，因此可以由虚拟机来实现跨平台运行）。</p>
-<p>具体介绍可参见下面链接：<br>田阅川：<a href="https://www.jianshu.com/p/c70474e1db0a" target="_blank" rel="noopener">Python解释器详解</a></p>
-<p>补充: 解释型语言与编译型语言辨析</p>
-<p>共同目标：将我们认识的语句（循环、判断等）转化成二进制代码，然后交给计算机执行。</p>
-<p>区别： 编译型语言在程序写完以后，把代码完全翻译成二进制文件，通过执行二进制文件来执行程序；生成的二进制文件可以直接执行。 解释型语言没有转化为二进制代码的过程，需要的时候再编译；因此解释型语言需要随时带着解释器。</p>
-<p>知乎玖玖：<a href="https://zhuanlan.zhihu.com/p/141212114" target="_blank" rel="noopener">python解释器到底是什么？</a></p>
-<br>
-
-<p>3). pycharm 设置python解释器步骤：</p>
-<p>&emsp; File-&gt; Setting-&gt; Project: pythonProject (Python interpreter) -&gt; 点击右面的设置，点击Add -&gt; 在Existing enviroment下定位到Python安装路径，找到python3.7.exe，勾选适用于所有项目， 点击 Apply 就可以了。</p>
-]]></content>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python 调用 C++ 函数</title>
-    <url>/2020/06/02/Python-%E8%B0%83%E7%94%A8-C-%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
-<li><p>“.cpp” 文件是”C++”语言的文件，国际一般读作”C Plus Plus”，因此后缀为”.cpp”.</p>
-</li>
-<li><p>python 调用C/C++的方法有： boost.python， swig， ctypes， pybind11 等方法。</p>
-</li>
-<li><p>pybind11 是一个只包含头文件的库，语法与目标非常像Boost.Python； Boost.Python 兼容所有的C++编译器，Pybind11 只支持Python2.7以上和C++ 11以上的编译器。</p>
-</li>
-<li><p>使用Pybind11， 需要支持C++11标准的编译器(VS2015以上)，还需要下载CMake.</p>
-</li>
-<li><p>CMake是一个跨平台的安装（编译）工具，可以用简单的语句来描述所有平台的安装；可以输出各种各样的makefile或者project文件，只是它的组态档取名为 CMakeLists.txt。</p>
-</li>
-<li><p>CMake 在windows 上编译C++的简单使用<br>1）CMake安装好以后，编写一个简单.cpp程序；<br>2）在cpp文件相同目录下建立一个CMakeLists.txt文件，例如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake_minimum_required (VERSION 2.6)</span><br><span class="line">project (HelloWorld)</span><br><span class="line">add_executable (HelloWorld HelloWorld.cpp)</span><br></pre></td></tr></table></figure>
-<p>3）到CMakeLists.txt文件的目录，运行CMake:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake .</span><br></pre></td></tr></table></figure>
-<p>4) 生成.sln, .vcxproj文件，可以使用VS打开.sln文件来编译，运行，调试程序。<br>5）构建程序</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msbuild Helloworld.sln</span><br></pre></td></tr></table></figure>
-
-<p>就可以在Debug目录下找到HelloWorld.exe 程序。</p>
-</li>
-<li><p>Pybind11 是header-only,因此不需要编译动态链接库，直接使用include 就可以。<br>1） VS2017新建 C++ 空白工程</p>
-<pre><code>项目属性页-&gt;常规-&gt;调整输出类型为dll, 调整输出文件名为pyd;
-
-项目属性页-&gt;VC++目录-&gt;包含目录-&gt;（Anaconda3\include,Pybind11\include）,库目录（Anaconda3\libs）;
-
-项目属性页-&gt;链接器-&gt;输入-&gt;附加依赖项-&gt;手动输入（python36.lib，python3.lib）</code></pre><p>2）添加源文件，添加头文件，编译，运行，生成.pyd文件</p>
-<p>3）复制.pyd文件到要引用相同目录下，直接import就可以使用</p>
-</li>
-</ol>
-<p>说明： 以上内容整理自以下链接，侵权无意，告知立删。</p>
-<p>fitzzhang：<a href="https://blog.csdn.net/fitzzhang/article/details/78988682" target="_blank" rel="noopener">python调用C++之pybind11入门</a></p>
-<p>boonya：<a href="https://blog.csdn.net/boonya/article/details/88851372" target="_blank" rel="noopener">使用cmake在Windows上编译c++</a></p>
-<p>kupe87826：<a href="https://blog.csdn.net/kupepoem/article/details/105072604" target="_blank" rel="noopener">Pybind11实现python调用c++</a></p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python 中 numpy.sort() 与 Matlab 中 sort() 排序</title>
-    <url>/2020/07/14/Python-%E4%B8%AD-numpy-sort-%E4%B8%8E-Matlab-%E4%B8%AD-sort-%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp; 通过近一整天的debug发现，python 中的 numpy.sort() 函数与 matlab 中的 sort() 函数的默认排序方法不同，从而也导致了当待排序的数组中存在多个相同数值时最后的排序结果也不尽相同。</p>
-<p>&emsp; 当待排序的数组有多个可以排序的属性后，使用 matlab 中的 sort() 函数经过不同属性的多次排序后，可以得到想要的多个属性排序后排列数组（主要体现在数值相同的情况下）； 而 python 中的 numpy.sort() 中快速排序、 归并排序和堆排序则达不到这个效果。</p>
-<p>&emsp; sort()函数的三种排序方法都是不稳定排序，因此python 可以考虑使用稳定的 sorted() 函数。 如果要返回稳定排序后的下标，可以在sorted()函数内部使用enumerate（）函数。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">itemSorted = sorted(emuerate(item), key=lambda x:x[1])</span><br><span class="line">index = [ii[0] <span class="keyword">for</span> ii <span class="keyword">in</span> itemSorted]</span><br><span class="line">val = [jj[1] <span class="keyword">for</span> jj <span class="keyword">in</span> itemSorted]</span><br></pre></td></tr></table></figure>
-
-<p>部分内容节选自以下链接，侵权无意，告知立删：</p>
-<p>sbj123456789： <a href="https://www.cnblogs.com/sbj123456789/p/10951598.html" target="_blank" rel="noopener">python中sorted排序后返回同时返回下标</a></p>
-]]></content>
-      <tags>
-        <tag>python matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Quick Start</title>
-    <url>/2020/04/28/Quick%20Start/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>Tips for Latex</title>
-    <url>/2020/05/10/Tips-for-Latex/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<p>效果如下所示：</p>
-<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
-<br>
-
-<h1 id="TeXstudio-使用技巧"><a href="#TeXstudio-使用技巧" class="headerlink" title="TeXstudio 使用技巧"></a>TeXstudio 使用技巧</h1><h2 id="快捷键的使用"><a href="#快捷键的使用" class="headerlink" title="快捷键的使用"></a>快捷键的使用</h2><ol>
-<li>注释与反注释：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ctrl + T <span class="comment"># 注释</span></span><br><span class="line">Ctrl + U <span class="comment"># 反注释</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="编译报错"><a href="#编译报错" class="headerlink" title="编译报错"></a>编译报错</h2><ol>
-<li>Error: Undefinded control sequence. \begin{document}</li>
-</ol>
-<p>原因： 可能是导言区内某个包的引用有问题，或者某个包需要更新<br><br><br>内容参考以下链接，若有侵权，告知立删</p>
-<p>[CSDN]doubleslow; : <a href="https://blog.csdn.net/qq_36607894/article/details/103639607" target="_blank" rel="noopener">Texstudio error : Undefined control sequence. \begin{document} （subfigure已经被废弃了，用subcaption!!!）</a></p>
-]]></content>
-      <tags>
-        <tag>latex</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tips for writing</title>
-    <url>/2020/05/01/Tips-for-writing/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
-<li>Regardless of …, to the best of our knowlege, few …</li>
-<li>In …, we will first recall …. Then, we review …</li>
-<li>In …, we focus on … since … and …</li>
-<li>For this reason, in … we suggest … by …, which is the main difference with …</li>
-<li>The reason lies in the fact that …</li>
-<li>As … become increasingly aware of the potential benefits of applying … in …, … is gradually coming to light.</li>
-<li>For these problems we may happily look forward to a wealth of … success stories.</li>
-<li>The parameters of these comparison approahces are set on the basis of their original papers.</li>
-<li>Loosely speaking, </li>
-<li>First and foremost, …, then, …, afterwards, ….</li>
-<li>The derived …</li>
-<li>… is pivotal to the success of …</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>writing</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VMWare15 安装 Centos7 系统</title>
-    <url>/2020/06/17/VMWare15-%E5%AE%89%E8%A3%85-Centos7-%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>基本上参照以下两个链接可以完成安装，这里总结一下需要注意的几个地方：</p>
-<p>第一： 设置密码后，登录名称是“root”，密码为你自己设置的密码；</p>
-<p>第二： 修改内容的命令不是 “vim”， 而是 “vi”；</p>
-<p>第三： 设备的名称不要改</p>
-<p>第四： 修改具体内容，一般是进入目录后，按 “i键” 或者是 “insert”, 然后移动光标进行修改，修改完成后，保存退出，先按“Esc”，然后键入“：wq！”即可；</p>
-<center> <a id="more"></a> </center>
-
-<p>第五： 第一个网络适配器的设备名称是“ens33”，第二个网络适配器的设备名称不一定是“ens37”，可能是“ens34”；</p>
-<p>第六： 第二个网络适配器（外网的）IPADDR要确认在起始的IP范围内，才能ping通。</p>
-<p>第七，安装桌面版，参考第四条链接。</p>
-<p>第八，CentOS 桌面美化，见第五条链接。</p>
-<p>第九，安装VMWare需要先卸载 open-vm-tools，否则安装不上.</p>
-<p>参考链接：</p>
-<p>脚本之家：<a href="https://www.jb51.net/article/187026.htm" target="_blank" rel="noopener">VMware安装Linux CentOS 7.7系统的详细教程</a></p>
-<p>effortsing： <a href="https://www.cnblogs.com/effortsing/p/9996362.html" target="_blank" rel="noopener">vmware安装centos7.5、配置网卡、环境配置</a></p>
-<p>heshengfu1211: <a href="https://blog.csdn.net/heshengfu1211/article/details/87828523" target="_blank" rel="noopener">CentOS7操作系统安装及安装后解决ping不通网络和主机域名的问题</a></p>
-<p>玲珑醉： <a href="https://www.cnblogs.com/sunshine-1/p/8669031.html" target="_blank" rel="noopener">Centos7.1 mini版安装后安装图形界面教程</a></p>
-<p>cloudp： <a href="https://zhuanlan.zhihu.com/p/68845973?utm_source=qq" target="_blank" rel="noopener">CentOS7桌面美化</a></p>
-<h2 id="系统优化"><a href="#系统优化" class="headerlink" title="系统优化"></a>系统优化</h2><h3 id="CentOS7-安装-Chrome"><a href="#CentOS7-安装-Chrome" class="headerlink" title="CentOS7 安装 Chrome"></a>CentOS7 安装 Chrome</h3><ol>
-<li>配置yum 源</li>
-</ol>
-<p>在目录 /etc/yum.repos.d 下新建文件 google-chrome.repo</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vi /etc/yum.repos.d/google-chrome.repo</span></span><br></pre></td></tr></table></figure>
-
-<p>键入‘i’，或者‘Insert’后，新增以下内容：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[google-chrome]</span><br><span class="line">name=google-chrome</span><br><span class="line">baseurl=http://dl.google.com/linux/chrome/rpm/stable/<span class="variable">$basearch</span></span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub</span><br></pre></td></tr></table></figure>
-
-<p>保存退出</p>
-<p>‘Esc’键后，</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">:wq！</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>安装google chrome</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</span></span><br><span class="line"><span class="comment"># yum localinstall google-chrome-stable_current_x86_64.rpm</span></span><br></pre></td></tr></table></figure>
-
-<p>内容节选自以下链接，若有侵权，告知立删</p>
-<p><a href="https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-7/" target="_blank" rel="noopener">How to Install Google Chrome Web Browser on CentOS 7</a></p>
-<p>路过sayhi:<a href="https://www.cnblogs.com/vae860514/p/8269002.html" target="_blank" rel="noopener">Centos7 yum安装chrome浏览器</a></p>
-<h3 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h3><p>首先查看防火墙的运行状态</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo firewall-cmd --state</span><br></pre></td></tr></table></figure>
-
-<p>如果是 “running” 状态，则关闭防火墙：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl stop firewalld.service</span><br></pre></td></tr></table></figure>
-
-<h3 id="CentOS7-安装-pycharm"><a href="#CentOS7-安装-pycharm" class="headerlink" title="CentOS7 安装 pycharm"></a>CentOS7 安装 pycharm</h3><p>首先下载liunux版的 pycharm 安装包:<br><a href="https://www.jetbrains.com/pycharm/download/#section=linux" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/#section=linux</a></p>
-<p>其次，移动安装包到安装目录并解压:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tar -xzvf pycharm-2020.1.2.tar.gz</span><br></pre></td></tr></table></figure>
-
-<p>接着进入 bin 目录下安装pycharm：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo sh pycharm.sh</span><br></pre></td></tr></table></figure>
-
-<p>最后创建桌面快捷方式</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vi /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure>
-
-<p>在新出现的页面写入以下内容（’Exec=’和‘Icon=’分别是自己的安装目录下的内容）：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env xdg-open</span></span><br><span class="line">[Desktop Entry]</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">Name=Pycharm</span><br><span class="line">Comment=pycharm-2020.1.2</span><br><span class="line">Exec=/mytest/pycharm-2020.1.2/bin/pycharm.sh</span><br><span class="line">Icon=/mytest/pycharm-2020.1.2/bin/pycharm.png</span><br><span class="line">Terminal=<span class="literal">false</span></span><br><span class="line">StartupNotify=<span class="literal">true</span></span><br><span class="line">Type=Application</span><br><span class="line">Categories=Application;</span><br></pre></td></tr></table></figure>
-
-<p>最后一步：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">chmod a+x /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure>
-
-<p>破解过程参见第三个链接。</p>
-<p>说明： 部分内容节选自以下链接，若有侵权，告知立删</p>
-<p>鱼虫光：<a href="https://www.cnblogs.com/ycg-blog/p/12219942.html" target="_blank" rel="noopener">centos7 下载破解pycharm专业版</a></p>
-<p>山高似水深：<a href="https://www.cnblogs.com/tnsay/p/12297957.html" target="_blank" rel="noopener">最新pycharm 激活码 更新时间 2020年6月24日11:47:52</a></p>
-<p>wangxuanyou：<a href="https://www.cnblogs.com/xyou/p/12596895.html" target="_blank" rel="noopener">Pycharm2020 永久激活</a></p>
-<h3 id="CentOS7-安装-python3"><a href="#CentOS7-安装-python3" class="headerlink" title="CentOS7 安装 python3"></a>CentOS7 安装 python3</h3><p>参见以下链接：</p>
-<p>忧臣解读：<a href="https://www.cnblogs.com/anxminise/p/9650206.html" target="_blank" rel="noopener">Centos7安装Python3.7</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>“EXCEL 文本表示科学计数法</title>
-    <url>/2020/05/29/%E2%80%9CEXCEXCEL-%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
-<thead>
-<tr>
-<th align="left">A1</th>
-<th align="left">B1</th>
-<th align="left">C1</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">0.00E+00</td>
-<td align="left">0.00E+00</td>
-<td align="left">0.00E+00 (0.00E+00)</td>
-</tr>
-</tbody></table>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C1 =TEXT(A1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">" "</span>&amp; <span class="string">"("</span> &amp; TEXT(B1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">")"</span></span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>Excel</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Win10环境基于Anaconda安装Tensorflow</title>
-    <url>/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>搜索打开 Anaconda Prompt: </p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/SearchPrompt.png" alt="SearchPrompt"></p>
-<p>检查 Anaconda和 python 的版本：<br><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/version.png" alt="version"></p>
-<p>更新 pip版本：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
-
-
-<h1 id="配置安装环境"><a href="#配置安装环境" class="headerlink" title="配置安装环境"></a>配置安装环境</h1><p>连接到清华仓库镜像地址，下载提速：</p>
-<p>在 Anaconda Prompt中输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda create -n tensorflow python=3.6</span><br></pre></td></tr></table></figure>
-
-<p>同意安装新的 packages:</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/yes.png" alt="yes"></p>
-<p>安装环境配置成功。</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/activave.png" alt="activave"></p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/envir.png" alt="envir"></p>
-<h1 id="安装tensorflow1-5"><a href="#安装tensorflow1-5" class="headerlink" title="安装tensorflow1.5"></a>安装tensorflow1.5</h1><p>打开安装环境：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda activate tensorflow</span><br></pre></td></tr></table></figure>
-
-<p>输入命令，安装CPU版本tensorflow1.5：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ pip install tensorflow==1.5 -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/tf.png" alt="tf"></p>
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>关闭安装环境: </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ conda deactivate</span><br></pre></td></tr></table></figure>
-
-<p> Anaconda Prompt中输入 python：</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/python.png" alt="python"></p>
-<p>依次输入测试命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ import tensorflow as tf</span><br><span class="line">$ sess = tf.Session()</span><br><span class="line">$ succ = tf.constant(<span class="string">'succeed, tensorflow!'</span>)</span><br><span class="line">$ <span class="built_in">print</span>(sess.run(succ))</span><br></pre></td></tr></table></figure>
-
-<p>出现以下结果表明安装成功：</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/test.png" alt="test"></p>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>在 spyder中导入tensorflow包之前，需要在 Anaconda 的tenserflow环境中重新安装spyder插件：</p>
-<p><img src="/2020/05/05/Win10%E7%8E%AF%E5%A2%83%E5%9F%BA%E4%BA%8EAnaconda%E5%AE%89%E8%A3%85Tensorflow/spyder.png" alt="spyder"></p>
-<p>在 spyder中找不到的模块需要在tensorflow环境中重新安装一次，比如 matplotlib 模块:</p>
-<p>Anaconda Prompt中依次输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate tensorflow</span><br><span class="line">conda install matplotlib</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《微波工程》第一章：电磁理论</title>
-    <url>/2020/09/03/%E3%80%8A%E5%BE%AE%E6%B3%A2%E5%B7%A5%E7%A8%8B%E3%80%8B%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E7%94%B5%E7%A3%81%E7%90%86%E8%AE%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="第1章-电磁理论"><a href="#第1章-电磁理论" class="headerlink" title=" 第1章 电磁理论 "></a><center> 第1章 电磁理论 </center></h1><p>&emsp; 简要回顾微波工程的历史和重要应用，然后综述电磁理论的基本课题。</p>
-<h2 id="1-1-微波工程简介"><a href="#1-1-微波工程简介" class="headerlink" title="1.1 微波工程简介"></a>1.1 微波工程简介</h2><p>&emsp; <strong>微波</strong>(microwave) 指频率在 300MHz(3x10<sup>8</sup>Hz)到 300GHz(3x10<sup>11</sup>Hz)、对应的电波长在 $\lambda=c/f=1m$ 和 $\lambda=1mm$ 之间的交变电流信号。波长在毫米量级的信号，称为<strong>毫米波</strong>(millimeterwaves)。</p>
-<p>&emsp; 常规电路理论是麦克斯韦方程所描述的范围较宽的电磁理论的近似或特定使用，一般情况下，电路理论的集总电路元件近似在微波频段是不成立的，因此一般不能直接应用于求解微波网络问题(微波频率高/波长短)。</p>
-<p>&emsp; 微波元件常常是分布元件，因为器件的尺度与微波波长同一数量级，其中电压或电流的相位在器件的物理尺寸内有明显变化。 在极低频率下，波长足够长，在贯穿一个元件的线度范围内，其相位也没有明显的变化。</p>
-<p>&emsp; 频率的另一个极端被确定为光工程，波长比元件的尺寸短得多。 此时， 麦克斯韦方程可以简化为几何光学，光学系统可以用几何光学的理论来设计。这些技术也可以应用于毫米波系统，称为准光学。</p>
-<br>
-
-<p>&emsp; 微波工程中，人们通常从麦克斯韦方程及它的解开始，然而麦克斯韦方程包含了作为空间坐标函数的矢量场量的矢量微分或积分的运算，从而增加了数学上的复杂性。</p>
-<p>&emsp; 场理论的解通常给出了空间中每一点的电磁场的完整描述，比绝大多数实际应用中所需的信息多得多。一般情况下，我们更关心<strong>终端的量</strong>，例如功率、阻抗、电压和电流等常用电路理论概念表达的量。正是这种复杂性给微波工程增加了挑战性，而本书的目标是试图将场理论的解简化为可以用更简单的电路理论来表达结果。</p>
-<p>###1.1.1 微波工程的应用</p>
-<p>&emsp; 尽管微波能量的高频率和短波长让微波元件与系统的分析与设计变得困难，但同时也为微波系统的应用提供了很大的便利。 比如以下这些例子：<br>&emsp; 1) 天线增益与天线的电尺寸成比例。<br>&emsp; 2) 在频率较高时可以实现更大的带宽（携带信息的容量）。<br>&emsp; 3) 微波信号按视线传播，而不会像较低频率信号那样进入电离层时传输路径会弯曲。<br>&emsp; 4) 雷达目标的反射面积（雷达散射截面）总是与目标的电尺寸成比例。<br>&emsp; 5) 各种分子，原子和原子核的谐振都发生在微波频率下，使得微波在基础科学领域、遥感、医学诊断和治疗及加热方法等方面具有独特的应用。</p>
-<p>&emsp; 当今，微波技术的主要应用是通信、雷达、环境遥感和医学系统。 微波技术的首次应用可能是在20世纪70年代首次提出的蜂窝电话系统中。</p>
-<center> ![The electromagnetic spectrum](Spectrum.png) </center>
-
-
-]]></content>
-      <tags>
-        <tag>Microwave</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>佳作欣赏之&quot;黄石公《素书》&quot;</title>
-    <url>/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="黄石公《素书》"><a href="#黄石公《素书》" class="headerlink" title=" 黄石公《素书》 "></a><center> 黄石公《素书》 </center></h1><h2 id="原始章第一"><a href="#原始章第一" class="headerlink" title="原始章第一"></a>原始章第一</h2><p>夫道、德、仁、义、礼五者，一体也。 道者，人之所蹈，使万物不知其所由。 德者，人之所得，使万物各得其所欲。 仁者，人之所亲，有慈慧恻隐之心，以遂其生存。 义者，人之所宜，赏善罚恶，以立功立事。 礼者，人之所履，夙兴夜寐，以成人伦之序。 夫欲为人之本，不可无一焉。 贤人君子，明于盛衰之道，通乎成败之数，审乎治乱之势，达乎去就之理。故潜居抱道以待其时。 若时至而行，则能极人臣之位； 得机而动，则能成绝代之功。如其不遇，没身而已。 是以其道足高，而名重于后代。</p>
-<center> <a id="more"></a> </center>
-
-<h2 id="正道章第二"><a href="#正道章第二" class="headerlink" title="正道章第二"></a>正道章第二</h2><p>德足以怀远，信足以一异，义足以得众，才足以鉴古，明足以照下，此人之俊也。 行足以为仪表，智足以决嫌疑，信可以使守约，廉可以使分财，此人之豪也。 守职而不废，处义而不回，见嫌而不苟免，见利而不苟得，此人之杰也。</p>
-<h2 id="求人之志章第三"><a href="#求人之志章第三" class="headerlink" title="求人之志章第三"></a>求人之志章第三</h2><p>绝嗜禁欲，所以除累。抑非损恶，所以让过。贬酒阙色，所以无污。 避嫌远疑，所以不误。博学切问，所以广知。高行微言，所以修身。 恭俭谦约，所以自守。深计远虑，所以不穷。亲仁友直，所以扶颠。 近恕笃行，所以接人。任材使能，所以济物。殚恶斥谗，所以止乱。 推古验今，所以不惑。先揆后度，所以应卒。设变致权，所以解结。 括囊顺会，所以无咎。橛橛梗梗，所以立功。孜孜淑淑，所以保终。</p>
-<h2 id="本德宗道章第四"><a href="#本德宗道章第四" class="headerlink" title="本德宗道章第四"></a>本德宗道章第四</h2><p>夫志，心独行之术。长没长于博谋，安没安于忍辱，先没先于修德，乐没乐于好善，神没神于至诚，明没明于体物，吉没吉于知足，苦没苦于多愿，悲没悲于精散，病没病于无常，短没短于苟得，幽没幽于贪鄙，孤没孤于自恃，危没危于任疑，败没败于多私。</p>
-<h2 id="道义章第五"><a href="#道义章第五" class="headerlink" title="道义章第五"></a>道义章第五</h2><p>以明示下者暗，有过不知者蔽，迷而不返者惑，以言取怨者祸，令与心乖者废，后令缪前者毁，怒而无威者犯，好众辱人者殃，戮辱所任者危，慢其所敬者凶，貌合心离者孤，亲谗远忠者亡，近色远贤者昏，女谒公行者乱，私人以官者浮，凌下取胜者侵，名不胜实者耗。略己而责人者不治，自厚而薄人者弃废。以过弃功者损，群下外异者沦，既用不任者疏，行赏吝色者沮，多许少与者怨，既迎而拒者乖。薄施厚望者不报，贵而忘贱者不久。念旧而弃新功者凶，用人不得正者殆，强用人者不畜，为人择官者乱，失其所强者弱，决策于不仁者险，阴计外泄者败，厚敛薄施者凋。战士贫，游士富者衰；货赂公行者昧；闻善忽略，记过不忘者暴；所任不可信，所信不可任者浊。牧人以德者集，绳人以刑者散。小功不赏，则大功不立；小怨不赦，则大怨必生。赏不服人，罚不甘心者叛。赏及无功，罚及无罪者酷。听谗而美，闻谏而仇者亡。能有其有者安，贪人之有者残。</p>
-<h2 id="安礼章第六"><a href="#安礼章第六" class="headerlink" title="安礼章第六"></a>安礼章第六</h2><p>怨在不舍小过，患在不预定谋。福在积善，祸在积恶。饥在贱农，寒在堕织。安在得人，危在失事。富在迎来，贫在弃时。上无常操，下多疑心。轻上生罪，侮下无亲。近臣不重，远臣轻之。自疑不信人，自信不疑人。枉士无正友，曲上无直下。危国无贤人，乱政无善人。爱人深者求贤急，乐得贤者养人厚。国将霸者士皆归，邦将亡者贤先避。地薄者大物不产，水浅者大鱼不游，树秃者大禽不栖，林疏者大兽不居。山峭者崩，泽满者溢。弃玉取石者盲，羊质虎皮者柔。衣不举领者倒，走不视地者颠。柱弱者屋坏，辅弱者国倾。足寒伤心，人怨伤国。山将崩者下先隳，国将衰者人先弊。根枯枝朽，人困国残。与覆车同轨者倾，与亡国同事者灭。见已生者慎将生，恶其迹者须避之。畏危者安，畏亡者存。夫人之所行，有道则吉，无道则凶。吉者，百福所归；凶者，百祸所攻。非其神圣，自然所钟。务善策者无恶事，无远虑者有近忧。同志相得，同仁相忧，同恶相党，同爱相求，同美相妒，同智相谋，同贵相害，同利相忌，同声相应，同气相感，同类相依，同义相亲，同难相济，同道相成，同艺相规，同巧相胜：此乃数之所得，不可与理违。释己而教人者逆，正己而化人者顺。逆者难从，顺者易行，难从则乱，易行则理。如此理身、理国、理家，可也！</p>
-]]></content>
-      <tags>
-        <tag>read</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>佳作欣赏之《菜根谭》</title>
-    <url>/2020/09/10/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E8%8F%9C%E6%A0%B9%E8%B0%AD%E3%80%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="《菜根谭》"><a href="#《菜根谭》" class="headerlink" title=" 《菜根谭》 "></a><center> 《菜根谭》 </center></h1><center> [明]洪应明 </center>
-
-<h2 id="概论"><a href="#概论" class="headerlink" title="概论"></a>概论</h2><p>君子之心事，天青日白，不可使人知；君子之才华，玉韫珠藏，不可使人易知。</p>
-<p>耳中常闻逆耳之言，心中常有拂心之事，才是进德修行的砥石。若言言悦耳，事事快心，便把此生埋在鸩毒中矣。</p>
-<p>疾风怒雨，禽鸟戚戚；霁月风光，草木欣欣，可见天地不可一日无和气，人心不可一日无喜神。</p>
-<p>醲(No2ng)肥辛甘非真味，真味只是淡；神奇卓异非至人，至人只是常。</p>
-<p>夜深人静独坐观心；始知妄穷而真独露，每于此中得大机趣；既觉真现而妄难逃，又于此中得大惭忸。</p>
-<p>恩里由来生害，故快意时须早回头；败后或反成功，故拂心处切莫停手。</p>
-<p>藜口苋肠者，多冰清玉洁；衮衣玉食者，甘婢膝奴颜。盖志以淡泊明，而节从肥甘丧矣。</p>
-<p>面前的田地要放的宽，使人无不平之叹；身后的惠泽要流得长，使人有不匮之思。</p>
-<p>路径窄处留一步，与人行；滋味浓的减三分，让人嗜。此是涉世一极乐法。</p>
-<p>做人无甚高远的事业，摆脱得俗情便入名流；为学无甚增益的功夫，减除得物累便臻圣境。</p>
-<p>宠利毋居人前，德业毋落人后，受享毋逾分外，修持毋减分中。</p>
-<p>处世让一步为高，退步即进步的张本；待人宽一分是福，利人利己的根基。</p>
-<p>盖世的功劳，当不得一个矜字；弥天的罪过，当不得一个悔字。</p>
-<p>完名美节，不宜独任，分些与人，可以远害全身；辱行污名，不宜全推，引些归己，可以韬光养德。</p>
-]]></content>
-      <tags>
-        <tag>read</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>多目标算法之MOEAD</title>
-    <url>/2020/08/16/%E5%A4%9A%E7%9B%AE%E6%A0%87%E7%AE%97%E6%B3%95%E4%B9%8BMOEAD/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>MOEAD 优化框架（契比雪夫分解方法求解最小值问题）</p>
-<p>m: 多目标的个数</p>
-<p>输入：</p>
-<p>&emsp; 1) N: 种群规模</p>
-<p>&emsp; 2）W: 均匀分布的权重向量，N*m</p>
-<p>&emsp; 3) T: 邻域的规模</p>
-<p>初始化：</p>
-<p>&emsp; 1) 外部种群： EP = \varnothing</p>
-<p>&emsp; 2) 计算任意两个权重向量的欧式距离，为每个权重向量找到 T 个相邻向量 B(i); B = N*T;</p>
-<p>&emsp; 3) 产生初始种群pop 评估得到目标向量 FV</p>
-<p>&emsp; 4) 初始化参考点 Z* (最小化问题， Zi*=min(FVi))</p>
-<p>迭代：</p>
-<p>&emsp; 种群成员遍历：</p>
-<p>&emsp; &emsp; 1) 根据当前成员的邻域内任意两个成员产生新得子代</p>
-<p>&emsp; &emsp; 2）若子代超出边界则调整进边界内</p>
-<p>&emsp; &emsp; 3) 更新参考点Z*（替换为任意子代更小目标值）</p>
-<p>&emsp; &emsp; 4) 更新邻域内成员（如果子代的目标切比雪夫分解值小于父本的值，则子代替换父本）</p>
-<p>&emsp; &emsp; 5）从EP中删除被子代目标值所支配的所有成员； 如果没有子代目标值不能被任一成员支配，则将子代添加进EP</p>
-<p>满足终止条件输出EP。</p>
-]]></content>
-      <tags>
-        <tag>MOP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《牛客》学习笔记</title>
-    <url>/2020/06/16/%E7%AC%94%E8%AF%95%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h1><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>排序算法的复杂度</p>
-<p><img src="/2020/06/16/%E7%AC%94%E8%AF%95%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/sortComp.png" alt="The complexity of sorting algorithm"></p>
-<p>二叉树：</p>
-<p>树：不包含回路的连通无向图</p>
-<p>二叉树：特殊的树，不为空则有根节点，左子树与右子树组成</p>
-<p>满二叉树： 每个分支节点都有左子树和右子树，所有叶子都在同一层上。</p>
-<p>完全二叉树： 从右向左减少叶子节点的满二叉树。</p>
-<p>堆排序：</p>
-<p>堆:一种特殊的完全二叉树</p>
-<p>大顶堆：所有父节点都大于等于子节点</p>
-<p>小顶堆：所有父节点都小于等于子节点</p>
-<p>推的存储： 从上到下，从左到右，父节点编号为k,左儿子编号为2<em>k,右儿子编号为2</em>k+1.</p>
-<p>堆排序的基本思想：将序列构成大顶推，将根节点与末尾元素进行交换； 将剩余n-1个元素重新构造堆，反复执行，得到有序序列。</p>
-<p>说明：内容节选自以下链接，若有侵权，告知立删</p>
-<p>MaxineZhou：<a href="https://blog.csdn.net/MaxineZhou/article/details/89314044" target="_blank" rel="noopener">什么是堆以及堆排序原理</a></p>
-<p>dreamcatcher-cx：<a href="https://www.cnblogs.com/chengxiao/p/6129630.html" target="_blank" rel="noopener">图解排序算法(三)之堆排序</a></p>
-<h2 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h2><h3 id="题1"><a href="#题1" class="headerlink" title="题1"></a>题1</h3><p>来源：牛客网  链接：<a href="https://www.nowcoder.com/questionTerminal/9fededa1b63a41798e5d43344d7bf216?f=discussion" target="_blank" rel="noopener">车站建造问题</a></p>
-<p>有10^8个村庄排在一条公路上，依次编号为0<del>10^8-1，相邻村庄距离为1，其中有n个村庄居住着牛牛，居住着牛牛的村庄从小到大依次为a0</del>an-1，其中保证a0=0.<br>现在需要建设车站，有两个要求必须被满足：<br>1、每个有牛牛居住的村庄必须修建车站。<br>2、相邻车站的距离必须为1或为某个质数。<br>现给出n和a数组，求需要建设车站的最小数量。</p>
-<p>解题思路来源于牛客网用户_hzy1721： 车站数最少为n， 若相邻车站的距离不是1或者质数，则在中间插入一个或多个车站，使得距离为1或者质数;该题等同于把一个非素数分解为素数的个数，考核内容为<a href="https://zh.wikipedia.org/wiki/%E5%93%A5%E5%BE%B7%E5%B7%B4%E8%B5%AB%E7%8C%9C%E6%83%B3" target="_blank" rel="noopener">哥德巴赫猜想</a>。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>硬件基本知识整理</title>
-    <url>/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="S-参数"><a href="#S-参数" class="headerlink" title="S 参数"></a>S 参数</h1><p>S 参数英文原称是“Scattering Parameter”，即“散射参数”。</p>
-<p>一个二端口的网络，共有四个S参数：S11、S12、S21、S22；</p>
-<p>互易网络满足： S12 = S21；</p>
-<p>对称网络满足： S11 = S22；</p>
-<p>无耗网络中，端口1输入的能量或者反射回端口1或者传输到端口2，满足： S11*S11 + S21*S21 =1。</p>
-<p>高速电路设计中的微带线或者带状线，都有参考平面，通常是不对称结构（比如平行双导线就是对称结构），但是满足互易条件，因此S11!=S22， S12=S21。</p>
-]]></content>
-      <tags>
-        <tag>HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>算法类专利申请的注意事项</title>
-    <url>/2020/09/19/%E7%AE%97%E6%B3%95%E7%B1%BB%E4%B8%93%E5%88%A9%E7%94%B3%E8%AF%B7%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="中华人名共和国专利法释义："><a href="#中华人名共和国专利法释义：" class="headerlink" title="中华人名共和国专利法释义："></a><strong>中华人名共和国专利法释义：</strong></h2><p>&emsp; 第二十五条 对下列各项，不授予专利权：</p>
-<p>&emsp; 一） 科学发现;<br>&emsp; 二） 智力活动的规则和方法；<br>&emsp; 三） 疾病的诊断和治疗方法；<br>&emsp; 四） 动物和植物品种；<br>&emsp; 五） 用原子核变换方法获得的物质。</p>
-<p>&emsp; 对前款第 四）项所列产品的生产方法，可以依照本法规定授予专利权。</p>
-<p>&emps; 【释义】本条是关于不授予专利权的智力活动成果的规定。</p>
-<p>&emsp; 一、 建立专利制度的目的，是为了保护法定范围内的智力活动成果。 具备<strong>新颖性</strong>、<strong>创造性</strong>和<strong>实用性</strong>，并<strong>符合专利法规定</strong>的其它条件的发明创造，属于专利保护的智力成果，可以依法取得专利权。 按照本条规定，下列几类智力活动的成果，不属于专利保护的范围，不授予专利权：<br>&emsp; 1.科学发现。 指对自然界中<strong>已经客观存在的未知物质、现象、变化过程及其特性和规律</strong>的发现和认识。 这些本身<strong>不是一种技术方案</strong>，不是专利法意义上的发明创造，不能直接实施用以解决一定领域内的特定技术问题。<br>&emsp; 2.智力活动的规则和方法。 指人的思维活动，是大脑进行精神和智能活动的手段或过程，仅是指导人们对表达的信息进行思维、判断和记忆，不需要采用技术手段或者遵循自然法则，<strong>不具备技术特征</strong>。<br>&emsp; 3.疾病的诊断和治疗方法。 <strong>涉及人体健康，不能被少数人所独占</strong>。 治疗或者诊断无法在产业上制造或使用，<strong>不具备实用性</strong>。<br>&emsp; 4.动物和植物品种。 指以生物学方法培育出来的动植物新品种。 是大自然的产物，不是人们创造出来的，不能以工业方法生产，<strong>不具备专利法意义上的创造性和使用性</strong>。 可以通过专利法意外的其它法律保护。<br>&emsp; 5.用原子核变换方法获得的物质。 指通过核裂变、核聚变等方法获得的元素或化合物。 原子核变换方法获得的物质关系到国家的经济、国防、科研和公共生活的重大利益，关系国家安全，<strong>不宜公开</strong>。</p>
-<p>&emsp; 二、 对于动物和植物品种的生产方法，可以授予专利权。 这里的 “生产方法”指非生物学的方法，这类方法由于<strong>有技术成分的介入</strong>，并对最终达到的目的或效果起到了主要的<strong>控制作用或者决定性的作用</strong>，因而可以被授予专利权。 对于微生物和微生物方法可以获得专利保护。</p>
-<br>
-&emsp; 第三十三条 
-
-<p>&emsp; 申请人可以对其专利申请文件进行修改，但是，对发明和实用新型专利申请文件的修改不得超出原说明书和权利要求书记载的范围，对外观设计专利申请文件修改不得超出原图片或者照片表示的范围。</p>
-<p>&emsp; 【释义】本条是关于申请人对专利申请呃修改权的规定。</p>
-<p>&emsp; 一、这里规定的申请人对专利文件的修改，与本法第三十七条所规定的的申请人应国务院专利行政部门的要求对其专利申请的修改是不同的，这里是申请人主动提出的修改。 按照《专利法实施细则》的相关规定，<strong>发明专利申请人</strong>在提出实质审查请求或者在对专利局第一次实质审查意见作出答复时，可以对发明专利申请主动提出修改。 <strong>实用新型或者外观设计专利申请人</strong>自申请日起三个月内，可以对专利申请主动提出修改。 可以对原来的文字、图片进行修改，使其更加清楚、准确；或者对原来的技术方案进行修改、补充，使其更加完善。 但是，<strong>修改不得超出法律规定的范围</strong>。</p>
-<p>&emsp; 二、关于申请人对专利申请文件的修改范围。 按本条规定，对发明和实用新型专利申请文件的修改不得超出原说明书和权利要求书记载的范围； 对外观设计专利申请文件的修改不得超出原图片或者照片的范围。</p>
-<br>
-
-<p>引用：</p>
-<p>&emsp; [1] 安建.中华人民共和国专利法释义[M].北京：法律出版社，2009.</p>
-]]></content>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> Typora </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Quick Start</title>
+      <link href="/2020/04/28/Quick%20Start/"/>
+      <url>/2020/04/28/Quick%20Start/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p><h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
