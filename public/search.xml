@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Word 学习笔记</title>
+      <link href="/2020/09/29/Word-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/2020/09/29/Word-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="1-页眉跨节编辑"><a href="#1-页眉跨节编辑" class="headerlink" title="1. 页眉跨节编辑"></a>1. 页眉跨节编辑</h2><p>&emsp; 1) 插入-&gt;页眉， 可以选择插入页眉的格式</p><p>&emsp; 2) 如果前后页的页眉内容不同，按下面顺序操作：</p><p>&emsp; &ensp; ① 光标定位到上一页内容的最后位置， 布局-&gt;分隔符-&gt;下一页；</p><p>&emsp; &ensp; ② 编辑下一页的页眉内容时，先取消 设计 栏目下的 “链接到前一条页眉”；</p><p>&emsp; &ensp; ③ 检查前页的页眉内容是否发生更改，若有更改更正为正确的内容。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Office </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>算法类专利申请的注意事项</title>
       <link href="/2020/09/19/%E7%AE%97%E6%B3%95%E7%B1%BB%E4%B8%93%E5%88%A9%E7%94%B3%E8%AF%B7%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
       <url>/2020/09/19/%E7%AE%97%E6%B3%95%E7%B1%BB%E4%B8%93%E5%88%A9%E7%94%B3%E8%AF%B7%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
