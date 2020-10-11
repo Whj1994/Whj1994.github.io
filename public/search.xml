@@ -11,52 +11,12 @@
       </tags>
   </entry>
   <entry>
-    <title>CentOS 学习笔记</title>
-    <url>/2020/08/27/CentOS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>1. 常用命令:</strong></p>
-<p>删除文件夹：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rm -r /folder   <span class="comment"># -r 递归删除目录及子目录，包含写保护文件有提示</span></span><br><span class="line">rm -rf /folder	<span class="comment"># f 不提示用户  </span></span><br><span class="line">rm -ir /folder  <span class="comment"># -i 交互模式，删除任何文件前提示确认</span></span><br></pre></td></tr></table></figure>
-<br>
-
-<p><strong>2. 设置anydesk开机自启动</strong></p>
-<p>将anydesk的启动命令添加到 /etc/rc.d/rc.local 内：</p>
-<pre><code class="bash">vi /etc/rc.d/rc.local
-
-<span class="meta">#!/bin/sh</span>
-<span class="comment">#</span>
-<span class="comment"># This script will be executed *after* all the other init scripts.</span>
-<span class="comment"># You can put your own initialization stuff in here if you don't</span>
-<span class="comment"># want to do the full Sys V style init stuff.</span>
-
-touch /var/lock/subsys/<span class="built_in">local</span>
-/etc/init.d/anydesk start  <span class="comment"># 添加的anydesk 启动命令</span></code></pre>
-<br>
-内容节选自以下链接，若有侵权，告知立删：
-
-<p>[博客园]HorseShoe2016:<a href="https://www.cnblogs.com/dongling/p/6232730.html" target="_blank" rel="noopener">CentOS6.5系统下设置自己安装的程序开机自动启动</a><br><br></p>
-<p><strong>3. vi 和vim 的区别</strong></p>
-<p>vi和vim都是多模式编辑器，且vim是vi的升级版本, 除了完全兼容vi，还有具有以下特性：</p>
-<p>&emsp; ①多级撤销 (vi中，键u只能撤销上次命令，而vim 可以无限制撤销)</p>
-<p>&emsp; ②易用性 (vim 可以运行与更多的操作平台)</p>
-<p>&emsp; ③语法加亮 (vim可以用不同的颜色来加亮代码)</p>
-<p>&emsp; ④可视化操作 (vim 除了用于终端还可以用于桌面)</p>
-<p>vi有3个模式：<strong>插入模式</strong> 可以输入字符，Esc 可以回到命令模式; <strong>命令模式</strong>可以移动光标，删除字符等操作； <strong>低行模式</strong>可以保存文件，退出vi，设置vi及查找等功能。<br><br><br>内容节选自以下链接，若有侵权，告知立删：</p>
-<p>[博客园]yvioo:<a href="https://www.cnblogs.com/pxblog/archive/2019/03/12/10519719.html" target="_blank" rel="noopener">Centos 中 vi 和vim 的区别</a><br><br></p>
-<p><strong>4. rpm 和yum 的区别</strong></p>
-<p><strong>rpm：</strong></p>
-<p>&emsp; 全称 Red-Hat Package Manager,是一种底层的包管理工具，可以进行软件的安装，查询，卸载，升级等操作。安装软件时只会安装指定的软件，不会安装依赖性文件，如果缺失就会报错。</p>
-<p><strong>yum：</strong></p>
-<p>&emsp; 全称 Yellow dog Updater, Modified，是基于rpm 上层软件包管理。 yum 拥有rpm的功能，且具备从服务上下载rpm包及相关的依赖包。</p>
-<p><strong>yum 源：</strong></p>
-<p>&emsp; yum 下载rpm包的指定位置们可以是网络源，也可以是本地源。<br>&emsp; 网络yum源配置文件位于 /etc/yum.repos.d/目录下，文件扩展名为”.repo”。</p>
-<br> 
-内容精简自下述链接，若有侵权，告知立删：
-
-<p>[博客园]脆落花漾：<a href="https://www.cnblogs.com/guan-zl/p/12915761.html" target="_blank" rel="noopener">CentOS中rpm和yum到底有什么区别？</a><br><br></p>
+    <title>MOP 学习记录</title>
+    <url>/2020/07/17/MOP-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>2020.7.17</p>
+<p>问：目前是否有适用于具有混合连续-离散型决策变量的多目标优化问题的测试集</p>
+<p>答：没有，测试集的编码就是单一的。混合编码并不会提升难度，没有太大意义。</p>
 ]]></content>
-      <tags>
-        <tag>centos</tag>
-      </tags>
   </entry>
   <entry>
     <title>Highly cited journals</title>
@@ -176,12 +136,51 @@ touch /var/lock/subsys/<span class="built_in">local</span>
 ]]></content>
   </entry>
   <entry>
-    <title>MOP 学习记录</title>
-    <url>/2020/07/17/MOP-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>2020.7.17</p>
-<p>问：目前是否有适用于具有混合连续-离散型决策变量的多目标优化问题的测试集</p>
-<p>答：没有，测试集的编码就是单一的。混合编码并不会提升难度，没有太大意义。</p>
+    <title>Markdown 语法总结</title>
+    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
+<p><strong>粗体：</strong> “ ** ** “</p>
+<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
+<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
+<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
+<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
+<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
+<p>插入链接</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>上标： &lt;sup&gt; xxx &lt;/sup&gt;</p>
+<p>下标： &lt;sub&gt; xxx &lt;/sub&gt;</p>
+<p>\lambda : $\lambda$</p>
+<p>\Lambda : $\Lambda$</p>
+<p>换行： 空格，空格，回车</p>
+<p>插入图片格式： <img src="/home/picture/1.png" alt="avatar"></p>
 ]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Matlab,VBS与HFSS实现器件联调</title>
+    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
+<p>流程说明：</p>
+<p>Matlab 的作用：</p>
+<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
+<p>VBS 的作用：</p>
+<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
+<p>HFSS 的作用：</p>
+<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
+<p>流程(1)：</p>
+<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
+<p>流程(2)：</p>
+<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
+<p>流程(3)：</p>
+<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
+<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
+]]></content>
+      <tags>
+        <tag>Matlab, VBS, HFSS</tag>
+      </tags>
   </entry>
   <entry>
     <title>Matlab(Octave 4.0.0)常用知识总结</title>
@@ -237,63 +236,6 @@ touch /var/lock/subsys/<span class="built_in">local</span>
       </tags>
   </entry>
   <entry>
-    <title>Matlab 数据类型转换</title>
-    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
-<p>字符串转 double： str2double();</p>
-]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab,VBS与HFSS实现器件联调</title>
-    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
-<p>流程说明：</p>
-<p>Matlab 的作用：</p>
-<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
-<p>VBS 的作用：</p>
-<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
-<p>HFSS 的作用：</p>
-<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
-<p>流程(1)：</p>
-<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
-<p>流程(2)：</p>
-<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
-<p>流程(3)：</p>
-<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
-<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
-]]></content>
-      <tags>
-        <tag>Matlab, VBS, HFSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown 语法总结</title>
-    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
-<p><strong>粗体：</strong> “ ** ** “</p>
-<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
-<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
-<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
-<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
-<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
-<p>插入链接</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>
-
-<p>上标： &lt;sup&gt; xxx &lt;/sup&gt;</p>
-<p>下标： &lt;sub&gt; xxx &lt;/sub&gt;</p>
-<p>\lambda : $\lambda$</p>
-<p>\Lambda : $\Lambda$</p>
-<p>换行： 空格，空格，回车</p>
-<p>插入图片格式： <img src="/home/picture/1.png" alt="avatar"></p>
-]]></content>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Matlab  可变输入输出</title>
     <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
@@ -311,6 +253,80 @@ touch /var/lock/subsys/<span class="built_in">local</span>
 
 
 
+]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CentOS 学习笔记</title>
+    <url>/2020/08/27/CentOS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>1. 常用命令:</strong></p>
+<p>删除文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rm -r /folder   <span class="comment"># -r 递归删除目录及子目录，包含写保护文件有提示</span></span><br><span class="line">rm -rf /folder	<span class="comment"># f 不提示用户  </span></span><br><span class="line">rm -ir /folder  <span class="comment"># -i 交互模式，删除任何文件前提示确认</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<p><strong>2. 设置anydesk开机自启动</strong></p>
+<p>将anydesk的启动命令添加到 /etc/rc.d/rc.local 内：</p>
+<pre><code class="bash">vi /etc/rc.d/rc.local
+
+<span class="meta">#!/bin/sh</span>
+<span class="comment">#</span>
+<span class="comment"># This script will be executed *after* all the other init scripts.</span>
+<span class="comment"># You can put your own initialization stuff in here if you don't</span>
+<span class="comment"># want to do the full Sys V style init stuff.</span>
+
+touch /var/lock/subsys/<span class="built_in">local</span>
+/etc/init.d/anydesk start  <span class="comment"># 添加的anydesk 启动命令</span></code></pre>
+<br>
+内容节选自以下链接，若有侵权，告知立删：
+
+<p>[博客园]HorseShoe2016:<a href="https://www.cnblogs.com/dongling/p/6232730.html" target="_blank" rel="noopener">CentOS6.5系统下设置自己安装的程序开机自动启动</a><br><br></p>
+<p><strong>3. vi 和vim 的区别</strong></p>
+<p>vi和vim都是多模式编辑器，且vim是vi的升级版本, 除了完全兼容vi，还有具有以下特性：</p>
+<p>&emsp; ①多级撤销 (vi中，键u只能撤销上次命令，而vim 可以无限制撤销)</p>
+<p>&emsp; ②易用性 (vim 可以运行与更多的操作平台)</p>
+<p>&emsp; ③语法加亮 (vim可以用不同的颜色来加亮代码)</p>
+<p>&emsp; ④可视化操作 (vim 除了用于终端还可以用于桌面)</p>
+<p>vi有3个模式：<strong>插入模式</strong> 可以输入字符，Esc 可以回到命令模式; <strong>命令模式</strong>可以移动光标，删除字符等操作； <strong>低行模式</strong>可以保存文件，退出vi，设置vi及查找等功能。<br><br><br>内容节选自以下链接，若有侵权，告知立删：</p>
+<p>[博客园]yvioo:<a href="https://www.cnblogs.com/pxblog/archive/2019/03/12/10519719.html" target="_blank" rel="noopener">Centos 中 vi 和vim 的区别</a><br><br></p>
+<p><strong>4. rpm 和yum 的区别</strong></p>
+<p><strong>rpm：</strong></p>
+<p>&emsp; 全称 Red-Hat Package Manager,是一种底层的包管理工具，可以进行软件的安装，查询，卸载，升级等操作。安装软件时只会安装指定的软件，不会安装依赖性文件，如果缺失就会报错。</p>
+<p><strong>yum：</strong></p>
+<p>&emsp; 全称 Yellow dog Updater, Modified，是基于rpm 上层软件包管理。 yum 拥有rpm的功能，且具备从服务上下载rpm包及相关的依赖包。</p>
+<p><strong>yum 源：</strong></p>
+<p>&emsp; yum 下载rpm包的指定位置们可以是网络源，也可以是本地源。<br>&emsp; 网络yum源配置文件位于 /etc/yum.repos.d/目录下，文件扩展名为”.repo”。</p>
+<br> 
+内容精简自下述链接，若有侵权，告知立删：
+
+<p>[博客园]脆落花漾：<a href="https://www.cnblogs.com/guan-zl/p/12915761.html" target="_blank" rel="noopener">CentOS中rpm和yum到底有什么区别？</a><br><br></p>
+]]></content>
+      <tags>
+        <tag>centos</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Matlab中文本数据混合文件的数据读取</title>
+    <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
+<p>textscan 函数读取的结果是个 1*1 的cell数组，可以展开为 N*1 的cell数组，单个字符串或者单个数据占据其中的一个位置。</p>
+<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/oriFile.png" alt="oriFile"></p>
+<p>代码如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">clc; clear; close all;</span><br><span class="line"></span><br><span class="line">fid=fopen(<span class="string">'test.s2p'</span>); % open file <span class="keyword">in</span> <span class="built_in">read</span> only </span><br><span class="line">    data = textscan(fid,<span class="string">'%s'</span>);   % textscan <span class="keyword">function</span> <span class="built_in">read</span> data</span><br><span class="line">    data = data&#123;:&#125;;</span><br><span class="line">fclose(fid);</span><br></pre></td></tr></table></figure>
+
+<p>读取后的数据结果：</p>
+<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
+]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Matlab 数据类型转换</title>
+    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>cell 转字符串：string();</p>
+<p>字符串转 double： str2double();</p>
 ]]></content>
       <tags>
         <tag>matlab</tag>
@@ -335,22 +351,6 @@ touch /var/lock/subsys/<span class="built_in">local</span>
       </tags>
   </entry>
   <entry>
-    <title>Matlab中文本数据混合文件的数据读取</title>
-    <url>/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用textscan-函数读取"><a href="#使用textscan-函数读取" class="headerlink" title="使用textscan 函数读取"></a>使用textscan 函数读取</h1><p>textscan 函数在matlab中的解释是 “从文本文件或字符串读取格式化数据”</p>
-<p>textscan 函数读取的结果是个 1*1 的cell数组，可以展开为 N*1 的cell数组，单个字符串或者单个数据占据其中的一个位置。</p>
-<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/oriFile.png" alt="oriFile"></p>
-<p>代码如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">clc; clear; close all;</span><br><span class="line"></span><br><span class="line">fid=fopen(<span class="string">'test.s2p'</span>); % open file <span class="keyword">in</span> <span class="built_in">read</span> only </span><br><span class="line">    data = textscan(fid,<span class="string">'%s'</span>);   % textscan <span class="keyword">function</span> <span class="built_in">read</span> data</span><br><span class="line">    data = data&#123;:&#125;;</span><br><span class="line">fclose(fid);</span><br></pre></td></tr></table></figure>
-
-<p>读取后的数据结果：</p>
-<p><img src="/2020/05/13/Matlab%E4%B8%AD%E6%96%87%E6%9C%AC%E6%95%B0%E6%8D%AE%E6%B7%B7%E5%90%88%E6%96%87%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%8F%96/data.png" alt="data"></p>
-]]></content>
-      <tags>
-        <tag>matlab</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PhotoShop 学习笔记</title>
     <url>/2020/06/10/PhotoShop-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="像素，分辨率，英寸（厘米）的区分"><a href="#像素，分辨率，英寸（厘米）的区分" class="headerlink" title="像素，分辨率，英寸（厘米）的区分"></a>像素，分辨率，英寸（厘米）的区分</h2><p>像素： 构成图片的小色点。</p>
@@ -360,21 +360,6 @@ touch /var/lock/subsys/<span class="built_in">local</span>
 ]]></content>
       <tags>
         <tag>Photoshop</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python 中 numpy.sort() 与 Matlab 中 sort() 排序</title>
-    <url>/2020/07/14/Python-%E4%B8%AD-numpy-sort-%E4%B8%8E-Matlab-%E4%B8%AD-sort-%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp; 通过近一整天的debug发现，python 中的 numpy.sort() 函数与 matlab 中的 sort() 函数的默认排序方法不同，从而也导致了当待排序的数组中存在多个相同数值时最后的排序结果也不尽相同。</p>
-<p>&emsp; 当待排序的数组有多个可以排序的属性后，使用 matlab 中的 sort() 函数经过不同属性的多次排序后，可以得到想要的多个属性排序后排列数组（主要体现在数值相同的情况下）； 而 python 中的 numpy.sort() 中快速排序、 归并排序和堆排序则达不到这个效果。</p>
-<p>&emsp; sort()函数的三种排序方法都是不稳定排序，因此python 可以考虑使用稳定的 sorted() 函数。 如果要返回稳定排序后的下标，可以在sorted()函数内部使用enumerate（）函数。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">itemSorted = sorted(emuerate(item), key=lambda x:x[1])</span><br><span class="line">index = [ii[0] <span class="keyword">for</span> ii <span class="keyword">in</span> itemSorted]</span><br><span class="line">val = [jj[1] <span class="keyword">for</span> jj <span class="keyword">in</span> itemSorted]</span><br></pre></td></tr></table></figure>
-
-<p>部分内容节选自以下链接，侵权无意，告知立删：</p>
-<p>sbj123456789： <a href="https://www.cnblogs.com/sbj123456789/p/10951598.html" target="_blank" rel="noopener">python中sorted排序后返回同时返回下标</a></p>
-]]></content>
-      <tags>
-        <tag>python matlab</tag>
       </tags>
   </entry>
   <entry>
@@ -424,47 +409,6 @@ touch /var/lock/subsys/<span class="built_in">local</span>
       </tags>
   </entry>
   <entry>
-    <title>Tips for Latex</title>
-    <url>/2020/05/10/Tips-for-Latex/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<p>效果如下所示：</p>
-<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
-<br>
-
-<h1 id="TeXstudio-使用技巧"><a href="#TeXstudio-使用技巧" class="headerlink" title="TeXstudio 使用技巧"></a>TeXstudio 使用技巧</h1><h2 id="快捷键的使用"><a href="#快捷键的使用" class="headerlink" title="快捷键的使用"></a>快捷键的使用</h2><ol>
-<li>注释与反注释：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ctrl + T <span class="comment"># 注释</span></span><br><span class="line">Ctrl + U <span class="comment"># 反注释</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="编译报错"><a href="#编译报错" class="headerlink" title="编译报错"></a>编译报错</h2><ol>
-<li>Error: Undefinded control sequence. \begin{document}</li>
-</ol>
-<p>原因： 可能是导言区内某个包的引用有问题，或者某个包需要更新<br><br><br>内容参考以下链接，若有侵权，告知立删</p>
-<p>[CSDN]doubleslow; : <a href="https://blog.csdn.net/qq_36607894/article/details/103639607" target="_blank" rel="noopener">Texstudio error : Undefined control sequence. \begin{document} （subfigure已经被废弃了，用subcaption!!!）</a></p>
-]]></content>
-      <tags>
-        <tag>latex</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Quick Start</title>
-    <url>/2020/04/28/Quick%20Start/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
     <title>Python 调用 C++ 函数</title>
     <url>/2020/06/02/Python-%E8%B0%83%E7%94%A8-C-%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
@@ -504,6 +448,62 @@ touch /var/lock/subsys/<span class="built_in">local</span>
       <tags>
         <tag>Python</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Python 中 numpy.sort() 与 Matlab 中 sort() 排序</title>
+    <url>/2020/07/14/Python-%E4%B8%AD-numpy-sort-%E4%B8%8E-Matlab-%E4%B8%AD-sort-%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp; 通过近一整天的debug发现，python 中的 numpy.sort() 函数与 matlab 中的 sort() 函数的默认排序方法不同，从而也导致了当待排序的数组中存在多个相同数值时最后的排序结果也不尽相同。</p>
+<p>&emsp; 当待排序的数组有多个可以排序的属性后，使用 matlab 中的 sort() 函数经过不同属性的多次排序后，可以得到想要的多个属性排序后排列数组（主要体现在数值相同的情况下）； 而 python 中的 numpy.sort() 中快速排序、 归并排序和堆排序则达不到这个效果。</p>
+<p>&emsp; sort()函数的三种排序方法都是不稳定排序，因此python 可以考虑使用稳定的 sorted() 函数。 如果要返回稳定排序后的下标，可以在sorted()函数内部使用enumerate（）函数。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">itemSorted = sorted(emuerate(item), key=lambda x:x[1])</span><br><span class="line">index = [ii[0] <span class="keyword">for</span> ii <span class="keyword">in</span> itemSorted]</span><br><span class="line">val = [jj[1] <span class="keyword">for</span> jj <span class="keyword">in</span> itemSorted]</span><br></pre></td></tr></table></figure>
+
+<p>部分内容节选自以下链接，侵权无意，告知立删：</p>
+<p>sbj123456789： <a href="https://www.cnblogs.com/sbj123456789/p/10951598.html" target="_blank" rel="noopener">python中sorted排序后返回同时返回下标</a></p>
+]]></content>
+      <tags>
+        <tag>python matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tips for Latex</title>
+    <url>/2020/05/10/Tips-for-Latex/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果如下所示：</p>
+<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
+<br>
+
+<h1 id="TeXstudio-使用技巧"><a href="#TeXstudio-使用技巧" class="headerlink" title="TeXstudio 使用技巧"></a>TeXstudio 使用技巧</h1><h2 id="快捷键的使用"><a href="#快捷键的使用" class="headerlink" title="快捷键的使用"></a>快捷键的使用</h2><ol>
+<li>注释与反注释：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ctrl + T <span class="comment"># 注释</span></span><br><span class="line">Ctrl + U <span class="comment"># 反注释</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="编译报错"><a href="#编译报错" class="headerlink" title="编译报错"></a>编译报错</h2><ol>
+<li>Error: Undefinded control sequence. \begin{document}</li>
+</ol>
+<p>原因： 可能是导言区内某个包的引用有问题，或者某个包需要更新<br><br><br>内容参考以下链接，若有侵权，告知立删</p>
+<p>[CSDN]doubleslow; : <a href="https://blog.csdn.net/qq_36607894/article/details/103639607" target="_blank" rel="noopener">Texstudio error : Undefined control sequence. \begin{document} （subfigure已经被废弃了，用subcaption!!!）</a></p>
+]]></content>
+      <tags>
+        <tag>latex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Quick Start</title>
+    <url>/2020/04/28/Quick%20Start/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h1 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h1 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h1 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>Tips for writing</title>
@@ -650,19 +650,6 @@ touch /var/lock/subsys/<span class="built_in">local</span>
       </tags>
   </entry>
   <entry>
-    <title>Word 学习笔记</title>
-    <url>/2020/09/29/Word-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="1-页眉跨节编辑"><a href="#1-页眉跨节编辑" class="headerlink" title="1. 页眉跨节编辑"></a>1. 页眉跨节编辑</h2><p>&emsp; 1) 插入-&gt;页眉， 可以选择插入页眉的格式</p>
-<p>&emsp; 2) 如果前后页的页眉内容不同，按下面顺序操作：</p>
-<p>&emsp; &ensp; ① 光标定位到上一页内容的最后位置， 布局-&gt;分隔符-&gt;下一页；</p>
-<p>&emsp; &ensp; ② 编辑下一页的页眉内容时，先取消 设计 栏目下的 “链接到前一条页眉”；</p>
-<p>&emsp; &ensp; ③ 检查前页的页眉内容是否发生更改，若有更改更正为正确的内容。</p>
-]]></content>
-      <tags>
-        <tag>Office</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>“EXCEL 文本表示科学计数法</title>
     <url>/2020/05/29/%E2%80%9CEXCEXCEL-%E6%96%87%E6%9C%AC%E8%A1%A8%E7%A4%BA%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><table>
@@ -682,6 +669,47 @@ touch /var/lock/subsys/<span class="built_in">local</span>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C1 =TEXT(A1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">" "</span>&amp; <span class="string">"("</span> &amp; TEXT(B1,<span class="string">"0.00E+00"</span>) &amp; <span class="string">")"</span></span><br></pre></td></tr></table></figure>]]></content>
       <tags>
         <tag>Excel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Word 学习笔记</title>
+    <url>/2020/09/29/Word-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="1-页眉跨节编辑"><a href="#1-页眉跨节编辑" class="headerlink" title="1. 页眉跨节编辑"></a>1. 页眉跨节编辑</h2><p>&emsp; 1) 插入-&gt;页眉， 可以选择插入页眉的格式</p>
+<p>&emsp; 2) 如果前后页的页眉内容不同，按下面顺序操作：</p>
+<p>&emsp; &ensp; ① 光标定位到上一页内容的最后位置， 布局-&gt;分隔符-&gt;下一页；</p>
+<p>&emsp; &ensp; ② 编辑下一页的页眉内容时，先取消 设计 栏目下的 “链接到前一条页眉”；</p>
+<p>&emsp; &ensp; ③ 检查前页的页眉内容是否发生更改，若有更改更正为正确的内容。</p>
+]]></content>
+      <tags>
+        <tag>Office</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>佳作欣赏之《菜根谭》</title>
+    <url>/2020/09/10/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E8%8F%9C%E6%A0%B9%E8%B0%AD%E3%80%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="《菜根谭》"><a href="#《菜根谭》" class="headerlink" title=" 《菜根谭》 "></a><center> 《菜根谭》 </center></h1><center> [明]洪应明 </center>
+
+<h2 id="概论"><a href="#概论" class="headerlink" title="概论"></a>概论</h2><p>君子之心事，天青日白，不可使人知；君子之才华，玉韫珠藏，不可使人易知。</p>
+<p>耳中常闻逆耳之言，心中常有拂心之事，才是进德修行的砥石。若言言悦耳，事事快心，便把此生埋在鸩毒中矣。</p>
+<p>疾风怒雨，禽鸟戚戚；霁月风光，草木欣欣，可见天地不可一日无和气，人心不可一日无喜神。</p>
+<p>醲(No2ng)肥辛甘非真味，真味只是淡；神奇卓异非至人，至人只是常。</p>
+<p>夜深人静独坐观心；始知妄穷而真独露，每于此中得大机趣；既觉真现而妄难逃，又于此中得大惭忸。</p>
+<p>恩里由来生害，故快意时须早回头；败后或反成功，故拂心处切莫停手。</p>
+<p>藜口苋肠者，多冰清玉洁；衮衣玉食者，甘婢膝奴颜。盖志以淡泊明，而节从肥甘丧矣。</p>
+<p>面前的田地要放的宽，使人无不平之叹；身后的惠泽要流得长，使人有不匮之思。</p>
+<p>路径窄处留一步，与人行；滋味浓的减三分，让人嗜。此是涉世一极乐法。</p>
+<p>做人无甚高远的事业，摆脱得俗情便入名流；为学无甚增益的功夫，减除得物累便臻圣境。</p>
+<p>宠利毋居人前，德业毋落人后，受享毋逾分外，修持毋减分中。</p>
+<p>处世让一步为高，退步即进步的张本；待人宽一分是福，利人利己的根基。</p>
+<p>盖世的功劳，当不得一个矜字；弥天的罪过，当不得一个悔字。</p>
+<p>完名美节，不宜独任，分些与人，可以远害全身；辱行污名，不宜全推，引些归己，可以韬光养德。</p>
+<p>事事要留个有余不尽的意思，便造物不能忌我，鬼神不能损我。若业必满，功求必盈者，不生内变，必招外忧。</p>
+<p>家庭有个真佛，日用有种真道，人能诚心和气，愉色婉言，使父母兄弟间形骸两释，意气交流，胜于调息观心万倍矣。</p>
+<p>攻人之恶毋太严，要思其堪受； 教人以善毋过高，当使其可从。</p>
+<p>粪虫至秽变为蝉，而饮露于秋风；腐草无光化为荧，而耀采于夏月。故知洁常自污出，明每自暗生也。</p>
+]]></content>
+      <tags>
+        <tag>read</tag>
       </tags>
   </entry>
   <entry>
@@ -719,34 +747,6 @@ touch /var/lock/subsys/<span class="built_in">local</span>
       </tags>
   </entry>
   <entry>
-    <title>佳作欣赏之《菜根谭》</title>
-    <url>/2020/09/10/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E8%8F%9C%E6%A0%B9%E8%B0%AD%E3%80%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="《菜根谭》"><a href="#《菜根谭》" class="headerlink" title=" 《菜根谭》 "></a><center> 《菜根谭》 </center></h1><center> [明]洪应明 </center>
-
-<h2 id="概论"><a href="#概论" class="headerlink" title="概论"></a>概论</h2><p>君子之心事，天青日白，不可使人知；君子之才华，玉韫珠藏，不可使人易知。</p>
-<p>耳中常闻逆耳之言，心中常有拂心之事，才是进德修行的砥石。若言言悦耳，事事快心，便把此生埋在鸩毒中矣。</p>
-<p>疾风怒雨，禽鸟戚戚；霁月风光，草木欣欣，可见天地不可一日无和气，人心不可一日无喜神。</p>
-<p>醲(No2ng)肥辛甘非真味，真味只是淡；神奇卓异非至人，至人只是常。</p>
-<p>夜深人静独坐观心；始知妄穷而真独露，每于此中得大机趣；既觉真现而妄难逃，又于此中得大惭忸。</p>
-<p>恩里由来生害，故快意时须早回头；败后或反成功，故拂心处切莫停手。</p>
-<p>藜口苋肠者，多冰清玉洁；衮衣玉食者，甘婢膝奴颜。盖志以淡泊明，而节从肥甘丧矣。</p>
-<p>面前的田地要放的宽，使人无不平之叹；身后的惠泽要流得长，使人有不匮之思。</p>
-<p>路径窄处留一步，与人行；滋味浓的减三分，让人嗜。此是涉世一极乐法。</p>
-<p>做人无甚高远的事业，摆脱得俗情便入名流；为学无甚增益的功夫，减除得物累便臻圣境。</p>
-<p>宠利毋居人前，德业毋落人后，受享毋逾分外，修持毋减分中。</p>
-<p>处世让一步为高，退步即进步的张本；待人宽一分是福，利人利己的根基。</p>
-<p>盖世的功劳，当不得一个矜字；弥天的罪过，当不得一个悔字。</p>
-<p>完名美节，不宜独任，分些与人，可以远害全身；辱行污名，不宜全推，引些归己，可以韬光养德。</p>
-<p>事事要留个有余不尽的意思，便造物不能忌我，鬼神不能损我。若业必满，功求必盈者，不生内变，必招外忧。</p>
-<p>家庭有个真佛，日用有种真道，人能诚心和气，愉色婉言，使父母兄弟间形骸两释，意气交流，胜于调息观心万倍矣。</p>
-<p>攻人之恶毋太严，要思其堪受； 教人以善毋过高，当使其可从。</p>
-<p>粪虫至秽变为蝉，而饮露于秋风；腐草无光化为荧，而耀采于夏月。故知洁常自污出，明每自暗生也。</p>
-]]></content>
-      <tags>
-        <tag>read</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>佳作欣赏之&quot;黄石公《素书》&quot;</title>
     <url>/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="黄石公《素书》"><a href="#黄石公《素书》" class="headerlink" title=" 黄石公《素书》 "></a><center> 黄石公《素书》 </center></h1><h2 id="原始章第一"><a href="#原始章第一" class="headerlink" title="原始章第一"></a>原始章第一</h2><p>夫道、德、仁、义、礼五者，一体也。 道者，人之所蹈，使万物不知其所由。 德者，人之所得，使万物各得其所欲。 仁者，人之所亲，有慈慧恻隐之心，以遂其生存。 义者，人之所宜，赏善罚恶，以立功立事。 礼者，人之所履，夙兴夜寐，以成人伦之序。 夫欲为人之本，不可无一焉。 贤人君子，明于盛衰之道，通乎成败之数，审乎治乱之势，达乎去就之理。故潜居抱道以待其时。 若时至而行，则能极人臣之位； 得机而动，则能成绝代之功。如其不遇，没身而已。 是以其道足高，而名重于后代。</p>
@@ -770,6 +770,23 @@ touch /var/lock/subsys/<span class="built_in">local</span>
 ]]></content>
       <tags>
         <tag>Read</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>报告和申请类文稿撰写学习笔记</title>
+    <url>/2020/10/11/%E6%8A%A5%E5%91%8A%E5%92%8C%E7%94%B3%E8%AF%B7%E7%B1%BB%E6%96%87%E7%A8%BF%E6%92%B0%E5%86%99%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>1、“国内外相关文献掌握程度和研究方法的可靠性”怎么写</strong></p>
+<p>&emsp; 1) 前人的文献是怎么界定你所研究的问题的； 以 如何提高北京轨道交通系统的效率 为例， 需要说明什么是轨道交通系统，轨道交通系统的效率是如何定义的。</p>
+<p>&emsp; 2) 前人的文献中是怎么研究你所研究的问题； 同例， 他们有没有研究背景轨道交通系的效率， 采用了什么研究方法，使用了什么研究数据、研究材料。</p>
+<p>&emsp; 3) 前人的文献中是怎么研究类似的问题； 同例，他们有没有研究东京、香港、上海轨道交通系统的效率，采用了什么研究方法，使用了什么研究数据、研究材料</p>
+<p>&emsp; 4) 上述的1）、2）、3）中，哪些地方做的好，你将要继承和发扬，哪些地方进展不够，或者存在问题，你需要在你的研究中加以改进，并稍微说说如何改进。</p>
+<br>
+**说明：** 上述内容引自以下链接，如有侵权行为，告知即删：
+
+<p>&emsp;<strong>[百度知道] PKU00213089：</strong><a href="https://zhidao.baidu.com/question/210319598.html" target="_blank" rel="noopener">开题报告中国内外相关文献掌握程度怎么写</a></p>
+]]></content>
+      <tags>
+        <tag>Write</tag>
       </tags>
   </entry>
   <entry>
@@ -797,23 +814,6 @@ touch /var/lock/subsys/<span class="built_in">local</span>
 ]]></content>
       <tags>
         <tag>MOP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>报告和申请类文稿撰写学习笔记</title>
-    <url>/2020/10/11/%E6%8A%A5%E5%91%8A%E5%92%8C%E7%94%B3%E8%AF%B7%E7%B1%BB%E6%96%87%E7%A8%BF%E6%92%B0%E5%86%99%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>1、“国内外相关文献掌握程度和研究方法的可靠性”怎么写</strong></p>
-<p>&emsp; 1) 前人的文献是怎么界定你所研究的问题的； 以 如何提高北京轨道交通系统的效率 为例， 需要说明什么是轨道交通系统，轨道交通系统的效率是如何定义的。</p>
-<p>&emsp; 2) 前人的文献中是怎么研究你所研究的问题； 同例， 他们有没有研究背景轨道交通系的效率， 采用了什么研究方法，使用了什么研究数据、研究材料。</p>
-<p>&emsp; 3) 前人的文献中是怎么研究类似的问题； 同例，他们有没有研究东京、香港、上海轨道交通系统的效率，采用了什么研究方法，使用了什么研究数据、研究材料</p>
-<p>&emsp; 4) 上述的1）、2）、3）中，哪些地方做的好，你将要继承和发扬，哪些地方进展不够，或者存在问题，你需要在你的研究中加以改进，并稍微说说如何改进。</p>
-<br>
-**说明：**上述内容引自以下链接，如有侵权行为，告知即删：
-
-<p>&emsp;<strong>[百度知道] PKU00213089：</strong><a href="https://zhidao.baidu.com/question/210319598.html" target="_blank" rel="noopener">开题报告中国内外相关文献掌握程度怎么写</a></p>
-]]></content>
-      <tags>
-        <tag>Write</tag>
       </tags>
   </entry>
   <entry>
