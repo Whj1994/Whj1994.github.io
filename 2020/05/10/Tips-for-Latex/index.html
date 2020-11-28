@@ -34,7 +34,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/2020/05/10/Tips-for-Latex/BeamerFrame.png">
 <meta property="article:published_time" content="2020-05-09T22:38:00.000Z">
-<meta property="article:modified_time" content="2020-08-30T08:54:17.390Z">
+<meta property="article:modified_time" content="2020-11-26T11:22:26.286Z">
 <meta property="article:author" content="Wang Haijun">
 <meta property="article:tag" content="latex">
 <meta name="twitter:card" content="summary">
@@ -240,7 +240,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-30 16:54:17" itemprop="dateModified" datetime="2020-08-30T16:54:17+08:00">2020-08-30</time>
+                <time title="修改时间：2020-11-26 19:22:26" itemprop="dateModified" datetime="2020-11-26T19:22:26+08:00">2020-11-26</time>
               </span>
 
           
@@ -291,7 +291,12 @@
 </ol>
 <p>原因： 可能是导言区内某个包的引用有问题，或者某个包需要更新<br><br><br>内容参考以下链接，若有侵权，告知立删</p>
 <p>[CSDN]doubleslow; : <a href="https://blog.csdn.net/qq_36607894/article/details/103639607" target="_blank" rel="noopener">Texstudio error : Undefined control sequence. \begin{document} （subfigure已经被废弃了，用subcaption!!!）</a></p>
+<h2 id="Beamer-在指定的页面中插入背景图片"><a href="#Beamer-在指定的页面中插入背景图片" class="headerlink" title="Beamer 在指定的页面中插入背景图片"></a>Beamer 在指定的页面中插入背景图片</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	\usebackgroundtemplate&#123;\includegraphics[width=\paperwidth]&#123;background&#125;&#125;</span><br><span class="line">	\begin&#123;frame&#125;			% Insert background into the title page</span><br><span class="line">		\titlepage</span><br><span class="line">	\end&#123;frame&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+内容参考以下链接，若有侵权，告知立删:
+[Github] benjamin-weiss: [how to show background image in just one frame? #285](https://github.com/matze/mtheme/issues/285)
 
+<h2 id="插入横线"><a href="#插入横线" class="headerlink" title="插入横线"></a>插入横线</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\rule[水平高度]&#123;长度&#125;&#123;粗细&#125;</span><br><span class="line">\rule[-10pt]&#123;14.3cm&#125;&#123;0.05em&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -375,7 +380,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#latex-使用-beamer-宏包制作幻灯片"><span class="nav-number">1.</span> <span class="nav-text">latex 使用 beamer 宏包制作幻灯片</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本元素构建的框架"><span class="nav-number">1.1.</span> <span class="nav-text">基本元素构建的框架</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TeXstudio-使用技巧"><span class="nav-number">2.</span> <span class="nav-text">TeXstudio 使用技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷键的使用"><span class="nav-number">2.1.</span> <span class="nav-text">快捷键的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译报错"><span class="nav-number">2.2.</span> <span class="nav-text">编译报错</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#latex-使用-beamer-宏包制作幻灯片"><span class="nav-number">1.</span> <span class="nav-text">latex 使用 beamer 宏包制作幻灯片</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本元素构建的框架"><span class="nav-number">1.1.</span> <span class="nav-text">基本元素构建的框架</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#TeXstudio-使用技巧"><span class="nav-number">2.</span> <span class="nav-text">TeXstudio 使用技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷键的使用"><span class="nav-number">2.1.</span> <span class="nav-text">快捷键的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译报错"><span class="nav-number">2.2.</span> <span class="nav-text">编译报错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Beamer-在指定的页面中插入背景图片"><span class="nav-number">2.3.</span> <span class="nav-text">Beamer 在指定的页面中插入背景图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入横线"><span class="nav-number">2.4.</span> <span class="nav-text">插入横线</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -391,7 +396,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-count">34</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

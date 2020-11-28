@@ -204,6 +204,97 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/16/%E5%A4%9A%E7%9B%AE%E6%A0%87%E7%AE%97%E6%B3%95%E4%B9%8BMOEAD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/author.jpg">
+      <meta itemprop="name" content="Wang Haijun">
+      <meta itemprop="description" content="谩对黄河叹此心">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="渐营">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/08/16/%E5%A4%9A%E7%9B%AE%E6%A0%87%E7%AE%97%E6%B3%95%E4%B9%8BMOEAD/" class="post-title-link" itemprop="url">多目标算法之MOEAD</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-08-16 04:09:46 / 修改时间：17:31:55" itemprop="dateCreated datePublished" datetime="2020-08-16T04:09:46+08:00">2020-08-16</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/08/16/%E5%A4%9A%E7%9B%AE%E6%A0%87%E7%AE%97%E6%B3%95%E4%B9%8BMOEAD/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/08/16/%E5%A4%9A%E7%9B%AE%E6%A0%87%E7%AE%97%E6%B3%95%E4%B9%8BMOEAD/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>MOEAD 优化框架（契比雪夫分解方法求解最小值问题）</p>
+<p>m: 多目标的个数</p>
+<p>输入：</p>
+<p>&emsp; 1) N: 种群规模</p>
+<p>&emsp; 2）W: 均匀分布的权重向量，N*m</p>
+<p>&emsp; 3) T: 邻域的规模</p>
+<p>初始化：</p>
+<p>&emsp; 1) 外部种群： EP = \varnothing</p>
+<p>&emsp; 2) 计算任意两个权重向量的欧式距离，为每个权重向量找到 T 个相邻向量 B(i); B = N*T;</p>
+<p>&emsp; 3) 产生初始种群pop 评估得到目标向量 FV</p>
+<p>&emsp; 4) 初始化参考点 Z* (最小化问题， Zi*=min(FVi))</p>
+<p>迭代：</p>
+<p>&emsp; 种群成员遍历：</p>
+<p>&emsp; &emsp; 1) 根据当前成员的邻域内任意两个成员产生新得子代</p>
+<p>&emsp; &emsp; 2）若子代超出边界则调整进边界内</p>
+<p>&emsp; &emsp; 3) 更新参考点Z*（替换为任意子代更小目标值）</p>
+<p>&emsp; &emsp; 4) 更新邻域内成员（如果子代的目标切比雪夫分解值小于父本的值，则子代替换父本）</p>
+<p>&emsp; &emsp; 5）从EP中删除被子代目标值所支配的所有成员； 如果没有子代目标值不能被任一成员支配，则将子代添加进EP</p>
+<p>满足终止条件输出EP。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/17/MOP-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -227,10 +318,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-07-17 11:05:35 / 修改时间：11:08:54" itemprop="dateCreated datePublished" datetime="2020-07-17T11:05:35+08:00">2020-07-17</time>
+              <time title="创建时间：2020-07-17 11:05:35" itemprop="dateCreated datePublished" datetime="2020-07-17T11:05:35+08:00">2020-07-17</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-12 17:35:14" itemprop="dateModified" datetime="2020-10-12T17:35:14+08:00">2020-10-12</time>
+              </span>
 
           
   
@@ -258,8 +355,11 @@
 
       
           <p>2020.7.17</p>
-<p>问：目前是否有适用于具有混合连续-离散型决策变量的多目标优化问题的测试集</p>
+<p>问：目前是否有适用于具有混合连续-离散型决策变量的多目标优化问题的测试集？</p>
 <p>答：没有，测试集的编码就是单一的。混合编码并不会提升难度，没有太大意义。</p>
+<p>2020.10.12</p>
+<p>问： 多峰和多模有什么区别？</p>
+<p>答： 英文表达都一样，没有区别。 只是多峰一般指局部解很差不能留，而多模都要留着。</p>
 
       
     </div>
@@ -741,7 +841,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-06 18:01:07" itemprop="dateModified" datetime="2020-09-06T18:01:07+08:00">2020-09-06</time>
+                <time title="修改时间：2020-10-23 16:10:35" itemprop="dateModified" datetime="2020-10-23T16:10:35+08:00">2020-10-23</time>
               </span>
 
           
@@ -807,7 +907,9 @@
 
 <p>3). pycharm 设置python解释器步骤：</p>
 <p>&emsp; File-&gt; Setting-&gt; Project: pythonProject (Python interpreter) -&gt; 点击右面的设置，点击Add -&gt; 在Existing enviroment下定位到Python安装路径，找到python3.7.exe，勾选适用于所有项目， 点击 Apply 就可以了。</p>
+<h2 id="python-文件读写"><a href="#python-文件读写" class="headerlink" title="python 文件读写"></a>python 文件读写</h2><h3 id="写文件"><a href="#写文件" class="headerlink" title="写文件"></a>写文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">f = open(<span class="string">"temp.txt"</span>,<span class="string">"a"</span>)</span><br><span class="line">f.write(<span class="string">"Hello, world!\n"</span>)</span><br><span class="line">f.write(<span class="string">"Today is a sunny day!\n"</span>)</span><br><span class="line">f.close()</span><br></pre></td></tr></table></figure>
 
+<h3 id="读文件"><a href="#读文件" class="headerlink" title="读文件"></a>读文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">f = open(<span class="string">"temp.txt"</span>)</span><br><span class="line">lines = f.readlines()</span><br><span class="line"><span class="built_in">print</span>(lines[0])</span><br><span class="line">f.close()</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -1025,93 +1127,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/author.jpg">
-      <meta itemprop="name" content="Wang Haijun">
-      <meta itemprop="description" content="谩对黄河叹此心">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="渐营">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/" class="post-title-link" itemprop="url">佳作欣赏之"黄石公《素书》"</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-15 09:31:17" itemprop="dateCreated datePublished" datetime="2020-05-15T09:31:17+08:00">2020-05-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-11 00:22:09" itemprop="dateModified" datetime="2020-09-11T00:22:09+08:00">2020-09-11</time>
-              </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="黄石公《素书》"><a href="#黄石公《素书》" class="headerlink" title=" 黄石公《素书》 "></a><center> 黄石公《素书》 </center></h1><h2 id="原始章第一"><a href="#原始章第一" class="headerlink" title="原始章第一"></a>原始章第一</h2><p>夫道、德、仁、义、礼五者，一体也。 道者，人之所蹈，使万物不知其所由。 德者，人之所得，使万物各得其所欲。 仁者，人之所亲，有慈慧恻隐之心，以遂其生存。 义者，人之所宜，赏善罚恶，以立功立事。 礼者，人之所履，夙兴夜寐，以成人伦之序。 夫欲为人之本，不可无一焉。 贤人君子，明于盛衰之道，通乎成败之数，审乎治乱之势，达乎去就之理。故潜居抱道以待其时。 若时至而行，则能极人臣之位； 得机而动，则能成绝代之功。如其不遇，没身而已。 是以其道足高，而名重于后代。</p>
-<center></center>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/15/%E4%BD%B3%E4%BD%9C%E6%AC%A3%E8%B5%8F%E4%B9%8B%E3%80%8A%E9%BB%84%E7%9F%B3%E5%85%AC%E7%B4%A0%E4%B9%A6%E3%80%8B/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1183,7 +1198,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-count">34</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
