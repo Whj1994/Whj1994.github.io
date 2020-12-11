@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Action After Review (AAR)</title>
-    <url>/2020/05/04/Action-After-Review-AAR/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
-<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
+    <title>CentOS 学习笔记</title>
+    <url>/2020/08/27/CentOS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>1. 常用命令:</strong></p>
+<p>删除文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rm -r /folder   <span class="comment"># -r 递归删除目录及子目录，包含写保护文件有提示</span></span><br><span class="line">rm -rf /folder	<span class="comment"># f 不提示用户  </span></span><br><span class="line">rm -ir /folder  <span class="comment"># -i 交互模式，删除任何文件前提示确认</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<p><strong>2. 设置anydesk开机自启动</strong></p>
+<p>将anydesk的启动命令添加到 /etc/rc.d/rc.local 内：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vi /etc/rc.d/rc.local</span><br><span class="line"></span><br><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># This script will be executed *after* all the other init scripts.</span></span><br><span class="line"><span class="comment"># You can put your own initialization stuff in here if you don't</span></span><br><span class="line"><span class="comment"># want to do the full Sys V style init stuff.</span></span><br><span class="line"> </span><br><span class="line">touch /var/lock/subsys/<span class="built_in">local</span></span><br><span class="line">/etc/init.d/anydesk start  <span class="comment"># 添加的anydesk 启动命令</span></span><br><span class="line">``` </span><br><span class="line">&lt;br/&gt;</span><br><span class="line">内容节选自以下链接，若有侵权，告知立删：</span><br><span class="line"></span><br><span class="line">[博客园]HorseShoe2016:[CentOS6.5系统下设置自己安装的程序开机自动启动](https://www.cnblogs.com/dongling/p/6232730.html)</span><br><span class="line">&lt;br/&gt;</span><br><span class="line"></span><br><span class="line">**3. vi 和vim 的区别**</span><br><span class="line"></span><br><span class="line">vi和vim都是多模式编辑器，且vim是vi的升级版本, 除了完全兼容vi，还有具有以下特性：</span><br><span class="line"></span><br><span class="line">&amp;emsp; ①多级撤销 (vi中，键u只能撤销上次命令，而vim 可以无限制撤销)</span><br><span class="line"></span><br><span class="line">&amp;emsp; ②易用性 (vim 可以运行与更多的操作平台)</span><br><span class="line"></span><br><span class="line">&amp;emsp; ③语法加亮 (vim可以用不同的颜色来加亮代码)</span><br><span class="line"></span><br><span class="line">&amp;emsp; ④可视化操作 (vim 除了用于终端还可以用于桌面)</span><br><span class="line"></span><br><span class="line">vi有3个模式：**插入模式** 可以输入字符，Esc 可以回到命令模式; **命令模式**可以移动光标，删除字符等操作； **低行模式**可以保存文件，退出vi，设置vi及查找等功能。</span><br><span class="line">&lt;br/&gt;</span><br><span class="line">内容节选自以下链接，若有侵权，告知立删：</span><br><span class="line"></span><br><span class="line">[博客园]yvioo:[Centos 中 vi 和vim 的区别](https://www.cnblogs.com/pxblog/archive/2019/03/12/10519719.html)</span><br><span class="line">&lt;br/&gt;</span><br><span class="line"></span><br><span class="line">**4. rpm 和yum 的区别**</span><br><span class="line"></span><br><span class="line">**rpm：**</span><br><span class="line"></span><br><span class="line">&amp;emsp; 全称 Red-Hat Package Manager,是一种底层的包管理工具，可以进行软件的安装，查询，卸载，升级等操作。安装软件时只会安装指定的软件，不会安装依赖性文件，如果缺失就会报错。</span><br><span class="line"></span><br><span class="line">**yum：**</span><br><span class="line"></span><br><span class="line">&amp;emsp; 全称 Yellow dog Updater, Modified，是基于rpm 上层软件包管理。 yum 拥有rpm的功能，且具备从服务上下载rpm包及相关的依赖包。</span><br><span class="line"></span><br><span class="line">**yum 源：**</span><br><span class="line"></span><br><span class="line">&amp;emsp; yum 下载rpm包的指定位置们可以是网络源，也可以是本地源。</span><br><span class="line">&amp;emsp; 网络yum源配置文件位于 /etc/yum.repos.d/目录下，文件扩展名为<span class="string">".repo"</span>。</span><br><span class="line"></span><br><span class="line">&lt;br/&gt; </span><br><span class="line">内容精简自下述链接，若有侵权，告知立删：</span><br><span class="line"></span><br><span class="line">[博客园]脆落花漾：[CentOS中rpm和yum到底有什么区别？](https://www.cnblogs.com/guan-zl/p/12915761.html)</span><br><span class="line">&lt;br/&gt;</span><br><span class="line"></span><br><span class="line">** 对解除文件夹权限**</span><br><span class="line">``` bash</span><br><span class="line">sudo chmod -R 777 _FileFolderName</span><br></pre></td></tr></table></figure>
+
+<h2 id="Centos系统下-Matlab-安装激活"><a href="#Centos系统下-Matlab-安装激活" class="headerlink" title="Centos系统下 Matlab 安装激活"></a>Centos系统下 Matlab 安装激活</h2><p>&emsp; 1) 下载好matlab linux的安装包以后,将iso文件挂载到一个临时位置 /mnt/tmp ：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># mount -o loop R2018a_glnxa64_dvd1.iso /mnt/tmp</span></span><br></pre></td></tr></table></figure>
+
+<p>&emsp; 2) 回退到根目录进行安装 ：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># cd ..</span></span><br><span class="line"><span class="comment"># /mnt/tmp/install</span></span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">&amp;emsp; 3) 选择 “Use a File Installation Key” 安装, 填入 Crack文件夹中的秘钥： 09806-07443-53955-64350-21751-41297</span><br><span class="line"></span><br><span class="line">&amp;emsp; 4) 一路 Next，直到安装完成。 安装过程中如果出现“Eject DVD 1 and insert DVD 2 to <span class="built_in">continue</span>”, 新建命令行窗口 解除 DVD1的挂载，然后挂载 DVD2, 点击 OK 就可以继续安装：</span><br><span class="line">``` bash</span><br><span class="line"><span class="comment"># umount /mnt/tmp</span></span><br><span class="line"><span class="comment"># mount -o loop R2018a_glnxa64_dvd2.iso /mnt/tmp</span></span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">&amp;emsp; 5) 将 Crack 文件夹的 license_standalone.lic文件复制到安装目录下的 ./license/下，然后进入安装目录的 /bin 文件夹下新建命令行, 运行 ./matlab, 开始激活：</span><br><span class="line">``` bash</span><br><span class="line"><span class="comment"># cd ./bin</span></span><br><span class="line"><span class="comment"># ./matlab</span></span><br></pre></td></tr></table></figure>
+
+<p>&emsp; 6) 选择不需要网络激活， 选择license_standalone.lic 文件， 完成激活</p>
+<p>&emsp; 7) 最后将Crack 文件夹的 ./bin/ 覆盖安装目录下的 ./bin/ 文件夹</p>
+<p>&emsp; 8) 进入安装目录的 ./bin/, 开启命令行键入 ./matlab 就能启动软件开始编程。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># cd ./bin</span></span><br><span class="line"><span class="comment"># ./matlab</span></span><br></pre></td></tr></table></figure>
+<p>&emsp; 9) 创建快捷方式：<br>打开命令行,输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo gedit /usr/share/applications/matlab.desktop</span><br></pre></td></tr></table></figure>
+
+<p>在打开的 matlab.desktop 文档中编辑下面内容：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Version=1.0</span><br><span class="line">Type=Application</span><br><span class="line">Terminal=<span class="literal">false</span></span><br><span class="line">Exec=./bin/glnxa64/MATLAB -desktop</span><br><span class="line">Name=MATLAB</span><br><span class="line">Icon=./toolbox/nnet/nnresource/icons/matlab.png</span><br><span class="line">Categories=Math;Science</span><br><span class="line">Comment=Scientific computing environment</span><br><span class="line">StartupNotify=<span class="literal">true</span></span><br><span class="line">StartupWMClass=com-mathworks-util-PostVMInit</span><br></pre></td></tr></table></figure>
+<p>需要说明的是, 上述的 “Exec=” 和 “Icon=” 路径均是matlab的安装路径。保存以后就能在桌面找到matlab的快捷方式了。</p>
 ]]></content>
       <tags>
-        <tag>methodology</tag>
+        <tag>centos</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>C语言学习记录</title>
-    <url>/2020/12/11/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>！<a href="dataType.jpg">数据类型</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>MOP 学习记录</title>
-    <url>/2020/07/17/MOP-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>2020.7.17</p>
-<p>问：目前是否有适用于具有混合连续-离散型决策变量的多目标优化问题的测试集？</p>
-<p>答：没有，测试集的编码就是单一的。混合编码并不会提升难度，没有太大意义。</p>
-<p>2020.10.12</p>
-<p>问： 多峰和多模有什么区别？</p>
-<p>答： 英文表达都一样，没有区别。 只是多峰一般指局部解很差不能留，而多模都要留着。</p>
-]]></content>
   </entry>
   <entry>
     <title>Highly cited journals</title>
@@ -84,60 +90,13 @@
       </tags>
   </entry>
   <entry>
-    <title>CentOS 学习笔记</title>
-    <url>/2020/08/27/CentOS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>1. 常用命令:</strong></p>
-<p>删除文件夹：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rm -r /folder   <span class="comment"># -r 递归删除目录及子目录，包含写保护文件有提示</span></span><br><span class="line">rm -rf /folder	<span class="comment"># f 不提示用户  </span></span><br><span class="line">rm -ir /folder  <span class="comment"># -i 交互模式，删除任何文件前提示确认</span></span><br></pre></td></tr></table></figure>
-<br>
-
-<p><strong>2. 设置anydesk开机自启动</strong></p>
-<p>将anydesk的启动命令添加到 /etc/rc.d/rc.local 内：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vi /etc/rc.d/rc.local</span><br><span class="line"></span><br><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># This script will be executed *after* all the other init scripts.</span></span><br><span class="line"><span class="comment"># You can put your own initialization stuff in here if you don't</span></span><br><span class="line"><span class="comment"># want to do the full Sys V style init stuff.</span></span><br><span class="line"> </span><br><span class="line">touch /var/lock/subsys/<span class="built_in">local</span></span><br><span class="line">/etc/init.d/anydesk start  <span class="comment"># 添加的anydesk 启动命令</span></span><br><span class="line">``` </span><br><span class="line">&lt;br/&gt;</span><br><span class="line">内容节选自以下链接，若有侵权，告知立删：</span><br><span class="line"></span><br><span class="line">[博客园]HorseShoe2016:[CentOS6.5系统下设置自己安装的程序开机自动启动](https://www.cnblogs.com/dongling/p/6232730.html)</span><br><span class="line">&lt;br/&gt;</span><br><span class="line"></span><br><span class="line">**3. vi 和vim 的区别**</span><br><span class="line"></span><br><span class="line">vi和vim都是多模式编辑器，且vim是vi的升级版本, 除了完全兼容vi，还有具有以下特性：</span><br><span class="line"></span><br><span class="line">&amp;emsp; ①多级撤销 (vi中，键u只能撤销上次命令，而vim 可以无限制撤销)</span><br><span class="line"></span><br><span class="line">&amp;emsp; ②易用性 (vim 可以运行与更多的操作平台)</span><br><span class="line"></span><br><span class="line">&amp;emsp; ③语法加亮 (vim可以用不同的颜色来加亮代码)</span><br><span class="line"></span><br><span class="line">&amp;emsp; ④可视化操作 (vim 除了用于终端还可以用于桌面)</span><br><span class="line"></span><br><span class="line">vi有3个模式：**插入模式** 可以输入字符，Esc 可以回到命令模式; **命令模式**可以移动光标，删除字符等操作； **低行模式**可以保存文件，退出vi，设置vi及查找等功能。</span><br><span class="line">&lt;br/&gt;</span><br><span class="line">内容节选自以下链接，若有侵权，告知立删：</span><br><span class="line"></span><br><span class="line">[博客园]yvioo:[Centos 中 vi 和vim 的区别](https://www.cnblogs.com/pxblog/archive/2019/03/12/10519719.html)</span><br><span class="line">&lt;br/&gt;</span><br><span class="line"></span><br><span class="line">**4. rpm 和yum 的区别**</span><br><span class="line"></span><br><span class="line">**rpm：**</span><br><span class="line"></span><br><span class="line">&amp;emsp; 全称 Red-Hat Package Manager,是一种底层的包管理工具，可以进行软件的安装，查询，卸载，升级等操作。安装软件时只会安装指定的软件，不会安装依赖性文件，如果缺失就会报错。</span><br><span class="line"></span><br><span class="line">**yum：**</span><br><span class="line"></span><br><span class="line">&amp;emsp; 全称 Yellow dog Updater, Modified，是基于rpm 上层软件包管理。 yum 拥有rpm的功能，且具备从服务上下载rpm包及相关的依赖包。</span><br><span class="line"></span><br><span class="line">**yum 源：**</span><br><span class="line"></span><br><span class="line">&amp;emsp; yum 下载rpm包的指定位置们可以是网络源，也可以是本地源。</span><br><span class="line">&amp;emsp; 网络yum源配置文件位于 /etc/yum.repos.d/目录下，文件扩展名为<span class="string">".repo"</span>。</span><br><span class="line"></span><br><span class="line">&lt;br/&gt; </span><br><span class="line">内容精简自下述链接，若有侵权，告知立删：</span><br><span class="line"></span><br><span class="line">[博客园]脆落花漾：[CentOS中rpm和yum到底有什么区别？](https://www.cnblogs.com/guan-zl/p/12915761.html)</span><br><span class="line">&lt;br/&gt;</span><br><span class="line"></span><br><span class="line">** 对解除文件夹权限**</span><br><span class="line">``` bash</span><br><span class="line">sudo chmod -R 777 _FileFolderName</span><br></pre></td></tr></table></figure>
-
-<h2 id="Centos系统下-Matlab-安装激活"><a href="#Centos系统下-Matlab-安装激活" class="headerlink" title="Centos系统下 Matlab 安装激活"></a>Centos系统下 Matlab 安装激活</h2><p>&emsp; 1) 下载好matlab linux的安装包以后,将iso文件挂载到一个临时位置 /mnt/tmp ：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># mount -o loop R2018a_glnxa64_dvd1.iso /mnt/tmp</span></span><br></pre></td></tr></table></figure>
-
-<p>&emsp; 2) 回退到根目录进行安装 ：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># cd ..</span></span><br><span class="line"><span class="comment"># /mnt/tmp/install</span></span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">&amp;emsp; 3) 选择 “Use a File Installation Key” 安装, 填入 Crack文件夹中的秘钥： 09806-07443-53955-64350-21751-41297</span><br><span class="line"></span><br><span class="line">&amp;emsp; 4) 一路 Next，直到安装完成。 安装过程中如果出现“Eject DVD 1 and insert DVD 2 to <span class="built_in">continue</span>”, 新建命令行窗口 解除 DVD1的挂载，然后挂载 DVD2, 点击 OK 就可以继续安装：</span><br><span class="line">``` bash</span><br><span class="line"><span class="comment"># umount /mnt/tmp</span></span><br><span class="line"><span class="comment"># mount -o loop R2018a_glnxa64_dvd2.iso /mnt/tmp</span></span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">&amp;emsp; 5) 将 Crack 文件夹的 license_standalone.lic文件复制到安装目录下的 ./license/下，然后进入安装目录的 /bin 文件夹下新建命令行, 运行 ./matlab, 开始激活：</span><br><span class="line">``` bash</span><br><span class="line"><span class="comment"># cd ./bin</span></span><br><span class="line"><span class="comment"># ./matlab</span></span><br></pre></td></tr></table></figure>
-
-<p>&emsp; 6) 选择不需要网络激活， 选择license_standalone.lic 文件， 完成激活</p>
-<p>&emsp; 7) 最后将Crack 文件夹的 ./bin/ 覆盖安装目录下的 ./bin/ 文件夹</p>
-<p>&emsp; 8) 进入安装目录的 ./bin/, 开启命令行键入 ./matlab 就能启动软件开始编程。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># cd ./bin</span></span><br><span class="line"><span class="comment"># ./matlab</span></span><br></pre></td></tr></table></figure>
-<p>&emsp; 9) 创建快捷方式：<br>打开命令行,输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo gedit /usr/share/applications/matlab.desktop</span><br></pre></td></tr></table></figure>
-
-<p>在打开的 matlab.desktop 文档中编辑下面内容：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Version=1.0</span><br><span class="line">Type=Application</span><br><span class="line">Terminal=<span class="literal">false</span></span><br><span class="line">Exec=./bin/glnxa64/MATLAB -desktop</span><br><span class="line">Name=MATLAB</span><br><span class="line">Icon=./toolbox/nnet/nnresource/icons/matlab.png</span><br><span class="line">Categories=Math;Science</span><br><span class="line">Comment=Scientific computing environment</span><br><span class="line">StartupNotify=<span class="literal">true</span></span><br><span class="line">StartupWMClass=com-mathworks-util-PostVMInit</span><br></pre></td></tr></table></figure>
-<p>需要说明的是, 上述的 “Exec=” 和 “Icon=” 路径均是matlab的安装路径。保存以后就能在桌面找到matlab的快捷方式了。</p>
+    <title>C语言学习记录</title>
+    <url>/2020/12/11/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>！<a href="dataType.png">数据类型</a></p>
+<h3 id="自动类型转换"><a href="#自动类型转换" class="headerlink" title="自动类型转换"></a>自动类型转换</h3><p>！<a href="typeConv.png">自动类型转换</a></p>
+<p>char类型数据转换为int类型数据遵循ASCII码中的对应值</p>
+<p>字节小的可以向字节大的自动转换，但字节大的不能向字节小的自动转换</p>
 ]]></content>
-      <tags>
-        <tag>centos</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matlab,VBS与HFSS实现器件联调</title>
-    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
-<p>流程说明：</p>
-<p>Matlab 的作用：</p>
-<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
-<p>VBS 的作用：</p>
-<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
-<p>HFSS 的作用：</p>
-<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
-<p>流程(1)：</p>
-<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
-<p>流程(2)：</p>
-<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
-<p>流程(3)：</p>
-<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
-<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
-]]></content>
-      <tags>
-        <tag>Matlab, VBS, HFSS</tag>
-      </tags>
   </entry>
   <entry>
     <title>佳作欣赏之 &quot;IF&quot;</title>
@@ -201,13 +160,37 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Matlab 数据类型转换</title>
-    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="cell-转字符串：string"><a href="#cell-转字符串：string" class="headerlink" title="cell 转字符串：string();"></a>cell 转字符串：string();</h2><p>字符串转 double： str2double();</p>
-<h2 id="矩阵下标与索引的转换："><a href="#矩阵下标与索引的转换：" class="headerlink" title="矩阵下标与索引的转换："></a>矩阵下标与索引的转换：</h2><p>下标转索引： sub2ind<br>索引转下标： ind2sub</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">linearInd = sub2ind(matrixSize, rowSub, colSub);</span><br><span class="line">[rowSub, colSub] = ind2sub(matrixSize, linearInd);</span><br></pre></td></tr></table></figure>]]></content>
+    <title>Action After Review (AAR)</title>
+    <url>/2020/05/04/Action-After-Review-AAR/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/04/Action-After-Review-AAR/AAR.png" alt="AAR"></p>
+<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>文字内容选自“重庆大学周明教授选修课《信息素养》课件”，若有侵权，实属无意，告知立删。</p>
+]]></content>
       <tags>
-        <tag>matlab</tag>
+        <tag>methodology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown 语法总结</title>
+    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
+<p><strong>粗体：</strong> “ ** ** “</p>
+<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
+<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
+<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
+<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
+<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
+<p>插入链接</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>上标： &lt;sup&gt; xxx &lt;/sup&gt;</p>
+<p>下标： &lt;sub&gt; xxx &lt;/sub&gt;</p>
+<p>\lambda : $\lambda$</p>
+<p>\Lambda : $\Lambda$</p>
+<p>换行： 空格，空格，回车</p>
+<p>插入图片格式： <img src="/home/picture/1.png" alt="avatar"></p>
+]]></content>
+      <tags>
+        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -264,6 +247,40 @@
       </tags>
   </entry>
   <entry>
+    <title>MOP 学习记录</title>
+    <url>/2020/07/17/MOP-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>2020.7.17</p>
+<p>问：目前是否有适用于具有混合连续-离散型决策变量的多目标优化问题的测试集？</p>
+<p>答：没有，测试集的编码就是单一的。混合编码并不会提升难度，没有太大意义。</p>
+<p>2020.10.12</p>
+<p>问： 多峰和多模有什么区别？</p>
+<p>答： 英文表达都一样，没有区别。 只是多峰一般指局部解很差不能留，而多模都要留着。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Matlab,VBS与HFSS实现器件联调</title>
+    <url>/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src="/2020/05/08/Matlab-VBS%E4%B8%8EHFSS%E5%AE%9E%E7%8E%B0%E5%99%A8%E4%BB%B6%E8%81%94%E8%B0%83/circuit.png" alt="circuit"></p>
+<p>流程说明：</p>
+<p>Matlab 的作用：</p>
+<p>  ① 定义待优化的参数与范围；<br>  ② 构建随机化算法的框架；<br>  ③ 完成vbs文件的编辑。</p>
+<p>VBS 的作用：</p>
+<p> ① 利用指令的集合驱动 HFSS 建模，仿真与保存结果。</p>
+<p>HFSS 的作用：</p>
+<p> ① 根据随机产生的参数组合仿真得到优化目标的数值；<br>  ② 实际作用相当于纯算法中的评估过程。</p>
+<p>流程(1)：</p>
+<p> ① 通过dos命令运行‘file1.vbs’文件。</p>
+<p>流程(2)：</p>
+<p> ① 通过 HFSS 的内置接口完成建模，仿真和保存。</p>
+<p>流程(3)：</p>
+<p> ① Matlab 通过读写‘file2.txt’或者‘file2.csv’文件获取和记录目标函数的数值。</p>
+<p>整个过程循环执行，直到最终获取满足指标要求的待优化参数组合。</p>
+]]></content>
+      <tags>
+        <tag>Matlab, VBS, HFSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Matlab  可变输入输出</title>
     <url>/2020/05/08/Matlab-%E5%8F%AF%E5%8F%98%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vararout-与-varargin-实现可变输入输出"><a href="#vararout-与-varargin-实现可变输入输出" class="headerlink" title="vararout 与 varargin 实现可变输入输出"></a>vararout 与 varargin 实现可变输入输出</h1><p>猜测: var 是 “variable” 的缩写，表示可变的； arg 是 “argument” 的缩写，表示自变量； out/in 表示输入参数还是输出参数。</p>
@@ -287,27 +304,31 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown 语法总结</title>
-    <url>/2020/05/14/Markdown-%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><em>斜体：</em> “ * * “</p>
-<p><strong>粗体：</strong> “ ** ** “</p>
-<p><strong><em>粗斜体:</em></strong> “ *** *** “</p>
-<p>一个空格： “ &amp;nbsp; “ or “ &amp;#8194; “ (分号也需带上)</p>
-<p>两个空格： “ &amp;emsp; “ or “ &amp;#8195; “ (分号也需带上)</p>
-<p>内容居中： “&lt;center&gt; &lt;/center&gt;“</p>
-<p>首页文章内实现预览，在相应的位置填加 “&lt;!- -more- -&gt;“</p>
-<p>插入链接</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[链接文字](链接网址 <span class="string">"标题"</span>)</span><br></pre></td></tr></table></figure>
+    <title>Matlab 数据类型转换</title>
+    <url>/2020/05/13/Matlab-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="cell-转字符串：string"><a href="#cell-转字符串：string" class="headerlink" title="cell 转字符串：string();"></a>cell 转字符串：string();</h2><p>字符串转 double： str2double();</p>
+<h2 id="矩阵下标与索引的转换："><a href="#矩阵下标与索引的转换：" class="headerlink" title="矩阵下标与索引的转换："></a>矩阵下标与索引的转换：</h2><p>下标转索引： sub2ind<br>索引转下标： ind2sub</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">linearInd = sub2ind(matrixSize, rowSub, colSub);</span><br><span class="line">[rowSub, colSub] = ind2sub(matrixSize, linearInd);</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 学习笔记</title>
+    <url>/2020/06/09/Origin-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="将数据从-matlab-导入到-origin"><a href="#将数据从-matlab-导入到-origin" class="headerlink" title="将数据从 matlab 导入到 origin"></a>将数据从 matlab 导入到 origin</h2><p>Matlab 准备: 属性-&gt;快捷方式-&gt;目标-&gt;  后面填加 /Automation 和 /desktop，如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">"C:\Program Files\MATLAB\R2019a\bin\matlab.exe"</span> /Automation /desktop</span><br></pre></td></tr></table></figure>
 
-<p>上标： &lt;sup&gt; xxx &lt;/sup&gt;</p>
-<p>下标： &lt;sub&gt; xxx &lt;/sub&gt;</p>
-<p>\lambda : $\lambda$</p>
-<p>\Lambda : $\Lambda$</p>
-<p>换行： 空格，空格，回车</p>
-<p>插入图片格式： <img src="/home/picture/1.png" alt="avatar"></p>
+<p>运行 matlab 程序，得到相关变量</p>
+<p>打开Origin, Tools-&gt;Matlab Console-&gt; gc 变量， 如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gc data</span><br></pre></td></tr></table></figure>
+
+<p>说明： 上述内容整理自以下链接，侵权无意，告知立删。</p>
+<p>leonSUST: <a href="https://blog.csdn.net/LeonSUST/article/details/84861701" target="_blank" rel="noopener">画图技巧 ： 让Matlab将数据传送给Origin</a></p>
+<h2 id="Book-填入等差数据"><a href="#Book-填入等差数据" class="headerlink" title="Book 填入等差数据"></a>Book 填入等差数据</h2><p>先写入前三个数据，选中后， 按住 Alt 键后下拉</p>
 ]]></content>
       <tags>
-        <tag>markdown</tag>
+        <tag>origin</tag>
       </tags>
   </entry>
   <entry>
@@ -324,6 +345,74 @@
 ]]></content>
       <tags>
         <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python 中 numpy.sort() 与 Matlab 中 sort() 排序</title>
+    <url>/2020/07/14/Python-%E4%B8%AD-numpy-sort-%E4%B8%8E-Matlab-%E4%B8%AD-sort-%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp; 通过近一整天的debug发现，python 中的 numpy.sort() 函数与 matlab 中的 sort() 函数的默认排序方法不同，从而也导致了当待排序的数组中存在多个相同数值时最后的排序结果也不尽相同。</p>
+<p>&emsp; 当待排序的数组有多个可以排序的属性后，使用 matlab 中的 sort() 函数经过不同属性的多次排序后，可以得到想要的多个属性排序后排列数组（主要体现在数值相同的情况下）； 而 python 中的 numpy.sort() 中快速排序、 归并排序和堆排序则达不到这个效果。</p>
+<p>&emsp; sort()函数的三种排序方法都是不稳定排序，因此python 可以考虑使用稳定的 sorted() 函数。 如果要返回稳定排序后的下标，可以在sorted()函数内部使用enumerate（）函数。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">itemSorted = sorted(emuerate(item), key=lambda x:x[1])</span><br><span class="line">index = [ii[0] <span class="keyword">for</span> ii <span class="keyword">in</span> itemSorted]</span><br><span class="line">val = [jj[1] <span class="keyword">for</span> jj <span class="keyword">in</span> itemSorted]</span><br></pre></td></tr></table></figure>
+
+<p>部分内容节选自以下链接，侵权无意，告知立删：</p>
+<p>sbj123456789： <a href="https://www.cnblogs.com/sbj123456789/p/10951598.html" target="_blank" rel="noopener">python中sorted排序后返回同时返回下标</a></p>
+]]></content>
+      <tags>
+        <tag>python matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PhotoShop 学习笔记</title>
+    <url>/2020/06/10/PhotoShop-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="像素，分辨率，英寸（厘米）的区分"><a href="#像素，分辨率，英寸（厘米）的区分" class="headerlink" title="像素，分辨率，英寸（厘米）的区分"></a>像素，分辨率，英寸（厘米）的区分</h2><p>像素： 构成图片的小色点。</p>
+<p>分辨率： dpi(Dots Per Inch)，即是每英寸上像素的数量，也就是小色点的分布密度。</p>
+<p>实际尺寸（英寸）= 像素/分辨率， 1英寸=2.54厘米。</p>
+<p>说明： 内容节选自以下链接，无意侵权，告知立删。<br>改图宝：<a href="https://www.gaitubao.com/tools/pixel2cm.html" target="_blank" rel="noopener">图片像素尺寸(厘米/英寸)换算器、在线转换</a></p>
+]]></content>
+      <tags>
+        <tag>Photoshop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python 调用 C++ 函数</title>
+    <url>/2020/06/02/Python-%E8%B0%83%E7%94%A8-C-%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
+<li><p>“.cpp” 文件是”C++”语言的文件，国际一般读作”C Plus Plus”，因此后缀为”.cpp”.</p>
+</li>
+<li><p>python 调用C/C++的方法有： boost.python， swig， ctypes， pybind11 等方法。</p>
+</li>
+<li><p>pybind11 是一个只包含头文件的库，语法与目标非常像Boost.Python； Boost.Python 兼容所有的C++编译器，Pybind11 只支持Python2.7以上和C++ 11以上的编译器。</p>
+</li>
+<li><p>使用Pybind11， 需要支持C++11标准的编译器(VS2015以上)，还需要下载CMake.</p>
+</li>
+<li><p>CMake是一个跨平台的安装（编译）工具，可以用简单的语句来描述所有平台的安装；可以输出各种各样的makefile或者project文件，只是它的组态档取名为 CMakeLists.txt。</p>
+</li>
+<li><p>CMake 在windows 上编译C++的简单使用<br>1）CMake安装好以后，编写一个简单.cpp程序；<br>2）在cpp文件相同目录下建立一个CMakeLists.txt文件，例如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake_minimum_required (VERSION 2.6)</span><br><span class="line">project (HelloWorld)</span><br><span class="line">add_executable (HelloWorld HelloWorld.cpp)</span><br></pre></td></tr></table></figure>
+<p>3）到CMakeLists.txt文件的目录，运行CMake:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake .</span><br></pre></td></tr></table></figure>
+<p>4) 生成.sln, .vcxproj文件，可以使用VS打开.sln文件来编译，运行，调试程序。<br>5）构建程序</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msbuild Helloworld.sln</span><br></pre></td></tr></table></figure>
+
+<p>就可以在Debug目录下找到HelloWorld.exe 程序。</p>
+</li>
+<li><p>Pybind11 是header-only,因此不需要编译动态链接库，直接使用include 就可以。<br>1） VS2017新建 C++ 空白工程</p>
+<pre><code>项目属性页-&gt;常规-&gt;调整输出类型为dll, 调整输出文件名为pyd;
+
+项目属性页-&gt;VC++目录-&gt;包含目录-&gt;（Anaconda3\include,Pybind11\include）,库目录（Anaconda3\libs）;
+
+项目属性页-&gt;链接器-&gt;输入-&gt;附加依赖项-&gt;手动输入（python36.lib，python3.lib）</code></pre><p>2）添加源文件，添加头文件，编译，运行，生成.pyd文件</p>
+<p>3）复制.pyd文件到要引用相同目录下，直接import就可以使用</p>
+</li>
+</ol>
+<p>说明： 以上内容整理自以下链接，侵权无意，告知立删。</p>
+<p>fitzzhang：<a href="https://blog.csdn.net/fitzzhang/article/details/78988682" target="_blank" rel="noopener">python调用C++之pybind11入门</a></p>
+<p>boonya：<a href="https://blog.csdn.net/boonya/article/details/88851372" target="_blank" rel="noopener">使用cmake在Windows上编译c++</a></p>
+<p>kupe87826：<a href="https://blog.csdn.net/kupepoem/article/details/105072604" target="_blank" rel="noopener">Pybind11实现python调用c++</a></p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -375,21 +464,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python 中 numpy.sort() 与 Matlab 中 sort() 排序</title>
-    <url>/2020/07/14/Python-%E4%B8%AD-numpy-sort-%E4%B8%8E-Matlab-%E4%B8%AD-sort-%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp; 通过近一整天的debug发现，python 中的 numpy.sort() 函数与 matlab 中的 sort() 函数的默认排序方法不同，从而也导致了当待排序的数组中存在多个相同数值时最后的排序结果也不尽相同。</p>
-<p>&emsp; 当待排序的数组有多个可以排序的属性后，使用 matlab 中的 sort() 函数经过不同属性的多次排序后，可以得到想要的多个属性排序后排列数组（主要体现在数值相同的情况下）； 而 python 中的 numpy.sort() 中快速排序、 归并排序和堆排序则达不到这个效果。</p>
-<p>&emsp; sort()函数的三种排序方法都是不稳定排序，因此python 可以考虑使用稳定的 sorted() 函数。 如果要返回稳定排序后的下标，可以在sorted()函数内部使用enumerate（）函数。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">itemSorted = sorted(emuerate(item), key=lambda x:x[1])</span><br><span class="line">index = [ii[0] <span class="keyword">for</span> ii <span class="keyword">in</span> itemSorted]</span><br><span class="line">val = [jj[1] <span class="keyword">for</span> jj <span class="keyword">in</span> itemSorted]</span><br></pre></td></tr></table></figure>
-
-<p>部分内容节选自以下链接，侵权无意，告知立删：</p>
-<p>sbj123456789： <a href="https://www.cnblogs.com/sbj123456789/p/10951598.html" target="_blank" rel="noopener">python中sorted排序后返回同时返回下标</a></p>
-]]></content>
-      <tags>
-        <tag>python matlab</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Quick Start</title>
     <url>/2020/04/28/Quick%20Start/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"title"</span></span><br></pre></td></tr></table></figure>
@@ -407,15 +481,37 @@
 <h1 id="Quick-deploy"><a href="#Quick-deploy" class="headerlink" title="Quick deploy"></a>Quick deploy</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
-    <title>PhotoShop 学习笔记</title>
-    <url>/2020/06/10/PhotoShop-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="像素，分辨率，英寸（厘米）的区分"><a href="#像素，分辨率，英寸（厘米）的区分" class="headerlink" title="像素，分辨率，英寸（厘米）的区分"></a>像素，分辨率，英寸（厘米）的区分</h2><p>像素： 构成图片的小色点。</p>
-<p>分辨率： dpi(Dots Per Inch)，即是每英寸上像素的数量，也就是小色点的分布密度。</p>
-<p>实际尺寸（英寸）= 像素/分辨率， 1英寸=2.54厘米。</p>
-<p>说明： 内容节选自以下链接，无意侵权，告知立删。<br>改图宝：<a href="https://www.gaitubao.com/tools/pixel2cm.html" target="_blank" rel="noopener">图片像素尺寸(厘米/英寸)换算器、在线转换</a></p>
+    <title>Tips for Latex</title>
+    <url>/2020/05/10/Tips-for-Latex/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果如下所示：</p>
+<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
+<br>
+
+<h1 id="TeXstudio-使用技巧"><a href="#TeXstudio-使用技巧" class="headerlink" title="TeXstudio 使用技巧"></a>TeXstudio 使用技巧</h1><h2 id="快捷键的使用"><a href="#快捷键的使用" class="headerlink" title="快捷键的使用"></a>快捷键的使用</h2><ol>
+<li>注释与反注释：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ctrl + T <span class="comment"># 注释</span></span><br><span class="line">Ctrl + U <span class="comment"># 反注释</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="编译报错"><a href="#编译报错" class="headerlink" title="编译报错"></a>编译报错</h2><ol>
+<li>Error: Undefinded control sequence. \begin{document}</li>
+</ol>
+<p>原因： 可能是导言区内某个包的引用有问题，或者某个包需要更新<br><br><br>内容参考以下链接，若有侵权，告知立删</p>
+<p>[CSDN]doubleslow; : <a href="https://blog.csdn.net/qq_36607894/article/details/103639607" target="_blank" rel="noopener">Texstudio error : Undefined control sequence. \begin{document} （subfigure已经被废弃了，用subcaption!!!）</a></p>
+<h2 id="Beamer-在指定的页面中插入背景图片"><a href="#Beamer-在指定的页面中插入背景图片" class="headerlink" title="Beamer 在指定的页面中插入背景图片"></a>Beamer 在指定的页面中插入背景图片</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	\usebackgroundtemplate&#123;\includegraphics[width=\paperwidth]&#123;background&#125;&#125;</span><br><span class="line">	\begin&#123;frame&#125;			% Insert background into the title page</span><br><span class="line">		\titlepage</span><br><span class="line">	\end&#123;frame&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+内容参考以下链接，若有侵权，告知立删:
+[Github] benjamin-weiss: [how to show background image in just one frame? #285](https://github.com/matze/mtheme/issues/285)
+
+<h2 id="插入横线"><a href="#插入横线" class="headerlink" title="插入横线"></a>插入横线</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\rule[水平高度]&#123;长度&#125;&#123;粗细&#125;</span><br><span class="line">\rule[-10pt]&#123;14.3cm&#125;&#123;0.05em&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="字号设置"><a href="#字号设置" class="headerlink" title="字号设置"></a>字号设置</h2><p>可以直接修改字号的有以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\tiny</span><br><span class="line">\scriptsize</span><br><span class="line">\footnotesize</span><br><span class="line">\small</span><br><span class="line">\normalsize</span><br><span class="line">\large</span><br><span class="line">\Large</span><br><span class="line">\LARGE</span><br><span class="line">\huge</span><br><span class="line">\Huge</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
-        <tag>Photoshop</tag>
+        <tag>latex</tag>
       </tags>
   </entry>
   <entry>
@@ -492,65 +588,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Origin 学习笔记</title>
-    <url>/2020/06/09/Origin-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="将数据从-matlab-导入到-origin"><a href="#将数据从-matlab-导入到-origin" class="headerlink" title="将数据从 matlab 导入到 origin"></a>将数据从 matlab 导入到 origin</h2><p>Matlab 准备: 属性-&gt;快捷方式-&gt;目标-&gt;  后面填加 /Automation 和 /desktop，如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">"C:\Program Files\MATLAB\R2019a\bin\matlab.exe"</span> /Automation /desktop</span><br></pre></td></tr></table></figure>
-
-<p>运行 matlab 程序，得到相关变量</p>
-<p>打开Origin, Tools-&gt;Matlab Console-&gt; gc 变量， 如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gc data</span><br></pre></td></tr></table></figure>
-
-<p>说明： 上述内容整理自以下链接，侵权无意，告知立删。</p>
-<p>leonSUST: <a href="https://blog.csdn.net/LeonSUST/article/details/84861701" target="_blank" rel="noopener">画图技巧 ： 让Matlab将数据传送给Origin</a></p>
-<h2 id="Book-填入等差数据"><a href="#Book-填入等差数据" class="headerlink" title="Book 填入等差数据"></a>Book 填入等差数据</h2><p>先写入前三个数据，选中后， 按住 Alt 键后下拉</p>
-]]></content>
-      <tags>
-        <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python 调用 C++ 函数</title>
-    <url>/2020/06/02/Python-%E8%B0%83%E7%94%A8-C-%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
-<li><p>“.cpp” 文件是”C++”语言的文件，国际一般读作”C Plus Plus”，因此后缀为”.cpp”.</p>
-</li>
-<li><p>python 调用C/C++的方法有： boost.python， swig， ctypes， pybind11 等方法。</p>
-</li>
-<li><p>pybind11 是一个只包含头文件的库，语法与目标非常像Boost.Python； Boost.Python 兼容所有的C++编译器，Pybind11 只支持Python2.7以上和C++ 11以上的编译器。</p>
-</li>
-<li><p>使用Pybind11， 需要支持C++11标准的编译器(VS2015以上)，还需要下载CMake.</p>
-</li>
-<li><p>CMake是一个跨平台的安装（编译）工具，可以用简单的语句来描述所有平台的安装；可以输出各种各样的makefile或者project文件，只是它的组态档取名为 CMakeLists.txt。</p>
-</li>
-<li><p>CMake 在windows 上编译C++的简单使用<br>1）CMake安装好以后，编写一个简单.cpp程序；<br>2）在cpp文件相同目录下建立一个CMakeLists.txt文件，例如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake_minimum_required (VERSION 2.6)</span><br><span class="line">project (HelloWorld)</span><br><span class="line">add_executable (HelloWorld HelloWorld.cpp)</span><br></pre></td></tr></table></figure>
-<p>3）到CMakeLists.txt文件的目录，运行CMake:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cmake .</span><br></pre></td></tr></table></figure>
-<p>4) 生成.sln, .vcxproj文件，可以使用VS打开.sln文件来编译，运行，调试程序。<br>5）构建程序</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msbuild Helloworld.sln</span><br></pre></td></tr></table></figure>
-
-<p>就可以在Debug目录下找到HelloWorld.exe 程序。</p>
-</li>
-<li><p>Pybind11 是header-only,因此不需要编译动态链接库，直接使用include 就可以。<br>1） VS2017新建 C++ 空白工程</p>
-<pre><code>项目属性页-&gt;常规-&gt;调整输出类型为dll, 调整输出文件名为pyd;
-
-项目属性页-&gt;VC++目录-&gt;包含目录-&gt;（Anaconda3\include,Pybind11\include）,库目录（Anaconda3\libs）;
-
-项目属性页-&gt;链接器-&gt;输入-&gt;附加依赖项-&gt;手动输入（python36.lib，python3.lib）</code></pre><p>2）添加源文件，添加头文件，编译，运行，生成.pyd文件</p>
-<p>3）复制.pyd文件到要引用相同目录下，直接import就可以使用</p>
-</li>
-</ol>
-<p>说明： 以上内容整理自以下链接，侵权无意，告知立删。</p>
-<p>fitzzhang：<a href="https://blog.csdn.net/fitzzhang/article/details/78988682" target="_blank" rel="noopener">python调用C++之pybind11入门</a></p>
-<p>boonya：<a href="https://blog.csdn.net/boonya/article/details/88851372" target="_blank" rel="noopener">使用cmake在Windows上编译c++</a></p>
-<p>kupe87826：<a href="https://blog.csdn.net/kupepoem/article/details/105072604" target="_blank" rel="noopener">Pybind11实现python调用c++</a></p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Tips for writing</title>
     <url>/2020/05/01/Tips-for-writing/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol>
@@ -577,6 +614,30 @@
 ]]></content>
       <tags>
         <tag>writing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Word 学习笔记</title>
+    <url>/2020/09/29/Word-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="1-页眉跨节编辑"><a href="#1-页眉跨节编辑" class="headerlink" title="1. 页眉跨节编辑"></a>1. 页眉跨节编辑</h2><p>&emsp; 1) 插入-&gt;页眉， 可以选择插入页眉的格式</p>
+<p>&emsp; 2) 如果前后页的页眉内容不同，按下面顺序操作：</p>
+<p>&emsp; &ensp; ① 光标定位到上一页内容的最后位置， 布局-&gt;分隔符-&gt;下一页；</p>
+<p>&emsp; &ensp; ② 编辑下一页的页眉内容时，先取消 设计 栏目下的 “链接到前一条页眉”；</p>
+<p>&emsp; &ensp; ③ 检查前页的页眉内容是否发生更改，若有更改更正为正确的内容。</p>
+<h2 id="2-上下标快捷键切换"><a href="#2-上下标快捷键切换" class="headerlink" title="2. 上下标快捷键切换"></a>2. 上下标快捷键切换</h2><p>&emsp; 1) 下标： Ctrl + (+/=)； 重复可以恢复正常光标；</p>
+<p>&emsp; 2) 上标： Ctrl + Shift + (+/=)； 重复可以恢复正常光标.</p>
+<h2 id="3-分栏公式居中编号右对齐"><a href="#3-分栏公式居中编号右对齐" class="headerlink" title="3. 分栏公式居中编号右对齐"></a>3. 分栏公式居中编号右对齐</h2><p>&emsp; 1). 计算公式居中和编号右对齐的制表位位置<br>&emsp; &emsp; 布局-&gt;栏-&gt;更多栏-&gt;两栏-&gt;查看宽度： 24.86字符<br>&emsp; &emsp; 居中位置：24.86/2<br>&emsp; &emsp; 右对齐： 宽度/24.86 </p>
+<p>&emsp; 2). 创建通用样式<br>&emsp; &emsp; 开始-&gt;样式-&gt;创建样式-&gt;命名“分栏公式”-&gt;修改-&gt;格式-&gt;制表位<br>&emsp; &emsp; 输入居中位置的字符值-&gt;居中对齐-&gt;设置；<br>&emsp; &emsp; 输入右对齐位置的字符值-&gt;右对齐-&gt;设置</p>
+<p>&emsp; 3). 选中完整输入的公式和编号，点击样式中的 “分栏公式”，并在公式的两侧分别键下“Tab”键，完成编辑。</p>
+<p>&emsp; 4). 如果出现公式和编号没有数值对齐时：<br>&emsp; &emsp; 选中公式和编号-&gt;开始-&gt;段落的下拉角-&gt;中文板式-&gt;文本对齐方式设置为居中-&gt;确定。</p>
+<br>
+说明： 上述操作参考自以下链接：
+
+<p>[百度经验]： <a href="https://jingyan.baidu.com/article/27fa7326db71bd07f9271f79.html" target="_blank" rel="noopener">word分栏后如何实现公式居中、编号右对齐？</a></p>
+<p>[百度经验]： <a href="https://jingyan.baidu.com/article/e6c8503c1f68d5e54f1a18eb.html" target="_blank" rel="noopener">怎样使公式与编号上下对齐？</a></p>
+]]></content>
+      <tags>
+        <tag>Office</tag>
       </tags>
   </entry>
   <entry>
@@ -649,62 +710,18 @@
       </tags>
   </entry>
   <entry>
-    <title>Tips for Latex</title>
-    <url>/2020/05/10/Tips-for-Latex/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="latex-使用-beamer-宏包制作幻灯片"><a href="#latex-使用-beamer-宏包制作幻灯片" class="headerlink" title="latex 使用 beamer 宏包制作幻灯片"></a>latex 使用 beamer 宏包制作幻灯片</h1><h2 id="基本元素构建的框架"><a href="#基本元素构建的框架" class="headerlink" title="基本元素构建的框架"></a>基本元素构建的框架</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\documentclass[ 12pt,aspectratio=43]&#123;beamer&#125;</span><br><span class="line">% Beamer 文档类型，字号为 12pt，长宽比为4:3</span><br><span class="line"></span><br><span class="line">\usepackage[UTF8,noindent]&#123;ctexcap&#125;		% 使用文字宏包</span><br><span class="line"></span><br><span class="line">\usetheme&#123;CambridgeUS&#125;		%-主题选择</span><br><span class="line">\usecolortheme&#123;dolphin&#125;		%-色彩选择</span><br><span class="line">\usefonttheme&#123;serif&#125;		%-字体选择</span><br><span class="line"></span><br><span class="line">%%%%%%%%%%%% beamer 导言区 %%%%%%%%%%%%%%%%%%</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">%%--------------首页信息设置-----------------</span><br><span class="line">\title[大标题]&#123;\fontsize&#123;24pt&#125;&#123;12pt&#125;\selectfont &#123;\emph &#123;\textit &#123;大标题&#125;&#125;&#125;&#125;</span><br><span class="line">%\subtitle&#123;&#125;</span><br><span class="line">%----- 标题设置 -------</span><br><span class="line">\author&#123;作者&#125;</span><br><span class="line">%----- 个人信息设置 ---</span><br><span class="line">\institute[机构简写]&#123;</span><br><span class="line">	二级机构\\</span><br><span class="line">	一级机构&#125;</span><br><span class="line">%----- 机构信息 ------</span><br><span class="line">\CTEXoptions[today=old]	% 日期为英文格式</span><br><span class="line">\date[\today]&#123;\today&#125;</span><br><span class="line">%----- 日期信息 ------</span><br><span class="line"></span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line"></span><br><span class="line">%% -----生成标题页-----------</span><br><span class="line">%\begin&#123;frame&#125;</span><br><span class="line">%\titlepage</span><br><span class="line">%\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\section&#123;章标题&#125;</span><br><span class="line">	\subsection&#123;节标题&#125;</span><br><span class="line">		\begin&#123;frame&#125;&#123;页标题&#125;</span><br><span class="line">			\centering</span><br><span class="line">			正文部分</span><br><span class="line">		\end&#123;frame&#125;</span><br><span class="line"></span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-
-<p>效果如下所示：</p>
-<p><img src="/2020/05/10/Tips-for-Latex/BeamerFrame.png" alt="BeamerFrame"></p>
-<br>
-
-<h1 id="TeXstudio-使用技巧"><a href="#TeXstudio-使用技巧" class="headerlink" title="TeXstudio 使用技巧"></a>TeXstudio 使用技巧</h1><h2 id="快捷键的使用"><a href="#快捷键的使用" class="headerlink" title="快捷键的使用"></a>快捷键的使用</h2><ol>
-<li>注释与反注释：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ctrl + T <span class="comment"># 注释</span></span><br><span class="line">Ctrl + U <span class="comment"># 反注释</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="编译报错"><a href="#编译报错" class="headerlink" title="编译报错"></a>编译报错</h2><ol>
-<li>Error: Undefinded control sequence. \begin{document}</li>
-</ol>
-<p>原因： 可能是导言区内某个包的引用有问题，或者某个包需要更新<br><br><br>内容参考以下链接，若有侵权，告知立删</p>
-<p>[CSDN]doubleslow; : <a href="https://blog.csdn.net/qq_36607894/article/details/103639607" target="_blank" rel="noopener">Texstudio error : Undefined control sequence. \begin{document} （subfigure已经被废弃了，用subcaption!!!）</a></p>
-<h2 id="Beamer-在指定的页面中插入背景图片"><a href="#Beamer-在指定的页面中插入背景图片" class="headerlink" title="Beamer 在指定的页面中插入背景图片"></a>Beamer 在指定的页面中插入背景图片</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	\usebackgroundtemplate&#123;\includegraphics[width=\paperwidth]&#123;background&#125;&#125;</span><br><span class="line">	\begin&#123;frame&#125;			% Insert background into the title page</span><br><span class="line">		\titlepage</span><br><span class="line">	\end&#123;frame&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<br>
-内容参考以下链接，若有侵权，告知立删:
-[Github] benjamin-weiss: [how to show background image in just one frame? #285](https://github.com/matze/mtheme/issues/285)
-
-<h2 id="插入横线"><a href="#插入横线" class="headerlink" title="插入横线"></a>插入横线</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\rule[水平高度]&#123;长度&#125;&#123;粗细&#125;</span><br><span class="line">\rule[-10pt]&#123;14.3cm&#125;&#123;0.05em&#125;</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="字号设置"><a href="#字号设置" class="headerlink" title="字号设置"></a>字号设置</h2><p>可以直接修改字号的有以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">\tiny</span><br><span class="line">\scriptsize</span><br><span class="line">\footnotesize</span><br><span class="line">\small</span><br><span class="line">\normalsize</span><br><span class="line">\large</span><br><span class="line">\Large</span><br><span class="line">\LARGE</span><br><span class="line">\huge</span><br><span class="line">\Huge</span><br></pre></td></tr></table></figure>
+    <title>《入道四行经》</title>
+    <url>/2020/10/04/%E3%80%8A%E5%85%A5%E9%81%93%E5%9B%9B%E8%A1%8C%E7%BB%8F%E3%80%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>夫入道多途，要而言之，不出二种：一是理入，二是行入。</p>
+<p><strong>理入者</strong></p>
+<p>理入者，谓藉教悟宗。 深信含生同一真性，但为客尘妄想所覆，不能显了。 若也舍妄归真，凝住壁观，无自无他，凡圣等一，坚住不移，更不随于文教，此即与理冥符，无有分别，寂然无为，名为理入。</p>
+<p><strong>行入者</strong></p>
+<p>行入者，谓四行。 其余诸行，悉入此中。何等四耶？一抱冤行，二随缘行，三无所求行，四称法行。</p>
+<p>一、抱冤行者。 修道苦至，当年往劫。舍本逐末，多起爱憎。今虽无犯，是我宿作。 甘心受之，都无怨怼。经云：逢苦不忧，识达故也。此心生时，与道无违，体冤进道，故说言抱冤行。</p>
+<p>二、随缘行者。 众生无我，并缘业所转，苦乐齐受，皆从缘生。 若等胜报荣誉等事，是我过去宿因所感，今方得之。缘尽还无，何喜之有？得失从缘，心无增减。喜风不动，冥顺于道，是故说言随缘行。</p>
+<p>三、无所求行者。 世人长迷，处处贪著，名为之求。 智者悟真，理将俗反，安心无为，行随运转，万有斯空，无所愿乐。 功德黑暗常相随逐，三界久居，犹如火宅，有身皆苦，谁得而安？ 了达此处，故舍诸有，止想无求。 经曰： 有求皆苦，无求即乐。 判知无求真为道行，故言无所求行。</p>
+<p>四、称法行者。 性净之理，目为之法。 此理众相斯空，无染无著，无此无彼。经曰：法无众生，离众生垢故；法无有我，离我垢故。 智者若能信解此理，应当称法而行。 法体无悭，身、命、财行檀舍施，心无吝惜，脱解三空，不倚不著，但为去垢，称化众生而不取相。 此为自行，复能利他，亦能庄严菩提之道。 檀施既尔， 于五亦然。 为除妄想，修行六度，而无所行，是为称法行。</p>
 ]]></content>
-      <tags>
-        <tag>latex</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Word 学习笔记</title>
-    <url>/2020/09/29/Word-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="1-页眉跨节编辑"><a href="#1-页眉跨节编辑" class="headerlink" title="1. 页眉跨节编辑"></a>1. 页眉跨节编辑</h2><p>&emsp; 1) 插入-&gt;页眉， 可以选择插入页眉的格式</p>
-<p>&emsp; 2) 如果前后页的页眉内容不同，按下面顺序操作：</p>
-<p>&emsp; &ensp; ① 光标定位到上一页内容的最后位置， 布局-&gt;分隔符-&gt;下一页；</p>
-<p>&emsp; &ensp; ② 编辑下一页的页眉内容时，先取消 设计 栏目下的 “链接到前一条页眉”；</p>
-<p>&emsp; &ensp; ③ 检查前页的页眉内容是否发生更改，若有更改更正为正确的内容。</p>
-<h2 id="2-上下标快捷键切换"><a href="#2-上下标快捷键切换" class="headerlink" title="2. 上下标快捷键切换"></a>2. 上下标快捷键切换</h2><p>&emsp; 1) 下标： Ctrl + (+/=)； 重复可以恢复正常光标；</p>
-<p>&emsp; 2) 上标： Ctrl + Shift + (+/=)； 重复可以恢复正常光标.</p>
-<h2 id="3-分栏公式居中编号右对齐"><a href="#3-分栏公式居中编号右对齐" class="headerlink" title="3. 分栏公式居中编号右对齐"></a>3. 分栏公式居中编号右对齐</h2><p>&emsp; 1). 计算公式居中和编号右对齐的制表位位置<br>&emsp; &emsp; 布局-&gt;栏-&gt;更多栏-&gt;两栏-&gt;查看宽度： 24.86字符<br>&emsp; &emsp; 居中位置：24.86/2<br>&emsp; &emsp; 右对齐： 宽度/24.86 </p>
-<p>&emsp; 2). 创建通用样式<br>&emsp; &emsp; 开始-&gt;样式-&gt;创建样式-&gt;命名“分栏公式”-&gt;修改-&gt;格式-&gt;制表位<br>&emsp; &emsp; 输入居中位置的字符值-&gt;居中对齐-&gt;设置；<br>&emsp; &emsp; 输入右对齐位置的字符值-&gt;右对齐-&gt;设置</p>
-<p>&emsp; 3). 选中完整输入的公式和编号，点击样式中的 “分栏公式”，并在公式的两侧分别键下“Tab”键，完成编辑。</p>
-<p>&emsp; 4). 如果出现公式和编号没有数值对齐时：<br>&emsp; &emsp; 选中公式和编号-&gt;开始-&gt;段落的下拉角-&gt;中文板式-&gt;文本对齐方式设置为居中-&gt;确定。</p>
-<br>
-说明： 上述操作参考自以下链接：
-
-<p>[百度经验]： <a href="https://jingyan.baidu.com/article/27fa7326db71bd07f9271f79.html" target="_blank" rel="noopener">word分栏后如何实现公式居中、编号右对齐？</a></p>
-<p>[百度经验]： <a href="https://jingyan.baidu.com/article/e6c8503c1f68d5e54f1a18eb.html" target="_blank" rel="noopener">怎样使公式与编号上下对齐？</a></p>
-]]></content>
-      <tags>
-        <tag>Office</tag>
-      </tags>
   </entry>
   <entry>
     <title>《微波工程》第一章：电磁理论</title>
@@ -782,33 +799,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《入道四行经》</title>
-    <url>/2020/10/04/%E3%80%8A%E5%85%A5%E9%81%93%E5%9B%9B%E8%A1%8C%E7%BB%8F%E3%80%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>夫入道多途，要而言之，不出二种：一是理入，二是行入。</p>
-<p><strong>理入者</strong></p>
-<p>理入者，谓藉教悟宗。 深信含生同一真性，但为客尘妄想所覆，不能显了。 若也舍妄归真，凝住壁观，无自无他，凡圣等一，坚住不移，更不随于文教，此即与理冥符，无有分别，寂然无为，名为理入。</p>
-<p><strong>行入者</strong></p>
-<p>行入者，谓四行。 其余诸行，悉入此中。何等四耶？一抱冤行，二随缘行，三无所求行，四称法行。</p>
-<p>一、抱冤行者。 修道苦至，当年往劫。舍本逐末，多起爱憎。今虽无犯，是我宿作。 甘心受之，都无怨怼。经云：逢苦不忧，识达故也。此心生时，与道无违，体冤进道，故说言抱冤行。</p>
-<p>二、随缘行者。 众生无我，并缘业所转，苦乐齐受，皆从缘生。 若等胜报荣誉等事，是我过去宿因所感，今方得之。缘尽还无，何喜之有？得失从缘，心无增减。喜风不动，冥顺于道，是故说言随缘行。</p>
-<p>三、无所求行者。 世人长迷，处处贪著，名为之求。 智者悟真，理将俗反，安心无为，行随运转，万有斯空，无所愿乐。 功德黑暗常相随逐，三界久居，犹如火宅，有身皆苦，谁得而安？ 了达此处，故舍诸有，止想无求。 经曰： 有求皆苦，无求即乐。 判知无求真为道行，故言无所求行。</p>
-<p>四、称法行者。 性净之理，目为之法。 此理众相斯空，无染无著，无此无彼。经曰：法无众生，离众生垢故；法无有我，离我垢故。 智者若能信解此理，应当称法而行。 法体无悭，身、命、财行檀舍施，心无吝惜，脱解三空，不倚不著，但为去垢，称化众生而不取相。 此为自行，复能利他，亦能庄严菩提之道。 檀施既尔， 于五亦然。 为除妄想，修行六度，而无所行，是为称法行。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>田英章毛笔楷书入门教程</title>
-    <url>/2020/10/25/%E7%94%B0%E8%8B%B1%E7%AB%A0%E6%AF%9B%E7%AC%94%E6%A5%B7%E4%B9%A6%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="田英章间架结构28法"><a href="#田英章间架结构28法" class="headerlink" title="田英章间架结构28法"></a>田英章间架结构28法</h2><h3 id="第-1-法-首点居正"><a href="#第-1-法-首点居正" class="headerlink" title="第 1 法  首点居正"></a>第 1 法  首点居正</h3><p>&emsp; 唐太宗论笔法云： “夫点要做棱角，忌圆平，贵通变。” 首点者，应以龙睛凤眼之姿、 高山坠石之态，安居于全字中心之上，棱角突显，飒爽精神，是为点笔技法之要诀。</p>
-<h3 id="第-2-法-通变顾盼"><a href="#第-2-法-通变顾盼" class="headerlink" title="第 2 法  通变顾盼"></a>第 2 法  通变顾盼</h3><p>&emsp; 李阳冰论笔法云：“夫点不变，谓之布棋。” 一字之中，点笔当为至要，而两点以上者要顾盼通变，各有形制，点与点之间应首尾意连，彼此呼应。 若平直相似，整齐划一，便不为书。</p>
-<h3 id="第-3-法-点竖直对"><a href="#第-3-法-点竖直对" class="headerlink" title="第 3 法  点竖直对"></a>第 3 法  点竖直对</h3><p>&emsp; 一字之中，上有点下有竖者，当思考点竖是否直对，如直对，再思点笔位置。 点竖直对，有在字中间者，有在字左右者。 所谓直对，是重心垂直相对，万不可偏侧。 此法应先思后书，目测位置，手后随之。</p>
-<h3 id="第-4-法-中直对正"><a href="#第-4-法-中直对正" class="headerlink" title="第 4 法 中直对正"></a>第 4 法 中直对正</h3><p>&emsp; 一字之中，有上下两中竖者，两竖均应垂直对正，若能对正，则字身不倒。 然两竖中有一竖须坚挺垂直，以立其势，而另一竖则略向左斜，以化呆板。 对正之法，是以重心为准，如两笔僵直，神韵必失。</p>
-<h3 id="第-5-法-中直偏右"><a href="#第-5-法-中直偏右" class="headerlink" title="第 5 法 中直偏右"></a>第 5 法 中直偏右</h3><p>&emsp; 凡中直者，皆应垂直劲挺、管逐势行。 无论悬针垂露、有钩无钩，屈体弯身是为大忌。 右军论中直曰：“紧如春笋之抽寒谷是也。” 太宗也云：“为竖必努，贵战而雄。” 中直虽应垂直劲挺，但须稍有偏右，以化呆板，楷、行皆法此道。</p>
-<h3 id="第-6-法-底竖斜位"><a href="#第-6-法-底竖斜位" class="headerlink" title="第 6 法 底竖斜位"></a>第 6 法 底竖斜位</h3><p>&emsp; 凡竖在下方者，皆非全部居中，或偏于左，或侧于右，侧右者居多，偏左者少。 不居中者，当不可强为，强为居中字身必倒。 底竖笔锋所指，必有所向，察之要精，观之务细，以全局定其位置，以字势择其形态。</p>
-<h3 id="第-7-法-横笔等距"><a href="#第-7-法-横笔等距" class="headerlink" title="第 7 法 横笔等距"></a>第 7 法 横笔等距</h3><p>&emsp; 横笔之间凡无点、撇、捺者，间距基本相等，其法同“竖笔等距”法。</p>
-<h3 id="第-8-法-竖笔等距"><a href="#第-8-法-竖笔等距" class="headerlink" title="第 8 法 竖笔等距"></a>第 8 法 竖笔等距</h3><p>&emsp; 竖笔之间凡无点、撇、捺者，间距基本相等，楷书即是，行书亦然。 竖距虽然相等，但其宽窄当随字形而定，不可一律。 有因字势各异者，当有右倾左斜、阴阳粗细之别，或悬针，或垂露，迟速缓急，变化有致。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>多目标算法之MOEAD</title>
     <url>/2020/08/16/%E5%A4%9A%E7%9B%AE%E6%A0%87%E7%AE%97%E6%B3%95%E4%B9%8BMOEAD/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>MOEAD 优化框架（契比雪夫分解方法求解最小值问题）</p>
@@ -851,6 +841,33 @@
       <tags>
         <tag>Write</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>硬件基本知识整理</title>
+    <url>/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="S-参数"><a href="#S-参数" class="headerlink" title="S 参数"></a>S 参数</h1><p>S 参数英文原称是“Scattering Parameter”，即“散射参数”。</p>
+<p>一个二端口的网络，共有四个S参数：S11、S12、S21、S22；</p>
+<p>互易网络满足： S12 = S21；</p>
+<p>对称网络满足： S11 = S22；</p>
+<p>无耗网络中，端口1输入的能量或者反射回端口1或者传输到端口2，满足： S11*S11 + S21*S21 =1。</p>
+<p>高速电路设计中的微带线或者带状线，都有参考平面，通常是不对称结构（比如平行双导线就是对称结构），但是满足互易条件，因此S11!=S22， S12=S21。</p>
+]]></content>
+      <tags>
+        <tag>HFSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>田英章毛笔楷书入门教程</title>
+    <url>/2020/10/25/%E7%94%B0%E8%8B%B1%E7%AB%A0%E6%AF%9B%E7%AC%94%E6%A5%B7%E4%B9%A6%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="田英章间架结构28法"><a href="#田英章间架结构28法" class="headerlink" title="田英章间架结构28法"></a>田英章间架结构28法</h2><h3 id="第-1-法-首点居正"><a href="#第-1-法-首点居正" class="headerlink" title="第 1 法  首点居正"></a>第 1 法  首点居正</h3><p>&emsp; 唐太宗论笔法云： “夫点要做棱角，忌圆平，贵通变。” 首点者，应以龙睛凤眼之姿、 高山坠石之态，安居于全字中心之上，棱角突显，飒爽精神，是为点笔技法之要诀。</p>
+<h3 id="第-2-法-通变顾盼"><a href="#第-2-法-通变顾盼" class="headerlink" title="第 2 法  通变顾盼"></a>第 2 法  通变顾盼</h3><p>&emsp; 李阳冰论笔法云：“夫点不变，谓之布棋。” 一字之中，点笔当为至要，而两点以上者要顾盼通变，各有形制，点与点之间应首尾意连，彼此呼应。 若平直相似，整齐划一，便不为书。</p>
+<h3 id="第-3-法-点竖直对"><a href="#第-3-法-点竖直对" class="headerlink" title="第 3 法  点竖直对"></a>第 3 法  点竖直对</h3><p>&emsp; 一字之中，上有点下有竖者，当思考点竖是否直对，如直对，再思点笔位置。 点竖直对，有在字中间者，有在字左右者。 所谓直对，是重心垂直相对，万不可偏侧。 此法应先思后书，目测位置，手后随之。</p>
+<h3 id="第-4-法-中直对正"><a href="#第-4-法-中直对正" class="headerlink" title="第 4 法 中直对正"></a>第 4 法 中直对正</h3><p>&emsp; 一字之中，有上下两中竖者，两竖均应垂直对正，若能对正，则字身不倒。 然两竖中有一竖须坚挺垂直，以立其势，而另一竖则略向左斜，以化呆板。 对正之法，是以重心为准，如两笔僵直，神韵必失。</p>
+<h3 id="第-5-法-中直偏右"><a href="#第-5-法-中直偏右" class="headerlink" title="第 5 法 中直偏右"></a>第 5 法 中直偏右</h3><p>&emsp; 凡中直者，皆应垂直劲挺、管逐势行。 无论悬针垂露、有钩无钩，屈体弯身是为大忌。 右军论中直曰：“紧如春笋之抽寒谷是也。” 太宗也云：“为竖必努，贵战而雄。” 中直虽应垂直劲挺，但须稍有偏右，以化呆板，楷、行皆法此道。</p>
+<h3 id="第-6-法-底竖斜位"><a href="#第-6-法-底竖斜位" class="headerlink" title="第 6 法 底竖斜位"></a>第 6 法 底竖斜位</h3><p>&emsp; 凡竖在下方者，皆非全部居中，或偏于左，或侧于右，侧右者居多，偏左者少。 不居中者，当不可强为，强为居中字身必倒。 底竖笔锋所指，必有所向，察之要精，观之务细，以全局定其位置，以字势择其形态。</p>
+<h3 id="第-7-法-横笔等距"><a href="#第-7-法-横笔等距" class="headerlink" title="第 7 法 横笔等距"></a>第 7 法 横笔等距</h3><p>&emsp; 横笔之间凡无点、撇、捺者，间距基本相等，其法同“竖笔等距”法。</p>
+<h3 id="第-8-法-竖笔等距"><a href="#第-8-法-竖笔等距" class="headerlink" title="第 8 法 竖笔等距"></a>第 8 法 竖笔等距</h3><p>&emsp; 竖笔之间凡无点、撇、捺者，间距基本相等，楷书即是，行书亦然。 竖距虽然相等，但其宽窄当随字形而定，不可一律。 有因字势各异者，当有右倾左斜、阴阳粗细之别，或悬针，或垂露，迟速缓急，变化有致。</p>
+]]></content>
   </entry>
   <entry>
     <title>《牛客》学习笔记</title>
@@ -897,19 +914,5 @@
 <p>引用：</p>
 <p>&emsp; [1] 安建.中华人民共和国专利法释义[M].北京：法律出版社，2009.</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>硬件基本知识整理</title>
-    <url>/2020/05/13/%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="S-参数"><a href="#S-参数" class="headerlink" title="S 参数"></a>S 参数</h1><p>S 参数英文原称是“Scattering Parameter”，即“散射参数”。</p>
-<p>一个二端口的网络，共有四个S参数：S11、S12、S21、S22；</p>
-<p>互易网络满足： S12 = S21；</p>
-<p>对称网络满足： S11 = S22；</p>
-<p>无耗网络中，端口1输入的能量或者反射回端口1或者传输到端口2，满足： S11*S11 + S21*S21 =1。</p>
-<p>高速电路设计中的微带线或者带状线，都有参考平面，通常是不对称结构（比如平行双导线就是对称结构），但是满足互易条件，因此S11!=S22， S12=S21。</p>
-]]></content>
-      <tags>
-        <tag>HFSS</tag>
-      </tags>
   </entry>
 </search>
